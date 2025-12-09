@@ -1,0 +1,209 @@
+/* ------------------------------
+   GLOBAL
+-------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: white;
+}
+
+/* ------------------------------
+   TITLE
+-------------------------------*/
+.title {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: #00ff6a;  /* Green */
+}
+
+/* ------------------------------
+   CATEGORY BUTTONS
+-------------------------------*/
+.category-buttons {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.category-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #1f2937;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: 0.2s;
+}
+
+.category-buttons button:hover {
+  background: #374151;
+}
+
+/* ------------------------------
+   CATEGORY TITLE
+-------------------------------*/
+h2 {
+  margin: 25px 0 12px;
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ------------------------------
+   CHANNEL CARD
+-------------------------------*/
+.channel-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #0d1b2a, #1b263b);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  flex-wrap: wrap;
+}
+
+.channel-card:hover {
+  transform: scale(1.02);
+  background: linear-gradient(90deg, #1b263b, #293345);
+}
+
+.channel-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.countdown {
+  color: #8fd3fe;
+  font-size: 14px;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+
+/* ------------------------------
+   FLEX COLUMN FOR SMALL SCREENS
+-------------------------------*/
+.channel-card div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.channel-card div div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------------------
+   MEDIA QUERIES
+-------------------------------*/
+
+/* Phones (≤ 600px) */
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 26px;
+    padding: 15px 0;
+  }
+
+  .category-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .channel-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .channel-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .countdown {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+}
+
+/* Tablets (601px – 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .category-buttons button {
+    padding: 9px 18px;
+    font-size: 15px;
+  }
+
+  .channel-card {
+    padding: 12px;
+  }
+
+  .channel-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .countdown {
+    font-size: 13px;
+  }
+}
+
+/* Laptops / Small Desktops (1025px – 1440px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .channel-card {
+    padding: 15px;
+  }
+
+  .channel-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .countdown {
+    font-size: 14px;
+  }
+}
+
+/* Large Desktops (≥ 1441px) */
+@media screen and (min-width: 1441px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .channel-card {
+    padding: 18px;
+  }
+
+  .channel-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .countdown {
+    font-size: 16px;
+  }
+}
