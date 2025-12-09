@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBA - Miami Heat vs Orlando Magic</title>
+    <!-- ✅ Monetag Verification -->
+  <meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .back-button {
+    width: 95%;
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .back-button button {
+    padding: 10px 18px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .player-container {
+    width: 95%;
+    max-width: 1000px;
+    background: #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 50vw;
+    max-height: 600px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .buttons button {
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /* Chat container */
+  .chat {
+    width: 95%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 5px;
+  }
+
+  .messages div {
+    background: #eee;
+    margin-bottom: 5px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    word-wrap: break-word;
+  }
+
+  .messages .self {
+    background: #c8f7c5;
+    align-self: flex-end;
+  }
+
+  .chat-box {
+    display: flex;
+    gap: 10px;
+  }
+
+  .chat-box input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+
+  .chat-box button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /* Registration form */
+  #registerForm {
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #registerForm input, #registerForm button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    iframe { height: 55vw; }
+    .chat { height: 300px; }
+  }
+
+  @media (max-width: 480px) {
+    iframe { height: 65vw; }
+    .chat { height: 250px; }
+    .buttons button, .back-button button, .chat-box button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+    #registerForm input, #registerForm button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Back button -->
+<div class="back-button">
+  <button onclick="window.location.href='index.html'">← Back to Home</button>
+</div>
+
+<!-- Video player -->
+<div class="player-container">
+  <iframe id="player" src="https://masports.dpdns.org/app/nba1.html" allowfullscreen></iframe>
+  <div class="buttons">
+    <button onclick="switchServer('https://masports.dpdns.org/app/nba1.html')">Server 1</button>
+    <button onclick="switchServer('https://streamcenter.xyz/nba2.html')">Server 2</button>
+  </div>
+</div>
+
+<!-- Registration form -->
+<div id="registerForm">
+  <input type="text" id="displayNameInput" placeholder="Enter your display name">
+  <button onclick="registerUser()">Register</button>
+</div>
+
+<!-- Chat -->
+<div class="chat" id="chatContainer">
+  <div id="messages" class="messages"></div>
+
+  <div class="chat-box" id="chatBox" style="display:none;">
+    <input type="text" id="chatInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script type="module" src="nba1-script.js"></script>
+
+  <!-- ✅ Safe Monetag Ads: Load After User Interaction -->
+  <script>
+    let monetagLoaded = false;
+    document.addEventListener("click", () => {
+      if (!monetagLoaded) {
+        monetagLoaded = true;
+        console.log("✅ Loading Monetag Ads safely...");
+
+        // Popunder
+        (function(s){
+          s.dataset.zone='10131170';
+          s.src='https://al5sm.com/tag.min.js';
+          document.body.appendChild(s);
+        })(document.createElement('script'));
+
+        // Vignette
+        (function(s){
+          s.dataset.zone='10131172';
+          s.src='https://groleegni.net/vignette.min.js';
+          document.body.appendChild(s);
+        })(document.createElement('script'));
+
+      }
+    });
+  </script>
+
+  <!-- ✅ Fallback Monetag Banner -->
+  <noscript>
+    <a href="https://al5sm.com/" target="_blank">
+      <img src="https://i.imgur.com/8T3YF0Z.jpeg" alt="Watch Ad" style="width:100%;border-radius:12px;">
+    </a>
+  </noscript>
+
+  <!-- ✅ Performance Debug Log -->
+  <script>
+    window.addEventListener('load', () => {
+      console.log("✅ MASPORTS (Monetag Edition) loaded in", performance.now().toFixed(1), "ms");
+    });
+  </script>
+  
+</body>
+</html>
