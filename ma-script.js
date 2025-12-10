@@ -99,7 +99,7 @@ function renderCategoryButtons() {
 }
 
 /* ------------------------------------------------
-   RENDER CHANNEL LIST + HIDE ENDED
+   RENDER CHANNELS WITH SORT + HIDE ENDED
 -------------------------------------------------*/
 function renderChannels() {
   const container = document.getElementById("channels-container");
@@ -109,7 +109,7 @@ function renderChannels() {
 
   channels.forEach(c => {
     const status = getChannelStatus(c);
-    if (status === "ended") return; // hide ended
+    if (status === "ended") return; // ❌ Hide ended channels
 
     if (!grouped[c.category]) grouped[c.category] = [];
     grouped[c.category].push(c);
@@ -125,6 +125,7 @@ function renderChannels() {
       return order[sA] - order[sB];
     });
 
+    // Create section
     const section = document.createElement("div");
     section.id = `section-${category}`;
 
@@ -177,7 +178,7 @@ function renderChannels() {
 }
 
 /* ------------------------------------------------
-   COUNTDOWN (LIVE DOES NOT SHOW ENDING TIMER)
+   UPDATE COUNTDOWN + AUTO REFRESH CHANNEL ORDER
 -------------------------------------------------*/
 function updateCountdown() {
   const now = Date.now();
@@ -190,7 +191,6 @@ function updateCountdown() {
     const start = getPhilippinesTimestamp(date, time);
     const end = start + 3 * 60 * 60 * 1000;
 
-    // UPCOMING
     if (now < start) {
       const diff = start - now;
       const hrs = Math.floor(diff / 3600000);
@@ -201,19 +201,22 @@ function updateCountdown() {
       el.style.color = "#8fd3fe";
     }
 
-    // LIVE — ONLY SHOW “LIVE”
     else if (now >= start && now <= end) {
-      el.textContent = "LIVE";
+      const diff = end - now;
+      const hrs = Math.floor(diff / 3600000);
+      const mins = Math.floor((diff % 3600000) / 60000);
+      const secs = Math.floor((diff % 60000) / 1000);
+
+      el.textContent = `LIVE • Ends in ${hrs}h ${mins}m ${secs}s`;
       el.style.color = "#00ff6a";
     }
 
-    // ENDED → re-render list
     else {
-      changed = true;
+      changed = true; // an ended channel needs to disappear
     }
   });
 
-  if (changed) renderChannels();
+  if (changed) renderChannels(); // 🔄 auto-remove ended + auto-sort live to top
 }
 
 /* ------------------------------------------------
