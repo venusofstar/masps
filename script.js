@@ -3,25 +3,7 @@
    CHANNEL LIST
 -------------------------------------------------*/
 const channels = [
-{
-  title: "NBA- Phoenix Suns vs. Oklahoma City Thunder",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://api.ppvs.su/assets/thumb/8b2f2d4da1b1f498a6e5aa0d6d4dbaa7-thumbnail.jpg",
-  page: "nba1.html",
-  date: "2025-12-11",
-  time: "8:30 AM"
-},
-{
-  title: "NBA- San Antonio Spurs vs. Los Angeles Lakers",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://api.ppvs.su/assets/thumb/9e34880b11bf85d1b23d17e9e68bc42b-thumbnail.jpg",
-  page: "nba2.html",
-  date: "2025-12-11",
-  time: "11:00 AM"
-},
-{
+   {
   title: "🇵🇭 PBA - Miralco vs Columbia Dyip",
   category: "Basketball",
   service: "PBA",
@@ -40,6 +22,24 @@ const channels = [
   time: "7:30 PM"
 },
 {
+  title: "NBA- Phoenix Suns vs. Oklahoma City Thunder",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://api.ppvs.su/assets/thumb/8b2f2d4da1b1f498a6e5aa0d6d4dbaa7-thumbnail.jpg",
+  page: "nba1.html",
+  date: "2025-12-11",
+  time: "8:30 AM"
+},
+{
+  title: "NBA- San Antonio Spurs vs. Los Angeles Lakers",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://api.ppvs.su/assets/thumb/9e34880b11bf85d1b23d17e9e68bc42b-thumbnail.jpg",
+  page: "nba2.html",
+  date: "2025-12-11",
+  time: "11:00 AM"
+},
+{   
   title: "WWE: NXT",
   category: "WWE",
   service: "WWE",
