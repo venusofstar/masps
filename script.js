@@ -4,22 +4,22 @@
 -------------------------------------------------*/
 const channels = [
 {
-  title: "NBA - Miami Heat vs. Orlando Magic",
+  title: "NBA- Phoenix Suns vs. Oklahoma City Thunder",
   category: "Basketball",
   service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXJyTULlZDesM6NVEJ3MhrvTy5qQ1oWhdDxdN4NAFRDA&s=10",
+  logo: "https://api.ppvs.su/assets/thumb/8b2f2d4da1b1f498a6e5aa0d6d4dbaa7-thumbnail.jpg",
   page: "nba1.html",
-  date: "2025-12-10",
-  time: "7:00 AM"
+  date: "2025-12-11",
+  time: "8:30 AM"
 },
 {
-  title: "NBA - New York Knicks vs. Toronto Raptors",
+  title: "NBA- San Antonio Spurs vs. Los Angeles Lakers",
   category: "Basketball",
   service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwT5f5uD8hHtFB5txJY0s5iR2sPcuRi1PBC4kTMRDwVA&s=10",
+  logo: "https://api.ppvs.su/assets/thumb/9e34880b11bf85d1b23d17e9e68bc42b-thumbnail.jpg",
   page: "nba2.html",
-  date: "2025-12-10",
-  time: "9:30 AM"
+  date: "2025-12-11",
+  time: "11:00 AM"
 },
 {
   title: "🇵🇭 PBA - Miralco vs Columbia Dyip",
