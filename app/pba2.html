@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YouTube Optimized HLS Player</title>
+<title>YouTube Live HLS Player</title>
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
@@ -29,49 +29,36 @@
 <video id="player" controls autoplay playsinline muted></video>
 
 <script>
-// 🟥 PUT YOUR YOUTUBE M3U8 URL HERE
-const streamUrl =
-"https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1765381264/ei/MEA5af3sCMGBvcAPr6v7iAk/ip/126.209.53.186/id/8a-TY6MYC-s.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/tx/51539830/txs/51539830%2C51539831/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/bui/AYUSA3CFI2c9lOdVwS6AqoNTbLaeuiYqzuFgh0PxsPB_TSkmKurQtxTqHxZjHnkak4wMiMeCj4NtQEw9/spc/wH4Qq3a0M76HKdNdhwJ6l52eXo9lmWuMBXG4oyIOlK-G5ZvizLfG7dZcoU-lDo2twOZWLA/vprv/1/go/1/ns/6PKAIpK_tCOyPDRoP40r2l4R/rqh/5/pacing/0/nvgoi/1/ncsapi/1/keepalive/yes/fexp/51331020%2C51552689%2C51565115%2C51565682%2C51580968/dover/11/n/b5wNszD7rmBxZG6/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Ctx%2Ctxs%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Cns%2Crqh%2Citag%2Cplaylist_type/sig/AJfQdSswRAIgHZsPRUsibTjb3fHGfE1KEKRl7h0HhFo9BRxmHcEwbOICIAElHCxUqEK9JJNYPnitI2Wx3vok7bNRBPy4558n48Gi/file/index.m3u8";
+let streamUrl = "https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1765381264/ei/MEA5af3sCMGBvcAPr6v7iAk/ip/126.209.53.186/id/8a-TY6MYC-s.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/tx/51539830/txs/51539830%2C51539831/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/bui/AYUSA3CFI2c9lOdVwS6AqoNTbLaeuiYqzuFgh0PxsPB_TSkmKurQtxTqHxZjHnkak4wMiMeCj4NtQEw9/spc/wH4Qq3a0M76HKdNdhwJ6l52eXo9lmWuMBXG4oyIOlK-G5ZvizLfG7dZcoU-lDo2twOZWLA/vprv/1/go/1/ns/6PKAIpK_tCOyPDRoP40r2l4R/rqh/5/pacing/0/nvgoi/1/ncsapi/1/keepalive/yes/fexp/51331020%2C51552689%2C51565115%2C51565682%2C51580968/dover/11/n/b5wNszD7rmBxZG6/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Ctx%2Ctxs%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Cns%2Crqh%2Citag%2Cplaylist_type/sig/AJfQdSswRAIgHZsPRUsibTjb3fHGfE1KEKRl7h0HhFo9BRxmHcEwbOICIAElHCxUqEK9JJNYPnitI2Wx3vok7bNRBPy4558n48Gi/file/index.m3u8";
 
 let hls;
 const video = document.getElementById("player");
 
-// --------------------------
-// ⚡ Freeze Detector
-// --------------------------
+// Freeze detection
 let lastTime = 0;
 setInterval(() => {
-    if (!video.paused && !video.seeking) {
-        if (video.currentTime === lastTime) {
-            console.warn("Freeze detected → Reloading");
-            reloadStream();
-        }
+    if (!video.paused && !video.seeking && video.currentTime === lastTime) {
+        console.warn("Freeze detected → Reloading stream");
+        reloadStream();
     }
     lastTime = video.currentTime;
 }, 5000);
 
-// --------------------------
-// ⚡ Reload Function
-// --------------------------
+// Reload stream safely
 function reloadStream() {
-    console.warn("Reloading stream...");
     if (hls) hls.destroy();
     setTimeout(loadPlayer, 1500);
 }
 
-// --------------------------
-// ⚡ Load Player
-// --------------------------
+// Load HLS player
 function loadPlayer() {
-
     if (hls) hls.destroy();
 
     hls = new Hls({
         enableWorker: true,
         lowLatencyMode: true,
-        backBufferLength: 120,
+        backBufferLength: 60,
         maxBufferLength: 20,
-        maxMaxBufferLength: 40,
         liveSyncDuration: 2,
         liveMaxLatencyDuration: 5,
         fragLoadingTimeOut: 6000,
@@ -82,54 +69,35 @@ function loadPlayer() {
     hls.loadSource(streamUrl);
     hls.attachMedia(video);
 
-    // Auto play
+    // Auto play when manifest is parsed
     hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.muted = false;  // allow autoplay on mobile
+        video.muted = false;
         video.play().catch(() => {});
     });
 
-    // ------------------------------
-    // ⚡ YouTube-specific Error Fix
-    // ------------------------------
+    // Error handling
     hls.on(Hls.Events.ERROR, (event, data) => {
-        console.warn("HLS.js Error:", data);
+        console.warn("HLS.js error:", data);
 
         // YouTube token expired
-        if (data.details === "manifestLoadError" ||
-            data.details === "manifestLoadTimeOut") {
-            console.warn("Manifest expired → Reload");
-            return reloadStream();
+        if (data.details === "manifestLoadError" || data.details === "manifestLoadTimeOut") {
+            console.warn("Manifest expired → Reloading");
+            reloadStream();
         }
 
-        // Fatal crash
+        // Fatal errors
         if (data.fatal) {
-            switch (data.type) {
-                case Hls.ErrorTypes.NETWORK_ERROR:
-                case Hls.ErrorTypes.MEDIA_ERROR:
-                case Hls.ErrorTypes.OTHER_ERROR:
-                    reloadStream();
-                    break;
-            }
+            reloadStream();
         }
     });
 
-    // Video stall fallback
-    video.addEventListener("stalled", () => {
-        console.warn("Stalled → Reload");
-        reloadStream();
-    });
-
-    video.addEventListener("error", () => {
-        console.warn("Video tag error → Reload");
-        reloadStream();
-    });
-
-    video.addEventListener("ended", () => {
-        console.warn("Ended → Reload");
-        reloadStream();
-    });
+    // Video events
+    video.addEventListener("stalled", reloadStream);
+    video.addEventListener("error", reloadStream);
+    video.addEventListener("ended", reloadStream);
 }
 
+// Initial load
 loadPlayer();
 </script>
 
