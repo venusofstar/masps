@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fast Loading HLS.js Player</title>
+<title>YouTube Optimized HLS Player</title>
 
-<!-- HLS.js -->
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
 <style>
@@ -14,10 +13,9 @@
         padding: 0;
         width: 100%;
         height: 100%;
+        background: #000;
         overflow: hidden;
-        background: black;
     }
-
     video {
         width: 100%;
         height: 100%;
@@ -28,59 +26,110 @@
 
 <body>
 
-<video id="player-bet" controls autoplay playsinline></video>
+<video id="player" controls autoplay playsinline muted></video>
 
 <script>
-const streamUrl = "https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1765381264/ei/MEA5af3sCMGBvcAPr6v7iAk/ip/126.209.53.186/id/8a-TY6MYC-s.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/tx/51539830/txs/51539830%2C51539831/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/bui/AYUSA3CFI2c9lOdVwS6AqoNTbLaeuiYqzuFgh0PxsPB_TSkmKurQtxTqHxZjHnkak4wMiMeCj4NtQEw9/spc/wH4Qq3a0M76HKdNdhwJ6l52eXo9lmWuMBXG4oyIOlK-G5ZvizLfG7dZcoU-lDo2twOZWLA/vprv/1/go/1/ns/6PKAIpK_tCOyPDRoP40r2l4R/rqh/5/pacing/0/nvgoi/1/ncsapi/1/keepalive/yes/fexp/51331020%2C51552689%2C51565115%2C51565682%2C51580968/dover/11/n/b5wNszD7rmBxZG6/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Ctx%2Ctxs%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Cns%2Crqh%2Citag%2Cplaylist_type/sig/AJfQdSswRAIgHZsPRUsibTjb3fHGfE1KEKRl7h0HhFo9BRxmHcEwbOICIAElHCxUqEK9JJNYPnitI2Wx3vok7bNRBPy4558n48Gi/file/index.m3u8";
+// 🟥 PUT YOUR YOUTUBE M3U8 URL HERE
+const streamUrl =
+"https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1765381264/ei/MEA5af3sCMGBvcAPr6v7iAk/ip/126.209.53.186/id/8a-TY6MYC-s.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/tx/51539830/txs/51539830%2C51539831/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/bui/AYUSA3CFI2c9lOdVwS6AqoNTbLaeuiYqzuFgh0PxsPB_TSkmKurQtxTqHxZjHnkak4wMiMeCj4NtQEw9/spc/wH4Qq3a0M76HKdNdhwJ6l52eXo9lmWuMBXG4oyIOlK-G5ZvizLfG7dZcoU-lDo2twOZWLA/vprv/1/go/1/ns/6PKAIpK_tCOyPDRoP40r2l4R/rqh/5/pacing/0/nvgoi/1/ncsapi/1/keepalive/yes/fexp/51331020%2C51552689%2C51565115%2C51565682%2C51580968/dover/11/n/b5wNszD7rmBxZG6/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Ctx%2Ctxs%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Cns%2Crqh%2Citag%2Cplaylist_type/sig/AJfQdSswRAIgHZsPRUsibTjb3fHGfE1KEKRl7h0HhFo9BRxmHcEwbOICIAElHCxUqEK9JJNYPnitI2Wx3vok7bNRBPy4558n48Gi/file/index.m3u8";
 
 let hls;
-let video = document.getElementById("player-bet");
+const video = document.getElementById("player");
 
-function loadPlayer() {
-    // Destroy old instance
-    if (hls) {
-        hls.destroy();
+// --------------------------
+// ⚡ Freeze Detector
+// --------------------------
+let lastTime = 0;
+setInterval(() => {
+    if (!video.paused && !video.seeking) {
+        if (video.currentTime === lastTime) {
+            console.warn("Freeze detected → Reloading");
+            reloadStream();
+        }
     }
+    lastTime = video.currentTime;
+}, 5000);
+
+// --------------------------
+// ⚡ Reload Function
+// --------------------------
+function reloadStream() {
+    console.warn("Reloading stream...");
+    if (hls) hls.destroy();
+    setTimeout(loadPlayer, 1500);
+}
+
+// --------------------------
+// ⚡ Load Player
+// --------------------------
+function loadPlayer() {
+
+    if (hls) hls.destroy();
 
     hls = new Hls({
         enableWorker: true,
         lowLatencyMode: true,
-        backBufferLength: 90
+        backBufferLength: 120,
+        maxBufferLength: 20,
+        maxMaxBufferLength: 40,
+        liveSyncDuration: 2,
+        liveMaxLatencyDuration: 5,
+        fragLoadingTimeOut: 6000,
+        manifestLoadingTimeOut: 6000,
+        nudgeOffset: 0.1
     });
 
     hls.loadSource(streamUrl);
     hls.attachMedia(video);
 
-    // Auto-play when ready
+    // Auto play
     hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.volume = 1.0;
-        video.play();
+        video.muted = false;  // allow autoplay on mobile
+        video.play().catch(() => {});
     });
 
-    // ERROR HANDLING + AUTO RELOAD
-    hls.on(Hls.Events.ERROR, function (event, data) {
-        console.warn("HLS.js error:", data);
+    // ------------------------------
+    // ⚡ YouTube-specific Error Fix
+    // ------------------------------
+    hls.on(Hls.Events.ERROR, (event, data) => {
+        console.warn("HLS.js Error:", data);
 
+        // YouTube token expired
+        if (data.details === "manifestLoadError" ||
+            data.details === "manifestLoadTimeOut") {
+            console.warn("Manifest expired → Reload");
+            return reloadStream();
+        }
+
+        // Fatal crash
         if (data.fatal) {
-            console.warn("Fatal error, reloading player...");
-            setTimeout(loadPlayer, 2000);
+            switch (data.type) {
+                case Hls.ErrorTypes.NETWORK_ERROR:
+                case Hls.ErrorTypes.MEDIA_ERROR:
+                case Hls.ErrorTypes.OTHER_ERROR:
+                    reloadStream();
+                    break;
+            }
         }
     });
 
-    // Reload if stream stops
-    video.addEventListener("ended", () => {
-        console.warn("Stream ended. Reloading...");
-        setTimeout(loadPlayer, 2000);
+    // Video stall fallback
+    video.addEventListener("stalled", () => {
+        console.warn("Stalled → Reload");
+        reloadStream();
     });
 
-    // Reload if video freezes or stalls
-    video.addEventListener("stalled", () => {
-        console.warn("Playback stalled. Reloading...");
-        setTimeout(loadPlayer, 2000);
+    video.addEventListener("error", () => {
+        console.warn("Video tag error → Reload");
+        reloadStream();
+    });
+
+    video.addEventListener("ended", () => {
+        console.warn("Ended → Reload");
+        reloadStream();
     });
 }
 
-// First load
 loadPlayer();
 </script>
 
