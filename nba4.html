@@ -1,3 +1,192 @@
-<script>
-document.write(unescape('%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%3Ctitle%3ENBA%3C/title%3E%0A%0A%0A%3Cstyle%3E%0A%20%20body%20%7B%0A%20%20%20%20font-family%3A%20Arial%2C%20sans-serif%3B%0A%20%20%20%20background%3A%20%23f4f4f4%3B%0A%20%20%20%20margin%3A%200%3B%0A%20%20%20%20padding%3A%200%3B%0A%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20align-items%3A%20center%3B%0A%20%20%7D%0A%0A%20%20.back-button%20%7B%0A%20%20%20%20width%3A%2095%25%3B%0A%20%20%20%20max-width%3A%201000px%3B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20justify-content%3A%20flex-start%3B%0A%20%20%7D%0A%0A%20%20.back-button%20button%20%7B%0A%20%20%20%20padding%3A%2010px%2018px%3B%0A%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20font-size%3A%201rem%3B%0A%20%20%7D%0A%0A%20%20.player-container%20%7B%0A%20%20%20%20width%3A%2095%25%3B%0A%20%20%20%20max-width%3A%201000px%3B%0A%20%20%20%20background%3A%20%23000%3B%0A%20%20%20%20padding%3A%2010px%3B%0A%20%20%20%20border-radius%3A%208px%3B%0A%20%20%20%20margin-bottom%3A%2015px%3B%0A%20%20%7D%0A%0A%20%20iframe%20%7B%0A%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20height%3A%2050vw%3B%0A%20%20%20%20max-height%3A%20600px%3B%0A%20%20%20%20border%3A%20none%3B%0A%20%20%20%20border-radius%3A%208px%3B%0A%20%20%7D%0A%0A%20%20.buttons%20%7B%0A%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20flex-wrap%3A%20wrap%3B%0A%20%20%20%20gap%3A%2010px%3B%0A%20%20%20%20margin%3A%2010px%200%3B%0A%20%20%7D%0A%0A%20%20.buttons%20button%20%7B%0A%20%20%20%20padding%3A%2010px%2018px%3B%0A%20%20%20%20font-size%3A%201rem%3B%0A%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%7D%0A%0A%20%20/*%20Chat%20container%20*/%0A%20%20.chat%20%7B%0A%20%20%20%20width%3A%2095%25%3B%0A%20%20%20%20max-width%3A%201000px%3B%0A%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20padding%3A%2010px%3B%0A%20%20%20%20border-radius%3A%208px%3B%0A%20%20%20%20height%3A%20350px%3B%0A%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20box-shadow%3A%200%200%208px%20rgba%280%2C0%2C0%2C0.1%29%3B%0A%20%20%20%20margin-bottom%3A%2020px%3B%0A%20%20%7D%0A%0A%20%20.messages%20%7B%0A%20%20%20%20flex%3A%201%3B%0A%20%20%20%20overflow-y%3A%20auto%3B%0A%20%20%20%20margin-bottom%3A%2010px%3B%0A%20%20%20%20padding-right%3A%205px%3B%0A%20%20%7D%0A%0A%20%20.messages%20div%20%7B%0A%20%20%20%20background%3A%20%23eee%3B%0A%20%20%20%20margin-bottom%3A%205px%3B%0A%20%20%20%20padding%3A%206px%2010px%3B%0A%20%20%20%20border-radius%3A%204px%3B%0A%20%20%20%20word-wrap%3A%20break-word%3B%0A%20%20%7D%0A%0A%20%20.messages%20.self%20%7B%0A%20%20%20%20background%3A%20%23c8f7c5%3B%0A%20%20%20%20align-self%3A%20flex-end%3B%0A%20%20%7D%0A%0A%20%20.chat-box%20%7B%0A%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20gap%3A%2010px%3B%0A%20%20%7D%0A%0A%20%20.chat-box%20input%20%7B%0A%20%20%20%20flex%3A%201%3B%0A%20%20%20%20padding%3A%208px%3B%0A%20%20%20%20border-radius%3A%204px%3B%0A%20%20%20%20border%3A%201px%20solid%20%23ccc%3B%0A%20%20%20%20font-size%3A%201rem%3B%0A%20%20%7D%0A%0A%20%20.chat-box%20button%20%7B%0A%20%20%20%20padding%3A%208px%2016px%3B%0A%20%20%20%20font-size%3A%201rem%3B%0A%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%7D%0A%0A%20%20/*%20Registration%20form%20*/%0A%20%20%23registerForm%20%7B%0A%20%20%20%20width%3A%2095%25%3B%0A%20%20%20%20max-width%3A%20500px%3B%0A%20%20%20%20margin%3A%2020px%20auto%3B%0A%20%20%20%20background%3A%20%23fff%3B%0A%20%20%20%20padding%3A%2015px%3B%0A%20%20%20%20border-radius%3A%208px%3B%0A%20%20%20%20box-shadow%3A%200%200%208px%20rgba%280%2C0%2C0%2C0.1%29%3B%0A%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20gap%3A%2010px%3B%0A%20%20%7D%0A%0A%20%20%23registerForm%20input%2C%20%23registerForm%20button%20%7B%0A%20%20%20%20padding%3A%2010px%3B%0A%20%20%20%20font-size%3A%201rem%3B%0A%20%20%7D%0A%0A%20%20@media%20%28max-width%3A%20768px%29%20%7B%0A%20%20%20%20iframe%20%7B%20height%3A%2055vw%3B%20%7D%0A%20%20%20%20.chat%20%7B%20height%3A%20300px%3B%20%7D%0A%20%20%7D%0A%0A%20%20@media%20%28max-width%3A%20480px%29%20%7B%0A%20%20%20%20iframe%20%7B%20height%3A%2065vw%3B%20%7D%0A%20%20%20%20.chat%20%7B%20height%3A%20250px%3B%20%7D%0A%20%20%20%20.buttons%20button%2C%20.back-button%20button%2C%20.chat-box%20button%20%7B%0A%20%20%20%20%20%20font-size%3A%200.9rem%3B%0A%20%20%20%20%20%20padding%3A%208px%2012px%3B%0A%20%20%20%20%7D%0A%20%20%20%20%23registerForm%20input%2C%20%23registerForm%20button%20%7B%0A%20%20%20%20%20%20font-size%3A%200.9rem%3B%0A%20%20%20%20%20%20padding%3A%208px%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%3C/style%3E%0A%3C/head%3E%0A%3Cbody%3E%0A%0A%3C%21--%20Back%20button%20--%3E%0A%3Cdiv%20class%3D%22back-button%22%3E%0A%20%20%3Cbutton%20onclick%3D%22window.location.href%3D%27index.html%27%22%3E%u2190%20Back%20to%20Home%3C/button%3E%0A%3C/div%3E%0A%0A%3C%21--%20Video%20player%20--%3E%0A%3Cdiv%20class%3D%22player-container%22%3E%0A%20%20%3Ciframe%20id%3D%22player%22%20src%3D%22https%3A//masports.dpdns.org/app/nba4.html%22%20allowfullscreen%3E%3C/iframe%3E%0A%20%20%3Cdiv%20class%3D%22buttons%22%3E%0A%20%20%20%20%3Cbutton%20onclick%3D%22switchServer%28%27https%3A//masports.dpdns.org/app/nba4.html%27%29%22%3EServer%201%3C/button%3E%0A%20%20%20%20%3Cbutton%20onclick%3D%22switchServer%28%27https%3A//streamcenter.xyz/embed/ch68.php%27%29%22%3EServer%202%3C/button%3E%0A%20%20%3C/div%3E%0A%3C/div%3E%0A%0A%3C%21--%20Registration%20form%20--%3E%0A%3Cdiv%20id%3D%22registerForm%22%3E%0A%20%20%3Cinput%20type%3D%22text%22%20id%3D%22displayNameInput%22%20placeholder%3D%22Enter%20your%20display%20name%22%3E%0A%20%20%3Cbutton%20onclick%3D%22registerUser%28%29%22%3ERegister%3C/button%3E%0A%3C/div%3E%0A%0A%3C%21--%20Chat%20--%3E%0A%3Cdiv%20class%3D%22chat%22%20id%3D%22chatContainer%22%3E%0A%20%20%3Cdiv%20id%3D%22messages%22%20class%3D%22messages%22%3E%3C/div%3E%0A%0A%20%20%3Cdiv%20class%3D%22chat-box%22%20id%3D%22chatBox%22%20style%3D%22display%3Anone%3B%22%3E%0A%20%20%20%20%3Cinput%20type%3D%22text%22%20id%3D%22chatInput%22%20placeholder%3D%22Type%20your%20message...%22%3E%0A%20%20%20%20%3Cbutton%20onclick%3D%22sendMessage%28%29%22%3ESend%3C/button%3E%0A%20%20%3C/div%3E%0A%3C/div%3E%0A%0A%3Cscript%20type%3D%22module%22%20src%3D%22nba1-script.js%22%3E%3C/script%3E%0A%0A%20%20%0A%3C/body%3E%0A%3C/html%3E'));
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBA</title>
+
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .back-button {
+    width: 95%;
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .back-button button {
+    padding: 10px 18px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .player-container {
+    width: 95%;
+    max-width: 1000px;
+    background: #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 50vw;
+    max-height: 600px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .buttons button {
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /* Chat container */
+  .chat {
+    width: 95%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 5px;
+  }
+
+  .messages div {
+    background: #eee;
+    margin-bottom: 5px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    word-wrap: break-word;
+  }
+
+  .messages .self {
+    background: #c8f7c5;
+    align-self: flex-end;
+  }
+
+  .chat-box {
+    display: flex;
+    gap: 10px;
+  }
+
+  .chat-box input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+
+  .chat-box button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /* Registration form */
+  #registerForm {
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #registerForm input, #registerForm button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    iframe { height: 55vw; }
+    .chat { height: 300px; }
+  }
+
+  @media (max-width: 480px) {
+    iframe { height: 65vw; }
+    .chat { height: 250px; }
+    .buttons button, .back-button button, .chat-box button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+    #registerForm input, #registerForm button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Back button -->
+<div class="back-button">
+  <button onclick="window.location.href='index.html'">← Back to Home</button>
+</div>
+
+<!-- Video player -->
+<div class="player-container">
+  <iframe id="player" src="https://masports.dpdns.org/app/nba4.html" allowfullscreen></iframe>
+  <div class="buttons">
+    <button onclick="switchServer('https://masports.dpdns.org/app/nba4.html')">Server 1</button>
+    <button onclick="switchServer('https://streamcenter.xyz/embed/ch68.php')">Server 2</button>
+  </div>
+</div>
+
+<!-- Registration form -->
+<div id="registerForm">
+  <input type="text" id="displayNameInput" placeholder="Enter your display name">
+  <button onclick="registerUser()">Register</button>
+</div>
+
+<!-- Chat -->
+<div class="chat" id="chatContainer">
+  <div id="messages" class="messages"></div>
+
+  <div class="chat-box" id="chatBox" style="display:none;">
+    <input type="text" id="chatInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script type="module" src="nba1-script.js"></script>
+
+  
+</body>
+</html>
