@@ -40,13 +40,13 @@ const channels = [
   time: "11:00 AM"
 },
 {   
-  title: "WWE: NXT",
+  title: "AEW: Wednesday Night Dynamite",
   category: "WWE",
   service: "WWE",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZr5Kf-2nSHJw7LJXM_57RfmwVkcXo-pFrQ&usqp=CAU",
   page: "nxt.html",
-  date: "2025-12-10",
-  time: "8:00 AM"
+  date: "2025-12-11",
+  time: "9:00 AM"
 },
 {
   title: "UFC Fight Night: Royval vs. Kape",
