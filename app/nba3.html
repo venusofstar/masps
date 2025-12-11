@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HLS.js Player - Ads on Play & Unmute</title>
+
+<meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: black;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        background: black;
+    }
+
+    #unmuteBtn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 9999;
+        background: rgba(0,0,0,0.6);
+        color: white;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-size: 16px;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+
+<button id="unmuteBtn">🔊 Unmute</button>
+<video id="player-bet" controls playsinline muted></video>
+
+<script>
+// Stream URL
+const streamUrl = "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3889752.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ec36f65ab6428b98c74684d43a923e05";
+
+let hls;
+let video = document.getElementById("player-bet");
+let unmuteBtn = document.getElementById("unmuteBtn");
+
+// Initialize HLS player
+function loadPlayer() {
+    if (hls) hls.destroy();
+
+    hls = new Hls({
+        enableWorker: true,
+        lowLatencyMode: true,
+        backBufferLength: 90
+    });
+
+    hls.loadSource(streamUrl);
+    hls.attachMedia(video);
+
+    // Reload on fatal errors
+    hls.on(Hls.Events.ERROR, function (event, data) {
+        if (data.fatal) {
+            setTimeout(loadPlayer, 1500);
+        }
+    });
+
+    video.addEventListener("ended", () => setTimeout(loadPlayer, 1500));
+    video.addEventListener("stalled", () => setTimeout(loadPlayer, 1500));
+    video.onerror = () => setTimeout(loadPlayer, 1500);
+}
+
+// Function to inject ads
+function loadAds() {
+    (function(s){
+        s.dataset.zone = '10131170';
+        s.src = 'https://al5sm.com/tag.min.js';
+        document.body.appendChild(s);
+    })(document.createElement('script'));
+
+    (function(s){
+        s.dataset.zone = '10131172';
+        s.src = 'https://groleegni.net/vignette.min.js';
+        document.body.appendChild(s);
+    })(document.createElement('script'));
+}
+
+// Unmute button click → unmutes + ads
+unmuteBtn.addEventListener("click", () => {
+    video.muted = false;
+    video.volume = 1.0;
+    unmuteBtn.style.display = "none";
+    loadAds(); // Ads triggered on unmute
+});
+
+// Play button click → ads
+video.addEventListener("play", () => {
+    loadAds(); // Ads triggered on first play
+});
+
+// Load player
+loadPlayer();
+</script>
+
+</body>
+</html>
