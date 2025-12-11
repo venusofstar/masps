@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fast Loading HLS.js Player</title>
-  <meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
-<!-- HLS.js -->
+<meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
+
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
 <style>
@@ -31,7 +31,8 @@
 <video id="player-bet" controls playsinline></video>
 
 <script>
-const streamUrl = "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3889751.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b1dee3b3473ca3ecf15cc72465c040bb";
+const streamUrl =
+"https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3889751.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b1dee3b3473ca3ecf15cc72465c040bb";
 
 let hls;
 let video = document.getElementById("player-bet");
@@ -48,7 +49,9 @@ function loadPlayer() {
     hls.loadSource(streamUrl);
     hls.attachMedia(video);
 
-    // Reload for HLS.js fatal errors
+    // 🔥 NO autoplay here → user must press play manually
+
+    // Reload on critical HLS errors
     hls.on(Hls.Events.ERROR, function (event, data) {
         console.warn("HLS.js error:", data);
         if (data.fatal) {
@@ -63,63 +66,44 @@ function loadPlayer() {
         setTimeout(loadPlayer, 1500);
     });
 
-    // Reload on stall or freeze
+    // Reload on stall
     video.addEventListener("stalled", () => {
         console.warn("Video stalled → reloading...");
         setTimeout(loadPlayer, 1500);
     });
 
-    // Reload on video error event
+    // Reload on video error
     video.onerror = () => {
         console.warn("Video tag error → reloading...");
         setTimeout(loadPlayer, 1500);
     };
 }
 
+// Load player but DO NOT PLAY
 loadPlayer();
 </script>
 
-  <!-- ✅ Safe Monetag Ads: Load After User Interaction -->
-  <script>
-    let monetagLoaded = false;
-    document.addEventListener("click", () => {
-      if (!monetagLoaded) {
-        monetagLoaded = true;
-        console.log("✅ Loading Monetag Ads safely...");
+<!-- Monetag Loads Only On Click -->
+<script>
+let monetagLoaded = false;
+document.addEventListener("click", () => {
+  if (!monetagLoaded) {
+    monetagLoaded = true;
 
-        // Popunder
-        (function(s){
-          s.dataset.zone='10131170';
-          s.src='https://al5sm.com/tag.min.js';
-          document.body.appendChild(s);
-        })(document.createElement('script'));
+    (function(s){
+      s.dataset.zone='10131170';
+      s.src='https://al5sm.com/tag.min.js';
+      document.body.appendChild(s);
+    })(document.createElement('script'));
 
-        // Vignette
-        (function(s){
-          s.dataset.zone='10131172';
-          s.src='https://groleegni.net/vignette.min.js';
-          document.body.appendChild(s);
-        })(document.createElement('script'));
-
-      }
-    });
-  </script>
-
-  <!-- ✅ Fallback Monetag Banner -->
-  <noscript>
-    <a href="https://al5sm.com/" target="_blank">
-      <img src="https://i.imgur.com/8T3YF0Z.jpeg" alt="Watch Ad" style="width:100%;border-radius:12px;">
-    </a>
-  </noscript>
-
-  <!-- ✅ Performance Debug Log -->
-  <script>
-    window.addEventListener('load', () => {
-      console.log("✅ MASPORTS (Monetag Edition) loaded in", performance.now().toFixed(1), "ms");
-    });
-  </script>
-
-
+    (function(s){
+      s.dataset.zone='10131172';
+      s.src='https://groleegni.net/vignette.min.js';
+      document.body.appendChild(s);
+    })(document.createElement('script'));
+  }
+});
+</script>
 
 </body>
 </html>
