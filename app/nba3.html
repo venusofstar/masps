@@ -60,6 +60,21 @@
     cursor: pointer;
   }
 
+  /* FULLSCREEN BUTTON */
+  #fullscreenBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+
   /* LOADING SPINNER */
   #loading {
     position: absolute;
@@ -88,11 +103,14 @@
 <div id="video-container">
   <video id="player" playsinline muted></video>
 
-  <!-- NEW Play Button -->
+  <!-- BIG CENTER PLAY BUTTON -->
   <div id="playBtn">▶️</div>
 
   <!-- Unmute button -->
   <button id="unmuteBtn">🔊 Unmute</button>
+
+  <!-- Fullscreen button -->
+  <button id="fullscreenBtn">⛶</button>
 
   <!-- Loading Spinner -->
   <div id="loading"></div>
@@ -104,8 +122,9 @@
 const video = document.getElementById("player");
 const playBtn = document.getElementById("playBtn");
 const unmuteBtn = document.getElementById("unmuteBtn");
+const fullscreenBtn = document.getElementById("fullscreenBtn");
 const loading = document.getElementById("loading");
-const manifest = "https://shorten.is/nba3";
+const manifest = "https://shorten.is/nba1";
 
 // Ads
 function loadAds() {
@@ -159,6 +178,17 @@ unmuteBtn.addEventListener("click", () => {
   video.volume = 1.0;
   unmuteBtn.style.display = "none";
   loadAds();
+});
+
+// Fullscreen button
+fullscreenBtn.addEventListener("click", () => {
+  if (!document.fullscreenElement) {
+    document.getElementById("video-container").requestFullscreen().catch(err => {
+      console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
 });
 </script>
 
