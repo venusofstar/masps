@@ -40,12 +40,57 @@ const channels = [
   time: "11:00 AM"
 },
 {   
-  title: "AEW: Wednesday Night Dynamite",
+  title: "WWE: NXT",
   category: "WWE",
   service: "WWE",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZr5Kf-2nSHJw7LJXM_57RfmwVkcXo-pFrQ&usqp=CAU",
   page: "nxt.html",
+  date: "2025-12-10",
+  time: "9:00 AM"
+},
+{
+  title: "AEW: Wednesday Night Dynamite",
+  category: "WWE",
+  service: "WWE",
+  logo: "https://api.ppvs.su/assets/thumb/b406ff9100d91b9210600260350246ff-thumbnail.jpg",
+  page: "nxt.html",
   date: "2025-12-11",
+  time: "9:00 AM"
+},
+{
+  title: "TNA: Impact",
+  category: "WWE",
+  service: "WWE",
+  logo: "https://api.ppvs.su/assets/thumb/78f581ee61589a76f6bcdeb095f95c12-thumbnail.jpg",
+  page: "nxt.html",
+  date: "2025-12-12",
+  time: "9:00 AM"
+},
+{
+  title: "WWE: Friday Night Smackdown",
+  category: "WWE",
+  service: "WWE",
+  logo: "https://api.ppvs.su/assets/thumb/ec7810b68fc39115ce3510bcf9687a63-thumbnail.jpg",
+  page: "nxt.html",
+  date: "2025-12-13",
+  time: "9:00 AM"
+},
+{
+  title: "WWE: Saturday Night Collision",
+  category: "WWE",
+  service: "WWE",
+  logo: "https://api.ppvs.su/assets/thumb/6e29b1bb679dd5133c85bbaadc2c4b13-thumbnail.jpg",
+  page: "nxt.html",
+  date: "2025-12-14",
+  time: "9:00 AM"
+},
+{
+  title: "WWE: Saturday Night's Main Event",
+  category: "WWE",
+  service: "WWE",
+  logo: "https://api.ppvs.su/assets/thumb/880a048062dc9e403943d35cd58747b4-thumbnail.jpg",
+  page: "nxt.html",
+  date: "2025-12-14",
   time: "9:00 AM"
 },
 {
