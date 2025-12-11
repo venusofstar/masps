@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fast Loading HLS.js Player</title>
+
+<!-- HLS.js -->
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: black;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        background: black;
+    }
+</style>
+</head>
+
+<body>
+
+<video id="player-bet" controls playsinline></video>
+
+<script>
+const streamUrl = "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3889749.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=58eb957e03e661be5df02805ed42719e";
+
+let hls;
+let video = document.getElementById("player-bet");
+
+function loadPlayer() {
+    if (hls) hls.destroy();
+
+    hls = new Hls({
+        enableWorker: true,
+        lowLatencyMode: true,
+        backBufferLength: 90
+    });
+
+    hls.loadSource(streamUrl);
+    hls.attachMedia(video);
+
+    // Reload for HLS.js fatal errors
+    hls.on(Hls.Events.ERROR, function (event, data) {
+        console.warn("HLS.js error:", data);
+        if (data.fatal) {
+            console.warn("Fatal HLS error → reloading...");
+            setTimeout(loadPlayer, 1500);
+        }
+    });
+
+    // Reload if stream ends
+    video.addEventListener("ended", () => {
+        console.warn("Stream ended → reloading...");
+        setTimeout(loadPlayer, 1500);
+    });
+
+    // Reload on stall or freeze
+    video.addEventListener("stalled", () => {
+        console.warn("Video stalled → reloading...");
+        setTimeout(loadPlayer, 1500);
+    });
+
+    // Reload on video error event
+    video.onerror = () => {
+        console.warn("Video tag error → reloading...");
+        setTimeout(loadPlayer, 1500);
+    };
+}
+
+loadPlayer();
+</script>
+
+</body>
+</html>
