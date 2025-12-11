@@ -22,21 +22,39 @@ const channels = [
   time: "7:30 PM"
 },
 {
-  title: "NBA- Phoenix Suns vs. Oklahoma City Thunder",
+  title: "NBA - Los Angeles Clippers vs. Houston Rockets",
   category: "Basketball",
   service: "NBA",
-  logo: "https://api.ppvs.su/assets/thumb/8b2f2d4da1b1f498a6e5aa0d6d4dbaa7-thumbnail.jpg",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba1.html",
-  date: "2025-12-11",
-  time: "8:30 AM"
+  date: "2025-12-12",
+  time: "9:00 AM"
 },
 {
-  title: "NBA- San Antonio Spurs vs. Los Angeles Lakers",
+  title: "NBA - Boston Celtics vs. Milwaukee Bucks",
   category: "Basketball",
   service: "NBA",
-  logo: "https://api.ppvs.su/assets/thumb/9e34880b11bf85d1b23d17e9e68bc42b-thumbnail.jpg",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba2.html",
-  date: "2025-12-11",
+  date: "2025-12-12",
+  time: "9:00 AM"
+},
+{
+  title: "NBA - Portland Trail Blazers vs. New Orleans Pelicans",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba3.html",
+  date: "2025-12-12",
+  time: "9:00 AM"
+},
+{
+  title: "NBA - Denver Nuggets vs. Sacramento Kings",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba4.html",
+  date: "2025-12-12",
   time: "11:00 AM"
 },
 {   
