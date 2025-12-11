@@ -4,24 +4,6 @@
 -------------------------------------------------*/
 const channels = [
    {
-  title: "🇵🇭 PBA - Miralco vs Columbia Dyip",
-  category: "Basketball",
-  service: "PBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScbE-ZuKDsv9kPybK5feb0-iqW9wmnxgLGR6RsVTgKLg&s=10",
-  page: "pba1.html",
-  date: "2025-12-10",
-  time: "5:15 PM"
-},
-{
-  title: "🇵🇭 PBA - Genebra vs Blackwater",
-  category: "Basketball",
-  service: "PBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRz_VofiH7s6O2Q-s6Cr1yfEde8BxQUjRxXVGsHxzJbiN7-Z3aDaEkM432&s=10",
-  page: "pba2.html",
-  date: "2025-12-10",
-  time: "7:30 PM"
-},
-{
   title: "NBA - Los Angeles Clippers vs. Houston Rockets",
   category: "Basketball",
   service: "NBA",
@@ -58,6 +40,24 @@ const channels = [
   time: "11:00 AM"
    },
 {
+     title: "🇵🇭 PBA - Genebra vs Terrafirma",
+  category: "Basketball",
+  service: "PBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScbE-ZuKDsv9kPybK5feb0-iqW9wmnxgLGR6RsVTgKLg&s=10",
+  page: "pba1.html",
+  date: "2025-12-12",
+  time: "5:15 PM"
+},
+{
+  title: "🇵🇭 PBA - Meralco vs Phoenix",
+  category: "Basketball",
+  service: "PBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRz_VofiH7s6O2Q-s6Cr1yfEde8BxQUjRxXVGsHxzJbiN7-Z3aDaEkM432&s=10",
+  page: "pba2.html",
+  date: "2025-12-12",
+  time: "7:30 PM"
+},
+   {
   title: "World Darts Championship",
   category: "Darts",
   service: "Darts",
