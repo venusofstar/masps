@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -59,6 +60,27 @@
     border: 1px solid white;
     cursor: pointer;
   }
+
+  /* LOADING SPINNER */
+  #loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    border-top: 6px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    z-index: 9999;
+    display: none;
+  }
+
+  @keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
 </style>
 </head>
 
@@ -72,6 +94,9 @@
 
   <!-- Unmute button -->
   <button id="unmuteBtn">🔊 Unmute</button>
+
+  <!-- Loading Spinner -->
+  <div id="loading"></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.7"></script>
@@ -80,6 +105,7 @@
 const video = document.getElementById("player");
 const playBtn = document.getElementById("playBtn");
 const unmuteBtn = document.getElementById("unmuteBtn");
+const loading = document.getElementById("loading");
 const manifest = "https://shorten.is/nba4";
 
 // Ads
@@ -102,16 +128,19 @@ async function startVideo() {
   playBtn.style.opacity = 0;
   setTimeout(() => playBtn.style.display = "none", 300);
 
+  loading.style.display = "block"; // show loading spinner
   video.muted = true;
 
   if (video.canPlayType("application/vnd.apple.mpegurl")) {
     video.src = manifest;
+    video.addEventListener('loadeddata', () => loading.style.display = 'none');
     video.play();
   } else if (Hls.isSupported()) {
     const hls = new Hls();
     hls.loadSource(manifest);
     hls.attachMedia(video);
     hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+    hls.on(Hls.Events.FRAG_BUFFERED, () => loading.style.display = 'none'); // hide when first fragment is buffered
   }
 
   loadAds();
