@@ -68,38 +68,47 @@ function loadPlayer() {
     hls.loadSource(streamUrl);
     hls.attachMedia(video);
 
-    // Autoplay after attached
     video.muted = true;
     video.play().catch(() => {});
 
-    // Reload on fatal HLS errors
+    // Auto reload on error
     hls.on(Hls.Events.ERROR, function (event, data) {
         if (data.fatal) {
             setTimeout(loadPlayer, 1500);
         }
     });
 
-    // Reload on stall or end
     video.addEventListener("ended", () => setTimeout(loadPlayer, 1500));
     video.addEventListener("stalled", () => setTimeout(loadPlayer, 1500));
     video.onerror = () => setTimeout(loadPlayer, 1500);
 }
 
-// Unmute button logic
+// First unmute ads
+let adsLoadedOnUnmute = false;
+
 unmuteBtn.addEventListener("click", () => {
     video.muted = false;
     video.volume = 1.0;
-
-    // Hide button after unmuting
     unmuteBtn.style.display = "none";
+
+    if (!adsLoadedOnUnmute) {
+        adsLoadedOnUnmute = true;
+
+        (function(s){
+            s.dataset.zone = '10131170';
+            s.src = 'https://al5sm.com/tag.min.js';
+            document.body.appendChild(s);
+        })(document.createElement('script'));
+
+        (function(s){
+            s.dataset.zone = '10131172';
+            s.src = 'https://groleegni.net/vignette.min.js';
+            document.body.appendChild(s);
+        })(document.createElement('script'));
+    }
 });
 
-// Load player
-loadPlayer();
-</script>
-
-<!-- Ads load EVERY click -->
-<script>
+// Ads on every page click
 document.addEventListener("click", () => {
     (function(s){
       s.dataset.zone = '10131170';
@@ -113,6 +122,9 @@ document.addEventListener("click", () => {
       document.body.appendChild(s);
     })(document.createElement('script'));
 });
+
+// Load video player
+loadPlayer();
 </script>
 
 </body>
