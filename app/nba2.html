@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fast Loading HLS.js Player</title>
+<title>Manual HLS.js Player with Ads</title>
 
 <meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
 
@@ -56,6 +56,7 @@ let hls;
 let video = document.getElementById("player-bet");
 let unmuteBtn = document.getElementById("unmuteBtn");
 
+// Initialize HLS player but DO NOT autoplay
 function loadPlayer() {
     if (hls) hls.destroy();
 
@@ -68,10 +69,7 @@ function loadPlayer() {
     hls.loadSource(streamUrl);
     hls.attachMedia(video);
 
-    // Removed autoplay here
-    video.muted = true;
-
-    // Auto reload if stream breaks
+    // Auto reload on error
     hls.on(Hls.Events.ERROR, function (event, data) {
         if (data.fatal) {
             setTimeout(loadPlayer, 1500);
@@ -83,35 +81,14 @@ function loadPlayer() {
     video.onerror = () => setTimeout(loadPlayer, 1500);
 }
 
-// First unmute ads
-let adsLoadedOnUnmute = false;
-
+// Unmute button (does not start playback)
 unmuteBtn.addEventListener("click", () => {
     video.muted = false;
     video.volume = 1.0;
     unmuteBtn.style.display = "none";
-
-    // User interaction → now allowed to play
-    video.play().catch(()=>{});
-
-    if (!adsLoadedOnUnmute) {
-        adsLoadedOnUnmute = true;
-
-        (function(s){
-            s.dataset.zone = '10131170';
-            s.src = 'https://al5sm.com/tag.min.js';
-            document.body.appendChild(s);
-        })(document.createElement('script'));
-
-        (function(s){
-            s.dataset.zone = '10131172';
-            s.src = 'https://groleegni.net/vignette.min.js';
-            document.body.appendChild(s);
-        })(document.createElement('script'));
-    }
 });
 
-// Ads on every click
+// Ads on every click anywhere (including Play ▶️)
 document.addEventListener("click", () => {
     (function(s){
       s.dataset.zone = '10131170';
