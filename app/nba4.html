@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>HLS TV Player - Monetag Active on Buttons</title>
+<title>HLS TV Player - Manual Play + Auto Reload + Ads + Buffering</title>
 
 <meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
 
@@ -29,7 +29,6 @@
     background: #000;
   }
 
-  /* BIG CENTER PLAY BUTTON */
   #playBtn {
     position: absolute;
     top: 50%;
@@ -46,7 +45,6 @@
     transition: opacity 0.3s ease;
   }
 
-  /* Unmute Button */
   #unmuteBtn {
     position: absolute;
     top: 10px;
@@ -61,10 +59,9 @@
     cursor: pointer;
   }
 
-  /* FULLSCREEN BUTTON - TOP RIGHT */
   #fullscreenBtn {
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     right: 10px;
     z-index: 9999;
     background: rgba(0,0,0,0.6);
@@ -76,25 +73,37 @@
     cursor: pointer;
   }
 
-  /* LOADING SPINNER */
+  /* --------------------------
+       BUFFERING LOADING
+  ---------------------------*/
   #loading {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 9999;
+    display: none;
+  }
+
+  #spinner {
     border: 6px solid rgba(255, 255, 255, 0.2);
     border-top: 6px solid white;
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    margin: 0 auto 10px;
     animation: spin 1s linear infinite;
-    z-index: 9999;
-    display: none;
+  }
+
+  #bufferPercent {
+    font-size: 18px;
   }
 
   @keyframes spin {
-    0% { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 </style>
 </head>
@@ -104,17 +113,15 @@
 <div id="video-container">
   <video id="player" playsinline muted></video>
 
-  <!-- BIG CENTER PLAY BUTTON -->
   <div id="playBtn">▶️</div>
-
-  <!-- Unmute button -->
   <button id="unmuteBtn">🔊 Unmute</button>
-
-  <!-- Fullscreen button -->
   <button id="fullscreenBtn">⛶</button>
 
-  <!-- Loading Spinner -->
-  <div id="loading"></div>
+  <!-- BUFFERING LOADING -->
+  <div id="loading">
+    <div id="spinner"></div>
+    <div id="bufferPercent">0%</div>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.7"></script>
@@ -125,123 +132,88 @@ const playBtn = document.getElementById("playBtn");
 const unmuteBtn = document.getElementById("unmuteBtn");
 const fullscreenBtn = document.getElementById("fullscreenBtn");
 const loading = document.getElementById("loading");
-
+const bufferPercent = document.getElementById("bufferPercent");
 const manifest = "https://shorten.is/nba4";
+
 let hls;
 let lastTime = 0;
-let wasUnmuted = false; // REMEMBER unmute state
 
 /* --------------------------
-    MONETAG ON BUTTON CLICK
+    MONETAG ADS ON BUTTONS
 ---------------------------*/
-function triggerMonetag() {
-  // Create the scripts dynamically
-  const s1 = document.createElement('script');
-  s1.dataset.zone = '10131170';
-  s1.src = 'https://al5sm.com/tag.min.js';
-  document.body.appendChild(s1);
-
-  const s2 = document.createElement('script');
-  s2.dataset.zone = '10131172';
-  s2.src = 'https://groleegni.net/vignette.min.js';
-  document.body.appendChild(s2);
-}
-
-// Attach to all buttons
-[playBtn, unmuteBtn, fullscreenBtn].forEach(btn => {
-  btn.addEventListener('click', triggerMonetag);
-});
-
-
-/* --------------------------
-    AUTO RELOAD FUNCTION
----------------------------*/
-function reloadStream(reason = "") {
-  console.log("Auto Reload:", reason);
-  loading.style.display = "block";
-
-  if (hls) hls.destroy();
-
-  startVideo(true);
-}
-
-/* Detect freeze (no progress) */
-function startFreezeMonitor() {
-  setInterval(() => {
-    if (video.paused) return;
-
-    if (video.currentTime === lastTime) {
-      reloadStream("video-frozen");
-    }
-
-    lastTime = video.currentTime;
-  }, 4000);
-}
+(function loadMonetag() {
+  const s1=document.createElement('script'); s1.dataset.zone='10131170'; s1.src='https://al5sm.com/tag.min.js'; s1.async=true;
+  const s2=document.createElement('script'); s2.dataset.zone='10131172'; s2.src='https://groleegni.net/vignette.min.js'; s2.async=true;
+  document.body.appendChild(s1); document.body.appendChild(s2);
+})();
+function triggerMonetag(){ if(window.MonetagReload) window.MonetagReload(); }
+[playBtn, unmuteBtn, fullscreenBtn].forEach(btn => btn.addEventListener('click', triggerMonetag));
 
 /* --------------------------
         START VIDEO
 ---------------------------*/
-async function startVideo(isReload = false) {
+function startVideo() {
   playBtn.style.opacity = 0;
-  if (!isReload) setTimeout(() => playBtn.style.display = "none", 300);
+  setTimeout(() => playBtn.style.display = "none", 300);
 
   loading.style.display = "block";
-
-  if (wasUnmuted) {
-    video.muted = false;
-    video.volume = 1.0;
-    unmuteBtn.style.display = "none";
-  } else {
-    video.muted = true;
-  }
+  bufferPercent.textContent = "0%";
 
   if (video.canPlayType("application/vnd.apple.mpegurl")) {
     video.src = manifest;
     video.addEventListener('loadeddata', () => loading.style.display = 'none');
     video.play();
   } else if (Hls.isSupported()) {
-    hls = new Hls({
-      maxBufferHole: 1,
-      manifestLoadingTimeOut: 8000,
-      manifestLoadingRetryDelay: 2000,
-      fragLoadingRetryDelay: 2000
-    });
-
+    hls = new Hls();
     hls.loadSource(manifest);
     hls.attachMedia(video);
 
-    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-      video.play();
-      loading.style.display = "none";
+    hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+
+    // BUFFERING PERCENT
+    hls.on(Hls.Events.FRAG_BUFFERING, (event, data) => {
+      if(data.stats && data.stats.total){
+        let percent = Math.min(100, Math.floor((data.stats.loaded / data.stats.total) * 100));
+        bufferPercent.textContent = percent + "%";
+      }
     });
+
+    hls.on(Hls.Events.FRAG_BUFFERED, () => loading.style.display = 'none');
 
     hls.on(Hls.Events.ERROR, (event, data) => {
-      if (data.fatal) reloadStream("fatal-hls-error");
+      if(data.fatal){
+        console.log("HLS error, reloading stream...");
+        reloadStream();
+      }
     });
-
-    hls.on(Hls.Events.FRAG_LOAD_ERROR, () => reloadStream("frag-load-error"));
-    hls.on(Hls.Events.FRAG_LOAD_TIMEOUT, () => reloadStream("frag-timeout"));
   }
+}
 
-  video.addEventListener("stalled", () => reloadStream("stalled"));
-  video.addEventListener("error", () => reloadStream("video-error"));
-
-  startFreezeMonitor();
+/* --------------------------
+        RELOAD STREAM
+---------------------------*/
+function reloadStream() {
+  loading.style.display = "block";
+  bufferPercent.textContent = "0%";
+  if(hls) hls.destroy();
+  startVideo();
 }
 
 /* --------------------------
        PLAY BUTTON
 ---------------------------*/
 playBtn.addEventListener("click", startVideo);
+document.addEventListener("keydown", (e) => {
+  if(e.key === "Enter" || e.key === " ") startVideo();
+});
 
 /* --------------------------
-        UNMUTE BUTTON
+       UNMUTE BUTTON
 ---------------------------*/
 unmuteBtn.addEventListener("click", () => {
   video.muted = false;
   video.volume = 1.0;
   unmuteBtn.style.display = "none";
-  wasUnmuted = true;
 });
 
 /* --------------------------
@@ -249,8 +221,27 @@ unmuteBtn.addEventListener("click", () => {
 ---------------------------*/
 fullscreenBtn.addEventListener("click", () => {
   const vc = document.getElementById("video-container");
-  if (!document.fullscreenElement) vc.requestFullscreen();
+  if(!document.fullscreenElement) vc.requestFullscreen();
   else document.exitFullscreen();
+});
+
+/* --------------------------
+    AUTO RELOAD ON FREEZE
+---------------------------*/
+setInterval(() => {
+  if(!video.paused && video.currentTime === lastTime){
+    console.log("Video frozen, reloading...");
+    reloadStream();
+  }
+  lastTime = video.currentTime;
+}, 4000);
+
+/* --------------------------
+    VIDEO ERROR EVENT
+---------------------------*/
+video.addEventListener("error", () => {
+  console.log("Video element error, reloading...");
+  reloadStream();
 });
 </script>
 
