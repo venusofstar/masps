@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>HLS TV Player - Manual Play</title>
+<title>HLS TV Player - Manual Play + Auto Reload</title>
 
 <meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
 
@@ -46,6 +46,7 @@
     transition: opacity 0.3s ease;
   }
 
+  /* Unmute button */
   #unmuteBtn {
     position: absolute;
     top: 10px;
@@ -126,7 +127,35 @@ const fullscreenBtn = document.getElementById("fullscreenBtn");
 const loading = document.getElementById("loading");
 const manifest = "https://shorten.is/nba2";
 
-// Ads
+let hls;
+let lastTime = 0;
+
+/* --------------------------
+    AUTO RELOAD FUNCTION
+---------------------------*/
+function reloadStream(reason = "") {
+  console.log("Auto Reload: ", reason);
+  loading.style.display = "block";
+
+  if (hls) hls.destroy();
+
+  startVideo(true);
+}
+
+/* Detect frozen video (no progress) */
+function startFreezeMonitor() {
+  setInterval(() => {
+    if (video.paused) return;
+    if (video.currentTime === lastTime) {
+      reloadStream("video-frozen");
+    }
+    lastTime = video.currentTime;
+  }, 4000);
+}
+
+/* --------------------------
+          LOAD ADS
+---------------------------*/
 function loadAds() {
   (function(s){
     s.dataset.zone = '10131170';
@@ -141,12 +170,14 @@ function loadAds() {
   })(document.createElement('script'));
 }
 
-// Manual Start
-async function startVideo() {
+/* --------------------------
+        START VIDEO
+---------------------------*/
+async function startVideo(isReload = false) {
   playBtn.style.opacity = 0;
-  setTimeout(() => playBtn.style.display = "none", 300);
+  if (!isReload) setTimeout(() => playBtn.style.display = "none", 300);
 
-  loading.style.display = "block"; // show loading spinner
+  loading.style.display = "block";
   video.muted = true;
 
   if (video.canPlayType("application/vnd.apple.mpegurl")) {
@@ -154,25 +185,48 @@ async function startVideo() {
     video.addEventListener('loadeddata', () => loading.style.display = 'none');
     video.play();
   } else if (Hls.isSupported()) {
-    const hls = new Hls();
+    hls = new Hls({
+      maxBufferHole: 1,
+      manifestLoadingTimeOut: 8000,
+      manifestLoadingRetryDelay: 2000,
+      fragLoadingRetryDelay: 2000
+    });
+
     hls.loadSource(manifest);
     hls.attachMedia(video);
-    hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
-    hls.on(Hls.Events.FRAG_BUFFERED, () => loading.style.display = 'none'); // hide when first fragment is buffered
+
+    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+      video.play();
+      loading.style.display = "none";
+    });
+
+    hls.on(Hls.Events.ERROR, (event, data) => {
+      if (data.fatal) reloadStream("fatal-hls-error");
+    });
+
+    hls.on(Hls.Events.FRAG_LOAD_ERROR, () => reloadStream("frag-load-error"));
+    hls.on(Hls.Events.FRAG_LOAD_TIMEOUT, () => reloadStream("frag-timeout"));
   }
 
-  loadAds();
+  video.addEventListener("stalled", () => reloadStream("stalled"));
+  video.addEventListener("error", () => reloadStream("video-error"));
+
+  if (!isReload) loadAds();
+
+  startFreezeMonitor();
 }
 
-// Manual play button click
+/* --------------------------
+       PLAY BUTTON
+---------------------------*/
 playBtn.addEventListener("click", startVideo);
-
-// Keyboard & TV remote
-document.addEventListener('keydown', (e) => {
+document.addEventListener("keydown", (e) => {
   if (e.key === "Enter" || e.key === " ") startVideo();
 });
 
-// Unmute button
+/* --------------------------
+        UNMUTE BUTTON
+---------------------------*/
 unmuteBtn.addEventListener("click", () => {
   video.muted = false;
   video.volume = 1.0;
@@ -180,15 +234,13 @@ unmuteBtn.addEventListener("click", () => {
   loadAds();
 });
 
-// Fullscreen button
+/* --------------------------
+       FULLSCREEN BUTTON
+---------------------------*/
 fullscreenBtn.addEventListener("click", () => {
-  if (!document.fullscreenElement) {
-    document.getElementById("video-container").requestFullscreen().catch(err => {
-      console.error(`Error attempting to enable full-screen mode: ${err.message}`);
-    });
-  } else {
-    document.exitFullscreen();
-  }
+  const vc = document.getElementById("video-container");
+  if (!document.fullscreenElement) vc.requestFullscreen();
+  else document.exitFullscreen();
 });
 </script>
 
