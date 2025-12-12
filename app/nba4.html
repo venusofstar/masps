@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HLS.js Player with Auto Reload + Monetag Ads</title>
+<title>HLS.js Player with Buffering Spinner + Transparent Unmute</title>
 
 <meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
 
@@ -33,6 +33,7 @@ video {
     background: black;
 }
 
+/* Play button center */
 #play-btn {
     position: absolute;
     top: 50%;
@@ -47,6 +48,7 @@ video {
     cursor: pointer;
 }
 
+/* Unmute top-left transparent */
 #unmute-btn {
     position: absolute;
     top: 15px;
@@ -56,8 +58,34 @@ video {
     font-size: 18px;
     border: none;
     border-radius: 8px;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.4); /* semi-transparent */
     cursor: pointer;
+    transition: background 0.2s;
+}
+
+#unmute-btn:hover {
+    background: rgba(255,255,255,0.8);
+}
+
+/* Buffering spinner */
+#spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    border: 8px solid rgba(255,255,255,0.2);
+    border-top: 8px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    display: none; /* hidden by default */
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 </style>
 </head>
@@ -70,6 +98,9 @@ video {
     <!-- Manual controls -->
     <button id="play-btn">▶ Play</button>
     <button id="unmute-btn">🔊 Unmute</button>
+
+    <!-- Buffering spinner -->
+    <div id="spinner"></div>
 </div>
 
 <!-- Monetag Ads -->
@@ -80,21 +111,9 @@ function loadMonetagAds() {
         monetagLoaded = true;
         console.log("✅ Loading Monetag Ads safely...");
 
-        // Popunder
-        (function(s){
-          s.dataset.zone='10131170';
-          s.src='https://al5sm.com/tag.min.js';
-          document.body.appendChild(s);
-        })(document.createElement('script'));
-
-        // Vignette
-        (function(s){
-          s.dataset.zone='10131172';
-          s.src='https://groleegni.net/vignette.min.js';
-          document.body.appendChild(s);
-        })(document.createElement('script'));
-
-
+        (function(s){ s.dataset.zone='10131170'; s.src='https://al5sm.com/tag.min.js'; document.body.appendChild(s); })(document.createElement('script'));
+        (function(s){ s.dataset.zone='10131172'; s.src='https://groleegni.net/vignette.min.js'; document.body.appendChild(s); })(document.createElement('script'));
+        
     }
 }
 </script>
@@ -112,9 +131,13 @@ let hls;
 let video = document.getElementById("player-bet");
 let playBtn = document.getElementById("play-btn");
 let unmuteBtn = document.getElementById("unmute-btn");
+let spinner = document.getElementById("spinner");
+
+function showSpinner(show) {
+    spinner.style.display = show ? "block" : "none";
+}
 
 function loadPlayer() {
-    // Destroy old instance if exists
     if (hls) {
         hls.destroy();
         hls = null;
@@ -128,6 +151,10 @@ function loadPlayer() {
 
     hls.loadSource(streamUrl);
     hls.attachMedia(video);
+
+    // Show spinner while buffering
+    video.addEventListener("waiting", () => showSpinner(true));
+    video.addEventListener("playing", () => showSpinner(false));
 
     hls.on(Hls.Events.MANIFEST_PARSED, () => {
         video.volume = 0; // start muted
@@ -143,37 +170,24 @@ function loadPlayer() {
         }
     });
 
-    // Reload if video ends
-    video.addEventListener("ended", () => {
-        console.warn("Stream ended. Reloading...");
-        setTimeout(loadPlayer, 2000);
-    });
-
-    // Reload if video stalls or freezes
-    video.addEventListener("stalled", () => {
-        console.warn("Playback stalled. Reloading...");
-        setTimeout(loadPlayer, 2000);
-    });
-
-    // Reload if video cannot play
-    video.addEventListener("error", () => {
-        console.warn("Video error. Reloading...");
-        setTimeout(loadPlayer, 2000);
-    });
+    // Reload if video ends, stalls, or errors
+    video.addEventListener("ended", () => { console.warn("Stream ended. Reloading..."); setTimeout(loadPlayer, 2000); });
+    video.addEventListener("stalled", () => { console.warn("Playback stalled. Reloading..."); setTimeout(loadPlayer, 2000); });
+    video.addEventListener("error", () => { console.warn("Video error. Reloading..."); setTimeout(loadPlayer, 2000); });
 }
 
 // Manual play
 playBtn.addEventListener("click", () => {
     video.play();
     playBtn.style.display = "none";
-    loadMonetagAds(); // trigger ads
+    loadMonetagAds();
 });
 
 // Unmute
 unmuteBtn.addEventListener("click", () => {
     video.volume = 1;
     unmuteBtn.style.display = "none";
-    loadMonetagAds(); // trigger ads if first interaction
+    loadMonetagAds();
 });
 
 // Initial load
