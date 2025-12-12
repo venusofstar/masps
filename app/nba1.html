@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>HLS TV Player - Manual Play + Auto Reload</title>
+<title>HLS TV Player - Auto Reload + Unmute Restore</title>
 
 <meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
 
@@ -46,7 +46,7 @@
     transition: opacity 0.3s ease;
   }
 
-  /* Unmute button */
+  /* Unmute Button */
   #unmuteBtn {
     position: absolute;
     top: 10px;
@@ -125,16 +125,18 @@ const playBtn = document.getElementById("playBtn");
 const unmuteBtn = document.getElementById("unmuteBtn");
 const fullscreenBtn = document.getElementById("fullscreenBtn");
 const loading = document.getElementById("loading");
+
 const manifest = "https://shorten.is/nba1";
 
 let hls;
 let lastTime = 0;
+let wasUnmuted = false; // REMEMBER unmute state
 
 /* --------------------------
     AUTO RELOAD FUNCTION
 ---------------------------*/
 function reloadStream(reason = "") {
-  console.log("Auto Reload: ", reason);
+  console.log("Auto Reload:", reason);
   loading.style.display = "block";
 
   if (hls) hls.destroy();
@@ -142,13 +144,15 @@ function reloadStream(reason = "") {
   startVideo(true);
 }
 
-/* Detect frozen video (no progress) */
+/* Detect freeze (no progress) */
 function startFreezeMonitor() {
   setInterval(() => {
     if (video.paused) return;
+
     if (video.currentTime === lastTime) {
       reloadStream("video-frozen");
     }
+
     lastTime = video.currentTime;
   }, 4000);
 }
@@ -178,9 +182,18 @@ async function startVideo(isReload = false) {
   if (!isReload) setTimeout(() => playBtn.style.display = "none", 300);
 
   loading.style.display = "block";
-  video.muted = true;
+
+  // KEEP UNMUTED AFTER RELOAD
+  if (wasUnmuted) {
+    video.muted = false;
+    video.volume = 1.0;
+    unmuteBtn.style.display = "none";
+  } else {
+    video.muted = true;
+  }
 
   if (video.canPlayType("application/vnd.apple.mpegurl")) {
+    // Native support (Safari)
     video.src = manifest;
     video.addEventListener('loadeddata', () => loading.style.display = 'none');
     video.play();
@@ -231,7 +244,7 @@ unmuteBtn.addEventListener("click", () => {
   video.muted = false;
   video.volume = 1.0;
   unmuteBtn.style.display = "none";
-  loadAds();
+  wasUnmuted = true; // REMEMBER FOR RELOAD
 });
 
 /* --------------------------
