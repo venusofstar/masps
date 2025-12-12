@@ -64,7 +64,7 @@ const channels = [
   logo: "https://api.ppvs.su/assets/thumb/4e218218e0ba40cac4b0d2867873c96a-thumbnail.jpg",
   page: "darts.html",
   date: "2025-12-12",
-  time: "2:30 AM"
+  time: "8:30 PM"
 },
 {   
   title: "WWE: NXT",
