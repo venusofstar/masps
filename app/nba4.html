@@ -1,248 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>HLS TV Player - Manual Play + Auto Reload + Ads + Buffering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fast Loading HLS.js Player</title>
 
-<meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
+<!-- HLS.js -->
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
 <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background: #000;
-    overflow: hidden;
-  }
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: black;
+    }
 
-  #video-container {
-    position: fixed;
-    inset: 0;
-    background: #000;
-  }
-
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background: #000;
-  }
-
-  #playBtn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 70px;
-    color: white;
-    background: rgba(0,0,0,0.5);
-    padding: 25px 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10000;
-    border: 2px solid white;
-    transition: opacity 0.3s ease;
-  }
-
-  #unmuteBtn {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 9999;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-size: 16px;
-    border: 1px solid white;
-    cursor: pointer;
-  }
-
-  #fullscreenBtn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    z-index: 9999;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-size: 18px;
-    border: 1px solid white;
-    cursor: pointer;
-  }
-
-  /* --------------------------
-       BUFFERING LOADING
-  ---------------------------*/
-  #loading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    z-index: 9999;
-    display: none;
-  }
-
-  #spinner {
-    border: 6px solid rgba(255, 255, 255, 0.2);
-    border-top: 6px solid white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 10px;
-    animation: spin 1s linear infinite;
-  }
-
-  #bufferPercent {
-    font-size: 18px;
-  }
-
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+    video {
+        width: 100%;
+        height: 100%;
+        background: black;
+    }
 </style>
 </head>
 
 <body>
 
-<div id="video-container">
-  <video id="player" playsinline muted></video>
-
-  <div id="playBtn">▶️</div>
-  <button id="unmuteBtn">🔊 Unmute</button>
-  <button id="fullscreenBtn">⛶</button>
-
-  <!-- BUFFERING LOADING -->
-  <div id="loading">
-    <div id="spinner"></div>
-    <div id="bufferPercent">0%</div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.7"></script>
+<video id="player-bet" controls autoplay playsinline></video>
 
 <script>
-const video = document.getElementById("player");
-const playBtn = document.getElementById("playBtn");
-const unmuteBtn = document.getElementById("unmuteBtn");
-const fullscreenBtn = document.getElementById("fullscreenBtn");
-const loading = document.getElementById("loading");
-const bufferPercent = document.getElementById("bufferPercent");
-const manifest = "https://shorten.is/nba4";
+const streamUrl = "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3890558.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3010a306d1247b00ab538fe71aa7307d";
 
 let hls;
-let lastTime = 0;
+let video = document.getElementById("player-bet");
 
-/* --------------------------
-    MONETAG ADS ON BUTTONS
----------------------------*/
-(function loadMonetag() {
-  const s1=document.createElement('script'); s1.dataset.zone='10131170'; s1.src='https://al5sm.com/tag.min.js'; s1.async=true;
-  const s2=document.createElement('script'); s2.dataset.zone='10131172'; s2.src='https://groleegni.net/vignette.min.js'; s2.async=true;
-  document.body.appendChild(s1); document.body.appendChild(s2);
-})();
-function triggerMonetag(){ if(window.MonetagReload) window.MonetagReload(); }
-[playBtn, unmuteBtn, fullscreenBtn].forEach(btn => btn.addEventListener('click', triggerMonetag));
+function loadPlayer() {
+    // Destroy old instance
+    if (hls) {
+        hls.destroy();
+    }
 
-/* --------------------------
-        START VIDEO
----------------------------*/
-function startVideo() {
-  playBtn.style.opacity = 0;
-  setTimeout(() => playBtn.style.display = "none", 300);
+    hls = new Hls({
+        enableWorker: true,
+        lowLatencyMode: true,
+        backBufferLength: 90
+    });
 
-  loading.style.display = "block";
-  bufferPercent.textContent = "0%";
-
-  if (video.canPlayType("application/vnd.apple.mpegurl")) {
-    video.src = manifest;
-    video.addEventListener('loadeddata', () => loading.style.display = 'none');
-    video.play();
-  } else if (Hls.isSupported()) {
-    hls = new Hls();
-    hls.loadSource(manifest);
+    hls.loadSource(streamUrl);
     hls.attachMedia(video);
 
-    hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
-
-    // BUFFERING PERCENT
-    hls.on(Hls.Events.FRAG_BUFFERING, (event, data) => {
-      if(data.stats && data.stats.total){
-        let percent = Math.min(100, Math.floor((data.stats.loaded / data.stats.total) * 100));
-        bufferPercent.textContent = percent + "%";
-      }
+    // Auto-play when ready
+    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        video.volume = 1.0;
+        video.play();
     });
 
-    hls.on(Hls.Events.FRAG_BUFFERED, () => loading.style.display = 'none');
+    // ERROR HANDLING + AUTO RELOAD
+    hls.on(Hls.Events.ERROR, function (event, data) {
+        console.warn("HLS.js error:", data);
 
-    hls.on(Hls.Events.ERROR, (event, data) => {
-      if(data.fatal){
-        console.log("HLS error, reloading stream...");
-        reloadStream();
-      }
+        if (data.fatal) {
+            console.warn("Fatal error, reloading player...");
+            setTimeout(loadPlayer, 2000);
+        }
     });
-  }
+
+    // Reload if stream stops
+    video.addEventListener("ended", () => {
+        console.warn("Stream ended. Reloading...");
+        setTimeout(loadPlayer, 2000);
+    });
+
+    // Reload if video freezes or stalls
+    video.addEventListener("stalled", () => {
+        console.warn("Playback stalled. Reloading...");
+        setTimeout(loadPlayer, 2000);
+    });
 }
 
-/* --------------------------
-        RELOAD STREAM
----------------------------*/
-function reloadStream() {
-  loading.style.display = "block";
-  bufferPercent.textContent = "0%";
-  if(hls) hls.destroy();
-  startVideo();
-}
-
-/* --------------------------
-       PLAY BUTTON
----------------------------*/
-playBtn.addEventListener("click", startVideo);
-document.addEventListener("keydown", (e) => {
-  if(e.key === "Enter" || e.key === " ") startVideo();
-});
-
-/* --------------------------
-       UNMUTE BUTTON
----------------------------*/
-unmuteBtn.addEventListener("click", () => {
-  video.muted = false;
-  video.volume = 1.0;
-  unmuteBtn.style.display = "none";
-});
-
-/* --------------------------
-       FULLSCREEN BUTTON
----------------------------*/
-fullscreenBtn.addEventListener("click", () => {
-  const vc = document.getElementById("video-container");
-  if(!document.fullscreenElement) vc.requestFullscreen();
-  else document.exitFullscreen();
-});
-
-/* --------------------------
-    AUTO RELOAD ON FREEZE
----------------------------*/
-setInterval(() => {
-  if(!video.paused && video.currentTime === lastTime){
-    console.log("Video frozen, reloading...");
-    reloadStream();
-  }
-  lastTime = video.currentTime;
-}, 4000);
-
-/* --------------------------
-    VIDEO ERROR EVENT
----------------------------*/
-video.addEventListener("error", () => {
-  console.log("Video element error, reloading...");
-  reloadStream();
-});
+// First load
+loadPlayer();
 </script>
 
 </body>
