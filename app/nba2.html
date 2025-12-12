@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>HLS TV Player - Auto Reload + Unmute Restore</title>
+<title>HLS TV Player - Monetag Active on Buttons</title>
 
 <meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
 
@@ -61,11 +61,11 @@
     cursor: pointer;
   }
 
-  /* FULLSCREEN BUTTON - MOVED TO TOP-RIGHT */
+  /* FULLSCREEN BUTTON - TOP RIGHT */
   #fullscreenBtn {
     position: absolute;
-    top: 10px;       /* moved from bottom to top */
-    right: 10px;     /* right side */
+    top: 10px;
+    right: 10px;
     z-index: 9999;
     background: rgba(0,0,0,0.6);
     color: white;
@@ -127,10 +127,31 @@ const fullscreenBtn = document.getElementById("fullscreenBtn");
 const loading = document.getElementById("loading");
 
 const manifest = "https://shorten.is/nba2";
-
 let hls;
 let lastTime = 0;
 let wasUnmuted = false; // REMEMBER unmute state
+
+/* --------------------------
+    MONETAG ON BUTTON CLICK
+---------------------------*/
+function triggerMonetag() {
+  // Create the scripts dynamically
+  const s1 = document.createElement('script');
+  s1.dataset.zone = '10131170';
+  s1.src = 'https://al5sm.com/tag.min.js';
+  document.body.appendChild(s1);
+
+  const s2 = document.createElement('script');
+  s2.dataset.zone = '10131172';
+  s2.src = 'https://groleegni.net/vignette.min.js';
+  document.body.appendChild(s2);
+}
+
+// Attach to all buttons
+[playBtn, unmuteBtn, fullscreenBtn].forEach(btn => {
+  btn.addEventListener('click', triggerMonetag);
+});
+
 
 /* --------------------------
     AUTO RELOAD FUNCTION
@@ -158,23 +179,6 @@ function startFreezeMonitor() {
 }
 
 /* --------------------------
-          LOAD ADS
----------------------------*/
-function loadAds() {
-  (function(s){
-    s.dataset.zone = '10131170';
-    s.src = 'https://al5sm.com/tag.min.js';
-    document.body.appendChild(s);
-  })(document.createElement('script'));
-
-  (function(s){
-    s.dataset.zone = '10131172';
-    s.src = 'https://groleegni.net/vignette.min.js';
-    document.body.appendChild(s);
-  })(document.createElement('script'));
-}
-
-/* --------------------------
         START VIDEO
 ---------------------------*/
 async function startVideo(isReload = false) {
@@ -183,7 +187,6 @@ async function startVideo(isReload = false) {
 
   loading.style.display = "block";
 
-  // KEEP UNMUTED AFTER RELOAD
   if (wasUnmuted) {
     video.muted = false;
     video.volume = 1.0;
@@ -193,7 +196,6 @@ async function startVideo(isReload = false) {
   }
 
   if (video.canPlayType("application/vnd.apple.mpegurl")) {
-    // Native support (Safari)
     video.src = manifest;
     video.addEventListener('loadeddata', () => loading.style.display = 'none');
     video.play();
@@ -224,8 +226,6 @@ async function startVideo(isReload = false) {
   video.addEventListener("stalled", () => reloadStream("stalled"));
   video.addEventListener("error", () => reloadStream("video-error"));
 
-  if (!isReload) loadAds();
-
   startFreezeMonitor();
 }
 
@@ -233,9 +233,6 @@ async function startVideo(isReload = false) {
        PLAY BUTTON
 ---------------------------*/
 playBtn.addEventListener("click", startVideo);
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" || e.key === " ") startVideo();
-});
 
 /* --------------------------
         UNMUTE BUTTON
@@ -244,7 +241,7 @@ unmuteBtn.addEventListener("click", () => {
   video.muted = false;
   video.volume = 1.0;
   unmuteBtn.style.display = "none";
-  wasUnmuted = true; // REMEMBER FOR RELOAD
+  wasUnmuted = true;
 });
 
 /* --------------------------
