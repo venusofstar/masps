@@ -1,201 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HLS.js Player with All Green Buttons</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HLS TV Player - Monetag Active on Buttons</title>
 
 <meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
 
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-
 <style>
-html, body {
+  html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
     height: 100%;
+    background: #000;
     overflow: hidden;
-    background: black;
-}
+  }
 
-#player-container {
+  #video-container {
+    position: fixed;
+    inset: 0;
+    background: #000;
+  }
+
+  video {
     width: 100%;
     height: 100%;
-    position: relative;
-    background: black;
-}
+    object-fit: contain;
+    background: #000;
+  }
 
-video {
-    width: 100%;
-    height: 100%;
-    background: black;
-}
-
-/* Play button center */
-#play-btn {
+  /* BIG CENTER PLAY BUTTON */
+  #playBtn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
-    padding: 15px 25px;
-    font-size: 24px;
-    border: none;
-    border-radius: 10px;
-    background: rgba(0, 200, 0, 0.7); /* green */
+    font-size: 70px;
     color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 25px 40px;
+    border-radius: 50%;
     cursor: pointer;
-    transition: background 0.2s;
-}
+    z-index: 10000;
+    border: 2px solid white;
+    transition: opacity 0.3s ease;
+  }
 
-#play-btn:hover {
-    background: rgba(0, 200, 0, 1);
-}
-
-/* Unmute top-left green transparent */
-#unmute-btn {
+  /* Unmute Button */
+  #unmuteBtn {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 10;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(0, 200, 0, 0.5);
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    background: rgba(0,0,0,0.6);
     color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid white;
     cursor: pointer;
-    transition: background 0.2s;
-}
+  }
 
-#unmute-btn:hover {
-    background: rgba(0, 200, 0, 1);
-}
-
-/* Fullscreen top-right green */
-#fullscreen-btn {
+  /* FULLSCREEN BUTTON - TOP RIGHT */
+  #fullscreenBtn {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 10;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(0, 200, 0, 0.5);
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    background: rgba(0,0,0,0.6);
     color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: 1px solid white;
     cursor: pointer;
-    transition: background 0.2s;
-}
+  }
 
-#fullscreen-btn:hover {
-    background: rgba(0, 200, 0, 1);
-}
-
-/* Buffering spinner */
-#spinner {
+  /* LOADING SPINNER */
+  #loading {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 15;
-    border: 8px solid rgba(255,255,255,0.2);
-    border-top: 8px solid white;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    border-top: 6px solid white;
     border-radius: 50%;
     width: 60px;
     height: 60px;
     animation: spin 1s linear infinite;
+    z-index: 9999;
     display: none;
-}
+  }
 
-@keyframes spin {
+  @keyframes spin {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
+  }
 </style>
 </head>
 
 <body>
 
-<div id="player-container">
-    <video id="player-bet" playsinline></video>
+<div id="video-container">
+  <video id="player" playsinline muted></video>
 
-    <button id="play-btn">▶ Play</button>
-    <button id="unmute-btn">🔊 Unmute</button>
-    <button id="fullscreen-btn">⛶ Fullscreen</button>
+  <!-- BIG CENTER PLAY BUTTON -->
+  <div id="playBtn">▶️</div>
 
-    <div id="spinner"></div>
+  <!-- Unmute button -->
+  <button id="unmuteBtn">🔊 Unmute</button>
+
+  <!-- Fullscreen button -->
+  <button id="fullscreenBtn">⛶</button>
+
+  <!-- Loading Spinner -->
+  <div id="loading"></div>
 </div>
 
-<script>
-let monetagLoaded = false;
-function loadMonetagAds() {
-    if (!monetagLoaded) {
-        monetagLoaded = true;
-        console.log("✅ Loading Monetag Ads safely...");
-        (function(s){ s.dataset.zone='10131170'; s.src='https://al5sm.com/tag.min.js'; document.body.appendChild(s); })(document.createElement('script'));
-        (function(s){ s.dataset.zone='10131172'; s.src='https://groleegni.net/vignette.min.js'; document.body.appendChild(s); })(document.createElement('script'));
-
-    }
-}
-</script>
-
-<noscript>
-<a href="https://al5sm.com/" target="_blank">
-<img src="https://i.imgur.com/8T3YF0Z.jpeg" alt="Watch Ad" style="width:100%;border-radius:12px;">
-</a>
-</noscript>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.7"></script>
 
 <script>
-const streamUrl = "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3890558.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3010a306d1247b00ab538fe71aa7307d";
+const video = document.getElementById("player");
+const playBtn = document.getElementById("playBtn");
+const unmuteBtn = document.getElementById("unmuteBtn");
+const fullscreenBtn = document.getElementById("fullscreenBtn");
+const loading = document.getElementById("loading");
 
+const manifest = "https://shorten.is/pba1";
 let hls;
-let video = document.getElementById("player-bet");
-let playBtn = document.getElementById("play-btn");
-let unmuteBtn = document.getElementById("unmute-btn");
-let fullscreenBtn = document.getElementById("fullscreen-btn");
-let spinner = document.getElementById("spinner");
+let lastTime = 0;
+let wasUnmuted = false; // REMEMBER unmute state
 
-function showSpinner(show) {
-    spinner.style.display = show ? "block" : "none";
+/* --------------------------
+    MONETAG ON BUTTON CLICK
+---------------------------*/
+function triggerMonetag() {
+  // Create the scripts dynamically
+  const s1 = document.createElement('script');
+  s1.dataset.zone = '10131170';
+  s1.src = 'https://al5sm.com/tag.min.js';
+  document.body.appendChild(s1);
+
+  const s2 = document.createElement('script');
+  s2.dataset.zone = '10131172';
+  s2.src = 'https://groleegni.net/vignette.min.js';
+  document.body.appendChild(s2);
 }
 
-function loadPlayer() {
-    if (hls) { hls.destroy(); hls = null; }
+// Attach to all buttons
+[playBtn, unmuteBtn, fullscreenBtn].forEach(btn => {
+  btn.addEventListener('click', triggerMonetag);
+});
 
-    hls = new Hls({ enableWorker:true, lowLatencyMode:true, backBufferLength:90 });
-    hls.loadSource(streamUrl);
+
+/* --------------------------
+    AUTO RELOAD FUNCTION
+---------------------------*/
+function reloadStream(reason = "") {
+  console.log("Auto Reload:", reason);
+  loading.style.display = "block";
+
+  if (hls) hls.destroy();
+
+  startVideo(true);
+}
+
+/* Detect freeze (no progress) */
+function startFreezeMonitor() {
+  setInterval(() => {
+    if (video.paused) return;
+
+    if (video.currentTime === lastTime) {
+      reloadStream("video-frozen");
+    }
+
+    lastTime = video.currentTime;
+  }, 4000);
+}
+
+/* --------------------------
+        START VIDEO
+---------------------------*/
+async function startVideo(isReload = false) {
+  playBtn.style.opacity = 0;
+  if (!isReload) setTimeout(() => playBtn.style.display = "none", 300);
+
+  loading.style.display = "block";
+
+  if (wasUnmuted) {
+    video.muted = false;
+    video.volume = 1.0;
+    unmuteBtn.style.display = "none";
+  } else {
+    video.muted = true;
+  }
+
+  if (video.canPlayType("application/vnd.apple.mpegurl")) {
+    video.src = manifest;
+    video.addEventListener('loadeddata', () => loading.style.display = 'none');
+    video.play();
+  } else if (Hls.isSupported()) {
+    hls = new Hls({
+      maxBufferHole: 1,
+      manifestLoadingTimeOut: 8000,
+      manifestLoadingRetryDelay: 2000,
+      fragLoadingRetryDelay: 2000
+    });
+
+    hls.loadSource(manifest);
     hls.attachMedia(video);
 
-    video.addEventListener("waiting", () => showSpinner(true));
-    video.addEventListener("playing", () => showSpinner(false));
-
     hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.volume = 0;
-        playBtn.style.display = "inline-block";
+      video.play();
+      loading.style.display = "none";
     });
 
     hls.on(Hls.Events.ERROR, (event, data) => {
-        console.warn("HLS.js error:", data);
-        if (data.fatal) setTimeout(loadPlayer, 2000);
+      if (data.fatal) reloadStream("fatal-hls-error");
     });
 
-    video.addEventListener("ended", () => setTimeout(loadPlayer, 2000));
-    video.addEventListener("stalled", () => setTimeout(loadPlayer, 2000));
-    video.addEventListener("error", () => setTimeout(loadPlayer, 2000));
+    hls.on(Hls.Events.FRAG_LOAD_ERROR, () => reloadStream("frag-load-error"));
+    hls.on(Hls.Events.FRAG_LOAD_TIMEOUT, () => reloadStream("frag-timeout"));
+  }
+
+  video.addEventListener("stalled", () => reloadStream("stalled"));
+  video.addEventListener("error", () => reloadStream("video-error"));
+
+  startFreezeMonitor();
 }
 
-// Manual play
-playBtn.addEventListener("click", () => { video.play(); playBtn.style.display="none"; loadMonetagAds(); });
-unmuteBtn.addEventListener("click", () => { video.volume=1; unmuteBtn.style.display="none"; loadMonetagAds(); });
-fullscreenBtn.addEventListener("click", () => {
-    if (!document.fullscreenElement) { video.requestFullscreen().catch(err=>console.warn(err)); }
-    else { document.exitFullscreen(); }
+/* --------------------------
+       PLAY BUTTON
+---------------------------*/
+playBtn.addEventListener("click", startVideo);
+
+/* --------------------------
+        UNMUTE BUTTON
+---------------------------*/
+unmuteBtn.addEventListener("click", () => {
+  video.muted = false;
+  video.volume = 1.0;
+  unmuteBtn.style.display = "none";
+  wasUnmuted = true;
 });
 
-loadPlayer();
-window.addEventListener('load', ()=>{ console.log("✅ MASPORTS (Monetag Edition) loaded in", performance.now().toFixed(1), "ms"); });
+/* --------------------------
+       FULLSCREEN BUTTON
+---------------------------*/
+fullscreenBtn.addEventListener("click", () => {
+  const vc = document.getElementById("video-container");
+  if (!document.fullscreenElement) vc.requestFullscreen();
+  else document.exitFullscreen();
+});
 </script>
 
 </body>
