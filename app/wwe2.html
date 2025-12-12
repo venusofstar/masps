@@ -85,35 +85,24 @@
 
     @keyframes spin { to { transform:rotate(360deg); } }
 
+    /* Fallback completely hidden */
     .fallback {
-      position:absolute;
-      left:50%;
-      top:60%;
-      transform:translate(-50%,-50%);
-      background:rgba(0,0,0,0.6);
-      padding:14px 18px;
-      border-radius:10px;
-      z-index:45;
-      display:none;
-      text-align:center;
-      font-size:14px;
+      display:none !important;
     }
   </style>
 </head>
 <body>
 
   <div class="player-wrap" id="playerWrap">
-    <div class="title">wwe event stream</div>
+    <div class="title">masports</div>
 
     <div class="loading" id="loading">
       <div class="spinner"></div>
       Loading…
     </div>
 
-    <!-- Fallback now contains NO open link -->
-    <div class="fallback" id="fallback">
-      <strong>Unable to load the player.</strong>
-    </div>
+    <!-- FALLBACK REMOVED (hidden) -->
+    <div class="fallback" id="fallback"></div>
 
     <iframe
       id="player"
@@ -135,21 +124,16 @@
 
     let loadTimeout;
 
-    // Remove loading when iframe loads
     iframe.addEventListener('load', () => {
       setTimeout(() => loading.style.display = "none", 400);
       clearTimeout(loadTimeout);
     });
 
-    // Show fallback after 10s if not loaded
     loadTimeout = setTimeout(() => {
-      if (loading.style.display !== "none") {
-        loading.style.display = "none";
-        fallback.style.display = "block";
-      }
+      loading.style.display = "none";
+      // fallback is hidden, so no message will appear
     }, 10000);
 
-    // Fullscreen button
     document.getElementById('fsBtn').addEventListener('click', async () => {
       try {
         if (!document.fullscreenElement) {
@@ -162,7 +146,6 @@
       }
     });
 
-    // Keyboard shortcut: F
     window.addEventListener('keydown', (e) => {
       if (e.key.toLowerCase() === "f") {
         e.preventDefault();
