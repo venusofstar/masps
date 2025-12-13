@@ -37,7 +37,7 @@ const channels = [
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
     "page": "nba2.html",
     "date": "2025-12-14",
-    "time": "10:00 AM
+    "time": "10:00 AM"
   },
   {
     "title": "NBA - Minnesota Timberwolves vs. Golden State Warriors",
