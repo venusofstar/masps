@@ -4,6 +4,16 @@
 -------------------------------------------------*/
 const channels = [
    {
+         {
+     title: "🇵🇭 NCAA -Basketball Tournament - December 13, 2025 | NCAA Season 101",
+  category: "Basketball",
+  service: "NCAA",
+  logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
+  page: "ncaa.html",
+  date: "2025-12-13",
+  time: "2:15 PM"
+},
+{
      title: "🇵🇭 PBA - TNT vs NLEX",
   category: "Basketball",
   service: "PBA",
