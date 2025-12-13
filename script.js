@@ -63,7 +63,7 @@ const channels = [
   service: "Darts",
   logo: "https://api.ppvs.su/assets/thumb/4e218218e0ba40cac4b0d2867873c96a-thumbnail.jpg",
   page: "darts.html",
-  date: "2025-12-12",
+  date: "2025-12-14",
   time: "8:30 PM"
 },
 {   
@@ -116,7 +116,7 @@ const channels = [
   category: "WWE",
   service: "WWE",
   logo: "https://api.ppvs.su/assets/thumb/880a048062dc9e403943d35cd58747b4-thumbnail.jpg",
-  page: "nxt.html",
+  page: "wwe-event.html",
   date: "2025-12-14",
   time: "9:00 AM"
   },
@@ -127,7 +127,7 @@ const channels = [
   logo: "https://www.ufc.com/images/styles/background_image_sm_2x/s3/2025-11/121325-ufc-fight-night-royval-vs-kape-EVENT-ART.jpg?h=d1cb525d&itok=bzaxRKhC",
   page: "ufc1.html",
   date: "2025-12-14",
-  time: "11:00 AM" 
+  time: "8:00 AM" 
 }
 ];
 
