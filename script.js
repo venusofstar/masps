@@ -3,8 +3,7 @@
    CHANNEL LIST
 -------------------------------------------------*/
 const channels = [
-   {
-         {
+   {         
      title: "🇵🇭 NCAA -Basketball Tournament - December 13, 2025 | NCAA Season 101",
   category: "Basketball",
   service: "NCAA",
