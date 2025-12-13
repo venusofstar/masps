@@ -1,258 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>HLS TV Player - Monetag Active on Buttons</title>
-
-<meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
-
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background: #000;
-    overflow: hidden;
-  }
-
-  #video-container {
-    position: fixed;
-    inset: 0;
-    background: #000;
-  }
-
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background: #000;
-  }
-
-  /* BIG CENTER PLAY BUTTON */
-  #playBtn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 70px;
-    color: white;
-    background: rgba(0,0,0,0.5);
-    padding: 25px 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10000;
-    border: 2px solid white;
-    transition: opacity 0.3s ease;
-  }
-
-  /* Unmute Button */
-  #unmuteBtn {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 9999;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-size: 16px;
-    border: 1px solid white;
-    cursor: pointer;
-  }
-
-  /* FULLSCREEN BUTTON - TOP RIGHT */
-  #fullscreenBtn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 9999;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-size: 18px;
-    border: 1px solid white;
-    cursor: pointer;
-  }
-
-  /* LOADING SPINNER */
-  #loading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 6px solid rgba(255, 255, 255, 0.2);
-    border-top: 6px solid white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
-    z-index: 9999;
-    display: none;
-  }
-
-  @keyframes spin {
-    0% { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg); }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Live Fullscreen Embed</title>
+  <style>
+    /* Make the page and iframe full screen */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #000; /* Black background for better viewing */
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
-
 <body>
 
-<div id="video-container">
-  <video id="player" playsinline muted></video>
-
-  <!-- BIG CENTER PLAY BUTTON -->
-  <div id="playBtn">▶️</div>
-
-  <!-- Unmute button -->
-  <button id="unmuteBtn">🔊 Unmute</button>
-
-  <!-- Fullscreen button -->
-  <button id="fullscreenBtn">⛶</button>
-
-  <!-- Loading Spinner -->
-  <div id="loading"></div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.7"></script>
-
-<script>
-const video = document.getElementById("player");
-const playBtn = document.getElementById("playBtn");
-const unmuteBtn = document.getElementById("unmuteBtn");
-const fullscreenBtn = document.getElementById("fullscreenBtn");
-const loading = document.getElementById("loading");
-
-const manifest = "https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1765627553/ei/QQI9afudCK2X1d8PotXmwA8/ip/180.190.199.3/id/sv6LDl4hnrw.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/maudio/1/bui/AYUSA3B2v3fyLuNuw0LxPfLt6eRsK4De8FRm9Csmz3UDaas98kCnPNi-3GehK9tyzsrdlDlmTvctes-Q/spc/wH4Qq_6KBoJWBUBGoma7sFGQwgPJIVcFC_iZ_vMifBT7a9O1GIUsZDgOrYlR2dIVM-M-eg/vprv/1/go/1/ns/dXAXPyIsxq4iDXEvH6RgrFcR/rqh/5/pacing/0/nvgoi/1/ncsapi/1/keepalive/yes/fexp/51331020%2C51552689%2C51565116%2C51565682%2C51580968/dover/11/n/naIIbSUjkb5iD2N/itag/0/playlist_type/LIVE/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Cns%2Crqh%2Citag%2Cplaylist_type/sig/AJfQdSswRQIhAKVnFn2gwevHocGQ9AWgo-dsjgkbtr-k99YBj0SnQcNJAiAA8sUVflm7fnzTh8e_fcgwY3f_A0amUwqZrXML9Yp5Gw%3D%3D/file/index.m3u8";
-let hls;
-let lastTime = 0;
-let wasUnmuted = false; // REMEMBER unmute state
-
-/* --------------------------
-    MONETAG ON BUTTON CLICK
----------------------------*/
-function triggerMonetag() {
-  // Create the scripts dynamically
-  const s1 = document.createElement('script');
-  s1.dataset.zone = '10131170';
-  s1.src = 'https://al5sm.com/tag.min.js';
-  document.body.appendChild(s1);
-
-  const s2 = document.createElement('script');
-  s2.dataset.zone = '10131172';
-  s2.src = 'https://groleegni.net/vignette.min.js';
-  document.body.appendChild(s2);
-}
-
-// Attach to all buttons
-[playBtn, unmuteBtn, fullscreenBtn].forEach(btn => {
-  btn.addEventListener('click', triggerMonetag);
-});
-
-
-/* --------------------------
-    AUTO RELOAD FUNCTION
----------------------------*/
-function reloadStream(reason = "") {
-  console.log("Auto Reload:", reason);
-  loading.style.display = "block";
-
-  if (hls) hls.destroy();
-
-  startVideo(true);
-}
-
-/* Detect freeze (no progress) */
-function startFreezeMonitor() {
-  setInterval(() => {
-    if (video.paused) return;
-
-    if (video.currentTime === lastTime) {
-      reloadStream("video-frozen");
-    }
-
-    lastTime = video.currentTime;
-  }, 4000);
-}
-
-/* --------------------------
-        START VIDEO
----------------------------*/
-async function startVideo(isReload = false) {
-  playBtn.style.opacity = 0;
-  if (!isReload) setTimeout(() => playBtn.style.display = "none", 300);
-
-  loading.style.display = "block";
-
-  if (wasUnmuted) {
-    video.muted = false;
-    video.volume = 1.0;
-    unmuteBtn.style.display = "none";
-  } else {
-    video.muted = true;
-  }
-
-  if (video.canPlayType("application/vnd.apple.mpegurl")) {
-    video.src = manifest;
-    video.addEventListener('loadeddata', () => loading.style.display = 'none');
-    video.play();
-  } else if (Hls.isSupported()) {
-    hls = new Hls({
-      maxBufferHole: 1,
-      manifestLoadingTimeOut: 8000,
-      manifestLoadingRetryDelay: 2000,
-      fragLoadingRetryDelay: 2000
-    });
-
-    hls.loadSource(manifest);
-    hls.attachMedia(video);
-
-    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-      video.play();
-      loading.style.display = "none";
-    });
-
-    hls.on(Hls.Events.ERROR, (event, data) => {
-      if (data.fatal) reloadStream("fatal-hls-error");
-    });
-
-    hls.on(Hls.Events.FRAG_LOAD_ERROR, () => reloadStream("frag-load-error"));
-    hls.on(Hls.Events.FRAG_LOAD_TIMEOUT, () => reloadStream("frag-timeout"));
-  }
-
-  video.addEventListener("stalled", () => reloadStream("stalled"));
-  video.addEventListener("error", () => reloadStream("video-error"));
-
-  startFreezeMonitor();
-}
-
-/* --------------------------
-       PLAY BUTTON
----------------------------*/
-playBtn.addEventListener("click", startVideo);
-
-/* --------------------------
-        UNMUTE BUTTON
----------------------------*/
-unmuteBtn.addEventListener("click", () => {
-  video.muted = false;
-  video.volume = 1.0;
-  unmuteBtn.style.display = "none";
-  wasUnmuted = true;
-});
-
-/* --------------------------
-       FULLSCREEN BUTTON
----------------------------*/
-fullscreenBtn.addEventListener("click", () => {
-  const vc = document.getElementById("video-container");
-  if (!document.fullscreenElement) vc.requestFullscreen();
-  else document.exitFullscreen();
-});
-</script>
+  <!-- YouTube Live Embed -->
+  <iframe
+    src="https://www.youtube.com/embed/rNC4FeBiCMM?autoplay=1&mute=0"
+    title="YouTube Live"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+    allowfullscreen>
+  </iframe>
 
 </body>
 </html>
