@@ -30,77 +30,77 @@ const channels = [
   date: "2025-12-13",
   time: "7:30 PM"
 },
-  {
-    "title": "NBA - Washington Wizards vs. Indiana Pacers",
-    "category": "Basketball",
-    "service": "NBA",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    "page": "nba_wizards_pacers.html",
-    "date": "2025-12-15",
-    "time": "1:00 AM"
-  },
-  {
-    "title": "NBA - Charlotte Hornets vs. Cleveland Cavaliers",
-    "category": "Basketball",
-    "service": "NBA",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    "page": "nba_hornets_cavaliers.html",
-    "date": "2025-12-15",
-    "time": "1:30 AM"
-  },
-  {
-    "title": "NBA - Philadelphia 76ers vs. Atlanta Hawks",
-    "category": "Basketball",
-    "service": "NBA",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    "page": "nba_sixers_hawks.html",
-    "date": "2025-12-15",
-    "time": "4:00 AM"
-  },
-  {
-    "title": "NBA - Milwaukee Bucks vs. Brooklyn Nets",
-    "category": "Basketball",
-    "service": "NBA",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    "page": "nba_bucks_nets.html",
-    "date": "2025-12-15",
-    "time": "4:00 AM"
-  },
-  {
-    "title": "NBA - New Orleans Pelicans vs. Chicago Bulls",
-    "category": "Basketball",
-    "service": "NBA",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    "page": "nba_pelicans_bulls.html",
-    "date": "2025-12-15",
-    "time": "5:00 AM"
-  },
-  {
-    "title": "NBA - Sacramento Kings vs. Minnesota Timberwolves",
-    "category": "Basketball",
-    "service": "NBA",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    "page": "nba_kings_timberwolves.html",
-    "date": "2025-12-15",
-    "time": "5:00 AM"
-  },
-  {
-    "title": "NBA - Los Angeles Lakers vs. Phoenix Suns",
-    "category": "Basketball",
-    "service": "NBA",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    "page": "nba_lakers_suns.html",
-    "date": "2025-12-15",
-    "time": "9:00 AM"
-  },
-  {
-    "title": "NBA - Golden State Warriors vs. Portland Trail Blazers",
-    "category": "Basketball",
-    "service": "NBA",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    "page": "nba_warriors_blazers.html",
-    "date": "2025-12-15",
-    "time": "7:00 AM"
+{
+  title: "NBA - Washington Wizards vs. Indiana Pacers",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba1.html",
+  date: "2025-12-15",
+  time: "4:00 AM"
+},
+{
+  title: "NBA - Charlotte Hornets vs. Cleveland Cavaliers",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba2.html",
+  date: "2025-12-15",
+  time: "4:30 AM"
+},
+{
+  title: "NBA - Philadelphia 76ers vs. Atlanta Hawks",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba3.html",
+  date: "2025-12-15",
+  time: "7:00 AM"
+},
+{
+  title: "NBA - Milwaukee Bucks vs. Brooklyn Nets",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba4.html",
+  date: "2025-12-15",
+  time: "7:00 AM"
+},
+{
+  title: "NBA - New Orleans Pelicans vs. Chicago Bulls",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba5.html",
+  date: "2025-12-15",
+  time: "8:00 AM"
+},
+{
+  title: "NBA - Sacramento Kings vs. Minnesota Timberwolves",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba6.html",
+  date: "2025-12-15",
+  time: "8:00 AM"
+},
+{
+  title: "NBA - Los Angeles Lakers vs. Phoenix Suns",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba7.html",
+  date: "2025-12-15",
+  time: "9:00 AM"
+},
+{
+  title: "NBA - Golden State Warriors vs. Portland Trail Blazers",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba8.html",
+  date: "2025-12-15",
+  time: "10:00 AM"
   },  
    {
   title: "World Darts Championship",
