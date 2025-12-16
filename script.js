@@ -35,7 +35,7 @@ const channels = [
     service: "NBA",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
     page: "nba_cup_final.html",
-    date: "2025-12-16",
+    date: "2025-12-17",
     time: "9:30 AM"
   },
   {
@@ -44,7 +44,7 @@ const channels = [
     service: "NBA",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
     page: "nba_cavs_bulls.html",
-    date: "2025-12-17",
+    date: "2025-12-18",
     time: "9:00 AM"
   },
   {
@@ -53,7 +53,7 @@ const channels = [
     service: "NBA",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
     page: "nba_grizzlies_wolves.html",
-    date: "2025-12-17",
+    date: "2025-12-18",
     time: "9:00 AM"
   },
   {
@@ -71,7 +71,7 @@ const channels = [
     service: "WWE",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZr5Kf-2nSHJw7LJXM_57RfmwVkcXo-pFrQ&usqp=CAU",
     page: "nxt.html",
-    date: "2025-12-10",
+    date: "2025-12-17",
     time: "9:00 AM"
   },
   {
@@ -80,7 +80,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/b406ff9100d91b9210600260350246ff-thumbnail.jpg",
     page: "nxt.html",
-    date: "2025-12-11",
+    date: "2025-12-18",
     time: "9:00 AM"
   },
   {
@@ -89,7 +89,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/78f581ee61589a76f6bcdeb095f95c12-thumbnail.jpg",
     page: "nxt.html",
-    date: "2025-12-12",
+    date: "2025-12-19",
     time: "9:00 AM"
   },
   {
@@ -98,7 +98,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/ec7810b68fc39115ce3510bcf9687a63-thumbnail.jpg",
     page: "nxt.html",
-    date: "2025-12-13",
+    date: "2025-12-20",
     time: "9:00 AM"
   },
   {
@@ -107,7 +107,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/6e29b1bb679dd5133c85bbaadc2c4b13-thumbnail.jpg",
     page: "nxt.html",
-    date: "2025-12-14",
+    date: "2025-12-21",
     time: "9:00 AM"
   },
   {
@@ -116,7 +116,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/880a048062dc9e403943d35cd58747b4-thumbnail.jpg",
     page: "wwe-event.html",
-    date: "2025-12-14",
+    date: "2025-12-10",
     time: "9:00 AM"
   },
   {
