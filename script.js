@@ -31,50 +31,32 @@ const channels = [
   time: "7:30 PM"
 },
 {
-  "title": "NBA - Detroit Pistons vs. Boston Celtics",
+  "title": "San Antonio Spurs vs. New York Knicks",
   "category": "Basketball",
   "service": "NBA",
-  "logo": "https://my.dish.com/cms-files/ppvsports/basketball/logo/nbaleaguepass2024.png",
-  "page": "nba1.html",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  "page": "nba_cup_final.html",
   "date": "2025-12-16",
-  "time": "8:00 AM"
+  "time": "9:30 AM"
+    },  
+   {
+  "title": "Cleveland Cavaliers vs. Chicago Bulls",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  "page": "nba_cavs_bulls.html",
+  "date": "2025-12-17",
+  "time": "9:00 AM"
 },
 {
-  "title": "NBA - Toronto Raptors vs. Miami Heat",
+  "title": "Memphis Grizzlies vs. Minnesota Timberwolves",
   "category": "Basketball",
   "service": "NBA",
-  "logo": "https://my.dish.com/cms-files/ppvsports/basketball/logo/nbaleaguepass2024.png",
-  "page": "nba2.html",
-  "date": "2025-12-16",
-  "time": "8:30 AM"
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  "page": "nba_grizzlies_wolves.html",
+  "date": "2025-12-17",
+  "time": "9:00 AM"
 },
-{
-  "title": "NBA - Dallas Mavericks vs. Utah Jazz",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://my.dish.com/cms-files/ppvsports/basketball/logo/nbaleaguepass2024.png",
-  "page": "nba3.html",
-  "date": "2025-12-16",
-  "time": "10:00 AM"
-},
-{
-  "title": "NBA - Houston Rockets vs. Denver Nuggets",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://my.dish.com/cms-files/ppvsports/basketball/logo/nbaleaguepass2024.png",
-  "page": "nba4.html",
-  "date": "2025-12-16",
-  "time": "10:30 AM"
-},
-{
-  "title": "NBA - Memphis Grizzlies vs. Los Angeles Clippers",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://my.dish.com/cms-files/ppvsports/basketball/logo/nbaleaguepass2024.png",
-  "page": "nba5.html",
-  "date": "2025-12-16",
-  "time": "11:30 AM"
-  },  
    {
   title: "World Darts Championship",
   category: "Darts",
