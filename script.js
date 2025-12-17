@@ -34,7 +34,7 @@ const channels = [
     category: "Basketball",
     service: "NBA",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    page: "nba_cup_final.html",
+    page: "nba1.html",
     date: "2025-12-17",
     time: "9:30 AM"
   },
@@ -43,7 +43,7 @@ const channels = [
     category: "Basketball",
     service: "NBA",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    page: "nba_cavs_bulls.html",
+    page: "nba2.html",
     date: "2025-12-18",
     time: "9:00 AM"
   },
@@ -52,7 +52,7 @@ const channels = [
     category: "Basketball",
     service: "NBA",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    page: "nba_grizzlies_wolves.html",
+    page: "nba3.html",
     date: "2025-12-18",
     time: "9:00 AM"
   },
