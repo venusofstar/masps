@@ -12,21 +12,21 @@ const channels = [
     time: "2:15 PM"
   },
   {
-    title: "🇵🇭 PBA - TNT vs NLEX",
+    title: "🇵🇭 PBA -Beermen vs Terra",
     category: "Basketball",
     service: "PBA",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
     page: "pba1.html",
-    date: "2025-12-13",
+    date: "2025-12-17",
     time: "5:15 PM"
   },
   {
-    title: "🇵🇭 PBA - Blackwater vs Beermen",
+    title: "🇵🇭 PBA - Converge vs NLEX",
     category: "Basketball",
     service: "PBA",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
     page: "pba2.html",
-    date: "2025-12-13",
+    date: "2025-12-17",
     time: "7:30 PM"
   },
   {
