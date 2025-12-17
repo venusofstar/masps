@@ -12,7 +12,7 @@ const channels = [
     time: "2:15 PM"
   },
   {
-    title: "🇵🇭 PBA -Beermen vs Terra",
+    title: "🇵🇭 PBA -San Miguel vs Terrafirma",
     category: "Basketball",
     service: "PBA",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
