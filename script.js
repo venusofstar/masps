@@ -30,6 +30,15 @@ const channels = [
     time: "7:30 PM"
   },
   {
+         title: "🇵🇭 PBA - Rain or Shine vs vs Genebra",
+    category: "Basketball",
+    service: "PBA",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
+    page: "pba5.html",
+    date: "2025-12-17",
+    time: "11:55 PM"
+  },
+  {
     title: "San Antonio Spurs vs. New York Knicks",
     category: "Basketball",
     service: "NBA",
