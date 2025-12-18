@@ -12,21 +12,21 @@ const channels = [
     time: "2:15 PM"
   },
   {
-    title: "🇵🇭 PBA -San Miguel vs Terrafirma",
+    title: "🇵🇭 PBA -TNT vs Blackwater",
     category: "Basketball",
     service: "PBA",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
     page: "pba1.html",
-    date: "2025-12-17",
+    date: "2025-12-19",
     time: "5:15 PM"
   },
   {
-    title: "🇵🇭 PBA - Converge vs NLEX",
+    title: "🇵🇭 PBA - Meralco vs San Miguel",
     category: "Basketball",
     service: "PBA",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
     page: "pba2.html",
-    date: "2025-12-17",
+    date: "2025-12-19",
     time: "7:30 PM"
   },
   {
