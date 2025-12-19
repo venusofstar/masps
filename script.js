@@ -10,6 +10,24 @@ const channels = [
     page: "ncaa.html",
     date: "2025-12-13",
     time: "2:15 PM"
+         },
+  {
+              title: "🇵🇭 PBA -TNT vs Blackwater",
+    category: "Basketball",
+    service: "PBA",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
+    page: "pba1.html",
+    date: "2025-12-19",
+    time: "5:15 PM"
+  },
+  {
+    title: "🇵🇭 PBA - Meralco vs San Miguel",
+    category: "Basketball",
+    service: "PBA",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
+    page: "pba2.html",
+    date: "2025-12-19",
+    time: "7:30 PM"
   },
 {
   title: "Miami Heat vs. Boston Celtics",
@@ -57,25 +75,6 @@ const channels = [
   time: "10:00 AM"
 },
    {
-
-         title: "🇵🇭 PBA -TNT vs Blackwater",
-    category: "Basketball",
-    service: "PBA",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
-    page: "pba1.html",
-    date: "2025-12-19",
-    time: "5:15 PM"
-  },
-  {
-    title: "🇵🇭 PBA - Meralco vs San Miguel",
-    category: "Basketball",
-    service: "PBA",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
-    page: "pba2.html",
-    date: "2025-12-19",
-    time: "7:30 PM"
-  },
-  {
          title: "🇵🇭 PBA - Rain or Shine vs vs Genebra",
     category: "Basketball",
     service: "PBA",
