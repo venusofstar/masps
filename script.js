@@ -94,8 +94,8 @@ const channels = [
        },
   {
     title: "Boxing 🥊- Jake Paul vs. Anthony Joshua",
-    category: "WWE",
-    service: "WWE",
+    category: "Boxing",
+    service: "Boxing",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6rchBnUP5iYqkeHE_ssFYduICpDUYzJRucQO4sxU0w&s=10",
     page: "boxing1.html",
     date: "2025-12-20",
