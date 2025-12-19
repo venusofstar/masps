@@ -66,11 +66,20 @@ const channels = [
     time: "9:00 AM"
   },
   {
-    title: "Detroit Pistons vs. Dallas Mavericks",
+         title: "Thunder vs. Clippers",
     category: "Basketball",
     service: "NBA",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
     page: "nba7.html",
+    date: "2025-12-19",
+    time: "9:00 AM"
+  },
+  {
+    title: "Detroit Pistons vs. Dallas Mavericks",
+    category: "Basketball",
+    service: "NBA",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+    page: "nba8.html",
     date: "2025-12-19",
     time: "9:30 AM"
   },
@@ -79,7 +88,7 @@ const channels = [
     category: "Basketball",
     service: "NBA",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    page: "nba8.html",
+    page: "nba9.html",
     date: "2025-12-19",
     time: "10:00 AM"
   },
@@ -88,7 +97,7 @@ const channels = [
     category: "Basketball",
     service: "NBA",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    page: "nba9.html",
+    page: "nba10.html",
     date: "2025-12-19",
     time: "10:00 AM"
   },
@@ -97,7 +106,7 @@ const channels = [
     category: "Basketball",
     service: "NBA",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    page: "nba10.html",
+    page: "nba11.html",
     date: "2025-12-19",
     time: "10:00 AM"
   },
@@ -106,7 +115,7 @@ const channels = [
     category: "Basketball",
     service: "NBA",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-    page: "nba11.html",
+    page: "nba12.html",
     date: "2025-12-19",
     time: "11:00 AM"
   },
