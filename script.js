@@ -89,8 +89,17 @@ const channels = [
     service: "Darts",
     logo: "https://api.ppvs.su/assets/thumb/4e218218e0ba40cac4b0d2867873c96a-thumbnail.jpg",
     page: "darts.html",
-    date: "2025-12-14",
+    date: "2025-12-2",
     time: "8:30 PM"
+       },
+  {
+    title: "Boxing 🥊- Jake Paul vs. Anthony Joshua",
+    category: "WWE",
+    service: "WWE",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6rchBnUP5iYqkeHE_ssFYduICpDUYzJRucQO4sxU0w&s=10",
+    page: "boxing1.html",
+    date: "2025-12-20",
+    time: "9:00 AM"
   },
   {
     title: "WWE: NXT",
