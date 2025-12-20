@@ -99,7 +99,7 @@ const channels = [
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6rchBnUP5iYqkeHE_ssFYduICpDUYzJRucQO4sxU0w&s=10",
     page: "boxing1.html",
     date: "2025-12-20",
-    time: "9:00 AM"
+    time: "11:30 AM"
   },
   {
     title: "WWE: NXT",
