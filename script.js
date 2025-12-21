@@ -11,60 +11,6 @@ const channels = [
     date: "2025-12-13",
     time: "2:15 PM"
          },
-{
-  title: "Atlanta Hawks vs. Chicago Bulls",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://example.com/nba_logo.png",
-  page: "nba1.html",
-  date: "2025-12-22",
-  time: "4:30 AM"
-},
-{
-  title: "Miami Heat vs. New York Knicks",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://example.com/nba_logo.png",
-  page: "nba2.html",
-  date: "2025-12-22",
-  time: "7:00 AM"
-},
-{
-  title: "Toronto Raptors vs. Brooklyn Nets",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://example.com/nba_logo.png",
-  page: "nba3.html",
-  date: "2025-12-22",
-  time: "7:00 AM"
-},
-{
-  title: "Milwaukee Bucks vs. Minnesota Timberwolves",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://example.com/nba_logo.png",
-  page: "nba4.html",
-  date: "2025-12-22",
-  time: "8:00 AM"
-},
-{
-  title: "San Antonio Spurs vs. Washington Wizards",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://example.com/nba_logo.png",
-  page: "nba5.html",
-  date: "2025-12-22",
-  time: "8:00 AM"
-},
-{
-  title: "Houston Rockets vs. Sacramento Kings",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://example.com/nba_logo.png",
-  page: "nba6.html",
-  date: "2025-12-22",
-  time: "11:00 AM"
-},
    {
 
                    title: "🇵🇭 PBA -TNT vs Magnolia",
@@ -85,6 +31,60 @@ const channels = [
     time: "7:30 PM"
   },
 {
+     title: "Atlanta Hawks vs. Chicago Bulls",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba1.html",
+  date: "2025-12-22",
+  time: "4:30 AM"
+},
+{
+  title: "Miami Heat vs. New York Knicks",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba2.html",
+  date: "2025-12-22",
+  time: "7:00 AM"
+},
+{
+  title: "Toronto Raptors vs. Brooklyn Nets",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba3.html",
+  date: "2025-12-22",
+  time: "7:00 AM"
+},
+{
+  title: "Milwaukee Bucks vs. Minnesota Timberwolves",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba4.html",
+  date: "2025-12-22",
+  time: "8:00 AM"
+},
+{
+  title: "San Antonio Spurs vs. Washington Wizards",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba5.html",
+  date: "2025-12-22",
+  time: "8:00 AM"
+},
+{
+  title: "Houston Rockets vs. Sacramento Kings",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba6.html",
+  date: "2025-12-22",
+  time: "11:00 AM"
+},
+   {
     title: "World Darts Championship",
     category: "Darts",
     service: "Darts",
