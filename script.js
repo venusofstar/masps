@@ -11,106 +11,62 @@ const channels = [
     date: "2025-12-13",
     time: "2:15 PM"
          },
-   {
-  title: "Houston Rockets vs. Denver Nuggets",
+{
+  title: "Atlanta Hawks vs. Chicago Bulls",
   category: "Basketball",
   service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  logo: "https://example.com/nba_logo.png",
   page: "nba1.html",
-  date: "2025-12-21",
-  time: "6:00 AM"
+  date: "2025-12-22",
+  time: "4:30 AM"
 },
 {
-  title: "Dallas Mavericks vs. Philadelphia 76ers",
+  title: "Miami Heat vs. New York Knicks",
   category: "Basketball",
   service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  logo: "https://example.com/nba_logo.png",
   page: "nba2.html",
-  date: "2025-12-21",
-  time: "8:00 AM"
+  date: "2025-12-22",
+  time: "7:00 AM"
 },
 {
-  title: "Boston Celtics vs. Toronto Raptors",
+  title: "Toronto Raptors vs. Brooklyn Nets",
   category: "Basketball",
   service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  logo: "https://example.com/nba_logo.png",
   page: "nba3.html",
-  date: "2025-12-21",
-  time: "8:00 AM"
+  date: "2025-12-22",
+  time: "7:00 AM"
 },
 {
-  title: "Indiana Pacers vs. New Orleans Pelicans",
+  title: "Milwaukee Bucks vs. Minnesota Timberwolves",
   category: "Basketball",
   service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  logo: "https://example.com/nba_logo.png",
   page: "nba4.html",
-  date: "2025-12-21",
+  date: "2025-12-22",
   time: "8:00 AM"
 },
 {
-  title: "Charlotte Hornets vs. Detroit Pistons",
+  title: "San Antonio Spurs vs. Washington Wizards",
   category: "Basketball",
   service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  logo: "https://example.com/nba_logo.png",
   page: "nba5.html",
-  date: "2025-12-21",
-  time: "8:30 AM"
+  date: "2025-12-22",
+  time: "8:00 AM"
 },
 {
-  title: "Washington Wizards vs. Memphis Grizzlies",
+  title: "Houston Rockets vs. Sacramento Kings",
   category: "Basketball",
   service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  logo: "https://example.com/nba_logo.png",
   page: "nba6.html",
-  date: "2025-12-21",
-  time: "9:00 AM"
-},
-{
-  title: "Phoenix Suns vs. Golden State Warriors",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba7.html",
-  date: "2025-12-21",
-  time: "9:30 AM"
-},
-{
-  title: "Orlando Magic vs. Utah Jazz",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba8.html",
-  date: "2025-12-21",
-  time: "10:30 AM"
-},
-{
-  title: "Portland Trail Blazers vs. Sacramento Kings",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba9.html",
-  date: "2025-12-21",
+  date: "2025-12-22",
   time: "11:00 AM"
 },
-{
-  title: "LA Lakers vs. LA Clippers",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba10.html",
-  date: "2025-12-21",
-  time: "11:30 AM"
-},
    {
-         title: "🇵🇭 PBA - Rain or Shine vs vs Genebra",
-    category: "Basketball",
-    service: "PBA",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
-    page: "pba5.html",
-    date: "2025-12-17",
-    time: "11:55 PM"      
-  },
-  {
+
                    title: "🇵🇭 PBA -TNT vs Magnolia",
     category: "Basketball",
     service: "PBA",
