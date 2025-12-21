@@ -11,25 +11,7 @@ const channels = [
     date: "2025-12-13",
     time: "2:15 PM"
          },
-  {
-              title: "🇵🇭 PBA -TNT vs Blackwater",
-    category: "Basketball",
-    service: "PBA",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
-    page: "pba1.html",
-    date: "2025-12-19",
-    time: "5:15 PM"
-  },
-  {
-    title: "🇵🇭 PBA - Meralco vs San Miguel",
-    category: "Basketball",
-    service: "PBA",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
-    page: "pba2.html",
-    date: "2025-12-19",
-    time: "7:30 PM"
-  },
-{
+   {
   title: "Houston Rockets vs. Denver Nuggets",
   category: "Basketball",
   service: "NBA",
@@ -126,9 +108,27 @@ const channels = [
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
     page: "pba5.html",
     date: "2025-12-17",
-    time: "11:55 PM"
+    time: "11:55 PM"      
   },
   {
+                   title: "🇵🇭 PBA -TNT vs Magnolia",
+    category: "Basketball",
+    service: "PBA",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
+    page: "pba1.html",
+    date: "2025-12-21",
+    time: "5:15 PM"
+  },
+  {
+    title: "🇵🇭 PBA - Genebra vs Titan Ultra",
+    category: "Basketball",
+    service: "PBA",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
+    page: "pba2.html",
+    date: "2025-12-21",
+    time: "7:30 PM"
+  },
+{
     title: "World Darts Championship",
     category: "Darts",
     service: "Darts",
