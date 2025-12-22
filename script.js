@@ -30,7 +30,6 @@ const channels = [
     date: "2025-12-21",
     time: "7:30 PM"
   },
-
 {
   title: "Charlotte Hornets vs. Cleveland Cavaliers",
   category: "Basketball",
@@ -202,6 +201,7 @@ const channels = [
   date: "2025-12-24",
   time: "10:00 AM"
 },
+   {
     title: "World Darts Championship",
     category: "Darts",
     service: "Darts",
