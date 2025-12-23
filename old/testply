@@ -1,0 +1,7 @@
+#EXTM3U
+
+#EXTINF:-1 group-title="OTT" tvg-name="OTT Stream", OTT Stream
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
+https://pfl5.galaxaignite.space/playlist/41753/a.alipanah3.space/caxi
