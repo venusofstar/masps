@@ -34,7 +34,7 @@ const channels = [
   title: "Cleveland Cavaliers vs. New York Knicks",
   category: "Basketball",
   service: "NBA",
-  logo: "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba1.html",
   date: "2025-12-26",
   time: "1:00 AM"
@@ -43,7 +43,7 @@ const channels = [
   title: "San Antonio Spurs vs. Oklahoma City Thunder",
   category: "Basketball",
   service: "NBA",
-  logo: "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba2.html",
   date: "2025-12-26",
   time: "3:30 AM"
@@ -52,7 +52,7 @@ const channels = [
   title: "Dallas Mavericks vs. Golden State Warriors",
   category: "Basketball",
   service: "NBA",
-  logo: "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba3.html",
   date: "2025-12-26",
   time: "6:00 AM"
@@ -61,7 +61,7 @@ const channels = [
   title: "Houston Rockets vs. Los Angeles Lakers",
   category: "Basketball",
   service: "NBA",
-  logo: "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba4.html",
   date: "2025-12-26",
   time: "9:00 AM"
@@ -70,7 +70,7 @@ const channels = [
   title: "Minnesota Timberwolves vs. Denver Nuggets",
   category: "Basketball",
   service: "NBA",
-  logo: "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba5.html",
   date: "2025-12-26",
   time: "11:30 AM"
