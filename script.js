@@ -123,7 +123,7 @@ const channels = [
   {
     title: "Ring V: Night of the Samurai: Inoue vs. Picasso",
     category: "Boxing",
-    service: "Boxing 🥊",
+    service: "Boxing",
     logo: "https://i.ytimg.com/vi/nFTU-T7huDE/maxresdefault.jpg",
     page: "boxing1.html",
     date: "2025-12-27",
