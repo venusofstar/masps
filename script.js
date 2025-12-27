@@ -126,7 +126,7 @@ const channels = [
     service: "Boxing 🥊",
     logo: "https://i.ytimg.com/vi/nFTU-T7huDE/maxresdefault.jpg",
     page: "boxing1.html",
-    date: "2025-12-28",
+    date: "2025-12-27",
     time: "5:00 PM"
   },
   {
