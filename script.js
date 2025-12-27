@@ -127,7 +127,7 @@ const channels = [
     logo: "https://i.ytimg.com/vi/nFTU-T7huDE/maxresdefault.jpg",
     page: "boxing1.html",
     date: "2025-12-27",
-    time: "6:00 PM"
+    time: "8:30 PM"
   },
   {
     title: "WWE: NXT",
