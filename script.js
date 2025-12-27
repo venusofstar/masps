@@ -31,85 +31,85 @@ const channels = [
     time: "7:30 PM"
   },
 {
-  title: "Miami Heat vs. Atlanta Hawks",
+  title: "Dallas Mavericks vs. Sacramento Kings",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba1.html",
-  date: "2025-12-27",
-  time: "8:00 AM"
+  date: "2025-12-28",
+  time: "6:00 AM"
 },
 {
-  title: "Charlotte Hornets vs. Orlando Magic",
+  title: "Denver Nuggets vs. Orlando Magic",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba2.html",
-  date: "2025-12-27",
+  date: "2025-12-28",
   time: "8:00 AM"
-},
-{
-  title: "Toronto Raptors vs. Washington Wizards",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba3.html",
-  date: "2025-12-27",
-  time: "8:00 AM"
-},
-{
-  title: "Boston Celtics vs. Indiana Pacers",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba4.html",
-  date: "2025-12-27",
-  time: "8:00 AM"
-},
-{
-  title: "Philadelphia 76ers vs. Chicago Bulls",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba5.html",
-  date: "2025-12-27",
-  time: "8:30 AM"
-},
-{
-  title: "Milwaukee Bucks vs. Memphis Grizzlies",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba6.html",
-  date: "2025-12-27",
-  time: "9:00 AM"
 },
 {
   title: "Phoenix Suns vs. New Orleans Pelicans",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba7.html",
-  date: "2025-12-27",
+  page: "nba3.html",
+  date: "2025-12-28",
+  time: "8:00 AM"
+},
+{
+  title: "New York Knicks vs. Atlanta Hawks",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba4.html",
+  date: "2025-12-28",
   time: "9:00 AM"
 },
 {
-  title: "Detroit Pistons vs. Utah Jazz",
+  title: "Indiana Pacers vs. Miami Heat",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba5.html",
+  date: "2025-12-28",
+  time: "9:00 AM"
+},
+{
+  title: "Milwaukee Bucks vs. Chicago Bulls",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba6.html",
+  date: "2025-12-28",
+  time: "9:00 AM"
+},
+{
+  title: "Cleveland Cavaliers vs. Houston Rockets",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba7.html",
+  date: "2025-12-28",
+  time: "9:00 AM"
+},
+{
+  title: "Brooklyn Nets vs. Minnesota Timberwolves",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba8.html",
-  date: "2025-12-27",
-  time: "10:30 AM"
+  date: "2025-12-28",
+  time: "9:00 AM"
 },
 {
-  title: "LA Clippers vs. Portland Trail Blazers",
+  title: "Utah Jazz vs. San Antonio Spurs",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba9.html",
-  date: "2025-12-27",
-  time: "11:00 AM"
+  date: "2025-12-28",
+  time: "9:00 AM"
 },
    {
     title: "World Darts Championship",
@@ -184,6 +184,15 @@ const channels = [
     time: "9:00 AM"
   },
   {
+         title: "AEW: World's End",
+    category: "WWE",
+    service: "WWE",
+    logo: "https://api.ppvs.su/assets/thumb/51025483c6980d4b9c1026b629c42537-thumbnail.jpg",
+    page: "wwe-event.html",
+    date: "2025-12-28",
+    time: "8:00 AM"
+  },
+  {
     title: "UFC Fight Night: Royval vs. Kape",
     category: "UFC",
     service: "UFC",
@@ -207,7 +216,7 @@ function getPhilippinesTimestamp(dateStr, timeStr) {
 function getChannelStatus(channel) {
   const now = Date.now();
   const start = getPhilippinesTimestamp(channel.date, channel.time);
-  const end = start + 3 * 60 * 60 * 1000;
+  const end = start + 5 * 60 * 60 * 1000;
 
   if (now < start) return "upcoming";
   if (now >= start && now <= end) return "live";
