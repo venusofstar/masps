@@ -45,7 +45,7 @@ const channels = [
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba2.html",
-  date: "2025-12-28",
+  date: "2025-12-29",
   time: "4:30 AM"
 },
 {
@@ -54,7 +54,7 @@ const channels = [
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba3.html",
-  date: "2025-12-28",
+  date: "2025-12-29",
   time: "7:00 AM"
 },
 {
@@ -63,7 +63,7 @@ const channels = [
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba4.html",
-  date: "2025-12-28",
+  date: "2025-12-29",
   time: "7:00 AM"
 },
 {
@@ -72,7 +72,7 @@ const channels = [
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba5.html",
-  date: "2025-12-28",
+  date: "2025-12-29",
   time: "10:00 AM"
 },
 {
@@ -81,7 +81,7 @@ const channels = [
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba6.html",
-  date: "2025-12-28",
+  date: "2025-12-29",
   time: "10:30 AM"
 },
    {
