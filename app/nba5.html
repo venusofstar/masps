@@ -1,202 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HLS.js Player with All Green Buttons</title>
+const express = require("express");
+const cors = require("cors");
+const fetch = require("node-fetch");
+const http = require("http");
+const https = require("https");
+const { pipeline } = require("stream");
 
-<meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+app.use(cors());
 
-<style>
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: black;
+// =========================
+// TCP / KEEP-ALIVE
+// =========================
+const httpAgent = new http.Agent({ keepAlive: true, maxSockets: 500 });
+const httpsAgent = new https.Agent({ keepAlive: true, maxSockets: 500 });
+
+// =========================
+// ORIGINS
+// =========================
+const ORIGINS = [
+  "http://136.239.158.18:6610",
+  "http://136.239.158.20:6610",
+  "http://136.239.158.30:6610",
+  "http://136.239.173.3:6610",
+  "http://136.158.97.2:6610",
+  "http://136.239.173.10:6610",
+  "http://136.239.158.10:6610",
+  "http://136.239.159.20:6610"
+];
+
+// =========================
+// SESSION STATE
+// =========================
+const sessions = new Map();
+
+function getSession(channelId) {
+  if (!sessions.has(channelId)) {
+    sessions.set(channelId, {
+      originIndex: Math.floor(Math.random() * ORIGINS.length),
+      lastSegment: -1,
+      streamStarted: false
+    });
+  }
+  return sessions.get(channelId);
 }
 
-#player-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: black;
+function rotateOrigin(session) {
+  session.originIndex = (session.originIndex + 1) % ORIGINS.length;
 }
 
-video {
-    width: 100%;
-    height: 100%;
-    background: black;
-}
-
-/* Play button center */
-#play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    padding: 15px 25px;
-    font-size: 24px;
-    border: none;
-    border-radius: 10px;
-    background: rgba(0, 200, 0, 0.7); /* green */
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-#play-btn:hover {
-    background: rgba(0, 200, 0, 1);
-}
-
-/* Unmute top-left green transparent */
-#unmute-btn {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 10;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(0, 200, 0, 0.5);
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-#unmute-btn:hover {
-    background: rgba(0, 200, 0, 1);
-}
-
-/* Fullscreen top-right green */
-#fullscreen-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 10;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(0, 200, 0, 0.5);
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-#fullscreen-btn:hover {
-    background: rgba(0, 200, 0, 1);
-}
-
-/* Buffering spinner */
-#spinner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 15;
-    border: 8px solid rgba(255,255,255,0.2);
-    border-top: 8px solid white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
-    display: none;
-}
-
-@keyframes spin {
-    0% { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
-</style>
-</head>
-
-<body>
-
-<div id="player-container">
-    <video id="player-bet" playsinline></video>
-
-    <button id="play-btn">▶ Play</button>
-    <button id="unmute-btn">🔊 Unmute</button>
-    <button id="fullscreen-btn">⛶</button>
-
-    <div id="spinner"></div>
-</div>
-
-<script>
-let monetagLoaded = false;
-function loadMonetagAds() {
-    if (!monetagLoaded) {
-        monetagLoaded = true;
-        console.log("✅ Loading Monetag Ads safely...");
-        (function(s){ s.dataset.zone='10131170'; s.src='https://al5sm.com/tag.min.js'; document.body.appendChild(s); })(document.createElement('script'));
-        (function(s){ s.dataset.zone='10131172'; s.src='https://groleegni.net/vignette.min.js'; document.body.appendChild(s); })(document.createElement('script'));
-
+// =========================
+// FETCH UPSTREAM
+// =========================
+async function fetchUpstream(urlBuilder, session) {
+  for (let i = 0; i < ORIGINS.length; i++) {
+    const origin = ORIGINS[session.originIndex];
+    try {
+      const res = await fetch(urlBuilder(origin), {
+        agent: origin.startsWith("https") ? httpsAgent : httpAgent,
+        headers: { "User-Agent": "OTT" },
+        timeout: 3000
+      });
+      if (!res.ok) throw new Error();
+      return res;
+    } catch {
+      rotateOrigin(session); // rotate immediately on error
     }
-}
-</script>
-
-<noscript>
-<a href="https://al5sm.com/" target="_blank">
-<img src="https://i.imgur.com/8T3YF0Z.jpeg" alt="Watch Ad" style="width:100%;border-radius:12px;">
-</a>
-</noscript>
-
-<script>
-const streamUrl = "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866925.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=9f8d2be8d595e6aa9e884033b7798dc4";
-
-let hls;
-let video = document.getElementById("player-bet");
-let playBtn = document.getElementById("play-btn");
-let unmuteBtn = document.getElementById("unmute-btn");
-let fullscreenBtn = document.getElementById("fullscreen-btn");
-let spinner = document.getElementById("spinner");
-
-function showSpinner(show) {
-    spinner.style.display = show ? "block" : "none";
+  }
+  throw new Error("All origins failed");
 }
 
-function loadPlayer() {
-    if (hls) { hls.destroy(); hls = null; }
+// =========================
+// ROUTE
+// =========================
+app.get("/:channelId/*", async (req, res) => {
+  const { channelId } = req.params;
+  const path = req.params[0];
+  const session = getSession(channelId);
 
-    hls = new Hls({ enableWorker:true, lowLatencyMode:true, backBufferLength:90 });
-    hls.loadSource(streamUrl);
-    hls.attachMedia(video);
+  const segMatch = path.match(/(\d+)\.(m4s|mp4)/);
+  const segNum = segMatch ? parseInt(segMatch[1]) : null;
 
-    video.addEventListener("waiting", () => showSpinner(true));
-    video.addEventListener("playing", () => showSpinner(false));
+  // =========================
+  // BLOCK REPEATS
+  // =========================
+  if (segNum !== null && segNum <= session.lastSegment) {
+    return res.status(204).end();
+  }
 
-    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.volume = 0;
-        playBtn.style.display = "inline-block";
+  const auth =
+    `JITPDRMType=Widevine&virtualDomain=001.live_hls.zte.com&m4s_min=1&NeedJITP=1`;
+
+  try {
+    const upstream = await fetchUpstream(origin => {
+      const base = `${origin}/001/2/ch0000009099000000${channelId}/`;
+      return path.includes("?") ? `${base}${path}&${auth}` : `${base}${path}?${auth}`;
+    }, session);
+
+    // =========================
+    // MPD
+    // =========================
+    if (path.endsWith(".mpd")) {
+      let mpd = await upstream.text();
+      mpd = mpd.replace(/<BaseURL>.*?<\/BaseURL>/gs, "");
+      mpd = mpd.replace(
+        /<MPD([^>]*)>/,
+        `<MPD$1><BaseURL>${req.protocol}://${req.get("host")}/${channelId}/</BaseURL>`
+      );
+      mpd = mpd.replace(/timeShiftBufferDepth="PT\d+S"/, 'timeShiftBufferDepth="PT15S"');
+      mpd = mpd.replace(/minBufferTime="PT\d+(\.\d+)?S"/, 'minBufferTime="PT0.8S"');
+      return res.type("application/dash+xml").send(mpd);
+    }
+
+    // =========================
+    // INIT SEGMENT
+    // =========================
+    if (path.includes("init")) {
+      return pipeline(upstream.body, res, () => {});
+    }
+
+    // =========================
+    // MEDIA SEGMENT
+    // =========================
+    let bytes = 0;
+    let segmentTimeout = setTimeout(() => {
+      if (bytes === 0) {
+        rotateOrigin(session); // rotate if stalled
+        res.status(204).end();
+      }
+    }, 3000); // 3s stall detection
+
+    pipeline(upstream.body, res, err => {
+      clearTimeout(segmentTimeout);
+      if (!err && bytes > 0 && segNum !== null) {
+        session.lastSegment = segNum;
+        session.streamStarted = true;
+      }
+      if (err || bytes === 0) {
+        rotateOrigin(session); // rotate on error or stall
+        return res.status(204).end();
+      }
     });
 
-    hls.on(Hls.Events.ERROR, (event, data) => {
-        console.warn("HLS.js error:", data);
-        if (data.fatal) setTimeout(loadPlayer, 2000);
-    });
+    upstream.body.on("data", c => (bytes += c.length));
 
-    video.addEventListener("ended", () => setTimeout(loadPlayer, 2000));
-    video.addEventListener("stalled", () => setTimeout(loadPlayer, 2000));
-    video.addEventListener("error", () => setTimeout(loadPlayer, 2000));
-}
-
-// Manual play
-playBtn.addEventListener("click", () => { video.play(); playBtn.style.display="none"; loadMonetagAds(); });
-unmuteBtn.addEventListener("click", () => { video.volume=1; unmuteBtn.style.display="none"; loadMonetagAds(); });
-fullscreenBtn.addEventListener("click", () => {
-    if (!document.fullscreenElement) { video.requestFullscreen().catch(err=>console.warn(err)); }
-    else { document.exitFullscreen(); }
+  } catch {
+    rotateOrigin(session); // rotate if fetch failed
+    return res.status(204).end();
+  }
 });
 
-loadPlayer();
-window.addEventListener('load', ()=>{ console.log("✅ MASPORTS (Monetag Edition) loaded in", performance.now().toFixed(1), "ms"); });
-</script>
-
-</body>
-</html>
+// =========================
+// START SERVER
+// =========================
+app.listen(PORT, () => {
+  console.log("✅ Live DASH proxy fully optimized — rotate on buffering/error, no repeat, forward-only");
+});
