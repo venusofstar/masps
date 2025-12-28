@@ -216,7 +216,7 @@ function getPhilippinesTimestamp(dateStr, timeStr) {
 function getChannelStatus(channel) {
   const now = Date.now();
   const start = getPhilippinesTimestamp(channel.date, channel.time);
-  const end = start + 5 * 60 * 60 * 1000;
+  const end = start + 3 * 60 * 60 * 1000;
 
   if (now < start) return "upcoming";
   if (now >= start && now <= end) return "live";
