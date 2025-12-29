@@ -31,58 +31,103 @@ const channels = [
     time: "7:30 PM"
   },
 {
-  title: "Golden State Warriors vs. Toronto Raptors",
+  title: "Milwaukee Bucks vs. Charlotte Hornets",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba1.html",
-  date: "2025-12-28",
-  time: "4:30 AM"
+  date: "2025-12-30",
+  time: "8:00 AM"
 },
 {
-  title: "Philadelphia 76ers vs. Oklahoma City Thunder",
+  title: "Phoenix Suns vs. Washington Wizards",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba2.html",
-  date: "2025-12-29",
-  time: "4:30 AM"
+  date: "2025-12-30",
+  time: "8:00 AM"
 },
 {
-  title: "Memphis Grizzlies vs. Washington Wizards",
+  title: "Golden State Warriors vs. Brooklyn Nets",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba3.html",
-  date: "2025-12-29",
-  time: "7:00 AM"
+  date: "2025-12-30",
+  time: "8:30 AM"
 },
 {
-  title: "Boston Celtics vs. Portland Trail Blazers",
+  title: "Denver Nuggets vs. Miami Heat",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba4.html",
-  date: "2025-12-29",
-  time: "7:00 AM"
+  date: "2025-12-30",
+  time: "8:30 AM"
 },
 {
-  title: "Detroit Pistons vs. LA Clippers",
+  title: "Orlando Magic vs. Toronto Raptors",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba5.html",
-  date: "2025-12-29",
-  time: "10:00 AM"
+  date: "2025-12-30",
+  time: "8:30 AM"
 },
 {
-  title: "Sacramento Kings vs. Los Angeles Lakers",
+  title: "Minnesota Timberwolves vs. Chicago Bulls",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba6.html",
-  date: "2025-12-29",
-  time: "10:30 AM"
+  date: "2025-12-30",
+  time: "9:00 AM"
+},
+{
+  title: "Indiana Pacers vs. Houston Rockets",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba7.html",
+  date: "2025-12-30",
+  time: "9:00 AM"
+},
+{
+  title: "New York Knicks vs. New Orleans Pelicans",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba8.html",
+  date: "2025-12-30",
+  time: "9:00 AM"
+},
+{
+  title: "Atlanta Hawks vs. Oklahoma City Thunder",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba9.html",
+  date: "2025-12-30",
+  time: "9:00 AM"
+},
+{
+  title: "Cleveland Cavaliers vs. San Antonio Spurs",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba10.html",
+  date: "2025-12-30",
+  time: "9:00 AM"
+},
+{
+  title: "Dallas Mavericks vs. Portland Trail Blazers",
+  category: "Basketball",
+  service: "NBA",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
+  page: "nba11.html",
+  date: "2025-12-30",
+  time: "11:30 AM"
 },
    {
     title: "World Darts Championship",
