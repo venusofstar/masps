@@ -31,103 +31,40 @@ const channels = [
     time: "7:30 PM"
   },
 {
-  title: "Milwaukee Bucks vs. Charlotte Hornets",
+  title: "Philadelphia 76ers vs. Memphis Grizzlies",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba1.html",
-  date: "2025-12-30",
-  time: "8:00 AM"
+  date: "2025-12-31",
+  time: "9:00 AM"
 },
 {
-  title: "Phoenix Suns vs. Washington Wizards",
+  title: "Boston Celtics vs. Utah Jazz",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba2.html",
-  date: "2025-12-30",
-  time: "8:00 AM"
+  date: "2025-12-31",
+  time: "10:00 AM"
 },
 {
-  title: "Golden State Warriors vs. Brooklyn Nets",
+  title: "Detroit Pistons vs. Los Angeles Lakers",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba3.html",
-  date: "2025-12-30",
-  time: "8:30 AM"
+  date: "2025-12-31",
+  time: "11:30 AM"
 },
 {
-  title: "Denver Nuggets vs. Miami Heat",
+  title: "Sacramento Kings vs. LA Clippers",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba4.html",
-  date: "2025-12-30",
-  time: "8:30 AM"
-},
-{
-  title: "Orlando Magic vs. Toronto Raptors",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba5.html",
-  date: "2025-12-30",
-  time: "8:30 AM"
-},
-{
-  title: "Minnesota Timberwolves vs. Chicago Bulls",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba6.html",
-  date: "2025-12-30",
-  time: "9:00 AM"
-},
-{
-  title: "Indiana Pacers vs. Houston Rockets",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba7.html",
-  date: "2025-12-30",
-  time: "9:00 AM"
-},
-{
-  title: "New York Knicks vs. New Orleans Pelicans",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba8.html",
-  date: "2025-12-30",
-  time: "9:00 AM"
-},
-{
-  title: "Atlanta Hawks vs. Oklahoma City Thunder",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba9.html",
-  date: "2025-12-30",
-  time: "9:00 AM"
-},
-{
-  title: "Cleveland Cavaliers vs. San Antonio Spurs",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba10.html",
-  date: "2025-12-30",
-  time: "9:00 AM"
-},
-{
-  title: "Dallas Mavericks vs. Portland Trail Blazers",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba11.html",
-  date: "2025-12-30",
-  time: "11:30 AM"
+  date: "2025-12-31",
+  time: "12:00 PM"
 },
    {
     title: "World Darts Championship",
@@ -135,7 +72,7 @@ const channels = [
     service: "Darts",
     logo: "https://api.ppvs.su/assets/thumb/4e218218e0ba40cac4b0d2867873c96a-thumbnail.jpg",
     page: "darts.html",
-    date: "2025-12-2",
+    date: "2025-12-31",
     time: "8:30 PM"
        },
   {
@@ -153,7 +90,7 @@ const channels = [
     service: "WWE",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZr5Kf-2nSHJw7LJXM_57RfmwVkcXo-pFrQ&usqp=CAU",
     page: "nxt.html",
-    date: "2025-12-17",
+    date: "2025-12-31",
     time: "9:00 AM"
   },
   {
@@ -162,7 +99,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/b406ff9100d91b9210600260350246ff-thumbnail.jpg",
     page: "nxt.html",
-    date: "2025-12-18",
+    date: "2026-01-01",
     time: "9:00 AM"
   },
   {
@@ -171,7 +108,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/78f581ee61589a76f6bcdeb095f95c12-thumbnail.jpg",
     page: "nxt.html",
-    date: "2025-12-19",
+    date: "2026-01-02",
     time: "9:00 AM"
   },
   {
@@ -180,7 +117,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/ec7810b68fc39115ce3510bcf9687a63-thumbnail.jpg",
     page: "nxt.html",
-    date: "2025-12-20",
+    date: "2026-01-03",
     time: "9:00 AM"
   },
   {
@@ -189,7 +126,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/6e29b1bb679dd5133c85bbaadc2c4b13-thumbnail.jpg",
     page: "nxt.html",
-    date: "2025-12-21",
+    date: "2026-01-04",
     time: "9:00 AM"
   },
   {
@@ -198,7 +135,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/880a048062dc9e403943d35cd58747b4-thumbnail.jpg",
     page: "wwe-event.html",
-    date: "2025-12-10",
+    date: "2026-01-05",
     time: "9:00 AM"
   },
   {
