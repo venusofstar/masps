@@ -135,7 +135,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/880a048062dc9e403943d35cd58747b4-thumbnail.jpg",
     page: "wwe-event.html",
-    date: "2026-1-5",
+    date: "2026-12-5",
     time: "9:00 AM"
   },
   {
