@@ -99,7 +99,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/b406ff9100d91b9210600260350246ff-thumbnail.jpg",
     page: "nxt.html",
-    date: "2026-01-01",
+    date: "2026-1-1",
     time: "9:00 AM"
   },
   {
@@ -108,7 +108,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/78f581ee61589a76f6bcdeb095f95c12-thumbnail.jpg",
     page: "nxt.html",
-    date: "2026-01-02",
+    date: "2026-1-2",
     time: "9:00 AM"
   },
   {
@@ -117,7 +117,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/ec7810b68fc39115ce3510bcf9687a63-thumbnail.jpg",
     page: "nxt.html",
-    date: "2026-01-03",
+    date: "2026-1-3",
     time: "9:00 AM"
   },
   {
@@ -126,7 +126,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/6e29b1bb679dd5133c85bbaadc2c4b13-thumbnail.jpg",
     page: "nxt.html",
-    date: "2026-01-04",
+    date: "2026-1-4",
     time: "9:00 AM"
   },
   {
@@ -135,7 +135,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/880a048062dc9e403943d35cd58747b4-thumbnail.jpg",
     page: "wwe-event.html",
-    date: "2026-01-05",
+    date: "2026-1-5",
     time: "9:00 AM"
   },
   {
