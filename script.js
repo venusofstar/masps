@@ -31,86 +31,50 @@ const channels = [
     time: "7:30 PM"
   },
 {
-  title: "Golden State Warriors vs. Charlotte Hornets",
+  title: "Houston Rockets vs. Brooklyn Nets",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba1.html",
   date: "2026-1-1",
-  time: "2:00 AM"
+  time: "7:00 AM"
 },
 {
-  title: "Minnesota Timberwolves vs. Atlanta Hawks",
+  title: "Miami Heat vs. Detroit Pistons",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba2.html",
   date: "2026-1-1",
-  time: "4:00 AM"
+  time: "8:00 AM"
 },
 {
-  title: "Orlando Magic vs. Indiana Pacers",
+  title: "Philadelphia 76ers vs. Dallas Mavericks",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba3.html",
   date: "2026-1-1",
-  time: "4:00 AM"
+  time: "9:30 AM"
 },
 {
-  title: "Phoenix Suns vs. Cleveland Cavaliers",
+  title: "Boston Celtics vs. Sacramento Kings",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba4.html",
   date: "2026-1-1",
-  time: "4:30 AM"
+  time: "11:00 AM"
 },
 {
-  title: "New Orleans Pelicans vs. Chicago Bulls",
+  title: "Utah Jazz vs. LA Clippers",
   category: "Basketball",
   service: "NBA",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
   page: "nba5.html",
   date: "2026-1-1",
-  time: "8:00 AM"
-},
-{
-  title: "New York Knicks vs. San Antonio Spurs",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba6.html",
-  date: "2026-1-1",
-  time: "8:00 AM"
-},
-{
-  title: "Denver Nuggets vs. Toronto Raptors",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba7.html",
-  date: "2026-1-1",
-  time: "8:30 AM"
-},
-{
-  title: "Washington Wizards vs. Milwaukee Bucks",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba8.html",
-  date: "2026-1-1",
-  time: "9:00 AM"
-},
-{
-  title: "Portland Trail Blazers vs. Oklahoma City Thunder",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4xKmG0KlPqh1xXr4lR0-UVnLYUn4eIj5pEReo7dvJg&s=10",
-  page: "nba9.html",
-  date: "2026-1-1",
-  time: "9:00 AM"
-},
+  time: "11:30 AM"
+}, 
    {
     title: "World Darts Championship",
     category: "Darts",
