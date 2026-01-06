@@ -82,7 +82,7 @@ const channels = [
       "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
       "page": "nba6.html",
       "date": "2026-1-7",
-      "time": "12:00 AM"
+      "time": "12:00 PM"
     },
    {
     title: "World Darts Championship",
