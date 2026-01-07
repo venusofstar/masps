@@ -30,59 +30,113 @@ const channels = [
     date: "2025-12-21",
     time: "7:30 PM"
   },
-    {
-      "title": "Cleveland Cavaliers vs. Indiana Pacers",
-      "category": "Basketball",
-      "service": "NBA",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-      "page": "nba1.html",
-      "date": "2026-1-7",
-      "time": "8:00 AM"
-    },
-    {
-      "title": "Orlando Magic vs. Washington Wizards",
-      "category": "Basketball",
-      "service": "NBA",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-      "page": "nba2.html",
-      "date": "2026-1-7",
-      "time": "8:00 AM"
-    },
-    {
-      "title": "San Antonio Spurs vs. Memphis Grizzlies",
-      "category": "Basketball",
-      "service": "NBA",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-      "page": "nba3.html",
-      "date": "2026-1-7",
-      "time": "9:00 AM"
-    },
-    {
-      "title": "Miami Heat vs. Minnesota Timberwolves",
-      "category": "Basketball",
-      "service": "NBA",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-      "page": "nba4.html",
-      "date": "2026-1-7",
-      "time": "9:00 AM"
-    },
-    {
-      "title": "Los Angeles Lakers vs. New Orleans Pelicans",
-      "category": "Basketball",
-      "service": "NBA",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-      "page": "nba5.html",
-      "date": "2026-1-7",
-      "time": "9:00 AM"
-    },
-    {
-      "title": "Dallas Mavericks vs. Sacramento Kings",
-      "category": "Basketball",
-      "service": "NBA",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-      "page": "nba6.html",
-      "date": "2026-1-7",
-      "time": "12:00 PM"
+  {
+    "title": "Toronto Raptors vs. Charlotte Hornets",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba1.html",
+    "date": "2026-1-8",
+    "time": "8:00 AM"
+  },
+  {
+    "title": "Chicago Bulls vs. Detroit Pistons",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba2.html",
+    "date": "2026-1-8",
+    "time": "8:00 AM"
+  },
+  {
+    "title": "Washington Wizards vs. Philadelphia 76ers",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba3.html",
+    "date": "2026-1-8",
+    "time": "8:00 AM"
+  },
+  {
+    "title": "Denver Nuggets vs. Boston Celtics",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba4.html",
+    "date": "2026-1-8",
+    "time": "8:00 AM"
+  },
+  {
+    "title": "New Orleans Pelicans vs. Atlanta Hawks",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba5.html",
+    "date": "2026-1-8",
+    "time": "8:30 AM"
+  },
+  {
+    "title": "Orlando Magic vs. Brooklyn Nets",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba6.html",
+    "date": "2026-1-8",
+    "time": "8:30 AM"
+  },
+  {
+    "title": "LA Clippers vs. New York Knicks",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba7.html",
+    "date": "2026-1-8",
+    "time": "8:30 AM"
+  },
+  {
+    "title": "Phoenix Suns vs. Memphis Grizzlies",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba8.html",
+    "date": "2026-1-8",
+    "time": "9:00 AM"
+  },
+  {
+    "title": "Utah Jazz vs. Oklahoma City Thunder",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba9.html",
+    "date": "2026-1-8",
+    "time": "9:00 AM"
+  },
+  {
+    "title": "Los Angeles Lakers vs. San Antonio Spurs",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba10.html",
+    "date": "2026-1-8",
+    "time": "9:00 AM"
+  },
+  {
+    "title": "Milwaukee Bucks vs. Golden State Warriors",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba11.html",
+    "date": "2026-1-8",
+    "time": "10:30 AM"
+  },
+  {
+    "title": "Houston Rockets vs. Portland Trail Blazers",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba12.html",
+    "date": "2026-1-8",
+    "time": "11:00 AM"
     },
    {
     title: "World Darts Championship",
