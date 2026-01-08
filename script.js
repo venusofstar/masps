@@ -118,7 +118,7 @@ const channels = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba10.html",
     "date": "2026-1-8",
-    "time": "9:00 AM"
+    "time": "10:30 AM"
   },
   {
     "title": "Milwaukee Bucks vs. Golden State Warriors",
