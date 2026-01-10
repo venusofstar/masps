@@ -13,21 +13,21 @@ const channels = [
          },
    {
 
-                   title: "🇵🇭 PBA -TNT vs Magnolia",
+                   title: "🇵🇭 PBA- Genebra vs San Miguel",
     category: "Basketball",
     service: "PBA",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
     page: "pba1.html",
-    date: "2025-12-21",
+    date: "2026-1-11",
     time: "5:15 PM"
   },
   {
-    title: "🇵🇭 PBA - Genebra vs Titan Ultra",
+    title: "🇵🇭 PBA - TNT vs Meralco",
     category: "Basketball",
     service: "PBA",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
     page: "pba2.html",
-    date: "2025-12-21",
+    date: "2026-1-11",
     time: "7:30 PM"
   },
   {
