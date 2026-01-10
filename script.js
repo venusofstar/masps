@@ -108,7 +108,7 @@ const channels = [
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba9.html",
-    "date": "2026-1-8",
+    "date": "2026-1-10",
     "time": "11:00 AM"
   },
   {
@@ -117,7 +117,7 @@ const channels = [
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba10.html",
-    "date": "2026-1-8",
+    "date": "2026-1-10",
     "time": "11:30 AM"
   },
    {
