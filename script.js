@@ -17,8 +17,8 @@ const channels = [
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba1.html",
-    "date: "2026-1-18",
-    "time": "6:00am"
+    "date": "2026-1-18",
+    "time": "6:00 AM"
   },
   {
     "title": "Boston Celtics vs. Atlanta Hawks",
@@ -26,8 +26,8 @@ const channels = [
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba2.html",
-     "date: "2026-1-18",
-    "time": "8:30am"
+    "date": "2026-1-18",
+    "time": "8:30 AM"
   },
   {
     "title": "Indiana Pacers vs. Detroit Pistons",
@@ -35,8 +35,8 @@ const channels = [
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba3.html",
-     "date: "2026-1-18",
-    "time": "8:30am"
+    "date": "2026-1-18",
+    "time": "8:30 AM"
   },
   {
     "title": "Phoenix Suns vs. New York Knicks",
@@ -44,8 +44,8 @@ const channels = [
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba4.html",
-     "date: "2026-1-18",
-    "time": "8:30am"
+    "date": "2026-1-18",
+    "time": "8:30 AM"
   },
   {
     "title": "Oklahoma City Thunder vs. Miami Heat",
@@ -53,8 +53,8 @@ const channels = [
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba5.html",
-     "date: "2026-1-18",
-    "time": "9:00am"
+    "date": "2026-1-18",
+    "time": "9:00 AM"
   },
   {
     "title": "Minnesota Timberwolves vs. San Antonio Spurs",
@@ -62,8 +62,8 @@ const channels = [
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba6.html",
-     "date: "2026-1-18",
-    "time": "9:00am"
+    "date": "2026-1-18",
+    "time": "9:00 AM"
   },
   {
     "title": "Charlotte Hornets vs. Golden State Warriors",
@@ -71,8 +71,8 @@ const channels = [
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba7.html",
-     "date: "2026-1-18",
-    "time": "9:30am"
+    "date": "2026-1-18",
+    "time": "9:30 AM"
   },
   {
     "title": "Washington Wizards vs. Denver Nuggets",
@@ -80,8 +80,8 @@ const channels = [
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba8.html",
-     "date: "2026-1-18",
-    "time": "10:00am"
+    "date": "2026-1-18",
+    "time": "10:00 AM"
   },
   {
     "title": "Los Angeles Lakers vs. Portland Trail Blazers",
@@ -89,8 +89,8 @@ const channels = [
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba9.html",
-     "date: "2026-1-18",
-    "time": "11:00am"
+    "date": "2026-1-18",
+    "time": "11:00 AM"
   },
    {
                          title: "🇵🇭 PBA- Genebra vs San Miguel",
