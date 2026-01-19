@@ -45,7 +45,7 @@ const channels = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba4.html",
     "date": "2026-1-19",
-    "time": "9:30 AM"
+    "time": "9:00 AM"
   },
   {
     "title": "Portland Trail Blazers vs. Sacramento Kings",
@@ -54,7 +54,7 @@ const channels = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba5.html",
     "date": "2026-1-19",
-    "time": "11:00 AM"
+    "time": "10:00 AM"
   },
   {
     "title": "Toronto Raptors vs. Los Angeles Lakers",
@@ -63,7 +63,7 @@ const channels = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba6.html",
     "date": "2026-1-19",
-    "time": "11:30 AM"
+    "time": "10:30 AM"
   },
    {
                          title: "🇵🇭 PBA- Genebra vs San Miguel",
