@@ -1,10 +1,44 @@
 #EXTM3U
 
-############################
-# Phoenix Suns vs. Philadelphia 76ers — 8:00am
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Phoenix Suns vs. Philadelphia 76ers — 8:00am
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-origin=https://gooz.aapmains.net
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
-https://shorten.is/nbaa1
+#EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://api.ppv.to/assets/thumb/552331da56e151f2b876ed369b0de7c0-thumbnail.jpg" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",CHA vs. ORL @ Today @ 8AM
+#EXTVLCOPT:http-origin=https://ppv.to
+#EXTVLCOPT:http-referrer=https://ppv.to
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+http://149.51.149.36:5000/cha-vs-orl-today-8am.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://api.ppv.to/assets/thumb/9acf9dda514219118650f5ac0fa8f0cb-thumbnail.jpg" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",HOU vs. PHI @ Today @ 8AM
+#EXTVLCOPT:http-origin=https://ppv.to
+#EXTVLCOPT:http-referrer=https://ppv.to
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+http://149.51.149.36:5000/hou-vs-phi-today-8am.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://api.ppv.to/assets/thumb/b8f112eab1355bfa8c4f877547ee5032-thumbnail.jpg" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",DEN vs. WAS @ Today @ 8AM
+#EXTVLCOPT:http-origin=https://ppv.to
+#EXTVLCOPT:http-referrer=https://ppv.to
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+http://149.51.149.36:5000/den-vs-was-today-8am.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://api.ppv.to/assets/thumb/abbaf06d257ef27ee0641c87f2f404f6-thumbnail.jpg" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",GSW vs. DAL @ Today @ 8AM
+#EXTVLCOPT:http-origin=https://ppv.to
+#EXTVLCOPT:http-referrer=https://ppv.to
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+http://149.51.149.36:5000/gsw-vs-dal-today-8am.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://api.ppv.to/assets/thumb/918d6c660678f545827cc37aeea6e15b-thumbnail.jpg" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",CHI vs. MIN @ Today @ 9AM
+#EXTVLCOPT:http-origin=https://ppv.to
+#EXTVLCOPT:http-referrer=https://ppv.to
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+http://149.51.149.36:5000/chi-vs-min-today-9am.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://api.ppv.to/assets/thumb/3ede21a0f8c3339975395d5651fe0445-thumbnail.jpg" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",SAS vs. UTA @ Today @ 10AM
+#EXTVLCOPT:http-origin=https://ppv.to
+#EXTVLCOPT:http-referrer=https://ppv.to
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+http://149.51.149.36:5000/sas-vs-uta-today-10am.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://api.ppv.to/assets/thumb/f6cd5a81a9ebb0ad9b4e980d84f1326a-thumbnail.jpg" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",LAL vs. LA Clippers @ Today @ 11AM
+#EXTVLCOPT:http-origin=https://ppv.to
+#EXTVLCOPT:http-referrer=https://ppv.to
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+http://149.51.149.36:5000/lal-vs-la-clippers-today-11am.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://api.ppv.to/assets/thumb/53b0d804d85cbf6778943e9de764c7e4-thumbnail.jpg" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",MIA vs. POR @ Today @ 11AM
+#EXTVLCOPT:http-origin=https://ppv.to
+#EXTVLCOPT:http-referrer=https://ppv.to
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+http://149.51.149.36:5000/mia-vs-por-today-11am.m3u8
 
