@@ -1,7 +1,7 @@
 #EXTM3U
 
 #EXTM3U 
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1NdZYpKFZ6hwzDkY7khnaGjmTIFdeeXCAew&s" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",Waiting Update 
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1NdZYpKFZ6hwzDkY7khnaGjmTIFdeeXCAew&s" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",Waiting Update 
 #EXTVLCOPT:http-origin=https://ppv.to
 #EXTVLCOPT:http-referrer=https://ppv.to
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
