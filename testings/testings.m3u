@@ -1,42 +1,33 @@
 #EXTM3U
 
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",GMA wide
-https://gsattv.akamaized.net/live/media0/gma7/Widevine/gma7.mpd
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",GMA fair
-https://gsattv.akamaized.net/live/media0/gma7/Fairplay/gma7.m3u8
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",KAPAMILYA SD
-#KODIPROP:inputstream.adaptive.license_type=widevine
-#KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
-http://136.158.97.2:6610/001/2/ch00000090990000001248/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMApp6yQcv0eXOeLWPg38eVQ3syK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001545&contentid=ch00000000000000001545&videoid=ch00000090990000001248&recommendtype=0&userid=1939893849220&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=COJ0KA4VBZGXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20448120260101155240039866&ispcode=55
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",TELERADYO
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-a3wg6pwadXme2xCv1mdjj7EaYJYnAyWRXZtk0OvxEw&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",TELERADYO
 #KODIPROP:inputstream.adaptive.license_type=widevine
 #KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
 http://136.239.173.3:6610/001/2/ch00000090990000001249/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAr70JxlZHE85iqqUwY%2BlbxPsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001585&contentid=ch00000000000000001585&videoid=ch00000090990000001249&recommendtype=0&userid=1153314047374&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=N3KWA75YPNMXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20451420260101155240188205&ispcode=55
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",ANC HD
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNymKvRqOFcFKp6-NXILd3-Z2EPM-tIwK4qLcsnPdZA&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",ANC HD
 #KODIPROP:inputstream.adaptive.license_type=widevine
 #KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
 http://136.239.158.18:6610/001/2/ch00000090990000001274/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMArDV011BfpAq1Gp53oE1jzo2%2FjHNuou2Jtxin49X3LQKw%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001693&contentid=ch00000000000000001693&videoid=ch00000090990000001274&recommendtype=0&userid=1652778683930&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=HRKWD59PEBJXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20451220260101155241052582&ispcode=55
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",MYX PH
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKq56aljOgCP7CY9BagVwpn7JxqC5Yj20baA&s" group-title="🇵🇭 PHILIPPINES CHANNEL",MYX PH
 #KODIPROP:inputstream.adaptive.license_type=widevine
 #KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
 http://161.49.17.2:6610/001/2/ch00000090990000001252/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMApnsWBpPBgeEj%2FSfIRshYPE2%2FjHNuou2Jtxin49X3LQKw%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001673&contentid=ch00000000000000001673&videoid=ch00000090990000001252&recommendtype=0&userid=1373226745504&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=IPR0C7CNXRGXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20449220260101155240184175&ispcode=55
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",GMA
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZSp1IPW_ZB7yhQDfggbdNJisQbsFJfpkBL3YLtdBYaQ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",GMA
 #KODIPROP:inputstream.adaptive.license_type=widevine
 #KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
 http://136.158.97.2:6610/001/2/ch00000090990000001093/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAoLvT86fM74ocVChyFS93HUsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001214&contentid=ch00000000000000001214&videoid=ch00000090990000001093&recommendtype=0&userid=1438418816418&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=BLJMICF8T5XXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20448620260101155237367179&ispcode=55
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",GTV
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkQx8ExxdlzMFbXXoJwzPiEV6_S5qCTgp2Q&s" group-title="🇵🇭 PHILIPPINES CHANNEL",GTV
 #KODIPROP:inputstream.adaptive.license_type=widevine
 #KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
 http://136.239.173.10:6610/001/2/ch00000090990000001143/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMArwAtJC%2BsmBQ5ARU076BdkhsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001313&contentid=ch00000000000000001313&videoid=ch00000090990000001143&recommendtype=0&userid=1430687738767&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=VTF7PQ0PAOMXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20446820260101155238998726&ispcode=55
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",TV5 HD
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl34VYbzEbC8o6oY50mvFuxkbr8dfL3j3gQsW2mJ0NPgxYpY4yhULHOJ46&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",TV5 HD
 #KODIPROP:inputstream.adaptive.license_type=widevine
 #KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
 http://136.158.97.2:6610/001/2/ch00000090990000001088/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAoh0xOsaoSFLqA0PEh9gVjisyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001213&contentid=ch00000000000000001213&videoid=ch00000090990000001088&recommendtype=0&userid=1099183361159&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=ZRUDOFEVUJOXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20448320260101155237311409&ispcode=55
