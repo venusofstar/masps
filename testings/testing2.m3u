@@ -1,9 +1,145 @@
 #EXTM3U
 
-#EXTM3U 
-#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1NdZYpKFZ6hwzDkY7khnaGjmTIFdeeXCAew&s" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",Waiting Update 
-#EXTVLCOPT:http-origin=https://ppv.to
-#EXTVLCOPT:http-referrer=https://ppv.to
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
-http://smartst.com/ted.com
+############################
+# Houston Rockets vs. Detroit Pistons — 8:00am
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Houston Rockets vs. Detroit Pistons — 8:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
+https://shorten.is/nbaa1
 
+#EXTINF:-1 tvg-logo="https://frontofficesports.com/wp-content/uploads/2018/03/48ccb3b763a14cbaa90c60a3234340e8.jpg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Houston Rockets vs. Detroit Pistons — 8:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://embedsports.top
+#EXTVLCOPT:http-referrer=https://embedsports.top/
+https://shorten.is/nba1
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/egcnYmO.jpeg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Houston Rockets vs. Detroit Pistons — 8:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://shorten.is/nba1c
+
+############################
+# Phoenix Suns vs. Atlanta Hawks — 8:30am
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Phoenix Suns vs. Atlanta Hawks — 8:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
+https://shorten.is/nbaa2
+
+#EXTINF:-1 tvg-logo="https://frontofficesports.com/wp-content/uploads/2018/03/48ccb3b763a14cbaa90c60a3234340e8.jpg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Phoenix Suns vs. Atlanta Hawks — 8:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://embedsports.top
+#EXTVLCOPT:http-referrer=https://embedsports.top/
+https://shorten.is/nba2
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/egcnYmO.jpeg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Phoenix Suns vs. Atlanta Hawks — 8:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://shorten.is/nba2c
+
+############################
+# Boston Celtics vs. Brooklyn Nets — 8:30am
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Boston Celtics vs. Brooklyn Nets — 8:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
+https://shorten.is/nbaa3
+
+#EXTINF:-1 tvg-logo="https://frontofficesports.com/wp-content/uploads/2018/03/48ccb3b763a14cbaa90c60a3234340e8.jpg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Boston Celtics vs. Brooklyn Nets — 8:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://embedsports.top
+#EXTVLCOPT:http-referrer=https://embedsports.top/
+https://shorten.is/nba3
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/egcnYmO.jpeg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Boston Celtics vs. Brooklyn Nets — 8:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://shorten.is/nba3c
+
+############################
+# Sacramento Kings vs. Cleveland Cavaliers — 8:30am
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Sacramento Kings vs. Cleveland Cavaliers — 8:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
+https://shorten.is/nbaa4
+
+#EXTINF:-1 tvg-logo="https://frontofficesports.com/wp-content/uploads/2018/03/48ccb3b763a14cbaa90c60a3234340e8.jpg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Sacramento Kings vs. Cleveland Cavaliers — 8:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://embedsports.top
+#EXTVLCOPT:http-referrer=https://embedsports.top/
+https://shorten.is/nba4
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/egcnYmO.jpeg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Sacramento Kings vs. Cleveland Cavaliers — 8:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://shorten.is/nba4c
+
+############################
+# New Orleans Pelicans vs. Memphis Grizzlies — 9:00am
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",NBA🏀- New Orleans Pelicans vs. Memphis Grizzlies — 9:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
+https://shorten.is/nbaa5
+
+#EXTINF:-1 tvg-logo="https://frontofficesports.com/wp-content/uploads/2018/03/48ccb3b763a14cbaa90c60a3234340e8.jpg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- New Orleans Pelicans vs. Memphis Grizzlies — 9:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://embedsports.top
+#EXTVLCOPT:http-referrer=https://embedsports.top/
+https://shorten.is/nba5
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/egcnYmO.jpeg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- New Orleans Pelicans vs. Memphis Grizzlies — 9:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://shorten.is/nba5c
+
+############################
+# Indiana Pacers vs. Oklahoma City Thunder — 9:00am
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Indiana Pacers vs. Oklahoma City Thunder — 9:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
+https://shorten.is/nbaa6
+
+#EXTINF:-1 tvg-logo="https://frontofficesports.com/wp-content/uploads/2018/03/48ccb3b763a14cbaa90c60a3234340e8.jpg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Indiana Pacers vs. Oklahoma City Thunder — 9:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://embedsports.top
+#EXTVLCOPT:http-referrer=https://embedsports.top/
+https://shorten.is/nba6
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/egcnYmO.jpeg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Indiana Pacers vs. Oklahoma City Thunder — 9:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://shorten.is/nba6c
+
+############################
+# Denver Nuggets vs. Milwaukee Bucks — 10:30am
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Denver Nuggets vs. Milwaukee Bucks — 10:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
+https://shorten.is/nbaa7
+
+#EXTINF:-1 tvg-logo="https://frontofficesports.com/wp-content/uploads/2018/03/48ccb3b763a14cbaa90c60a3234340e8.jpg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Denver Nuggets vs. Milwaukee Bucks — 10:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://embedsports.top
+#EXTVLCOPT:http-referrer=https://embedsports.top/
+https://shorten.is/nba7
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/egcnYmO.jpeg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Denver Nuggets vs. Milwaukee Bucks — 10:30am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://shorten.is/nba7c
+
+############################
+# Toronto Raptors vs. Portland Trail Blazers — 11:00am
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Toronto Raptors vs. Portland Trail Blazers — 11:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
+https://shorten.is/nbaa8
+
+#EXTINF:-1 tvg-logo="https://frontofficesports.com/wp-content/uploads/2018/03/48ccb3b763a14cbaa90c60a3234340e8.jpg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Toronto Raptors vs. Portland Trail Blazers — 11:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-origin=https://embedsports.top
+#EXTVLCOPT:http-referrer=https://embedsports.top/
+https://shorten.is/nba8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/egcnYmO.jpeg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- Toronto Raptors vs. Portland Trail Blazers — 11:00am
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://shorten.is/nba8c
