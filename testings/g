@@ -1,0 +1,8 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-name="ABS Live" group-title="Live TV",ABS Live
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=bd1f88dd3b254514bf7a113188c10dc2:ea86da60f0116f3b92a86acf45b8e071
+https://abslive.akamaized.net/dash/live/2028189/kc3/manifest.mpd
