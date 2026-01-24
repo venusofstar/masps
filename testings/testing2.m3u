@@ -1,4 +1,4 @@
-
+#EXTM3U
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://api.ppv.to/assets/thumb/552331da56e151f2b876ed369b0de7c0-thumbnail.jpg" group-title="NBA LEAGUE PASS" group-logo="https://i.imgur.com/oPRWh7y.png",CHA vs. ORL @ Today @ 8AM
 #EXTVLCOPT:http-origin=https://ppv.to
