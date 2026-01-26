@@ -20,15 +20,7 @@ const channels = [
   "page": "nba1.html",
   "date": "2026-1-26",
   "time": "4:00 AM"
-},
-{
-  "title": "Denver Nuggets vs. Memphis Grizzlies",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba2.html",
-  "date": "2026-1-26",
-  "time": "4:30 AM"
+
 },
 {
   "title": "Golden State Warriors vs. Minnesota Timberwolves",
@@ -38,15 +30,7 @@ const channels = [
   "page": "nba3.html",
   "date": "2026-1-26",
   "time": "6:30 AM"
-},
-{
-  "title": "Dallas Mavericks vs. Milwaukee Bucks",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba4.html",
-  "date": "2026-1-26",
-  "time": "8:00 AM"
+
 },
 {
   "title": "Toronto Raptors vs. Oklahoma City Thunder",
