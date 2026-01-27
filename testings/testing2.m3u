@@ -124,4 +124,9 @@ https://shorten.is/nba7
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/egcnYmO.jpeg" group-title="🏀 NBA LEAGUE PASS",NBA🏀- LA Clippers vs. Utah Jazz — 11:00 AM
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://shorten.is/nba7c
+https://shorten.is/nba7c?.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/egcnYmO.jpeg" group-title="🏀 NBA LEAGUE PASS", test
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://amg18481-amg18481c1-amgplt0352.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg18481-amg18481c1-amgplt0352/playlist.m3u8
