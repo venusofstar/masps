@@ -1,4 +1,7 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="1086" tvg-logo="https://ottepg8.comclark.com:8443/iptvepg/images/markurl/mark_1723133792284.png" group-title="conv-production",PTVi
+http://136.158.97.2:6410/001/2/ch00000090990000001086?AuthInfo=CfqQ6PIdhPzZ8SbJEgvnDgFvPJUZkFdpJ6EpngD6myWPHhWdwcT67LECtbQtbpZMIofJwiKE0DkQVzfLcdQ5ow%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001175&contentid=ch00000000000000001175&videoid=ch00000090990000001086&recommendtype=0&userid=1878702116443&boid=001&stbid=02:00:00:00:00:00&terminalflag=1&profilecode=&usersessionid=1458207409&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=Widevine&RateLow=1000000&RateHigh=2500000000000000000&IASHttpSessionId=OTT000020260122082803700923
+
 http://136.239.158.30:6610/001/2/ch00000090990000001087/manifest.mpd?AuthInfo=CfqQ6PIdhPzZ8SbJEgvnDgFvPJUZkFdpJ6EpngD6myUMqirb%2FyXwC4KXy2ejh3GbJbNpK52PkkwZrw48jf7mig%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001176&contentid=ch00000000000000001176&videoid=ch00000090990000001087&recommendtype=0&userid=1878702116443&boid=001&stbid=02:00:00:00:00:00&terminalflag=1&profilecode=&usersessionid=1442189552&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=Widevine&RateLow=1000000&RateHigh=2500000000000000000&IASHttpSessionId=OTT000020260121163928649754&ispcode=55
 
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
