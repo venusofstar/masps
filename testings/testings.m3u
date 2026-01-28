@@ -1,8 +1,10 @@
 #EXTM3U
 
 
-
-
+#EXTINF:-1 tvg-logo="" group-title="🇵🇭 PHILIPPINES CHANNEL",VIP PLAYLIST ALWAYS AVAILABLE 
+#KODIPROP:inputstream.adaptive.license_type=widevine
+#KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
+https://example.cpo/ghj.m3u8
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",ANC HD
 #KODIPROP:inputstream.adaptive.license_type=widevine
