@@ -179,7 +179,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/880a048062dc9e403943d35cd58747b4-thumbnail.jpg",
     page: "wwe-event.html",
-    date: "2026-12-5",
+    date: "2025-12-5",
     time: "9:00 AM"
   },
   {
@@ -192,12 +192,12 @@ const channels = [
     time: "8:00 AM"
   },
   {
-    title: "UFC Fight Night: Royval vs. Kape",
+    title: "UFC 325: Volkanovski vs. Lopes 2",
     category: "UFC",
     service: "UFC",
-    logo: "https://www.ufc.com/images/styles/background_image_sm_2x/s3/2025-11/121325-ufc-fight-night-royval-vs-kape-EVENT-ART.jpg",
+    logo: "https://api.ppvs.su/assets/thumb/49ff6d9c50f12a66e31590661fa2ff8a-thumbnail.jpg",
     page: "ufc1.html",
-    date: "2025-12-14",
+    date: "2026-1-31",
     time: "8:00 AM"
   }
 ];
