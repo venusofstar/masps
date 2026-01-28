@@ -1,55 +1,576 @@
 #EXTM3U
 
-############################
-# Portland Trail Blazers vs. Washington Wizards — 8:00 AM
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",Coming Soon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866302.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=5d71365275ff530b19172ee48952ad2f
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",RTS 1
+https://viamotionhsi.netplus.ch/live/eds/rts1hd/browser-dash/rts1hd.mpd
 
-############################
-# Sacramento Kings vs. New York Knicks — 8:30 AM
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",Coming Soon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-origin=https://gooz.aapmains.net
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
-https://pfl4.ascendastro.space/playlist/44102/a.zenithorbit.space/caxi
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",RTS 2
+https://viamotionhsi.netplus.ch/live/eds/rts2hd/browser-dash/rts2hd.mpd
 
-############################
-# Milwaukee Bucks vs. Philadelphia 76ers — 9:00 AM
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",Coming Soon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-origin=https://gooz.aapmains.net
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
-https://red8.ignitequantum.space/playlist/44104/load-playlist
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TF1
+https://viamotionhsi.netplus.ch/live/eds/tf1hd/browser-dash/tf1hd.mpd
 
-############################
-# New Orleans Pelicans vs. Oklahoma City Thunder — 9:00 AM
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",Coming Soon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-origin=https://gooz.aapmains.net
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
-https://red4.voyagerover.shop/playlist/44103/load-playlist
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",FRANCE 2
+https://viamotionhsi.netplus.ch/live/eds/france2hd/browser-dash/france2hd.mpd
 
-############################
-# Detroit Pistons vs. Denver Nuggets — 10:00 AM
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",Coming Soon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-origin=https://gooz.aapmains.net
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
-https://shorten.is/nbaa5
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",FRANCE 3
+https://viamotionhsi.netplus.ch/live/eds/france3hd/browser-dash/france3hd.mpd
 
-############################
-# Brooklyn Nets vs. Phoenix Suns — 10:00 AM
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",Coming Soon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-origin=https://gooz.aapmains.net
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
-https://shorten.is/nbaa6
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",FRANCE 4
+https://viamotionhsi.netplus.ch/live/eds/france4hd/browser-dash/france4hd.mpd
 
-############################
-# LA Clippers vs. Utah Jazz — 11:00 AM
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png" group-title="🏀 NBA LEAGUE PASS",Coming Soon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-origin=https://gooz.aapmains.net
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/
-https://shorten.is/nbaa7
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",FRANCE 5
+https://viamotionhsi.netplus.ch/live/eds/france5hd/browser-dash/france5hd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",M6
+https://viamotionhsi.netplus.ch/live/eds/m6hd/browser-dash/m6hd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CANAL 9
+https://viamotionhsi.netplus.ch/live/eds/canal9/browser-dash/canal9.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",LEMAN BLEU
+https://viamotionhsi.netplus.ch/live/eds/lemanbleu/browser-dash/lemanbleu.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",LA TELE
+https://viamotionhsi.netplus.ch/live/eds/latele/browser-dash/latele.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CANAL ALPHA JU
+https://viamotionhsi.netplus.ch/live/eds/canalalphaju/browser-dash/canalalphaju.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CANAL ALPHA NE
+https://viamotionhsi.netplus.ch/live/eds/canalalphane/browser-dash/canalalphane.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TMC
+https://viamotionhsi.netplus.ch/live/eds/tmc/browser-dash/tmc.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",W9
+https://viamotionhsi.netplus.ch/live/eds/w9/browser-dash/w9.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CARAC 1
+https://viamotionhsi.netplus.ch/live/eds/rougetv/browser-dash/rougetv.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TFX
+https://viamotionhsi.netplus.ch/live/eds/nt1/browser-dash/nt1.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",T18
+https://viamotionhsi.netplus.ch/live/eds/t18/browser-dash/t18.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CSTAR
+https://viamotionhsi.netplus.ch/live/eds/d17/browser-dash/d17.mpd
+
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",RTL9
+https://viamotionhsi.netplus.ch/live/eds/rtl9/browser-dash/rtl9.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",AB1
+https://viamotionhsi.netplus.ch/live/eds/ab1/browser-dash/ab1.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TF1 SERIES FILMS
+https://viamotionhsi.netplus.ch/live/eds/hd1/browser-dash/hd1.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",6TER
+https://viamotionhsi.netplus.ch/live/eds/6ter/browser-dash/6ter.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",RMC LIFE
+https://viamotionhsi.netplus.ch/live/eds/cherie25/browser-dash/cherie25.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",NOVO19
+https://viamotionhsi.netplus.ch/live/eds/novo19/browser-dash/novo19.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",RMC STORY
+https://viamotionhsi.netplus.ch/live/eds/numero23/browser-dash/numero23.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",BLUEZOOM
+https://viamotionhsi.netplus.ch/live/eds/bluezoomfr/browser-dash/bluezoomfr.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",LEQUIPE
+https://viamotionhsi.netplus.ch/live/eds/lequipe21/browser-dash/lequipe21.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",AB3
+https://viamotionhsi.netplus.ch/live/eds/ab3/browser-dash/ab3.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TCM CINEMA
+https://viamotionhsi.netplus.ch/live/eds/tcm/browser-dash/tcm.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CARTOON NETWORK
+https://viamotionhsi.netplus.ch/live/eds/cartoonnetwork/browser-dash/cartoonnetwork.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",GULLI
+https://viamotionhsi.netplus.ch/live/eds/gulli/browser-dash/gulli.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TREK
+https://viamotionhsi.netplus.ch/live/eds/escales/browser-dash/escales.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",RMC DECOUVERTE
+https://viamotionhsi.netplus.ch/live/eds/rmcdecouverte/browser-dash/rmcdecouverte.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",PLANETE +
+https://viamotionhsi.netplus.ch/live/eds/planeteplus/browser-dash/planeteplus.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",ANIMAUX
+https://viamotionhsi.netplus.ch/live/eds/animaux/browser-dash/animaux.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",ARTE
+https://viamotionhsi.netplus.ch/live/eds/artehd/browser-dash/artehd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",BFM TV
+https://viamotionhsi.netplus.ch/live/eds/bfmtv/browser-dash/bfmtv.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",FRANCE 24
+https://viamotionhsi.netplus.ch/live/eds/france24/browser-dash/france24.mpd
+
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",EURONEWS
+https://viamotionhsi.netplus.ch/live/eds/euronews/browser-dash/euronews.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TV5 MONDE FBS
+https://viamotionhsi.netplus.ch/live/eds/tv5mondefbs/browser-dash/tv5mondefbs.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CNEWS
+https://viamotionhsi.netplus.ch/live/eds/itele/browser-dash/itele.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",LCI
+https://viamotionhsi.netplus.ch/live/eds/lci/browser-dash/lci.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",LCP
+https://viamotionhsi.netplus.ch/live/eds/lcp/browser-dash/lcp.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",BFM BUSINESS
+https://viamotionhsi.netplus.ch/live/eds/bfmbusiness/browser-dash/bfmbusiness.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",FRANCE INFO
+https://viamotionhsi.netplus.ch/live/eds/franceinfo/browser-dash/franceinfo.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",MONACO TV
+https://viamotionhsi.netplus.ch/live/eds/monacotv/browser-dash/monacotv.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",RHONE TV
+https://rhonetv.vedge.infomaniak.com/livecast/ik:rhonetv/manifest.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",MEZZO
+https://viamotionhsi.netplus.ch/live/eds/mezzo/browser-dash/mezzo.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CARAC 2
+https://viamotionhsi.netplus.ch/live/eds/onetv/browser-dash/onetv.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CARAC 3
+https://viamotionhsi.netplus.ch/live/eds/lfmtv/browser-dash/lfmtv.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",MTV FRANCE
+https://viamotionhsi.netplus.ch/live/eds/mtvfrance/browser-dash/mtvfrance.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TRACE LATINA
+https://amg01131-tracetv-tracelatina-glewed-vtnk7.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TRACE URBAN
+https://lightning-traceurban-samsungau.amagi.tv/playlist720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",KTO
+https://viamotionhsi.netplus.ch/live/eds/kto/browser-dash/kto.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CANAL+ (PLAGES EN CLAIR)
+https://viamotionhsi.netplus.ch/live/eds/canalplusclair/browser-dash/canalplusclair.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CARAC 4
+https://viamotionhsi.netplus.ch/live/eds/tvsuisseplus/browser-dash/tvsuisseplus.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CARAC 5
+https://viamotionhsi.netplus.ch/live/eds/teleswizz/browser-dash/teleswizz.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",NRTV
+https://viamotionhsi.netplus.ch/live/eds/nrtv/browser-dash/nrtv.mpd
+
+
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",MAXTV
+https://viamotionhsi.netplus.ch/live/eds/maxtv/browser-dash/maxtv.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TVM3
+https://viamotionhsi.netplus.ch/live/eds/tvm3/browser-dash/tvm3.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",8 MONT-BLANC
+https://viamotionhsi.netplus.ch/live/eds/tv8montblanc/browser-dash/tv8montblanc.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",VALTV
+https://viamotionhsi.netplus.ch/live/eds/valtv/browser-dash/valtv.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",COMEDY CENTRAL
+https://viamotionhsi.netplus.ch/live/eds/comedycentral/browser-dash/comedycentral.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",NICKELODEON
+https://viamotionhsi.netplus.ch/live/eds/comedycentralnick/browser-dash/comedycentralnick.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",CANAL J
+https://viamotionhsi.netplus.ch/live/eds/canalj/browser-dash/canalj.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",EQUIDIA
+https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/equidia/live2.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",SRF 1
+https://viamotionhsi.netplus.ch/live/eds/srf1hd/browser-dash/srf1hd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",SRF 2
+https://viamotionhsi.netplus.ch/live/eds/srf2hd/browser-dash/srf2hd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",SRF INFO
+https://viamotionhsi.netplus.ch/live/eds/srfinfo/browser-dash/srfinfo.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",DAS ERSTE
+https://viamotionhsi.netplus.ch/live/eds/daserstehd/browser-dash/daserstehd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",ZDF
+https://viamotionhsi.netplus.ch/live/eds/zdfhd/browser-dash/zdfhd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",ORF 1
+https://viamotionhsi.netplus.ch/live/eds/orf1/browser-dash/orf1.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",RTL
+https://viamotionhsi.netplus.ch/live/eds/rtl/browser-dash/rtl.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",RTL 2
+https://viamotionhsi.netplus.ch/live/eds/rtl2/browser-dash/rtl2.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",PRO SIEBEN
+https://viamotionhsi.netplus.ch/live/eds/pro7/browser-dash/pro7.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",VOX
+https://viamotionhsi.netplus.ch/live/eds/vox/browser-dash/vox.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",3SAT
+https://viamotionhsi.netplus.ch/live/eds/3sathd/browser-dash/3sathd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",SWR BW
+https://viamotionhsi.netplus.ch/live/eds/swrbw/browser-dash/swrbw.mpd
+
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",SUPER RTL
+https://viamotionhsi.netplus.ch/live/eds/superrtl/browser-dash/superrtl.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",KIKA
+https://viamotionhsi.netplus.ch/live/eds/kikahd/browser-dash/kikahd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",SPORT 1
+https://viamotionhsi.netplus.ch/live/eds/sport1/browser-dash/sport1.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",KANAL 9
+https://viamotionhsi.netplus.ch/live/eds/kanal9/browser-dash/kanal9.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TELEBARN
+https://viamotionhsi.netplus.ch/live/eds/telebaern/browser-dash/telebaern.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TV24
+https://viamotionhsi.netplus.ch/live/eds/tv24/browser-dash/tv24.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",BLUE ZOOM
+https://viamotionhsi.netplus.ch/live/eds/bluezoomde/browser-dash/bluezoomde.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",TELEBILINGUE
+https://viamotionhsi.netplus.ch/live/eds/telebielingue/browser-dash/telebielingue.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",ORF 2
+https://viamotionhsi.netplus.ch/live/eds/orf2/browser-dash/orf2.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",RTL NITRO
+https://viamotionhsi.netplus.ch/live/eds/rtlnitro/browser-dash/rtlnitro.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",SIXX
+https://dash4.antik.sk/live/test_sixx_tizen/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",BR SUD
+https://viamotionhsi.netplus.ch/live/eds/brhdsud/browser-dash/brhdsud.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",WDR
+https://viamotionhsi.netplus.ch/live/eds/wdrhd/browser-dash/wdrhd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",NDR
+https://viamotionhsi.netplus.ch/live/eds/ndr/browser-dash/ndr.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",HR
+https://viamotionhsi.netplus.ch/live/eds/hr/browser-dash/hr.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",MDR
+https://viamotionhsi.netplus.ch/live/eds/mdr/browser-dash/mdr.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",ZDF NEO
+https://viamotionhsi.netplus.ch/live/eds/zdfneohd/browser-dash/zdfneohd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",ZDF INFO
+https://viamotionhsi.netplus.ch/live/eds/zdfinfohd/browser-dash/zdfinfohd.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",N24
+https://viamotionhsi.netplus.ch/live/eds/n24/browser-dash/n24.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBykrP3yRALIrxMSas1Q7RwBGmFDRC7Aamea1dlyLD_w&s=10" group-title="NETPLUS",NTV
+https://viamotionhsi.netplus.ch/live/eds/ntv/browser-dash/ntv.mpd
+
+#EXTM3U
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",PHOENIX
+https://viamotionhsi.netplus.ch/live/eds/phoenixhd/browser-dash/phoenixhd.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",EUROSPORT DE
+https://viamotionhsi.netplus.ch/live/eds/eurosportde/browser-dash/eurosportde.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",DISNEY CHANNEL DE
+https://viamotionhsi.netplus.ch/live/eds/disneychannelde/browser-dash/disneychannelde.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",RIC
+https://viamotionhsi.netplus.ch/live/eds/ric/browser-dash/ric.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",DMAX
+https://viamotionhsi.netplus.ch/live/eds/dmax/browser-dash/dmax.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",DELUXE MUSIC
+https://viamotionhsi.netplus.ch/live/eds/deluxemusic/browser-dash/deluxemusic.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",SERVUS TV
+https://viamotionhsi.netplus.ch/live/eds/servustvhd/browser-dash/servustvhd.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",ANIXE
+https://viamotionhsi.netplus.ch/live/eds/anixe/browser-dash/anixe.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",TELE 5
+https://viamotionhsi.netplus.ch/live/eds/tele5/browser-dash/tele5.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",BR ALPHA
+https://viamotionhsi.netplus.ch/live/eds/bralpha/browser-dash/bralpha.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",RBB
+https://viamotionhsi.netplus.ch/live/eds/rbb/browser-dash/rbb.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",ATV 2
+https://viamotionhsi.netplus.ch/live/eds/atv/browser-dash/atv.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",ONE
+https://viamotionhsi.netplus.ch/live/eds/onehd/browser-dash/onehd.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",STAR TV
+https://viamotionhsi.netplus.ch/live/eds/startv/browser-dash/startv.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",RSI LA 1
+https://viamotionhsi.netplus.ch/live/eds/rsila1hd/browser-dash/rsila1hd.mpd
+
+#EXTINF:-1 group-title="🇪🇺 EUROPE TV",RSI LA 2
+https://viamotionhsi.netplus.ch/live/eds/rsila2hd/browser-dash/rsila2hd.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",RAI 1
+https://viamotionhsi.netplus.ch/live/eds/rai1/browser-dash/rai1.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",RAI 2
+https://viamotionhsi.netplus.ch/live/eds/rai2/browser-dash/rai2.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",RAI 3
+https://viamotionhsi.netplus.ch/live/eds/rai3/browser-dash/rai3.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",RAI SPORT
+https://viamotionhsi.netplus.ch/live/eds/raisport1/browser-dash/raisport1.mpd
+
+#EXTM3U
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",RAI NEWS
+https://viamotionhsi.netplus.ch/live/eds/rainews/browser-dash/rainews.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",ITALIA 1
+https://viamotionhsi.netplus.ch/live/eds/italia1/browser-dash/italia1.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",RETE 4
+https://viamotionhsi.netplus.ch/live/eds/rete4/browser-dash/rete4.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",CANALE 5
+https://viamotionhsi.netplus.ch/live/eds/canale5/browser-dash/canale5.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",LA 7
+https://viamotionhsi.netplus.ch/live/eds/la7/browser-dash/la7.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",RAI GULP
+https://viamotionhsi.netplus.ch/live/eds/raigulp/browser-dash/raigulp.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",RAI STORIA
+https://viamotionhsi.netplus.ch/live/eds/raistoria/browser-dash/raistoria.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",RAI SCUOLA
+https://viamotionhsi.netplus.ch/live/eds/raiscuola/browser-dash/raiscuola.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",DMAX ITALIA
+https://viamotionhsi.netplus.ch/live/eds/dmaxitalia/browser-dash/dmaxitalia.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",CANALE ITALIA
+https://viamotionhsi.netplus.ch/live/eds/canaleit/browser-dash/canaleit.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",VIDEO ITALIA
+https://viamotionhsi.netplus.ch/live/eds/videoitalia/browser-dash/videoitalia.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",NOVE
+https://viamotionhsi.netplus.ch/live/eds/nove/browser-dash/nove.mpd
+
+#EXTINF:-1 group-title="🇮🇹 ITALY",LA 7 CINEMA
+https://viamotionhsi.netplus.ch/live/eds/la7d/browser-dash/la7d.mpd
+
+#EXTINF:-1 group-title="🇬🇧 UK",BBC 2
+https://viamotionhsi.netplus.ch/live/eds/bbc2/browser-dash/bbc2.mpd
+
+#EXTINF:-1 group-title="🇬🇧 UK",BBC 3
+https://viamotionhsi.netplus.ch/live/eds/bbc3cbbc/browser-dash/bbc3cbbc.mpd
+
+#EXTINF:-1 group-title="🇬🇧 UK",BBC 4
+https://viamotionhsi.netplus.ch/live/eds/bbc4cbeebies/browser-dash/bbc4cbeebies.mpd
+
+#EXTINF:-1 group-title="🇬🇧 UK",BBC WORLD
+https://viamotionhsi.netplus.ch/live/eds/bbcworld/browser-dash/bbcworld.mpd
+
+#EXTINF:-1 group-title="🇬🇧 UK",ITV 2
+https://viamotionhsi.netplus.ch/live/eds/itv2/browser-dash/itv2.mpd
+
+#EXTINF:-1 group-title="🇬🇧 UK",ITV 3
+https://viamotionhsi.netplus.ch/live/eds/itv3/browser-dash/itv3.mpd
+
+#EXTINF:-1 group-title="🇬🇧 UK",ITV 4
+https://viamotionhsi.netplus.ch/live/eds/itv4/browser-dash/itv4.mpd
+
+
+#EXTM3U
+
+#EXTINF:-1 group-title="🌐 NEWS",SKY NEWS
+https://viamotionhsi.netplus.ch/live/eds/skynews/browser-dash/skynews.mpd
+
+#EXTINF:-1 group-title="🌐 NEWS",CNN
+https://viamotionhsi.netplus.ch/live/eds/cnn/browser-dash/cnn.mpd
+
+#EXTINF:-1 group-title="🌐 NEWS",ALJAZEERA
+https://viamotionhsi.netplus.ch/live/eds/aljazeera/browser-dash/aljazeera.mpd
+
+#EXTINF:-1 group-title="🌐 NEWS",CNBC
+https://viamotionhsi.netplus.ch/live/eds/cnbc/browser-dash/cnbc.mpd
+
+#EXTINF:-1 group-title="🌐 NEWS",BLOOMBERG
+https://viamotionhsi.netplus.ch/live/eds/bloomberg/browser-dash/bloomberg.mpd
+
+#EXTINF:-1 group-title="🌐 DISCOVERY / EDUCATION",QUEST
+https://viamotionhsi.netplus.ch/live/eds/quest/browser-dash/quest.mpd
+
+#EXTINF:-1 group-title="🌐 UK CHANNELS",CHANNEL 4
+https://viamotionhsi.netplus.ch/live/eds/channel4/browser-dash/channel4.mpd
+
+#EXTINF:-1 group-title="🌐 UK CHANNELS",CHANNEL 5
+https://viamotionhsi.netplus.ch/live/eds/channel5/browser-dash/channel5.mpd
+
+#EXTINF:-1 group-title="🌐 UK CHANNELS",FILM 4
+https://viamotionhsi.netplus.ch/live/eds/film4/browser-dash/film4.mpd
+
+#EXTINF:-1 group-title="🌐 UK CHANNELS",MORE 4
+https://viamotionhsi.netplus.ch/live/eds/more4/browser-dash/more4.mpd
+
+#EXTINF:-1 group-title="🌐 LIFESTYLE / FOOD",FOODNETWORK
+https://viamotionhsi.netplus.ch/live/eds/foodnetwork/browser-dash/foodnetwork.mpd
+
+#EXTINF:-1 group-title="🌐 INTERNATIONAL NEWS",CGTN ENG
+https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
+
+#EXTINF:-1 group-title="🌐 INTERNATIONAL NEWS",CGTN FR
+https://francais-livews.cgtn.com/hl...STeV6PO0Ut9r71Uq3k5goCA220802cd/playlist.m3u8
+
+#EXTINF:-1 group-title="🌐 NEWS",TVC NEWS
+https://viamotionhsi.netplus.ch/live/eds/tvcnews/browser-dash/tvcnews.mpd
+
+#EXTINF:-1 group-title="🌐 NEWS / ASIA",NHK WORLD
+https://viamotionhsi.netplus.ch/live/eds/nhk/browser-dash/nhk.mpd
+
+#EXTINF:-1 group-title="🌐 INTERNATIONAL",RTPI
+https://viamotionhsi.netplus.ch/live/eds/rtpi/browser-dash/rtpi.mpd
+
+#EXTINF:-1 group-title="🌐 INTERNATIONAL",REDE REORD INTERNACIONAL
+https://viamotionhsi.netplus.ch/liv...onal/browser-dash/rederecordinternacional.mpd
+
+#EXTINF:-1 group-title="🌐 INTERNATIONAL",TVE INTRNACIONAL
+https://viamotionhsi.netplus.ch/live/eds/tveinternacional/browser-dash/tveinternacional.mpd
+
+#EXTINF:-1 group-title="🌐 SPAIN",CANAL 24 HORAS
+https://viamotionhsi.netplus.ch/live/eds/canal24horas/browser-dash/canal24horas.mpd
+
+#EXTINF:-1 group-title="🌐 SPAIN",ARAGON TV
+https://viamotionhsi.netplus.ch/live/eds/aragontv/browser-dash/aragontv.mpd
+
+
+#EXTM3U
+
+#EXTINF:-1 group-title="🇪🇸 SPAIN",CANAL SUR ANDALUCIA
+https://live-24-canalsur.interactvt...6328c93b9c03e9181b9d0a825147a7d978e69202.m3u8
+
+#EXTINF:-1 group-title="🇪🇸 SPAIN",STAR TVE
+https://viamotionhsi.netplus.ch/live/eds/starhd/browser-dash/starhd.mpd
+
+#EXTINF:-1 group-title="🌐 BRAZIL",RECORD NEWS
+https://viamotionhsi.netplus.ch/live/eds/recordnews/browser-dash/recordnews.mpd
+
+#EXTINF:-1 group-title="🌐 MIDDLE EAST",AL ARABIYA
+https://viamotionhsi.netplus.ch/live/eds/alarabiya/browser-dash/alarabiya.mpd
+
+#EXTINF:-1 group-title="🌐 AFRICA",AL MAGHRIBIA
+https://viamotionhsi.netplus.ch/live/eds/almaghribia/browser-dash/almaghribia.mpd
+
+#EXTINF:-1 group-title="🌐 AFRICA",TUNISIE NATIONALE
+https://viamotionhsi.netplus.ch/live/eds/tunisienationale/browser-HLS8/tunisienationale.m3u8
+
+#EXTINF:-1 group-title="🌐 AFRICA",CANAL ALGERIE
+https://viamotionhsi.netplus.ch/live/eds/canalalgerie/browser-dash/canalalgerie.mpd
+
+#EXTINF:-1 group-title="🌐 AFRICA",AL MASRIYAH
+https://viamotionhsi.netplus.ch/live/eds/almasriyah/browser-dash/almasriyah.mpd
+
+#EXTINF:-1 group-title="🌐 AFRICA",DM SAT
+https://viamotionhsi.netplus.ch/live/eds/dmsat/browser-dash/dmsat.mpd
+
+#EXTINF:-1 group-title="🌐 TURKEY",SHOW TURK
+https://viamotionhsi.netplus.ch/live/eds/showturk/browser-dash/showturk.mpd
+
+#EXTINF:-1 group-title="🌐 EUROPE",EURO D
+https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
+
+#EXTINF:-1 group-title="🌐 POLAND",TV POLONIA
+https://viamotionhsi.netplus.ch/live/eds/tvpolonia/browser-dash/tvpolonia.mpd
+
+#EXTINF:-1 group-title="🌐 HUNGARY",DUNA
+https://viamotionhsi.netplus.ch/live/eds/duna/browser-dash/duna.mpd
+
+#EXTINF:-1 group-title="🌐 BULGARIA",BNT 4
+https://viamotionhsi.netplus.ch/live/eds/bntworld/browser-dash/bntworld.mpd
+
+#EXTINF:-1 group-title="🌐 ROMANIA",TVR INTERNATIONAL
+https://viamotionhsi.netplus.ch/live/eds/tvrinternational/browser-dash/tvrinternational.mpd
+
+#EXTINF:-1 group-title="🌐 NETHERLANDS",BVN
+https://viamotionhsi.netplus.ch/live/eds/bvn/browser-dash/bvn.mpd
+
+#EXTINF:-1 group-title="🌐 KOSOVO",RTK 1
+https://viamotionhsi.netplus.ch/live/eds/rtk1/browser-dash/rtk1.mpd
+
+#EXTINF:-1 group-title="🌐 BOSNIA / SERBIA",RTSSATBR
+https://viamotionhsi.netplus.ch/live/eds/rtssat/browser-dash/rtssat.mpd
+
+#EXTINF:-1 group-title="🌐 MONTENEGRO",RTCG
+https://viamotionhsi.netplus.ch/live/eds/rtcg/browser-dash/rtcg.mpd
+
+#EXTINF:-1 group-title="🌐 TURKEY",TRT TURK
+https://viamotionhsi.netplus.ch/live/eds/trtturk/browser-dash/trtturk.mpd
+
+#EXTINF:-1 group-title="🌐 MOROCCO",2M MAROC
+https://d2qh3gh0k5vp3v.cloudfront.n...c5b73da68a62b09d1/cc-n6pess5lwbghr/2M_ES.m3u8
+
+#EXTINF:-1 group-title="🌐 CHINA",CCTV 4
+https://viamotionhsi.netplus.ch/live/eds/cctv4/browser-dash/cctv4.mpd
+
+
+
+
+
+
+
+
+
+
+
+
+
