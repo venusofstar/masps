@@ -273,63 +273,63 @@ http://136.239.158.18:6610/001/2/ch00000090990000001157/manifest.mpd?AuthInfo=v8
 
 #EXTM3U
 
-#EXTINF:-1 tvg-id="c88dc6c668cac3b468d4a4c7e176ff3d:1aeb739de2c14ed0ad658ca8043208d8" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="Sports",SKY Sports Laliga
+#EXTINF:-1 tvg-id="c88dc6c668cac3b468d4a4c7e176ff3d:1aeb739de2c14ed0ad658ca8043208d8" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="🇬🇧 Sky Sports",SKY Sports Laliga
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=c88dc6c668cac3b468d4a4c7e176ff3d:1aeb739de2c14ed0ad658ca8043208d8
 https://nog-live1-ott.izzigo.tv/2/out/u/dash/SKYSPORTS16HD/default.mpd
 
-#EXTINF:-1 tvg-id="d8d5823d92a9ef9306a4cc4bd634b4b4:df9fbdaa0ef9e905b75f4692f213af19" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="Sports",SKY Sports Bundesliga
+#EXTINF:-1 tvg-id="d8d5823d92a9ef9306a4cc4bd634b4b4:df9fbdaa0ef9e905b75f4692f213af19" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="🇬🇧 Sky Sports",SKY Sports Bundesliga
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=d8d5823d92a9ef9306a4cc4bd634b4b4:df9fbdaa0ef9e905b75f4692f213af19
 https://nog-live1-ott.izzigo.tv/5/out/u/dash/SKYSPORTS24HD/default.mpd
 
-#EXTINF:-1 tvg-id="335511dfdf0d03bc06f1fdead5870b5a:1a022fb33ad3de4d4579b04966551488" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="Sports",SKY Sports
+#EXTINF:-1 tvg-id="335511dfdf0d03bc06f1fdead5870b5a:1a022fb33ad3de4d4579b04966551488" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="🇬🇧 Sky Sports",SKY Sports
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=335511dfdf0d03bc06f1fdead5870b5a:1a022fb33ad3de4d4579b04966551488
 https://nog-live1-ott.izzigo.tv/3/out/u/dash/SKYSPORTSHD/default.mpd
 
-#EXTINF:-1 tvg-id="99909032389c6ee41c3d2f3ec829f804:41fbc575c8ef1cdac1dca990c9a0df9d" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="Sports",SKY Sports 2
+#EXTINF:-1 tvg-id="99909032389c6ee41c3d2f3ec829f804:41fbc575c8ef1cdac1dca990c9a0df9d" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="🇬🇧 Sky Sports",SKY Sports 2
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=99909032389c6ee41c3d2f3ec829f804:41fbc575c8ef1cdac1dca990c9a0df9d
 https://nog-live1-ott.izzigo.tv/3/out/u/dash/SKYSPORTS21HD/default.mpd
 
-#EXTINF:-1 tvg-id="a3636a51227fa338cdddf5892d8a621c:1444ee3c4d08bf39454b914f797968eb" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="Sports",SKY Live Event 1
+#EXTINF:-1 tvg-id="a3636a51227fa338cdddf5892d8a621c:1444ee3c4d08bf39454b914f797968eb" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="🇬🇧 Sky Sports",SKY Live Event 1
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=a3636a51227fa338cdddf5892d8a621c:1444ee3c4d08bf39454b914f797968eb
 https://nog-live1-ott.izzigo.tv/1/out/u/dash/SKYLIVEEVENT1HD/default.mpd
 
-#EXTINF:-1 tvg-id="7239a58fb7388b222a834d549bf18d8f:8b04a883e88dbdebc43673d998ea1cb2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="Sports",SKY Live Event 2
+#EXTINF:-1 tvg-id="7239a58fb7388b222a834d549bf18d8f:8b04a883e88dbdebc43673d998ea1cb2" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="🇬🇧 Sky Sports",SKY Live Event 2
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=7239a58fb7388b222a834d549bf18d8f:8b04a883e88dbdebc43673d998ea1cb2
 https://nog-live1-ott.izzigo.tv/5/out/u/dash/SKYLIVEEVENT2HD/default.mpd
 
-#EXTINF:-1 tvg-id="561a21ad50f806b77d328dedbe59f93e:edf3e70cc9de81a73e2a00fe9c0611a8" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="Sports",SKY Live Event 3
+#EXTINF:-1 tvg-id="561a21ad50f806b77d328dedbe59f93e:edf3e70cc9de81a73e2a00fe9c0611a8" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="🇬🇧 Sky Sports",SKY Live Event 3
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=561a21ad50f806b77d328dedbe59f93e:edf3e70cc9de81a73e2a00fe9c0611a8
 https://nog-live1-ott.izzigo.tv/1/out/u/dash/SKYLIVEEVENT3HD/default.mpd
 
-#EXTINF:-1 tvg-id="a931b2e953695ffb0cfd38573e97ba33:4ddd99cc4fb168d7f0e20be8a3287100" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="Sports",SKY Live Event 4
+#EXTINF:-1 tvg-id="a931b2e953695ffb0cfd38573e97ba33:4ddd99cc4fb168d7f0e20be8a3287100" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="🇬🇧 Sky Sports",SKY Live Event 4
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=a931b2e953695ffb0cfd38573e97ba33:4ddd99cc4fb168d7f0e20be8a3287100
 https://nog-live1-ott.izzigo.tv/1/out/u/dash/SKYLIVEEVENT4HD/default.mpd
 
-#EXTINF:-1 tvg-id="6c89e84c52eae0428b7d2c8e887a48ec:758a1484f920a0f1aa73e95d5f2be225" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="Sports",SKY Live Event 5
+#EXTINF:-1 tvg-id="6c89e84c52eae0428b7d2c8e887a48ec:758a1484f920a0f1aa73e95d5f2be225" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6c/Sky_Sports_logo.png" group-title="🇬🇧 Sky Sports",SKY Live Event 5
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
