@@ -10,6 +10,7 @@ https://abslive.akamaized.net/dash/live/2028189/kc3/manifest.mpd
 
 #EXTINF:-1 tvg-logo="https://frontofficesports.com/wp-content/uploads/2018/03/48ccb3b763a14cbaa90c60a3234340e8.jpg" group-title="SS",- tv0am
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://emby.bae.appboxes.co/emby/videos/139712/original.mkv?DeviceId=32e6b419805b5cfd&MediaSourceId=mediasource_139712&PlaySessionId=a799477dd6204563af98492f90f1c38d&api_key=5686c04b34a24c78a196c9f79b8aff56
 https://emby.bae.appboxes.co/emby/videos/139712/original.mkv?api_key=5686c04b34a24c78a196c9f79b8aff56
 
 
