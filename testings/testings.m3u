@@ -34,7 +34,8 @@ http://136.158.97.2:6610/001/2/ch00000090990000001093/manifest.mpd?AuthInfo=v87H
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",GTV
 #KODIPROP:inputstream.adaptive.license_type=widevine
 #KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
-http://136.239.158.30:6610/001/2/ch00000090990000001143/manifest.mpd?AuthInfo=Tajaqa%2FdPohvabxHbYUVrZLZDsxmxbufdpmz6ykZVY7wAtJC%2BsmBQ5ARU076BdkhW2QukEgPdTHaavrsdcsbbg%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001313&contentid=ch00000000000000001313&videoid=ch00000090990000001143&recommendtype=0&userid=1878702116443&boid=001&stbid=02:00:00:00:00:00&terminalflag=1&profilecode=&usersessionid=1025965250&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
+https://streams.honortvph.qzz.io/stream/live/gtv/master.m3u8?u=honortvph&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793
+
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",TV5 HD
 #KODIPROP:inputstream.adaptive.license_type=widevine
 #KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
