@@ -189,7 +189,7 @@ const channels = [
     logo: "https://api.ppvs.su/assets/thumb/c69e6c0aec8f7f56e2e12c67a0d0d32d-thumbnail.jpg",
     page: "wwe-event.html",
     date: "2026-2-1",
-    time: "2:00 AM"
+    time: "3:00 AM"
   },
   {
     title: "UFC 325: Volkanovski vs. Lopes 2",
