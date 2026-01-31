@@ -143,7 +143,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/6e29b1bb679dd5133c85bbaadc2c4b13-thumbnail.jpg",
     page: "nxt.html",
-    date: "2026-1-4",
+    date: "2026-2-1",
     time: "9:00 AM"
   },
   {
@@ -152,7 +152,7 @@ const channels = [
     service: "WWE",
     logo: "https://api.ppvs.su/assets/thumb/880a048062dc9e403943d35cd58747b4-thumbnail.jpg",
     page: "wwe-event.html",
-    date: "2025-12-5",
+    date: "2026-1-1",
     time: "9:00 AM"
   },
   {
