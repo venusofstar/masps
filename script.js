@@ -197,7 +197,7 @@ const channels = [
     service: "UFC",
     logo: "https://api.ppvs.su/assets/thumb/49ff6d9c50f12a66e31590661fa2ff8a-thumbnail.jpg",
     page: "ufc1.html",
-    date: "2026-1-31",
+    date: "2026-2-1",
     time: "8:00 AM"
   }
 ];
