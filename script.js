@@ -183,13 +183,13 @@ const channels = [
     time: "9:00 AM"
   },
   {
-         title: "AEW: World's End",
+         title: "WWE: Royal Rumble",
     category: "WWE",
     service: "WWE",
-    logo: "https://api.ppvs.su/assets/thumb/51025483c6980d4b9c1026b629c42537-thumbnail.jpg",
+    logo: "https://api.ppvs.su/assets/thumb/c69e6c0aec8f7f56e2e12c67a0d0d32d-thumbnail.jpg",
     page: "wwe-event.html",
-    date: "2025-12-28",
-    time: "8:00 AM"
+    date: "2025-2-1",
+    time: "2:00 AM"
   },
   {
     title: "UFC 325: Volkanovski vs. Lopes 2",
