@@ -171,7 +171,7 @@ const channels = [
     logo: "https://api.ppvs.su/assets/thumb/67c090f1b8ba28977641444966cb44e3-thumbnail.jpg",
     page: "boxing1.html",
     date: "2026-2-1",
-    time: "9:00 AM"
+    time: "11:00 AM"
   },
   {
     title: "UFC 325: Volkanovski vs. Lopes 2",
@@ -180,7 +180,7 @@ const channels = [
     logo: "https://api.ppvs.su/assets/thumb/49ff6d9c50f12a66e31590661fa2ff8a-thumbnail.jpg",
     page: "ufc1.html",
     date: "2026-2-1",
-    time: "8:00 AM"
+    time: "11:00 AM"
   }
 ];
 
