@@ -169,7 +169,7 @@ const channels = [
     category: "Boxing",
     service: "Boxing",
     logo: "https://api.ppvs.su/assets/thumb/67c090f1b8ba28977641444966cb44e3-thumbnail.jpg",
-    page: "ufc1.html",
+    page: "boxing1.html",
     date: "2026-2-1",
     time: "9:00 AM"
   },
