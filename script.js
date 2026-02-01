@@ -163,6 +163,15 @@ const channels = [
     page: "wwe-event.html",
     date: "2026-2-1",
     time: "3:00 AM"
+       },
+  {
+    title: "Teofimo Lopez vs Shakur Stevenson",
+    category: "Boxing",
+    service: "Boxing",
+    logo: "https://api.ppvs.su/assets/thumb/67c090f1b8ba28977641444966cb44e3-thumbnail.jpg",
+    page: "ufc1.html",
+    date: "2026-2-1",
+    time: "9:00 AM"
   },
   {
     title: "UFC 325: Volkanovski vs. Lopes 2",
