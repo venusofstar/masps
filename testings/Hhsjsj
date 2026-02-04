@@ -1,0 +1,73 @@
+#EXTM3U
+
+#EXTINF:-1 group-title="Entertainment",8TV
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=da1cb24f55db4ae1b32319c365920539:721af66b9c3e8c4166b8b4586d1fbefd
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(8TV)/master.mpd
+
+#EXTINF:-1 group-title="Entertainment",ABC
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=a6349d2165514fa38fb6f1348679ba3:1db75d2e54ff52806d84af64499685ff
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(ABC)/master.mpd
+
+#EXTINF:-1 group-title="News",ALJAZEERA
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=b5c0678dad08451e955a53ee95aff30f:a05ca10851a61c2933243b7169be6679
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(aljazeera)/master.mpd
+
+#EXTINF:-1 group-title="Entertainment",ANIMAX
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=4bd30e54571144eb9168a1a7e5915f75:f8cb24e54d555381a326c157b5dfaa59
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(animax)/master.mpd
+
+#EXTINF:-1 group-title="Lifestyle",ASIAN FOOD NETWORK
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=d6f69611e9e94a1cba591f855b191362:bbd319d36c1728a8e4cc6bb4a8ad12f4
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(asianfoodnetwork)/master.mpd
+
+#EXTINF:-1 group-title="Entertainment",AXN
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=4345340d92d64788bef7d99594cbe643	c67f6e21ebbd520e31d4141b771d3867
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(axn)/master.mpd
+
+#EXTINF:-1 group-title="Documentary",BBC EARTH
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=5381b805544744d8b6344de564d327f5:d5fa0ec68c6a7c86c19f630cfd353606
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(bbcearth)/master.mpd
+
+#EXTINF:-1 group-title="Lifestyle",BBC LIFESTYLE
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=2610c65bf27740e29f9cc41dc3549781:12e8aaacff0fc2bd780058a5c6883a1c
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(bbclife)/master.mpd
+
+#EXTINF:-1 group-title="Sports",BEIN SPORTS 1
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=d48b6088253c443eb94d27cb7828f707:e9776141f9e949273a072b0e035070ab
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(bein1)/master.mpd
+
+#EXTINF:-1 group-title="Sports",BEIN SPORTS 2
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=efa6ff1acefa43048e8b7adc21d98871:5d0f448b52a92035e3763c4a60275933
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(bein2)/master.mpd
+
+#EXTINF:-1 group-title="Sports",BEIN SPORTS 3
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=816ee2f7c19f49ed84276f34541b465b:ca764a9973b6123a1112cffd3b32010d
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(bein3)/master.mpd
+
+#EXTINF:-1 group-title="Sports",BEIN SPORTS 4
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=d561ff976397473e9b456b44cdffcdd2:2b6cff42f7fae7e8bc32f3d5c62dc3c2
+https://unifi-live2.secureswiftcontent.com/Content/DASH/Live/channel(bein4)/master.mpd
