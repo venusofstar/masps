@@ -12,75 +12,57 @@ const channels = [
     time: "2:15 PM"
   },
 {
-  "title": "Washington Wizards vs. Detroit Pistons",
+  "title": "Miami Heat vs. Boston Celtics",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba1.html",
-  "date": "2026-02-06",
-  "time": "8:00 AM"
+  "date": "2026-02-07",
+  "time": "8:30 AM"
 },
 {
-  "title": "Brooklyn Nets vs. Orlando Magic",
+  "title": "New York Knicks vs. Detroit Pistons",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba2.html",
-  "date": "2026-02-06",
-  "time": "8:00 AM"
+  "date": "2026-02-07",
+  "time": "8:30 AM"
 },
 {
-  "title": "Utah Jazz vs. Atlanta Hawks",
+  "title": "Indiana Pacers vs. Milwaukee Bucks",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba3.html",
-  "date": "2026-02-06",
-  "time": "8:30 AM"
+  "date": "2026-02-07",
+  "time": "9:00 AM"
 },
 {
-  "title": "Chicago Bulls vs. Toronto Raptors",
+  "title": "New Orleans Pelicans vs. Minnesota Timberwolves",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba4.html",
-  "date": "2026-02-06",
-  "time": "8:30 AM"
+  "date": "2026-02-07",
+  "time": "9:00 AM"
 },
 {
-  "title": "Charlotte Hornets vs. Houston Rockets",
+  "title": "Memphis Grizzlies vs. Portland Trail Blazers",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba5.html",
-  "date": "2026-02-06",
-  "time": "9:00 AM"
+  "date": "2026-02-07",
+  "time": "11:00 AM"
 },
 {
-  "title": "San Antonio Spurs vs. Dallas Mavericks",
+  "title": "LA Clippers vs. Sacramento Kings",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba6.html",
-  "date": "2026-02-06",
-  "time": "9:30 AM"
-},
-{
-  "title": "Golden State Warriors vs. Phoenix Suns",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba7.html",
-  "date": "2026-02-06",
-  "time": "11:00 AM"
-},
-{
-  "title": "Philadelphia 76ers vs. Los Angeles Lakers",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba8.html",
-  "date": "2026-02-06",
+  "date": "2026-02-07",
   "time": "11:00 AM"
 },
    {
