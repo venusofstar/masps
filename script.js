@@ -192,12 +192,12 @@ const channels = [
     time: "1:00 PM"
   },
   {
-    title: "UFC 325: Volkanovski vs. Lopes 2",
+    title: "UFC Fight Night: Bautista vs. Oliveira",
     category: "UFC",
     service: "UFC",
     logo: "https://api.ppvs.su/assets/thumb/49ff6d9c50f12a66e31590661fa2ff8a-thumbnail.jpg",
     page: "ufc1.html",
-    date: "2026-2-1",
+    date: "2026-2-8",
     time: "1:00 PM"
   }
 ];
