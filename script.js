@@ -216,7 +216,7 @@ const channels = [
     logo: "https://api.ppvs.su/assets/thumb/49ff6d9c50f12a66e31590661fa2ff8a-thumbnail.jpg",
     page: "ufc1.html",
     date: "2026-2-8",
-    time: "1:00 PM"
+    time: "8:40 AM"
   }
 ];
 
