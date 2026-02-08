@@ -17,7 +17,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba1.html",
-  "date": "2026-02-08",
+  "date": "2026-02-09",
   "time": "1:30 AM"
 },
 {
@@ -26,7 +26,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba2.html",
-  "date": "2026-02-08",
+  "date": "2026-02-09",
   "time": "3:00 AM"
 },
 {
@@ -35,7 +35,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba3.html",
-  "date": "2026-02-08",
+  "date": "2026-02-09",
   "time": "4:00 AM"
 },
 {
@@ -44,7 +44,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba4.html",
-  "date": "2026-02-08",
+  "date": "2026-02-09",
   "time": "4:00 AM"
 },
 
