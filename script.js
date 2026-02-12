@@ -17,7 +17,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba1.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "8:00 AM"
 },
 {
@@ -26,7 +26,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba2.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "8:00 AM"
 },
 {
@@ -35,7 +35,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba3.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "8:00 AM"
 },
 {
@@ -44,7 +44,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba4.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "8:30 AM"
 },
 {
@@ -53,7 +53,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba5.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "8:30 AM"
 },
 {
@@ -62,7 +62,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba6.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "8:30 AM"
 },
 {
@@ -71,7 +71,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba7.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "8:30 AM"
 },
 {
@@ -80,7 +80,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba8.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "9:00 AM"
 },
 {
@@ -89,7 +89,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba9.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "9:00 AM"
 },
 {
@@ -98,7 +98,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba10.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "9:00 AM"
 },
 {
@@ -107,7 +107,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba11.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "10:00 AM"
 },
 {
@@ -116,7 +116,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba12.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "10:00 AM"
 },
 {
@@ -125,7 +125,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba13.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "10:00 AM"
 },
 {
@@ -134,7 +134,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   "page": "nba14.html",
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "time": "11:00 AM"
 },
 
@@ -144,7 +144,7 @@ const channels = [
     service: "PBA",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
     page: "pba1.html",
-    date: "2026-1-11",
+    date: "2026-1-12",
     time: "5:15 PM"
   },
   {
