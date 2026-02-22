@@ -171,7 +171,7 @@ const channels = [
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR6sImAOLVQCZWq3sO1agCN79VtITI8kDca549RaDQPQ&s=10",
     page: "boxing1.html",
     date: "2026-2-22",
-    time: "11:00 AM"
+    time: "1:00 PM"
   },
   {
     title: "UFC Fight Night: Bautista vs. Oliveira",
