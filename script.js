@@ -168,7 +168,7 @@ const channels = [
     title: "Ryan Garcia Vs Mario Barrios",
     category: "Boxing",
     service: "Boxing",
-    logo: "https://api.ppvs.su/assets/thumb/67c090f1b8ba28977641444966cb44e3-thumbnail.jpg",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR6sImAOLVQCZWq3sO1agCN79VtITI8kDca549RaDQPQ&s=10",
     page: "boxing1.html",
     date: "2026-2-22",
     time: "10:00 AM"
