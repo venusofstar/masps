@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>boxing</title>
 
+<style>
+  /* ===== DARK THEME ===== */
+  body {
+    font-family: Arial, sans-serif;
+    background: #0d0d0d; /* Deep dark background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
+
+  /* Back button */
+  .back-button {
+    width: 95%;
+    max-width: 1000px;
+    margin: 15px 0;
+    display: flex;
+  }
+
+  .back-button button {
+    background: #222;
+    border: 1px solid #444;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.2s;
+  }
+  .back-button button:hover {
+    background: #333;
+  }
+
+  /* Player */
+  .player-container {
+    width: 95%;
+    max-width: 1000px;
+    background: #111;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  }
+
+  iframe {
+    width: 100%;
+    height: 50vw;
+    max-height: 600px;
+    border: none;
+    border-radius: 12px;
+  }
+
+  /* Server buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 15px 0;
+  }
+
+  .buttons button {
+    background: #1e1e1e;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+
+  .buttons button:hover {
+    background: #333;
+    border-color: #777;
+  }
+
+  /* Registration */
+  #registerForm {
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto;
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #registerForm input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #1a1a1a;
+    color: #fff;
+  }
+
+  #registerForm button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #222;
+    color: white;
+    transition: 0.2s;
+  }
+  #registerForm button:hover {
+    background: #333;
+  }
+
+  /* Chat */
+  .chat {
+    width: 95%;
+    max-width: 1000px;
+    background: #111;
+    padding: 10px;
+    border-radius: 12px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+  }
+
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 5px;
+  }
+
+  .messages div {
+    background: #262626;
+    margin-bottom: 6px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #ddd;
+    font-weight: bold;
+    word-wrap: break-word;
+  }
+
+  .messages .self {
+    background: #0a84ff; /* blue bubble */
+    color: white;
+    align-self: flex-end;
+  }
+
+  /* Chat input area */
+  .chat-box {
+    display: flex;
+    gap: 10px;
+  }
+
+  .chat-box input {
+    padding: 10px;
+    border-radius: 6px;
+    background: #1a1a1a;
+    color: white;
+    border: 1px solid #444;
+    flex: 1;
+    font-size: 1rem;
+  }
+
+  .chat-box button {
+    padding: 10px 18px;
+    border-radius: 6px;
+    background: #0a84ff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .chat-box button:hover {
+    background: #006edc;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    iframe { height: 55vw; }
+    .chat { height: 300px; }
+  }
+  @media (max-width: 480px) {
+    iframe { height: 65vw; }
+    .chat { height: 250px; }
+    .buttons button, .back-button button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Back button -->
+<div class="back-button">
+  <button onclick="window.location.href='index.html'">← Back to Home</button>
+</div>
+
+<!-- Video player -->
+<div class="player-container">
+  <iframe id="player" src="https://streams.center/embed/ch47.php" allowfullscreen></iframe>
+  <div class="buttons">
+    <button onclick="switchServer('https://streams.center/embed/ch47.php')">Server 1</button>
+    <button onclick="switchServer('https://modistreams.org/embed/ring-6-teofimo-vs.-stevenson')">Server 2</button>
+  </div>
+</div>
+
+<!-- Registration -->
+<div id="registerForm">
+  <input type="text" id="displayNameInput" placeholder="Enter your display name">
+  <button onclick="registerUser()">Register</button>
+</div>
+
+<!-- Chat -->
+<div class="chat" id="chatContainer">
+  <div id="messages" class="messages"></div>
+
+  <div class="chat-box" id="chatBox" style="display:none;">
+    <input type="text" id="chatInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script type="module" src="nba1-script.js"></script>
+
+</body>
+</html>
