@@ -165,7 +165,7 @@ const channels = [
     time: "3:00 AM"
        },
   {
-    title: "Teofimo Lopez vs Shakur Stevenson",
+    title: "Ryan Garcia Vs Mario Barrios",
     category: "Boxing",
     service: "Boxing",
     logo: "https://api.ppvs.su/assets/thumb/67c090f1b8ba28977641444966cb44e3-thumbnail.jpg",
