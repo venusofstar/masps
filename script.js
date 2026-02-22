@@ -170,8 +170,8 @@ const channels = [
     service: "Boxing",
     logo: "https://api.ppvs.su/assets/thumb/67c090f1b8ba28977641444966cb44e3-thumbnail.jpg",
     page: "boxing1.html",
-    date: "2026-2-1",
-    time: "1:00 PM"
+    date: "2026-2-22",
+    time: "10:00 AM"
   },
   {
     title: "UFC Fight Night: Bautista vs. Oliveira",
