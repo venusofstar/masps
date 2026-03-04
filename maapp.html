@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>MASPORTS</title>
+
+<!-- ✅ Monetag Verification -->
+<meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0d0d0d;
+  color:#fff;
+}
+
+.title{
+  text-align:center;
+  font-size:28px;
+  padding:15px;
+  font-weight:bold;
+  background:#111;
+}
+
+.category-buttons{
+  display:flex;
+  overflow-x:auto;
+  padding:10px;
+  gap:10px;
+}
+
+.category-buttons button{
+  background:#1e1e1e;
+  color:white;
+  border:none;
+  padding:8px 14px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+#channels-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+  gap:12px;
+  padding:15px;
+}
+
+.channel{
+  background:#1a1a1a;
+  border-radius:12px;
+  padding:10px;
+  text-align:center;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.channel:hover{
+  background:#292929;
+  transform:scale(1.05);
+}
+
+.channel img{
+  width:100%;
+  height:80px;
+  object-fit:contain;
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">MASPORTS</div>
+
+<!-- Category Buttons -->
+<div class="category-buttons" id="categoryButtons">
+  <button>NBA</button>
+  <button>Boxing</button>
+  <button>UFC</button>
+  <button>Football</button>
+</div>
+
+<!-- Channels Container -->
+<div id="channels-container">
+
+  <div class="channel" onclick="openChannel('nba1')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png">
+    <p>NBA Live</p>
+  </div>
+
+  <div class="channel" onclick="openChannel('boxing1')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Boxing_gloves.svg/512px-Boxing_gloves.svg.png">
+    <p>Boxing Event</p>
+  </div>
+
+</div>
+
+<script>
+/* =========================
+   CHANNEL FUNCTION
+========================= */
+function openChannel(channel){
+  alert("Opening " + channel);
+
+  // ✅ Load Monetag ONLY when user opens a channel
+  loadMonetagAds();
+}
+
+/* =========================
+   SMART MONETAG LOADER
+========================= */
+let monetagLoaded = false;
+
+function loadMonetagAds(){
+  if(monetagLoaded) return;
+  monetagLoaded = true;
+
+  console.log("✅ Loading Monetag Vignette...");
+
+  const s = document.createElement("script");
+  s.dataset.zone = "10131172"; // Use your best performing zone
+  s.src = "https://groleegni.net/vignette.min.js";
+  s.async = true;
+
+  document.body.appendChild(s);
+}
+
+/* =========================
+   PERFORMANCE DEBUG
+========================= */
+window.addEventListener('load', () => {
+  console.log("✅ MASPORTS loaded in", performance.now().toFixed(1), "ms");
+});
+</script>
+
+<!-- ✅ Fallback Banner -->
+<noscript>
+  <a href="https://al5sm.com/" target="_blank">
+    <img src="https://i.imgur.com/8T3YF0Z.jpeg" 
+         alt="Watch Ad" 
+         style="width:100%;border-radius:12px;">
+  </a>
+</noscript>
+
+</body>
+</html>
