@@ -201,12 +201,12 @@ const channels = [
     time: "1:00 PM"
   },
   {
-    title: "UFC Fight Night: Bautista vs. Oliveira",
+    title: "UFC 326: Holloway vs. Oliveira 2",
     category: "UFC",
     service: "UFC",
     logo: "https://api.ppvs.su/assets/thumb/49ff6d9c50f12a66e31590661fa2ff8a-thumbnail.jpg",
     page: "ufc1.html",
-    date: "2026-2-8",
+    date: "2026-3-8",
     time: "8:40 AM"
   }
 ];
