@@ -141,7 +141,7 @@ const channels = [
     title: "WWE: Friday Night Smackdown",
     category: "WWE",
     service: "WWE",
-    logo: "https://api.ppvs.su/assets/thumb/ec7810b68fc39115ce3510bcf9687a63-thumbnail.jpg",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAaZHJg-QWJf9QqQoxudGrlWjiKelqkIgq3pmHr0Qbkdop45j5P07U-DQ&s=10",
     page: "nxt.html",
     date: "2026-3-7",
     time: "9:00 AM"
@@ -150,7 +150,7 @@ const channels = [
     title: "WWE: Saturday Night Collision",
     category: "WWE",
     service: "WWE",
-    logo: "https://api.ppvs.su/assets/thumb/6e29b1bb679dd5133c85bbaadc2c4b13-thumbnail.jpg",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9bf-Tv7mr4R5vSi8hzCiL7YVQbwAWemQTdAclsG6hQaPtyiYtYX3GLrGA&s=10",
     page: "nxt.html",
     date: "2026-3-8",
     time: "9:00 AM"
