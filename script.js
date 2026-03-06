@@ -204,7 +204,7 @@ const channels = [
     title: "UFC 326: Holloway vs. Oliveira 2",
     category: "UFC",
     service: "UFC",
-    logo: "https://api.ppvs.su/assets/thumb/49ff6d9c50f12a66e31590661fa2ff8a-thumbnail.jpg",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhhIipDjTUWUhtdOKIi_qliq9Vxp_Nxr9nR542I48iCi0JjhsmXtVFjdc&s=10",
     page: "ufc1.html",
     date: "2026-3-8",
     time: "8:40 AM"
