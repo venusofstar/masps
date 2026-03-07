@@ -152,7 +152,7 @@ const channels = [
     service: "F1",
     logo: "https://api.ppv.st/assets/thumb/37e91f412909452e3a12e037ec80f272-thumbnail.jpg",
     page: "f1t.html",
-    date: "2026-3-8",
+    date: "2026-3-9",
     time: "12:00 AM"
   },
   {
