@@ -20,7 +20,7 @@ const channels = [
   page: "nba1.html",
   date: "2026-03-08",
   startTime: "4:00 AM",
-  endTime: "6:30 AM"
+  endTime: "7:30 AM"
 },
 {
   title: "Brooklyn Nets vs. Detroit Pistons",
@@ -30,7 +30,7 @@ const channels = [
   page: "nba2.html",
   date: "2026-03-08",
   startTime: "7:00 AM",
-  endTime: "9:30 AM"
+  endTime: "10:30 AM"
 },
 {
   title: "Philadelphia 76ers vs. Atlanta Hawks",
@@ -40,7 +40,7 @@ const channels = [
   page: "nba3.html",
   date: "2026-03-08",
   startTime: "7:00 AM",
-  endTime: "9:30 AM"
+  endTime: "10:30 AM"
 },
 {
   title: "Utah Jazz vs. Milwaukee Bucks",
@@ -50,7 +50,7 @@ const channels = [
   page: "nba4.html",
   date: "2026-03-08",
   startTime: "9:00 AM",
-  endTime: "11:30 AM"
+  endTime: "12:30 PM"
 },
 {
   title: "LA Clippers vs. Memphis Grizzlies",
@@ -60,7 +60,7 @@ const channels = [
   page: "nba5.html",
   date: "2026-03-08",
   startTime: "9:00 AM",
-  endTime: "11:30 AM"
+  endTime: "12:30 PM"
 },
 {
   title: "Golden State Warriors vs. Oklahoma City Thunder",
@@ -70,7 +70,7 @@ const channels = [
   page: "nba6.html",
   date: "2026-03-08",
   startTime: "9:30 AM",
-  endTime: "12:00 PM"
+  endTime: "1:00 PM"
 },
 {
   title: "🇵🇭 PBA- Genebra vs San Miguel",
@@ -80,7 +80,7 @@ const channels = [
   page: "pba1.html",
   date: "2026-01-12",
   startTime: "5:15 PM",
-  endTime: "7:30 PM"
+  endTime: "8:30 PM"
 },
 {
   title: "🇵🇭 PBA - TNT vs Meralco",
@@ -101,6 +101,86 @@ const channels = [
   date: "2026-03-08",
   startTime: "8:40 AM",
   endTime: "12:30 PM"
+},
+   {
+  title: "Australian Grand Prix",
+  category: "F1",
+  service: "F1",
+  logo: "https://api.ppv.st/assets/thumb/37e91f412909452e3a12e037ec80f272-thumbnail.jpg",
+  page: "f1t.html",
+  date: "2026-03-08",
+  startTime: "11:00 PM",
+  endTime: "6:30 AM"
+},
+   {
+  title: "World Darts Championship",
+  category: "Darts",
+  service: "Darts",
+  logo: "https://api.ppvs.su/assets/thumb/4e218218e0ba40cac4b0d2867873c96a-thumbnail.jpg",
+  page: "darts.html",
+  date: "2025-12-31",
+  startTime: "8:30 PM",
+  endTime: "11:30 PM"
+},
+{
+  title: "Ring V: Night of the Samurai: Inoue vs. Picasso",
+  category: "Boxing",
+  service: "Boxing",
+  logo: "https://i.ytimg.com/vi/nFTU-T7huDE/maxresdefault.jpg",
+  page: "boxing1.html",
+  date: "2025-12-27",
+  startTime: "8:30 PM",
+  endTime: "11:30 PM"
+},
+{
+  title: "WWE: NXT",
+  category: "WWE",
+  service: "WWE",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZr5Kf-2nSHJw7LJXM_57RfmwVkcXo-pFrQ&usqp=CAU",
+  page: "nxt.html",
+  date: "2025-12-31",
+  startTime: "9:00 AM",
+  endTime: "11:00 AM"
+},
+{
+  title: "AEW: Wednesday Night Dynamite",
+  category: "WWE",
+  service: "WWE",
+  logo: "https://api.ppvs.su/assets/thumb/b406ff9100d91b9210600260350246ff-thumbnail.jpg",
+  page: "nxt.html",
+  date: "2026-01-01",
+  startTime: "9:00 AM",
+  endTime: "11:00 AM"
+},
+{
+  title: "TNA: Impact",
+  category: "WWE",
+  service: "WWE",
+  logo: "https://api.ppvs.su/assets/thumb/78f581ee61589a76f6bcdeb095f95c12-thumbnail.jpg",
+  page: "nxt.html",
+  date: "2026-01-02",
+  startTime: "9:00 AM",
+  endTime: "11:00 AM"
+},
+{
+  title: "WWE: Friday Night Smackdown",
+  category: "WWE",
+  service: "WWE",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAaZHJg-QWJf9QqQoxudGrlWjiKelqkIgq3pmHr0Qbkdop45j5P07U-DQ&s=10",
+  page: "nxt.html",
+  date: "2026-03-07",
+  startTime: "9:00 AM",
+  endTime: "11:00 AM"
+},
+{
+  title: "WWE: Saturday Night Collision",
+  category: "WWE",
+  service: "WWE",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9bf-Tv7mr4R5vSi8hzCiL7YVQbwAWemQTdAclsG6hQaPtyiYtYX3GLrGA&s=10",
+  page: "nxt.html",
+  date: "2026-03-08",
+  startTime: "9:00 AM",
+  endTime: "3:00 PM"
 }
 ];
 
