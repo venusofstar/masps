@@ -1,73 +1,104 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HLS TV Player</title>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.7"></script>
 
 <style>
 html,body{
 margin:0;
 padding:0;
 height:100%;
-background:#000;
+background:black;
 overflow:hidden;
 }
 
 #video-container{
 position:fixed;
 inset:0;
-background:#000;
+background:black;
 }
 
 video{
 width:100%;
 height:100%;
 object-fit:contain;
-background:#000;
+background:black;
 }
 
-/* overlay text */
-#overlay-text{
+/* CENTER PLAY BUTTON */
+#play-btn{
 position:absolute;
-top:10px;
+top:50%;
 left:50%;
-transform:translateX(-50%);
-color:#fff;
+transform:translate(-50%,-50%);
+padding:15px 25px;
 font-size:24px;
-font-family:Arial;
-background:rgba(0,0,0,.5);
-padding:6px 12px;
-border-radius:6px;
-pointer-events:none;
-transition:opacity .3s;
-}
-
-/* control buttons */
-#controls{
-position:absolute;
-bottom:40px;
-left:50%;
-transform:translateX(-50%);
-display:flex;
-gap:20px;
+border:none;
+border-radius:10px;
+background:rgba(0,200,0,.7);
+color:white;
+cursor:pointer;
 z-index:10;
 }
 
-.control-btn{
-background:#00c853;
-border:none;
-color:#fff;
-font-size:18px;
-padding:12px 20px;
-border-radius:8px;
-cursor:pointer;
-font-weight:bold;
-box-shadow:0 4px 12px rgba(0,0,0,.5);
+#play-btn:hover{
+background:rgba(0,200,0,1);
 }
 
-.control-btn:hover{
-background:#00e676;
+/* UNMUTE BUTTON */
+#unmute-btn{
+position:absolute;
+top:15px;
+left:15px;
+padding:10px 20px;
+font-size:18px;
+border:none;
+border-radius:8px;
+background:rgba(0,200,0,.5);
+color:white;
+cursor:pointer;
+z-index:10;
+}
+
+/* FULLSCREEN BUTTON */
+#fullscreen-btn{
+position:absolute;
+top:15px;
+right:15px;
+padding:10px 20px;
+font-size:18px;
+border:none;
+border-radius:8px;
+background:rgba(0,200,0,.5);
+color:white;
+cursor:pointer;
+z-index:10;
+}
+
+/* BUFFER SPINNER */
+#spinner{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border:8px solid rgba(255,255,255,.2);
+border-top:8px solid white;
+border-radius:50%;
+width:60px;
+height:60px;
+animation:spin 1s linear infinite;
+display:none;
+z-index:20;
+}
+
+@keyframes spin{
+0%{transform:translate(-50%,-50%) rotate(0deg);}
+100%{transform:translate(-50%,-50%) rotate(360deg);}
 }
 
 </style>
@@ -79,56 +110,39 @@ background:#00e676;
 
 <video id="player" playsinline muted></video>
 
-<div id="overlay-text">Click Play</div>
+<button id="play-btn">▶ Play</button>
+<button id="unmute-btn">🔊 Unmute</button>
+<button id="fullscreen-btn">⛶</button>
 
-<div id="controls">
-<button class="control-btn" id="playBtn">▶ Play</button>
-<button class="control-btn" id="unmuteBtn">🔊 Unmute</button>
-<button class="control-btn" id="fsBtn">⛶ Fullscreen</button>
-</div>
+<div id="spinner"></div>
 
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.7"></script>
 
 <script>
 
 const video=document.getElementById("player");
-const overlay=document.getElementById("overlay-text");
-
-const playBtn=document.getElementById("playBtn");
-const unmuteBtn=document.getElementById("unmuteBtn");
-const fsBtn=document.getElementById("fsBtn");
+const playBtn=document.getElementById("play-btn");
+const unmuteBtn=document.getElementById("unmute-btn");
+const fsBtn=document.getElementById("fullscreen-btn");
+const spinner=document.getElementById("spinner");
 
 const manifest="https://cdn6.tgfiles.cfd/live/cdn6/chunks.m3u8";
 
-async function unlockSound(){
-const ctx=new(window.AudioContext||window.webkitAudioContext)();
-const oscillator=ctx.createOscillator();
-const silent=ctx.createGain();
-silent.gain.value=0;
-oscillator.connect(silent);
-silent.connect(ctx.destination);
-oscillator.start();
-setTimeout(()=>{
-oscillator.stop();
-ctx.close();
-},50);
+let hls;
+
+function showSpinner(show){
+spinner.style.display=show?"block":"none";
 }
 
-async function initVideo(){
-
-try{
-
-await unlockSound();
+function initPlayer(){
 
 if(video.canPlayType("application/vnd.apple.mpegurl")){
 video.src=manifest;
-
 }else if(Hls.isSupported()){
 
-const hls=new Hls({
-maxBufferLength:30
+hls=new Hls({
+maxBufferLength:30,
+lowLatencyMode:true
 });
 
 hls.loadSource(manifest);
@@ -136,40 +150,34 @@ hls.attachMedia(video);
 
 }
 
-}catch(e){
-console.log(e);
-}
+video.addEventListener("waiting",()=>showSpinner(true));
+video.addEventListener("playing",()=>showSpinner(false));
 
 }
 
-initVideo();
-
-/* PLAY BUTTON */
-playBtn.onclick=async()=>{
-video.muted=false;
-video.volume=1;
-await video.play();
-overlay.style.opacity=0;
+playBtn.onclick=()=>{
+video.play();
+playBtn.style.display="none";
 };
 
-/* UNMUTE */
 unmuteBtn.onclick=()=>{
 video.muted=false;
 video.volume=1;
+unmuteBtn.style.display="none";
 };
 
-/* FULLSCREEN */
 fsBtn.onclick=()=>{
 const el=document.getElementById("video-container");
 
-if(el.requestFullscreen){
+if(!document.fullscreenElement){
 el.requestFullscreen();
-}else if(el.webkitRequestFullscreen){
-el.webkitRequestFullscreen();
+}else{
+document.exitFullscreen();
 }
 };
 
-/* keyboard remote control */
+/* keyboard remote */
+
 document.addEventListener("keydown",(e)=>{
 
 switch(e.key){
@@ -194,6 +202,8 @@ break;
 }
 
 });
+
+initPlayer();
 
 </script>
 
