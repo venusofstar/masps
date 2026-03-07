@@ -147,13 +147,13 @@ const channels = [
     time: "9:00 AM"
   },
   {
-    title: "WWE: Saturday Night's Main Event",
-    category: "WWE",
-    service: "WWE",
-    logo: "https://api.ppvs.su/assets/thumb/880a048062dc9e403943d35cd58747b4-thumbnail.jpg",
-    page: "wwe-event.html",
-    date: "2026-1-1",
-    time: "9:00 AM"
+    title: "Australian Grand Prix",
+    category: "F1",
+    service: "F1",
+    logo: "https://api.ppv.st/assets/thumb/37e91f412909452e3a12e037ec80f272-thumbnail.jpg",
+    page: "f1t.html",
+    date: "2026-3-8",
+    time: "12:00 AM"
   },
   {
          title: "WWE: Royal Rumble",
