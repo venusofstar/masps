@@ -1,201 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HLS.js Player with All Green Buttons</title>
-
-<meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
-
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HLS TV Player</title>
 
 <style>
-html, body {
+  html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
     height: 100%;
+    background: #000;
     overflow: hidden;
-    background: black;
-}
+  }
 
-#player-container {
+  #video-container {
+    position: fixed;
+    inset: 0;
+    background: #000;
+  }
+
+  video {
     width: 100%;
     height: 100%;
-    position: relative;
-    background: black;
-}
+    object-fit: contain;
+    background: #000;
+  }
 
-video {
-    width: 100%;
-    height: 100%;
-    background: black;
-}
-
-/* Play button center */
-#play-btn {
+  /* Overlay text at the top */
+  #overlay-text {
     position: absolute;
-    top: 50%;
+    top: 10px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    padding: 15px 25px;
+    transform: translateX(-50%);
+    color: #fff;
     font-size: 24px;
-    border: none;
-    border-radius: 10px;
-    background: rgba(0, 200, 0, 0.7); /* green */
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-#play-btn:hover {
-    background: rgba(0, 200, 0, 1);
-}
-
-/* Unmute top-left green transparent */
-#unmute-btn {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 10;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(0, 200, 0, 0.5);
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-#unmute-btn:hover {
-    background: rgba(0, 200, 0, 1);
-}
-
-/* Fullscreen top-right green */
-#fullscreen-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 10;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(0, 200, 0, 0.5);
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-#fullscreen-btn:hover {
-    background: rgba(0, 200, 0, 1);
-}
-
-/* Buffering spinner */
-#spinner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 15;
-    border: 8px solid rgba(255,255,255,0.2);
-    border-top: 8px solid white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
-    display: none;
-}
-
-@keyframes spin {
-    0% { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6px 12px;
+    border-radius: 6px;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
 </style>
 </head>
 
 <body>
 
-<div id="player-container">
-    <video id="player-bet" playsinline></video>
-
-    <button id="play-btn">▶ Play</button>
-    <button id="unmute-btn">🔊 Unmute</button>
-    <button id="fullscreen-btn">⛶</button>
-
-    <div id="spinner"></div>
+<div id="video-container">
+  <video id="player" playsinline muted></video>
+  <div id="overlay-text">Click to play</div>
 </div>
 
-<script>
-let monetagLoaded = false;
-function loadMonetagAds() {
-    if (!monetagLoaded) {
-        monetagLoaded = true;
-        console.log("✅ Loading Monetag Ads safely...");
-        (function(s){ s.dataset.zone='10131170'; s.src='https://al5sm.com/tag.min.js'; document.body.appendChild(s); })(document.createElement('script'));
-        (function(s){ s.dataset.zone='10131172'; s.src='https://groleegni.net/vignette.min.js'; document.body.appendChild(s); })(document.createElement('script'));
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.7"></script>
 
+<script>
+const video = document.getElementById("player");
+const overlay = document.getElementById("overlay-text");
+const manifest = "https://cdn6.tgfiles.cfd/live/cdn6/chunks.m3u8";
+
+// Unlock audio for auto-unmute
+async function unlockSound() {
+  const ctx = new (window.AudioContext || window.webkitAudioContext)();
+  const oscillator = ctx.createOscillator();
+  const silent = ctx.createGain();
+  silent.gain.value = 0;
+  oscillator.connect(silent);
+  silent.connect(ctx.destination);
+  oscillator.start();
+
+  setTimeout(() => {
+    oscillator.stop();
+    ctx.close();
+  }, 50);
+}
+
+// Initialize HLS video
+async function initVideo() {
+  try {
+    await unlockSound();
+    video.muted = false; // Auto-unmute
+    video.volume = 1.0;
+
+    if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      video.src = manifest;
+      await video.play();
+    } else if (Hls.isSupported()) {
+      const hls = new Hls({
+        maxBufferLength: 30,
+        maxRetry: 1,
+        retryDelay: 1000,
+        fragLoadingTimeOut: 20000,
+        levelLoadingTimeOut: 20000,
+        autoStartLoad: true
+      });
+
+      hls.loadSource(manifest);
+      hls.attachMedia(video);
+
+      hls.on(Hls.Events.MANIFEST_PARSED, async () => {
+        await video.play();
+      });
+
+      hls.on(Hls.Events.ERROR, (event, data) => {
+        if (data.fatal) {
+          switch(data.type) {
+            case Hls.ErrorTypes.NETWORK_ERROR:
+              hls.stopLoad();
+              break;
+            case Hls.ErrorTypes.MEDIA_ERROR:
+              hls.recoverMediaError();
+              break;
+            default:
+              hls.destroy();
+              break;
+          }
+        }
+      });
     }
-}
-</script>
 
-<noscript>
-<a href="https://al5sm.com/" target="_blank">
-<img src="https://i.imgur.com/8T3YF0Z.jpeg" alt="Watch Ad" style="width:100%;border-radius:12px;">
-</a>
-</noscript>
-
-<script>
-const streamUrl = "https://cdn6.tgfiles.cfd/live/cdn6/chunks.m3u8";
-
-let hls;
-let video = document.getElementById("player-bet");
-let playBtn = document.getElementById("play-btn");
-let unmuteBtn = document.getElementById("unmute-btn");
-let fullscreenBtn = document.getElementById("fullscreen-btn");
-let spinner = document.getElementById("spinner");
-
-function showSpinner(show) {
-    spinner.style.display = show ? "block" : "none";
-}
-
-function loadPlayer() {
-    if (hls) { hls.destroy(); hls = null; }
-
-    hls = new Hls({ enableWorker:true, lowLatencyMode:true, backBufferLength:90 });
-    hls.loadSource(streamUrl);
-    hls.attachMedia(video);
-
-    video.addEventListener("waiting", () => showSpinner(true));
-    video.addEventListener("playing", () => showSpinner(false));
-
-    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.volume = 0;
-        playBtn.style.display = "inline-block";
+    // Hide overlay once video starts
+    video.addEventListener('playing', () => {
+      overlay.style.opacity = 0;
     });
 
-    hls.on(Hls.Events.ERROR, (event, data) => {
-        console.warn("HLS.js error:", data);
-        if (data.fatal) setTimeout(loadPlayer, 2000);
-    });
-
-    video.addEventListener("ended", () => setTimeout(loadPlayer, 2000));
-    video.addEventListener("stalled", () => setTimeout(loadPlayer, 2000));
-    video.addEventListener("error", () => setTimeout(loadPlayer, 2000));
+  } catch (err) {
+    console.warn("Auto-play blocked or error:", err);
+  }
 }
 
-// Manual play
-playBtn.addEventListener("click", () => { video.play(); playBtn.style.display="none"; loadMonetagAds(); });
-unmuteBtn.addEventListener("click", () => { video.volume=1; unmuteBtn.style.display="none"; loadMonetagAds(); });
-fullscreenBtn.addEventListener("click", () => {
-    if (!document.fullscreenElement) { video.requestFullscreen().catch(err=>console.warn(err)); }
-    else { document.exitFullscreen(); }
+// Auto-play immediately
+initVideo();
+
+// TV remote & keyboard controls
+document.addEventListener('keydown', (e) => {
+  switch(e.key) {
+    case "Enter":        // OK/Play toggle
+    case " ":            // Space key
+      if (video.paused) video.play();
+      else video.pause();
+      break;
+    case "ArrowUp":      // Volume up
+      video.volume = Math.min(1, video.volume + 0.1);
+      break;
+    case "ArrowDown":    // Volume down
+      video.volume = Math.max(0, video.volume - 0.1);
+      break;
+    case "m":            // Mute/unmute
+    case "M":
+      video.muted = !video.muted;
+      break;
+  }
 });
 
-loadPlayer();
-window.addEventListener('load', ()=>{ console.log("✅ MASPORTS (Monetag Edition) loaded in", performance.now().toFixed(1), "ms"); });
+// Fallback for mobile if auto-play blocked
+document.addEventListener("touchstart", initVideo, { once: true });
+document.addEventListener("click", initVideo, { once: true });
 </script>
 
 </body>
