@@ -1,201 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HLS.js Player with All Green Buttons</title>
-
-<meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
-
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HLS TV Player</title>
 
 <style>
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: black;
+html,body{
+margin:0;
+padding:0;
+height:100%;
+background:#000;
+overflow:hidden;
 }
 
-#player-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: black;
+#video-container{
+position:fixed;
+inset:0;
+background:#000;
 }
 
-video {
-    width: 100%;
-    height: 100%;
-    background: black;
+video{
+width:100%;
+height:100%;
+object-fit:contain;
+background:#000;
 }
 
-/* Play button center */
-#play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    padding: 15px 25px;
-    font-size: 24px;
-    border: none;
-    border-radius: 10px;
-    background: rgba(0, 200, 0, 0.7); /* green */
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s;
+/* overlay text */
+#overlay-text{
+position:absolute;
+top:10px;
+left:50%;
+transform:translateX(-50%);
+color:#fff;
+font-size:24px;
+font-family:Arial;
+background:rgba(0,0,0,.5);
+padding:6px 12px;
+border-radius:6px;
+pointer-events:none;
+transition:opacity .3s;
 }
 
-#play-btn:hover {
-    background: rgba(0, 200, 0, 1);
+/* control buttons */
+#controls{
+position:absolute;
+bottom:40px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:20px;
+z-index:10;
 }
 
-/* Unmute top-left green transparent */
-#unmute-btn {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 10;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(0, 200, 0, 0.5);
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s;
+.control-btn{
+background:#00c853;
+border:none;
+color:#fff;
+font-size:18px;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+box-shadow:0 4px 12px rgba(0,0,0,.5);
 }
 
-#unmute-btn:hover {
-    background: rgba(0, 200, 0, 1);
+.control-btn:hover{
+background:#00e676;
 }
 
-/* Fullscreen top-right green */
-#fullscreen-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 10;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(0, 200, 0, 0.5);
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-#fullscreen-btn:hover {
-    background: rgba(0, 200, 0, 1);
-}
-
-/* Buffering spinner */
-#spinner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 15;
-    border: 8px solid rgba(255,255,255,0.2);
-    border-top: 8px solid white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
-    display: none;
-}
-
-@keyframes spin {
-    0% { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
 </style>
 </head>
 
 <body>
 
-<div id="player-container">
-    <video id="player-bet" playsinline></video>
+<div id="video-container">
 
-    <button id="play-btn">▶ Play</button>
-    <button id="unmute-btn">🔊 Unmute</button>
-    <button id="fullscreen-btn">⛶</button>
+<video id="player" playsinline muted></video>
 
-    <div id="spinner"></div>
+<div id="overlay-text">Click Play</div>
+
+<div id="controls">
+<button class="control-btn" id="playBtn">▶ Play</button>
+<button class="control-btn" id="unmuteBtn">🔊 Unmute</button>
+<button class="control-btn" id="fsBtn">⛶ Fullscreen</button>
 </div>
 
-<script>
-let monetagLoaded = false;
-function loadMonetagAds() {
-    if (!monetagLoaded) {
-        monetagLoaded = true;
-        console.log("✅ Loading Monetag Ads safely...");
-        (function(s){ s.dataset.zone='10131170'; s.src='https://al5sm.com/tag.min.js'; document.body.appendChild(s); })(document.createElement('script'));
-        (function(s){ s.dataset.zone='10131172'; s.src='https://groleegni.net/vignette.min.js'; document.body.appendChild(s); })(document.createElement('script'));
+</div>
 
-    }
-}
-</script>
-
-<noscript>
-<a href="https://al5sm.com/" target="_blank">
-<img src="https://i.imgur.com/8T3YF0Z.jpeg" alt="Watch Ad" style="width:100%;border-radius:12px;">
-</a>
-</noscript>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.7"></script>
 
 <script>
-const streamUrl = "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867986.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=d7ad4c66076a8c57058d5109a265c760";
 
-let hls;
-let video = document.getElementById("player-bet");
-let playBtn = document.getElementById("play-btn");
-let unmuteBtn = document.getElementById("unmute-btn");
-let fullscreenBtn = document.getElementById("fullscreen-btn");
-let spinner = document.getElementById("spinner");
+const video=document.getElementById("player");
+const overlay=document.getElementById("overlay-text");
 
-function showSpinner(show) {
-    spinner.style.display = show ? "block" : "none";
+const playBtn=document.getElementById("playBtn");
+const unmuteBtn=document.getElementById("unmuteBtn");
+const fsBtn=document.getElementById("fsBtn");
+
+const manifest="https://cdn6.tgfiles.cfd/live/cdn6/chunks.m3u8";
+
+async function unlockSound(){
+const ctx=new(window.AudioContext||window.webkitAudioContext)();
+const oscillator=ctx.createOscillator();
+const silent=ctx.createGain();
+silent.gain.value=0;
+oscillator.connect(silent);
+silent.connect(ctx.destination);
+oscillator.start();
+setTimeout(()=>{
+oscillator.stop();
+ctx.close();
+},50);
 }
 
-function loadPlayer() {
-    if (hls) { hls.destroy(); hls = null; }
+async function initVideo(){
 
-    hls = new Hls({ enableWorker:true, lowLatencyMode:true, backBufferLength:90 });
-    hls.loadSource(streamUrl);
-    hls.attachMedia(video);
+try{
 
-    video.addEventListener("waiting", () => showSpinner(true));
-    video.addEventListener("playing", () => showSpinner(false));
+await unlockSound();
 
-    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.volume = 0;
-        playBtn.style.display = "inline-block";
-    });
+if(video.canPlayType("application/vnd.apple.mpegurl")){
+video.src=manifest;
 
-    hls.on(Hls.Events.ERROR, (event, data) => {
-        console.warn("HLS.js error:", data);
-        if (data.fatal) setTimeout(loadPlayer, 2000);
-    });
+}else if(Hls.isSupported()){
 
-    video.addEventListener("ended", () => setTimeout(loadPlayer, 2000));
-    video.addEventListener("stalled", () => setTimeout(loadPlayer, 2000));
-    video.addEventListener("error", () => setTimeout(loadPlayer, 2000));
-}
-
-// Manual play
-playBtn.addEventListener("click", () => { video.play(); playBtn.style.display="none"; loadMonetagAds(); });
-unmuteBtn.addEventListener("click", () => { video.volume=1; unmuteBtn.style.display="none"; loadMonetagAds(); });
-fullscreenBtn.addEventListener("click", () => {
-    if (!document.fullscreenElement) { video.requestFullscreen().catch(err=>console.warn(err)); }
-    else { document.exitFullscreen(); }
+const hls=new Hls({
+maxBufferLength:30
 });
 
-loadPlayer();
-window.addEventListener('load', ()=>{ console.log("✅ MASPORTS (Monetag Edition) loaded in", performance.now().toFixed(1), "ms"); });
+hls.loadSource(manifest);
+hls.attachMedia(video);
+
+}
+
+}catch(e){
+console.log(e);
+}
+
+}
+
+initVideo();
+
+/* PLAY BUTTON */
+playBtn.onclick=async()=>{
+video.muted=false;
+video.volume=1;
+await video.play();
+overlay.style.opacity=0;
+};
+
+/* UNMUTE */
+unmuteBtn.onclick=()=>{
+video.muted=false;
+video.volume=1;
+};
+
+/* FULLSCREEN */
+fsBtn.onclick=()=>{
+const el=document.getElementById("video-container");
+
+if(el.requestFullscreen){
+el.requestFullscreen();
+}else if(el.webkitRequestFullscreen){
+el.webkitRequestFullscreen();
+}
+};
+
+/* keyboard remote control */
+document.addEventListener("keydown",(e)=>{
+
+switch(e.key){
+
+case "Enter":
+if(video.paused) video.play();
+else video.pause();
+break;
+
+case "ArrowUp":
+video.volume=Math.min(1,video.volume+0.1);
+break;
+
+case "ArrowDown":
+video.volume=Math.max(0,video.volume-0.1);
+break;
+
+case "m":
+video.muted=!video.muted;
+break;
+
+}
+
+});
+
 </script>
 
 </body>
