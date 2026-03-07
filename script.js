@@ -107,10 +107,10 @@ const channels = [
   category: "F1",
   service: "F1",
   logo: "https://api.ppv.st/assets/thumb/37e91f412909452e3a12e037ec80f272-thumbnail.jpg",
-  page: "f1t.html",
+  page: "f1.html",
   date: "2026-03-08",
-  startTime: "11:00 AM",
-  endTime: "6:30 AM"
+  startTime: "12:00 PM",
+  endTime: "6:30 PM"
 },
    {
   title: "World Darts Championship",
