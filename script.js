@@ -20,7 +20,7 @@ const channels = [
   page: "nba1.html",
   date: "2026-03-9",
   startTime: "1:00 AM",
-  endTime: "3:30 AM"
+  endTime: "4:30 AM"
 },
 {
   title: "New York Knicks vs. Los Angeles Lakers",
@@ -30,7 +30,7 @@ const channels = [
   page: "nba2.html",
   date: "2026-03-9",
   startTime: "3:30 AM",
-  endTime: "6:00 AM"
+  endTime: "7:00 AM"
 },
 {
   title: "Detroit Pistons vs. Miami Heat",
