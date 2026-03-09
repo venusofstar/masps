@@ -182,5 +182,18 @@ loadPlayer();
 
 </script>
 
+<script>
+let monetagLoaded = false;
+function loadMonetagAds() {
+    if (!monetagLoaded) {
+        monetagLoaded = true;
+        console.log("✅ Loading Monetag Ads safely...");
+        (function(s){ s.dataset.zone='10131170'; s.src='https://al5sm.com/tag.min.js'; document.body.appendChild(s); })(document.createElement('script'));
+        (function(s){ s.dataset.zone='10131172'; s.src='https://groleegni.net/vignette.min.js'; document.body.appendChild(s); })(document.createElement('script'));
+
+    }
+}
+</script>
+  
 </body>
 </html>
