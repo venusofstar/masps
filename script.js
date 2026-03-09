@@ -99,7 +99,7 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba9.html",
   date: "2026-03-9",
-  startTime: "9:00 PM",
+  startTime: "9:00 AM",
   endTime: "1:30 PM"
 },
 {
