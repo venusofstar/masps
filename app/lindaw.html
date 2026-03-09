@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Video Player</title>
+
+<meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
@@ -26,6 +29,7 @@ video{
 width:100%;
 height:100%;
 background:black;
+object-fit:contain;
 }
 
 /* buttons */
@@ -84,6 +88,7 @@ display:none;
 100%{transform:translate(-50%,-50%) rotate(360deg);}
 }
 </style>
+
 </head>
 
 <body>
@@ -92,9 +97,7 @@ display:none;
 
 <video id="video" playsinline preload="auto"></video>
 
-<button id="play-btn">▶ Play</button>
-<button id="unmute-btn">🔊 Unmute</button>
-<button id="fullscreen-btn">⛶</button>
+<button id="play-btn">▶ Play</button> <button id="unmute-btn">🔊 Unmute</button> <button id="fullscreen-btn">⛶</button>
 
 <div id="spinner"></div>
 
@@ -102,7 +105,7 @@ display:none;
 
 <script>
 
-/* SERVER 1 ONLY */
+/* VIDEO SOURCE */
 const videoSrc="https://ia800702.us.archive.org/25/items/lindawolker-tagalog/lindawolker-tagalog.mp4";
 
 let video=document.getElementById("video");
@@ -112,6 +115,31 @@ let fullscreenBtn=document.getElementById("fullscreen-btn");
 let spinner=document.getElementById("spinner");
 
 let hls;
+let monetagLoaded=false;
+
+/* MONETAG */
+
+function loadMonetagAds(){
+
+if(monetagLoaded) return;
+
+monetagLoaded=true;
+
+console.log("Loading Monetag ads");
+
+(function(s){
+s.dataset.zone='10131170';
+s.src='https://al5sm.com/tag.min.js';
+document.body.appendChild(s);
+})(document.createElement('script'));
+
+(function(s){
+s.dataset.zone='10131172';
+s.src='https://groleegni.net/vignette.min.js';
+document.body.appendChild(s);
+})(document.createElement('script'));
+
+}
 
 /* spinner */
 
@@ -123,17 +151,19 @@ spinner.style.display=v?"block":"none";
 
 function loadPlayer(){
 
+if(hls){
+hls.destroy();
+hls=null;
+}
+
 if(videoSrc.endsWith(".m3u8") && Hls.isSupported()){
 
 hls=new Hls();
 
 hls.loadSource(videoSrc);
-
 hls.attachMedia(video);
 
 }else{
-
-/* MP4 playback */
 
 video.src=videoSrc;
 
@@ -141,7 +171,7 @@ video.src=videoSrc;
 
 }
 
-/* buffering events */
+/* buffering */
 
 video.addEventListener("waiting",()=>showSpinner(true));
 video.addEventListener("playing",()=>showSpinner(false));
@@ -154,6 +184,8 @@ video.play();
 
 playBtn.style.display="none";
 
+loadMonetagAds();
+
 };
 
 unmuteBtn.onclick=()=>{
@@ -161,6 +193,8 @@ unmuteBtn.onclick=()=>{
 video.volume=1;
 
 unmuteBtn.style.display="none";
+
+loadMonetagAds();
 
 };
 
@@ -176,24 +210,15 @@ document.exitFullscreen();
 
 }
 
+loadMonetagAds();
+
 };
+
+/* start */
 
 loadPlayer();
 
 </script>
 
-<script>
-let monetagLoaded = false;
-function loadMonetagAds() {
-    if (!monetagLoaded) {
-        monetagLoaded = true;
-        console.log("✅ Loading Monetag Ads safely...");
-        (function(s){ s.dataset.zone='10131170'; s.src='https://al5sm.com/tag.min.js'; document.body.appendChild(s); })(document.createElement('script'));
-        (function(s){ s.dataset.zone='10131172'; s.src='https://groleegni.net/vignette.min.js'; document.body.appendChild(s); })(document.createElement('script'));
-
-    }
-}
-</script>
-  
 </body>
 </html>
