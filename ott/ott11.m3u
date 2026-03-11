@@ -6,6 +6,23 @@
 #KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
 https://example.cpo/ghj.m3u8
 
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://app.blasttv.ph/favicon.ico" group-title="BLAST TV",BLAST TV Live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#EXTVLCOPT:http-origin=https://app.blasttv.ph
+#EXTVLCOPT:http-referrer=https://app.blasttv.ph/
+#EXTVLCOPT:http-header=Host:dice-live-ap.akamaized.net
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:en-US
+#EXTVLCOPT:http-header=Accept-Encoding:gzip, deflate, br, zstd
+#EXTVLCOPT:http-header=Connection:keep-alive
+#EXTVLCOPT:http-header=Sec-Fetch-Dest:empty
+#EXTVLCOPT:http-header=Sec-Fetch-Mode:cors
+#EXTVLCOPT:http-header=Sec-Fetch-Site:cross-site
+https://dice-live-ap.akamaized.net/hls/live/2001903/300024-317970/playlist.m3u8?hdnea=st=1773217877~exp=1773217917~acl=*hls/live/2001903/300024-317970/*!*hls/live/2001903-b/300024-317970-b/*~id=de26a0da-1136-4995-9536-f9cfbed0e9c3~data=dWlkPWNGaDZGenw2YzcyNmIzMS03NDAxLTRkMDgtYWM1Zi1jNDFiOWFiYzU0NWUmaXA9MTgwLjE5MC4xNzIuNDEmZXhwPTE3NzMzMDQzMTcmZWlkPTMwMDAyNCZjaWQ9ZGNlLnRhcGdvJm9pZD0zMjUmdHlwZT1MSVZF~hmac=22498b20bbc23e2f489415ecf9dbc9356b4f845856a13b2d174bd77607d520ae&opId=325&cc=PH&ua=TW96aWxsYS81LjAgKFgxMTsgTGludXggeDg2XzY0OyBydjoxMzkuMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC8xMzkuMA%3D%3D&sd=PH-METRO+MANILA&startTime=1772294400&endTime=1930147200
+
+
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9EbZcCTMl8r_IRS6X8UOonBrjT65wzk2eQUp4VdHIhYmTGTj6f_KOqbJ&s=10" group-title="🇵🇭 PHILIPPINES CHANNEL",ANC HD
 #KODIPROP:inputstream.adaptive.license_type=widevine
 #KODIPROP:inputstream.adaptive.license_key=https://ottmdrm.comclark.com/widevine/
