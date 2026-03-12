@@ -133,24 +133,34 @@ const channels = [
   endTime: "12:30 PM"
 },
    {
-  title: "Australian Grand Prix",
+  title: "Chinese Grand Prix - Practice 1",
   category: "F1",
   service: "F1",
   logo: "https://api.ppv.st/assets/thumb/37e91f412909452e3a12e037ec80f272-thumbnail.jpg",
   page: "f1.html",
-  date: "2026-03-08",
-  startTime: "12:00 PM",
+  date: "2026-03-13",
+  startTime: "9:30 AM",
   endTime: "6:30 PM"
 },
+    {
+  title: "Chinese Grand Prix - Practice 1",
+  category: "F1",
+  service: "F1",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt81CczBXQyyfo9Ue5iP_Y2FPOYa8WjhG7TmjGrFsCynixHFFCUPST4mr_&s=10",
+  page: "f1.html",
+  date: "2026-03-13",
+  startTime: "9:30 AM",
+  endTime: "6:30 PM"
+},  
    {
-  title: "World Darts Championship",
+  title: "Chinese Grand Prix - Sprint Qualifying",
   category: "Darts",
   service: "Darts",
-  logo: "https://api.ppvs.su/assets/thumb/4e218218e0ba40cac4b0d2867873c96a-thumbnail.jpg",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt81CczBXQyyfo9Ue5iP_Y2FPOYa8WjhG7TmjGrFsCynixHFFCUPST4mr_&s=10",
   page: "darts.html",
   date: "2025-12-31",
-  startTime: "8:30 PM",
-  endTime: "11:30 PM"
+  startTime: "2:00 PM",
+  endTime: "9:30 PM"
 },
 {
   title: "Ring V: Night of the Samurai: Inoue vs. Picasso",
