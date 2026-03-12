@@ -136,14 +136,14 @@ const channels = [
   title: "Chinese Grand Prix - Practice 1",
   category: "F1",
   service: "F1",
-  logo: "https://api.ppv.st/assets/thumb/37e91f412909452e3a12e037ec80f272-thumbnail.jpg",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt81CczBXQyyfo9Ue5iP_Y2FPOYa8WjhG7TmjGrFsCynixHFFCUPST4mr_&s=10",
   page: "f1.html",
   date: "2026-03-13",
   startTime: "9:30 AM",
   endTime: "6:30 PM"
 },
     {
-  title: "Chinese Grand Prix - Practice 1",
+  title: "Chinese Grand Prix - Sprint Qualifying",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt81CczBXQyyfo9Ue5iP_Y2FPOYa8WjhG7TmjGrFsCynixHFFCUPST4mr_&s=10",
@@ -153,11 +153,11 @@ const channels = [
   endTime: "6:30 PM"
 },  
    {
-  title: "Chinese Grand Prix - Sprint Qualifying",
-  category: "Darts",
-  service: "Darts",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt81CczBXQyyfo9Ue5iP_Y2FPOYa8WjhG7TmjGrFsCynixHFFCUPST4mr_&s=10",
-  page: "darts.html",
+  title: "UFC- Emmett vs Vallejos",
+  category: "UFC",
+  service: "UFC",
+  logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
+  page: "ufc1.html",
   date: "2025-12-31",
   startTime: "2:00 PM",
   endTime: "9:30 PM"
