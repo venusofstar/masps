@@ -139,7 +139,7 @@ const channels = [
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt81CczBXQyyfo9Ue5iP_Y2FPOYa8WjhG7TmjGrFsCynixHFFCUPST4mr_&s=10",
   page: "f1.html",
   date: "2026-03-13",
-  startTime: "9:30 AM",
+  startTime: "11:30 AM",
   endTime: "6:30 PM"
 },
     {
@@ -149,8 +149,8 @@ const channels = [
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt81CczBXQyyfo9Ue5iP_Y2FPOYa8WjhG7TmjGrFsCynixHFFCUPST4mr_&s=10",
   page: "f1.html",
   date: "2026-03-13",
-  startTime: "9:30 AM",
-  endTime: "6:30 PM"
+  startTime: "3:30 PM",
+  endTime: "9:30 PM"
 },  
    {
   title: "UFC- Emmett vs Vallejos",
