@@ -139,8 +139,8 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
   page: "ufc1.html",
   date: "2026-03-15",
-  startTime: "2:00 PM",
-  endTime: "9:30 PM"
+  startTime: "7:30 AM",
+  endTime: "5:30 PM"
 },
 {
   title: "Ring V: Night of the Samurai: Inoue vs. Picasso",
