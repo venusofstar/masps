@@ -118,9 +118,9 @@ const channels = [
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt81CczBXQyyfo9Ue5iP_Y2FPOYa8WjhG7TmjGrFsCynixHFFCUPST4mr_&s=10",
   page: "f1.html",
-  date: "2026-03-13",
-  startTime: "11:30 AM",
-  endTime: "6:30 PM"
+  date: "2026-03-15",
+  startTime: "3:00 M",
+  endTime: "9:30 PM"
 },
     {
   title: "Chinese Grand Prix - Sprint Qualifying",
