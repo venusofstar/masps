@@ -1,5 +1,17 @@
 #EXTM3U
+#EXTM3U
 
+#EXTINF:-1 tvg-name="Philadelphia 76ers Stream 1" group-title="NBA",Philadelphia 76ers
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#EXTVLCOPT:http-referrer=https://pooembed.eu/
+#EXTVLCOPT:http-origin=https://pooembed.eu
+https://lb3.modifiles.fans/secure/YqtaWHGDwPHYqwpiqShJibpSeNAEKJGZ/1773496800/1773524880/philadelphia76ers/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-name="Philadelphia 76ers Stream 2" group-title="NBA",Philadelphia 76ers Alt
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+https://n12.sanwalyaarpya.com:1686/hls/mphiladelphia76ers.m3u8?md5=aCmS-I7ny5vsY6GxPnkzFg&expires=1773512939
 #EXTINF:-1 group-title="Entertainment",8TV
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
