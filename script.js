@@ -148,8 +148,8 @@ const channels = [
   service: "Boxing",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHGVyO8knsTLMCR4_Jo95AM_8FONTK23yJTdThIk11Q&s=10",
   page: "boxing1.html",
-  date: "2025-12-27",
-  startTime: "8:30 PM",
+  date: "2026-03-15",
+  startTime: "3:30 PM",
   endTime: "11:30 PM"
 },
 {
