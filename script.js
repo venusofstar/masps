@@ -143,10 +143,10 @@ const channels = [
   endTime: "5:30 PM"
 },
 {
-  title: "Ring V: Night of the Samurai: Inoue vs. Picasso",
+  title: "Nonito Donaire vs. Riku Masuda",
   category: "Boxing",
   service: "Boxing",
-  logo: "https://i.ytimg.com/vi/nFTU-T7huDE/maxresdefault.jpg",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHGVyO8knsTLMCR4_Jo95AM_8FONTK23yJTdThIk11Q&s=10",
   page: "boxing1.html",
   date: "2025-12-27",
   startTime: "8:30 PM",
