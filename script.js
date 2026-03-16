@@ -9,8 +9,8 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba1.html",
   date: "2026-03-17",
-  startTime: "7:00 PM",
-  endTime: "11:00 PM"
+  startTime: "7:00 AM",
+  endTime: "11:00 AM"
 },
 {
   title: "Golden State Warriors vs. Washington Wizards",
@@ -19,8 +19,8 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba2.html",
   date: "2026-03-17",
-  startTime: "7:00 PM",
-  endTime: "11:00 PM"
+  startTime: "7:00 AM",
+  endTime: "11:00 AM"
 },
 {
   title: "Portland Trail Blazers vs. Brooklyn Nets",
@@ -29,8 +29,8 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba3.html",
   date: "2026-03-17",
-  startTime: "7:30 PM",
-  endTime: "11:30 PM"
+  startTime: "7:30 AM",
+  endTime: "11:30 AM"
 },
 {
   title: "Phoenix Suns vs. Boston Celtics",
@@ -39,8 +39,8 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba4.html",
   date: "2026-03-17",
-  startTime: "7:30 PM",
-  endTime: "11:30 PM"
+  startTime: "7:30 AM",
+  endTime: "11:30 AM"
 },
 {
   title: "Memphis Grizzlies vs. Chicago Bulls",
@@ -49,8 +49,8 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba5.html",
   date: "2026-03-17",
-  startTime: "8:00 PM",
-  endTime: "12:00 AM"
+  startTime: "8:00 AM",
+  endTime: "12:00 PM"
 },
 {
   title: "Dallas Mavericks vs. New Orleans Pelicans",
@@ -59,8 +59,8 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba6.html",
   date: "2026-03-17",
-  startTime: "8:00 PM",
-  endTime: "12:00 AM"
+  startTime: "8:00 AM",
+  endTime: "12:00 PM"
 },
 {
   title: "Los Angeles Lakers vs. Houston Rockets",
@@ -69,8 +69,8 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba7.html",
   date: "2026-03-17",
-  startTime: "9:30 PM",
-  endTime: "1:30 AM"
+  startTime: "9:30 AM",
+  endTime: "1:30 PM"
 },
 {
   title: "San Antonio Spurs vs. LA Clippers",
@@ -79,8 +79,8 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba8.html",
   date: "2026-03-17",
-  startTime: "10:00 PM",
-  endTime: "2:00 AM"
+  startTime: "10:00 AM",
+  endTime: "2:00 PM"
 },
 {
   title: "🇵🇭 PBA- Genebra vs San Miguel",
