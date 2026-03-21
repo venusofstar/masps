@@ -153,14 +153,14 @@ const channels = [
   endTime: "9:30 PM"
 },  
    {
-  title: "UFC- Emmett vs Vallejos",
+  title: "UFC Fight Night: Evloev vs. Murphy",
   category: "UFC",
   service: "UFC",
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
   page: "ufc1.html",
-  date: "2026-03-15",
-  startTime: "7:30 AM",
-  endTime: "5:30 PM"
+  date: "2026-03-22",
+  startTime: "1:00 AM",
+  endTime: "10:30 AM"
 },
 {
   title: "Nonito Donaire vs. Riku Masuda",
