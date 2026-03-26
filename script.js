@@ -63,13 +63,13 @@ const channels = [
   endTime: "12:30 PM"
 },
    {
-  title: "Chinese Grand Prix - Practice 1",
+  title: "Japanese Grand Prix - Practice ",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt81CczBXQyyfo9Ue5iP_Y2FPOYa8WjhG7TmjGrFsCynixHFFCUPST4mr_&s=10",
   page: "f1.html",
-  date: "2026-03-15",
-  startTime: "3:00 M",
+  date: "2026-03-27",
+  startTime: "10:30 AM",
   endTime: "9:30 PM"
 },
     {
