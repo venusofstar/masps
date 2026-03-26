@@ -8,7 +8,7 @@ const channels = [
   service: "NBA",
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba1.html",
-  date: "2026-03-26",
+  date: "2026-03-27",
   startTime: "7:00 AM",
   endTime: "11:00 AM"
 },
@@ -18,7 +18,7 @@ const channels = [
   service: "NBA",
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba2.html",
-  date: "2026-03-26",
+  date: "2026-03-27",
   startTime: "7:00 AM",
   endTime: "11:00 AM"
 },
@@ -28,7 +28,7 @@ const channels = [
   service: "NBA",
   logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
   page: "nba3.html",
-  date: "2026-03-26",
+  date: "2026-03-27",
   startTime: "7:00 AM",
   endTime: "11:00 AM"
 },
