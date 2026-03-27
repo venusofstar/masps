@@ -102,6 +102,7 @@ const channels = [
   startTime: "10:30 AM",
   endTime: "2:30 PM"
 },
+   {
   title: "🇵🇭 PBA- Genebra vs San Miguel",
   category: "Basketball",
   service: "PBA",
