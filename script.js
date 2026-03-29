@@ -123,14 +123,14 @@ const channels = [
   endTime: "12:30 PM"
 },
 {
-  title: "Nonito Donaire vs. Riku Masuda",
+  title: "Fundora vs Thurman",
   category: "Boxing",
   service: "Boxing",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHGVyO8knsTLMCR4_Jo95AM_8FONTK23yJTdThIk11Q&s=10",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH8CQhoXPv9Q8fvjnugRAihFJNgHUSyqynHqO4YX1VvA&s=10",
   page: "boxing1.html",
-  date: "2026-03-15",
-  startTime: "3:30 PM",
-  endTime: "11:30 PM"
+  date: "2026-03-29",
+  startTime: "9:00 AM",
+  endTime: "2:30 PM"
 },
 {
   title: "WWE: NXT",
