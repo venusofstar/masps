@@ -10,7 +10,7 @@ const channels = [
     "page": "nba1.html",
     "date": "2026-04-06",
     "startTime": "3:30 AM",
-    "endTime": "5:30 AM"
+    "endTime": "6:30 AM"
   },
   {
     "title": "Washington Wizards vs. Brooklyn Nets",
@@ -20,7 +20,7 @@ const channels = [
     "page": "nba2.html",
     "date": "2026-04-06",
     "startTime": "3:30 AM",
-    "endTime": "5:30 AM"
+    "endTime": "6:30 AM"
   },
   {
     "title": "Phoenix Suns vs. Chicago Bulls",
@@ -30,7 +30,7 @@ const channels = [
     "page": "nba3.html",
     "date": "2026-04-06",
     "startTime": "3:30 AM",
-    "endTime": "5:30 AM"
+    "endTime": "6:30 AM"
   },
   {
     "title": "Memphis Grizzlies vs. Milwaukee Bucks",
@@ -40,7 +40,7 @@ const channels = [
     "page": "nba4.html",
     "date": "2026-04-06",
     "startTime": "3:30 AM",
-    "endTime": "5:30 AM"
+    "endTime": "6:30 AM"
   },
   {
     "title": "Indiana Pacers vs. Cleveland Cavaliers",
@@ -50,7 +50,7 @@ const channels = [
     "page": "nba5.html",
     "date": "2026-04-06",
     "startTime": "6:00 AM",
-    "endTime": "8:00 AM"
+    "endTime": "9:00 AM"
   },
   {
     "title": "Charlotte Hornets vs. Minnesota Timberwolves",
@@ -60,7 +60,7 @@ const channels = [
     "page": "nba6.html",
     "date": "2026-04-06",
     "startTime": "7:00 AM",
-    "endTime": "9:00 AM"
+    "endTime": "10:00 AM"
   },
   {
     "title": "Orlando Magic vs. New Orleans Pelicans",
@@ -70,7 +70,7 @@ const channels = [
     "page": "nba7.html",
     "date": "2026-04-06",
     "startTime": "7:00 AM",
-    "endTime": "9:00 AM"
+    "endTime": "11:00 AM"
   },
   {
     "title": "Utah Jazz vs. Oklahoma City Thunder",
@@ -80,7 +80,7 @@ const channels = [
     "page": "nba8.html",
     "date": "2026-04-06",
     "startTime": "7:00 AM",
-    "endTime": "9:00 AM"
+    "endTime": "12:00 AM"
   },
   {
     "title": "Los Angeles Lakers vs. Dallas Mavericks",
@@ -90,7 +90,7 @@ const channels = [
     "page": "nba9.html",
     "date": "2026-04-06",
     "startTime": "7:30 AM",
-    "endTime": "9:30 AM"
+    "endTime": "11:30 AM"
   },
   {
     "title": "LA Clippers vs. Sacramento Kings",
@@ -100,7 +100,7 @@ const channels = [
     "page": "nba10.html",
     "date": "2026-04-06",
     "startTime": "9:00 AM",
-    "endTime": "11:00 AM"
+    "endTime": "12:00 PM"
   },
   {
     "title": "Houston Rockets vs. Golden State Warriors",
@@ -110,7 +110,7 @@ const channels = [
     "page": "nba11.html",
     "date": "2026-04-06",
     "startTime": "10:00 AM",
-    "endTime": "12:00 PM"
+    "endTime": "1:00 PM"
   },
    {
   title: "🇵🇭 PBA- Genebra vs San Miguel",
