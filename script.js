@@ -80,7 +80,7 @@ const channels = [
     "page": "nba8.html",
     "date": "2026-04-06",
     "startTime": "7:00 AM",
-    "endTime": "12:00 AM"
+    "endTime": "11:00 AM"
   },
   {
     "title": "Los Angeles Lakers vs. Dallas Mavericks",
