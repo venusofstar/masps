@@ -98,7 +98,7 @@ const channels = [
   service: "UFC",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhhIipDjTUWUhtdOKIi_qliq9Vxp_Nxr9nR542I48iCi0JjhsmXtVFjdc&s=10",
   page: "ufc1.html",
-  date: "2026-04-011",
+  date: "2026-04-12",
   startTime: "8:40 AM",
   endTime: "12:30 PM"
 },
