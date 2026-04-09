@@ -96,7 +96,7 @@ const channels = [
   title: "UFC 327: Procházka vs. Ulberg",
   category: "UFC",
   service: "UFC",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhhIipDjTUWUhtdOKIi_qliq9Vxp_Nxr9nR542I48iCi0JjhsmXtVFjdc&s=10",
+  logo: "https://goluchas.com/wp-content/uploads/2026/02/IMG_0145-678x509.png",
   page: "ufc1.html",
   date: "2026-04-12",
   startTime: "8:40 AM",
