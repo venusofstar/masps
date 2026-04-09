@@ -93,12 +93,12 @@ const channels = [
   endTime: "10:00 PM"
 },
 {
-  title: "UFC 326: Holloway vs. Oliveira 2",
+  title: "UFC 327: Procházka vs. Ulberg",
   category: "UFC",
   service: "UFC",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhhIipDjTUWUhtdOKIi_qliq9Vxp_Nxr9nR542I48iCi0JjhsmXtVFjdc&s=10",
   page: "ufc1.html",
-  date: "2026-03-08",
+  date: "2026-04-011",
   startTime: "8:40 AM",
   endTime: "12:30 PM"
 },
