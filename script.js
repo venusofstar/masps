@@ -3,154 +3,154 @@
 -------------------------------------------------*/
 const channels = [
   {
-    "title": "Detroit Pistons vs. Charlotte Hornets",
+    "title": "Orlando Magic vs. Boston Celtics",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba1.html",
-    "date": "2026-04-11",
-    "startTime": "7:00 AM",
-    "endTime": "10:00 AM"
+    "date": "2026-04-12",
+    "startTime": "6:00 AM",
+    "endTime": "8:30 AM"
   },
   {
-    "title": "Miami Heat vs. Washington Wizards",
+    "title": "Washington Wizards vs. Cleveland Cavaliers",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba2.html",
-    "date": "2026-04-11",
-    "startTime": "7:00 AM",
-    "endTime": "10:00 AM"
+    "date": "2026-04-12",
+    "startTime": "6:00 AM",
+    "endTime": "8:30 AM"
   },
   {
-    "title": "Cleveland Cavaliers vs. Atlanta Hawks",
+    "title": "Detroit Pistons vs. Indiana Pacers",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba3.html",
-    "date": "2026-04-11",
-    "startTime": "7:00 AM",
-    "endTime": "10:00 AM"
+    "date": "2026-04-12",
+    "startTime": "6:00 AM",
+    "endTime": "8:30 AM"
   },
   {
-    "title": "New Orleans Pelicans vs. Boston Celtics",
+    "title": "Atlanta Hawks vs. Miami Heat",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba4.html",
-    "date": "2026-04-11",
-    "startTime": "7:30 AM",
-    "endTime": "10:30 AM"
+    "date": "2026-04-12",
+    "startTime": "6:00 AM",
+    "endTime": "8:30 AM"
   },
   {
-    "title": "Philadelphia 76ers vs. Indiana Pacers",
+    "title": "Charlotte Hornets vs. New York Knicks",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba5.html",
-    "date": "2026-04-11",
-    "startTime": "7:30 AM",
-    "endTime": "10:30 AM"
+    "date": "2026-04-12",
+    "startTime": "6:00 AM",
+    "endTime": "8:30 AM"
   },
   {
-    "title": "Toronto Raptors vs. New York Knicks",
+    "title": "Milwaukee Bucks vs. Philadelphia 76ers",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba6.html",
-    "date": "2026-04-11",
-    "startTime": "7:30 AM",
-    "endTime": "10:30 AM"
+    "date": "2026-04-12",
+    "startTime": "6:00 AM",
+    "endTime": "8:30 AM"
   },
   {
-    "title": "Orlando Magic vs. Chicago Bulls",
+    "title": "Brooklyn Nets vs. Toronto Raptors",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba7.html",
-    "date": "2026-04-11",
-    "startTime": "8:00 AM",
-    "endTime": "11:00 AM"
+    "date": "2026-04-12",
+    "startTime": "6:00 AM",
+    "endTime": "8:30 AM"
   },
   {
-    "title": "Brooklyn Nets vs. Milwaukee Bucks",
+    "title": "Chicago Bulls vs. Dallas Mavericks",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba8.html",
-    "date": "2026-04-11",
-    "startTime": "8:00 AM",
-    "endTime": "11:00 AM"
+    "date": "2026-04-12",
+    "startTime": "8:30 AM",
+    "endTime": "10:00 AM"
   },
   {
-    "title": "Dallas Mavericks vs. San Antonio Spurs",
+    "title": "Memphis Grizzlies vs. Houston Rockets",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba9.html",
-    "date": "2026-04-11",
-    "startTime": "8:00 AM",
-    "endTime": "11:00 AM"
+    "date": "2026-04-12",
+    "startTime": "8:30 AM",
+    "endTime": "10:00 AM"
   },
   {
-    "title": "Oklahoma City Thunder vs. Denver Nuggets",
+    "title": "New Orleans Pelicans vs. Minnesota Timberwolves",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba10.html",
-    "date": "2026-04-11",
-    "startTime": "9:00 AM",
-    "endTime": "12:00 PM"
+    "date": "2026-04-12",
+    "startTime": "8:30 AM",
+    "endTime": "10:00 AM"
   },
   {
-    "title": "Minnesota Timberwolves vs. Houston Rockets",
+    "title": "Phoenix Suns vs. Oklahoma City Thunder",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba11.html",
-    "date": "2026-04-11",
-    "startTime": "9:30 AM",
-    "endTime": "12:30 PM"
+    "date": "2026-04-12",
+    "startTime": "8:30 AM",
+    "endTime": "10:00 AM"
   },
   {
-    "title": "Memphis Grizzlies vs. Utah Jazz",
+    "title": "Denver Nuggets vs. San Antonio Spurs",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba12.html",
-    "date": "2026-04-11",
-    "startTime": "9:30 AM",
-    "endTime": "12:30 PM"
+    "date": "2026-04-12",
+    "startTime": "8:30 AM",
+    "endTime": "10:00 AM"
   },
   {
-    "title": "LA Clippers vs. Portland Trail Blazers",
+    "title": "Utah Jazz vs. Los Angeles Lakers",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba13.html",
-    "date": "2026-04-11",
-    "startTime": "10:00 AM",
-    "endTime": "1:00 PM"
+    "date": "2026-04-12",
+    "startTime": "8:30 AM",
+    "endTime": "10:00 AM"
   },
   {
-    "title": "Golden State Warriors vs. Sacramento Kings",
+    "title": "Golden State Warriors vs. LA Clippers",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba14.html",
-    "date": "2026-04-11",
-    "startTime": "10:00 AM",
-    "endTime": "1:00 PM"
+    "date": "2026-04-12",
+    "startTime": "8:30 AM",
+    "endTime": "10:00 AM"
   },
   {
-    "title": "Phoenix Suns vs. Los Angeles Lakers",
+    "title": "Sacramento Kings vs. Portland Trail Blazers",
     "category": "Basketball",
     "service": "NBA",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
     "page": "nba15.html",
-    "date": "2026-04-11",
-    "startTime": "10:30 AM",
-    "endTime": "1:30 PM"
+    "date": "2026-04-12",
+    "startTime": "8:30 AM",
+    "endTime": "10:00 AM"
   },
    {
   title: "🇵🇭 PBA- Genebra vs San Miguel",
