@@ -10,7 +10,7 @@ const channels = [
     "page": "nba1.html",
     "date": "2026-04-13",
     "startTime": "6:00 AM",
-    "endTime": "8:30 AM"
+    "endTime": "9:30 AM"
   },
   {
     "title": "Washington Wizards vs. Cleveland Cavaliers",
@@ -20,7 +20,7 @@ const channels = [
     "page": "nba2.html",
     "date": "2026-04-13",
     "startTime": "6:00 AM",
-    "endTime": "8:30 AM"
+    "endTime": "9:30 AM"
   },
   {
     "title": "Detroit Pistons vs. Indiana Pacers",
@@ -30,7 +30,7 @@ const channels = [
     "page": "nba3.html",
     "date": "2026-04-13",
     "startTime": "6:00 AM",
-    "endTime": "8:30 AM"
+    "endTime": "9:30 AM"
   },
   {
     "title": "Atlanta Hawks vs. Miami Heat",
@@ -40,7 +40,7 @@ const channels = [
     "page": "nba4.html",
     "date": "2026-04-13",
     "startTime": "6:00 AM",
-    "endTime": "8:30 AM"
+    "endTime": "9:30 AM"
   },
   {
     "title": "Charlotte Hornets vs. New York Knicks",
@@ -50,7 +50,7 @@ const channels = [
     "page": "nba5.html",
     "date": "2026-04-13",
     "startTime": "6:00 AM",
-    "endTime": "8:30 AM"
+    "endTime": "9:30 AM"
   },
   {
     "title": "Milwaukee Bucks vs. Philadelphia 76ers",
@@ -60,7 +60,7 @@ const channels = [
     "page": "nba6.html",
     "date": "2026-04-13",
     "startTime": "6:00 AM",
-    "endTime": "8:30 AM"
+    "endTime": "9:30 AM"
   },
   {
     "title": "Brooklyn Nets vs. Toronto Raptors",
@@ -70,7 +70,7 @@ const channels = [
     "page": "nba7.html",
     "date": "2026-04-13",
     "startTime": "6:00 AM",
-    "endTime": "8:30 AM"
+    "endTime": "9:30 AM"
   },
   {
     "title": "Chicago Bulls vs. Dallas Mavericks",
@@ -80,7 +80,7 @@ const channels = [
     "page": "nba8.html",
     "date": "2026-04-13",
     "startTime": "8:30 AM",
-    "endTime": "10:00 AM"
+    "endTime": "11:00 AM"
   },
   {
     "title": "Memphis Grizzlies vs. Houston Rockets",
@@ -90,7 +90,7 @@ const channels = [
     "page": "nba9.html",
     "date": "2026-04-13",
     "startTime": "8:30 AM",
-    "endTime": "10:00 AM"
+    "endTime": "11:00 AM"
   },
   {
     "title": "New Orleans Pelicans vs. Minnesota Timberwolves",
@@ -100,7 +100,7 @@ const channels = [
     "page": "nba10.html",
     "date": "2026-04-13",
     "startTime": "8:30 AM",
-    "endTime": "10:00 AM"
+    "endTime": "11:00 AM"
   },
   {
     "title": "Phoenix Suns vs. Oklahoma City Thunder",
@@ -110,7 +110,7 @@ const channels = [
     "page": "nba11.html",
     "date": "2026-04-13",
     "startTime": "8:30 AM",
-    "endTime": "10:00 AM"
+    "endTime": "11:00 AM"
   },
   {
     "title": "Denver Nuggets vs. San Antonio Spurs",
@@ -120,7 +120,7 @@ const channels = [
     "page": "nba12.html",
     "date": "2026-04-13",
     "startTime": "8:30 AM",
-    "endTime": "10:00 AM"
+    "endTime": "11:00 AM"
   },
   {
     "title": "Utah Jazz vs. Los Angeles Lakers",
@@ -130,7 +130,7 @@ const channels = [
     "page": "nba13.html",
     "date": "2026-04-13",
     "startTime": "8:30 AM",
-    "endTime": "10:00 AM"
+    "endTime": "11:00 AM"
   },
   {
     "title": "Golden State Warriors vs. LA Clippers",
@@ -140,7 +140,7 @@ const channels = [
     "page": "nba14.html",
     "date": "2026-04-13",
     "startTime": "8:30 AM",
-    "endTime": "10:00 AM"
+    "endTime": "11:00 AM"
   },
   {
     "title": "Sacramento Kings vs. Portland Trail Blazers",
@@ -150,7 +150,7 @@ const channels = [
     "page": "nba15.html",
     "date": "2026-04-13",
     "startTime": "8:30 AM",
-    "endTime": "10:00 AM"
+    "endTime": "11:00 AM"
   },
    {
   title: "🇵🇭 PBA- Genebra vs San Miguel",
