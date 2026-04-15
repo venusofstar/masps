@@ -2,26 +2,26 @@
    CHANNEL LIST
 -------------------------------------------------*/
 const channels = [
-{
-  "title": "Miami Heat vs. Charlotte Hornets",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba1.html",
-  "date": "2026-04-15",
-  "startTime": "7:30 AM",
-  "endTime": "11:00 AM"
-},
-{
-  "title": "Portland Trail Blazers vs. Phoenix Suns",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba2.html",
-  "date": "2026-04-15",
-  "startTime": "10:00 AM",
-  "endTime": "1:30 PM"
-},
+  {
+    "title": "Orlando Magic vs. Philadelphia 76ers",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba1.html",
+    "date": "2026-04-16",
+    "startTime": "7:30 AM",
+    "endTime": "10:00 AM"
+  },
+  {
+    "title": "Golden State Warriors vs. LA Clippers",
+    "category": "Basketball",
+    "service": "NBA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+    "page": "nba2.html",
+    "date": "2026-04-16",
+    "startTime": "10:00 AM",
+    "endTime": "1:00 PM"
+  },
 
    {
   title: "🇵🇭 PBA- Genebra vs San Miguel",
