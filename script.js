@@ -13,7 +13,7 @@ const channels = [
   "endTime": "10:00 AM"
 },
 {
-  "title": "NBA Play-In Tournament Game",
+  "title": "Golden State Warriors vs. Phoenix Suns",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
