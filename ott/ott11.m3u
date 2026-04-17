@@ -1,6 +1,30 @@
 #EXTM3U
 
+#EXTINF:-1 group-title="Live TV",cinemaone ph
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=55eddd1e157e4c3b830866e4679e7032:525030e984567ba8df0af80660952368
+#KODIPROP:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#KODIPROP:http-referrer=https://www.iwanttfc.com/
+https://abslive.akamaized.net/dash/live/2027618/c1ph/manifest.mpd
 
+
+#EXTINF:-1 group-title="Live TV",cinemo
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=aa8aebe35ccc4541b7ce6292efcb1bfb:f06b6031a3604cc6708c14d83f1a1b27
+#KODIPROP:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#KODIPROP:http-referrer=https://www.iwanttfc.com/
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-cinemo-dash-abscbnono/dadaafe3-3515-4706-8117-094ed0a6c170/index.mpd
+
+
+#EXTINF:-1 group-title="Live TV",cinemaone global
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=58d0e56991194043b8fb82feb4db7276:c116c612201e178193693eced13d7319
+#KODIPROP:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#KODIPROP:http-referrer=https://www.iwanttfc.com/
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-cinemaone-dash-abscbnono/45bf6022-0567-457b-9a71-7f727097f566/index.mpd
 
 #EXTINF:-1 group-title="Live TV",Channel Namek
 #KODIPROP:inputstream.adaptive.manifest_type=dash
