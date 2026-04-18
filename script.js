@@ -22,6 +22,46 @@ const channels = [
   "startTime": "10:00 AM",
   "endTime": "1:30 PM"
 },
+   {
+  "title": "Toronto Raptors vs. Cleveland Cavaliers",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+  "page": "nba1.html",
+  "date": "2026-04-19",
+  "startTime": "1:00 AM",
+  "endTime": "4:30 AM"
+},
+{
+  "title": "Minnesota Timberwolves vs. Denver Nuggets",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+  "page": "nba2.html",
+  "date": "2026-04-19",
+  "startTime": "3:30 AM",
+  "endTime": "7:00 AM"
+},
+{
+  "title": "Atlanta Hawks vs. New York Knicks",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+  "page": "nba3.html",
+  "date": "2026-04-19",
+  "startTime": "6:00 AM",
+  "endTime": "9:30 AM"
+},
+{
+  "title": "Houston Rockets vs. Los Angeles Lakers",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
+  "page": "nba4.html",
+  "date": "2026-04-19",
+  "startTime": "8:30 AM",
+  "endTime": "12:00 PM"
+},
 
    {
   title: "🇵🇭 PBA- Genebra vs San Miguel",
