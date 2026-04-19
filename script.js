@@ -7,7 +7,7 @@ const channels = [
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
-  "page": "nba5.html",
+  "page": "nba1.html",
   "date": "2026-04-20",
   "startTime": "1:00 AM",
   "endTime": "4:30 AM"
@@ -17,7 +17,7 @@ const channels = [
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
-  "page": "nba6.html",
+  "page": "nba2.html",
   "date": "2026-04-20",
   "startTime": "3:30 AM",
   "endTime": "7:00 AM"
@@ -27,7 +27,7 @@ const channels = [
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
-  "page": "nba7.html",
+  "page": "nba3.html",
   "date": "2026-04-20",
   "startTime": "6:30 AM",
   "endTime": "10:00 AM"
@@ -37,7 +37,7 @@ const channels = [
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
-  "page": "nba8.html",
+  "page": "nba4.html",
   "date": "2026-04-20",
   "startTime": "9:00 AM",
   "endTime": "12:30 PM"
