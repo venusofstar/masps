@@ -3,64 +3,44 @@
 -------------------------------------------------*/
 const channels = [
 {
-  "title": "Charlotte Hornets vs. Orlando Magic",
+  "title": "Philadelphia 76ers vs. Boston Celtics",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba1.html",
-  "date": "2026-04-18",
-  "startTime": "7:30 AM",
-  "endTime": "10:00 AM"
-},
-{
-  "title": "Golden State Warriors vs. Phoenix Suns",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba2.html",
-  "date": "2026-04-18",
-  "startTime": "10:00 AM",
-  "endTime": "1:30 PM"
-},
-   {
-  "title": "Toronto Raptors vs. Cleveland Cavaliers",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba1.html",
-  "date": "2026-04-19",
+  "page": "nba5.html",
+  "date": "2026-04-20",
   "startTime": "1:00 AM",
   "endTime": "4:30 AM"
 },
 {
-  "title": "Minnesota Timberwolves vs. Denver Nuggets",
+  "title": "Phoenix Suns vs. Oklahoma City Thunder",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba2.html",
-  "date": "2026-04-19",
+  "page": "nba6.html",
+  "date": "2026-04-20",
   "startTime": "3:30 AM",
   "endTime": "7:00 AM"
 },
 {
-  "title": "Atlanta Hawks vs. New York Knicks",
+  "title": "Orlando Magic vs. Detroit Pistons",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba3.html",
-  "date": "2026-04-19",
-  "startTime": "6:00 AM",
-  "endTime": "9:30 AM"
+  "page": "nba7.html",
+  "date": "2026-04-20",
+  "startTime": "6:30 AM",
+  "endTime": "10:00 AM"
 },
 {
-  "title": "Houston Rockets vs. Los Angeles Lakers",
+  "title": "Portland Trail Blazers vs. San Antonio Spurs",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_League_Pass_Logo_%282017%29.png",
-  "page": "nba4.html",
-  "date": "2026-04-19",
-  "startTime": "8:30 AM",
-  "endTime": "12:00 PM"
+  "page": "nba8.html",
+  "date": "2026-04-20",
+  "startTime": "9:00 AM",
+  "endTime": "12:30 PM"
 },
 
    {
