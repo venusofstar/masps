@@ -3,44 +3,34 @@
 -------------------------------------------------*/
 const channels = [
 {
-  "title": "Philadelphia 76ers vs. Boston Celtics",
+  "title": "Toronto Raptors vs. Cleveland Cavaliers",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
-  "date": "2026-04-20",
-  "startTime": "1:00 AM",
-  "endTime": "4:30 AM"
+  "date": "2026-04-21",
+  "startTime": "7:00 AM",
+  "endTime": "10:30 AM"
 },
 {
-  "title": "Phoenix Suns vs. Oklahoma City Thunder",
+  "title": "Atlanta Hawks vs. New York Knicks",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba2.html",
-  "date": "2026-04-20",
-  "startTime": "3:30 AM",
-  "endTime": "7:00 AM"
+  "date": "2026-04-21",
+  "startTime": "8:00 AM",
+  "endTime": "11:30 AM"
 },
 {
-  "title": "Orlando Magic vs. Detroit Pistons",
+  "title": "Minnesota Timberwolves vs. Denver Nuggets",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba3.html",
-  "date": "2026-04-20",
-  "startTime": "6:30 AM",
-  "endTime": "10:00 AM"
-},
-{
-  "title": "Portland Trail Blazers vs. San Antonio Spurs",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://i.imgur.com/916TTeF.jpeg",
-  "page": "nba4.html",
-  "date": "2026-04-20",
-  "startTime": "9:00 AM",
-  "endTime": "12:30 PM"
+  "date": "2026-04-21",
+  "startTime": "10:30 AM",
+  "endTime": "2:00 PM"
 },
 
    {
