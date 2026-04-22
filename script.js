@@ -30,7 +30,7 @@ const channels = [
   "page": "nba3.html",
   "date": "2026-04-22",
   "startTime": "10:30 AM",
-  "endTime": "1:30 PM"
+  "endTime": "2:30 PM"
 },
 
    {
