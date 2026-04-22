@@ -10,7 +10,7 @@ const channels = [
     "page": "nba1.html",
     "date": "2026-04-16",
     "startTime": "7:00 AM",
-    "endTime": "9:30 AM"
+    "endTime": "10:30 AM"
   },
   {
     "title": "Phoenix Suns vs. Oklahoma City Thunder",
@@ -20,7 +20,7 @@ const channels = [
     "page": "nba2.html",
     "date": "2026-04-16",
     "startTime": "9:30 AM",
-    "endTime": "12:00 PM"
+    "endTime": "1:00 PM"
   },
 
    {
