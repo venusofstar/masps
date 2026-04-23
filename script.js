@@ -2,26 +2,36 @@
    CHANNEL LIST
 -------------------------------------------------*/
 const channels = [
-  {
-    "title": "Orlando Magic vs. Detroit Pistons",
-    "category": "Basketball",
-    "service": "NBA",
-    "logo": "https://i.imgur.com/916TTeF.jpeg",
-    "page": "nba1.html",
-    "date": "2026-04-23",
-    "startTime": "7:00 AM",
-    "endTime": "10:30 AM"
-  },
-  {
-    "title": "Phoenix Suns vs. Oklahoma City Thunder",
-    "category": "Basketball",
-    "service": "NBA",
-    "logo": "https://i.imgur.com/916TTeF.jpeg",
-    "page": "nba2.html",
-    "date": "2026-04-23",
-    "startTime": "9:30 AM",
-    "endTime": "1:00 PM"
-  },
+{
+  "title": "New York Knicks vs. Atlanta Hawks",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://i.imgur.com/916TTeF.jpeg",
+  "page": "nba1.html",
+  "date": "2026-04-24",
+  "startTime": "7:00 AM",
+  "endTime": "10:30 AM"
+},
+{
+  "title": "Cleveland Cavaliers vs. Toronto Raptors",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://i.imgur.com/916TTeF.jpeg",
+  "page": "nba2.html",
+  "date": "2026-04-24",
+  "startTime": "8:00 AM",
+  "endTime": "11:30 AM"
+},
+{
+  "title": "Denver Nuggets vs. Minnesota Timberwolves",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://i.imgur.com/916TTeF.jpeg",
+  "page": "nba3.html",
+  "date": "2026-04-24",
+  "startTime": "9:30 AM",
+  "endTime": "1:00 PM"
+},
 
    {
   title: "🇵🇭 PBA- Genebra vs San Miguel",
