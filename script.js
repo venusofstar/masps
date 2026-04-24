@@ -3,34 +3,34 @@
 -------------------------------------------------*/
 const channels = [
 {
-  "title": "New York Knicks vs. Atlanta Hawks",
+  "title": "Boston Celtics vs. Philadelphia 76ers",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
-  "date": "2026-04-24",
+  "date": "2026-04-25",
   "startTime": "7:00 AM",
   "endTime": "10:30 AM"
 },
 {
-  "title": "Cleveland Cavaliers vs. Toronto Raptors",
+  "title": "Los Angeles Lakers vs. Houston Rockets",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba2.html",
-  "date": "2026-04-24",
+  "date": "2026-04-25",
   "startTime": "8:00 AM",
   "endTime": "11:30 AM"
 },
 {
-  "title": "Denver Nuggets vs. Minnesota Timberwolves",
+  "title": "San Antonio Spurs vs. Portland Trail Blazers",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba3.html",
-  "date": "2026-04-24",
-  "startTime": "9:30 AM",
-  "endTime": "1:00 PM"
+  "date": "2026-04-25",
+  "startTime": "10:30 AM",
+  "endTime": "2:00 PM"
 },
 
    {
