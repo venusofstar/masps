@@ -93,7 +93,7 @@ const channels = [
   endTime: "9:30 PM"
 },  
    {
-  title: "UFC Fight Night: Adesanya vs. Pyfer",
+  title: "UFC Fight Night: Sterling vs. Zalal",
   category: "UFC",
   service: "UFC",
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
