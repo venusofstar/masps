@@ -3,36 +3,45 @@
 -------------------------------------------------*/
 const channels = [
 {
-  "title": "Boston Celtics vs. Philadelphia 76ers",
+  "title": "Detroit Pistons vs. Orlando Magic",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
-  "date": "2026-04-25",
-  "startTime": "7:00 AM",
-  "endTime": "10:30 AM"
+  "date": "2026-04-26",
+  "startTime": "2:00 PM",
+  "endTime": "4:30 PM"
 },
 {
-  "title": "Los Angeles Lakers vs. Houston Rockets",
+  "title": "Oklahoma City Thunder vs. Phoenix Suns",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba2.html",
-  "date": "2026-04-25",
-  "startTime": "8:00 AM",
-  "endTime": "11:30 AM"
+  "date": "2026-04-26",
+  "startTime": "4:30 PM",
+  "endTime": "7:00 PM"
 },
 {
-  "title": "San Antonio Spurs vs. Portland Trail Blazers",
+  "title": "New York Knicks vs. Atlanta Hawks",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba3.html",
-  "date": "2026-04-25",
-  "startTime": "10:30 AM",
-  "endTime": "2:00 PM"
+  "date": "2026-04-26",
+  "startTime": "7:00 PM",
+  "endTime": "9:30 PM"
 },
-
+{
+  "title": "Denver Nuggets vs. Minnesota Timberwolves",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://i.imgur.com/916TTeF.jpeg",
+  "page": "nba4.html",
+  "date": "2026-04-26",
+  "startTime": "9:30 PM",
+  "endTime": "12:00 AM"
+},
    {
   title: "🇵🇭 PBA- Genebra vs San Miguel",
   category: "Basketball",
