@@ -9,8 +9,8 @@ const channels = [
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
   "date": "2026-04-26",
-  "startTime": "2:00 AM",
-  "endTime": "4:30 AM"
+  "startTime": "1:00 AM",
+  "endTime": "3:30 AM"
 },
 {
   "title": "Oklahoma City Thunder vs. Phoenix Suns",
@@ -19,7 +19,7 @@ const channels = [
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba2.html",
   "date": "2026-04-26",
-  "startTime": "4:30 AM",
+  "startTime": "3:30 AM",
   "endTime": "7:00 AM"
 },
 {
@@ -29,8 +29,8 @@ const channels = [
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba3.html",
   "date": "2026-04-26",
-  "startTime": "7:00 AM",
-  "endTime": "11:30 AM"
+  "startTime": "6:00 AM",
+  "endTime": "9:30 AM"
 },
 {
   "title": "Denver Nuggets vs. Minnesota Timberwolves",
@@ -39,7 +39,7 @@ const channels = [
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba4.html",
   "date": "2026-04-26",
-  "startTime": "9:30 AM",
+  "startTime": "8:30 AM",
   "endTime": "1:00 PM"
 },
    {
