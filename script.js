@@ -63,7 +63,7 @@ const channels = [
   endTime: "10:00 PM"
 },
 {
-  title: "UFC 327: Procházka vs. Ulberg",
+  title: "UFC Fight Night: Sterling vs Zalal",
   category: "UFC",
   service: "UFC",
   logo: "https://goluchas.com/wp-content/uploads/2026/02/IMG_0145-678x509.png",
