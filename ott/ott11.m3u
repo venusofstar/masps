@@ -14,6 +14,14 @@
 https://instreams.pro/US/NBA4/index.m3u8?st=f4NjZGgOrFPX2yo-74v0lA&e=1777178482
 
 
+#EXTINF:-1 tvg-id="" tvg-name="NBA4 Stream" tvg-logo="" group-title="NBA",NBA4h
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#EXTVLCOPT:http-referrer=https://instream.click/
+#EXTVLCOPT:http-origin=https://instream.click
+#EXTVLCOPT:http-header=Host:instreams.pro
+https://instreams.pro/US/NBA4/index.m3u8
+
+
 #EXTM3U
 
 #EXTINF:-1 tvg-id="" tvg-name="Minnesota Timberwolves Stream" tvg-logo="" group-title="NBA",Minnesota Timberwolves
