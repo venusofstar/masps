@@ -1,4 +1,34 @@
 #EXTM3U
+
+#EXTM3U
+
+#EXTINF:-1 tvg-id="" tvg-name="NBA4 Stream" tvg-logo="" group-title="NBA",NBA4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#EXTVLCOPT:http-referrer=https://instream.click/
+#EXTVLCOPT:http-origin=https://instream.click
+#EXTVLCOPT:http-header=Host:instreams.pro
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:en-US
+#EXTVLCOPT:http-header=Accept-Encoding:gzip, deflate, br, zstd
+#EXTVLCOPT:http-header=Connection:keep-alive
+https://instreams.pro/US/NBA4/index.m3u8?st=f4NjZGgOrFPX2yo-74v0lA&e=1777178482
+
+
+#EXTM3U
+
+#EXTINF:-1 tvg-id="" tvg-name="Minnesota Timberwolves Stream" tvg-logo="" group-title="NBA",Minnesota Timberwolves
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-header=Host:n5.zohanayaan.com:1686
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:en-US
+#EXTVLCOPT:http-header=Accept-Encoding:gzip, deflate, br, zstd
+#EXTVLCOPT:http-header=Connection:keep-alive
+https://n5.zohanayaan.com:1686/hls/mminnesotatimberwolves.m3u8?md5=rzF68NwE8D4hoHNnZmXCkw&expires=1777174744
+
+
+
 #EXTINF:-1 tvg-name="DRM Channel",DRM Channel
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
