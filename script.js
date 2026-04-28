@@ -3,34 +3,34 @@
 -------------------------------------------------*/
 const channels = [
 {
-  "title": "Detroit Pistons vs. Orlando Magic",
+  "title": "Philadelphia 76ers vs. Boston Celtics",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
-  "date": "2026-04-28",
-  "startTime": "8:00 AM",
-  "endTime": "11:30 AM"
+  "date": "2026-04-29",
+  "startTime": "7:00 AM",
+  "endTime": "10:30 AM"
 },
 {
-  "title": "Oklahoma City Thunder vs. Phoenix Suns",
+  "title": "Atlanta Hawks vs. New York Knicks",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba2.html",
-  "date": "2026-04-28",
-  "startTime": "9:30 AM",
-  "endTime": "1:00 PM"
+  "date": "2026-04-29",
+  "startTime": "8:00 AM",
+  "endTime": "11:30 AM"
 },
 {
-  "title": "Minnesota Timberwolves vs. Denver Nuggets",
+  "title": "Portland Trail Blazers vs. San Antonio Spurs",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba3.html",
-  "date": "2026-04-28",
-  "startTime": "10:30 AM",
-  "endTime": "2:00 PM"
+  "date": "2026-04-29",
+  "startTime": "9:30 AM",
+  "endTime": "1:00 PM"
 },
    {
   title: "🇵🇭 PBA- Genebra vs San Miguel",
