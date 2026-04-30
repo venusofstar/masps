@@ -1,6 +1,6 @@
 #EXTM3U
 
-#EXTM3U
+#EXTM3U https://mc-2l6kt16zkr.bunny.run/NBA.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="NBA4 Stream" tvg-logo="" group-title="NBA",NBA4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
