@@ -3,13 +3,13 @@
 -------------------------------------------------*/
 const channels = [
 {
-  title: "Detroit Pistons vs. Orlando Magic",
+  title: "Philadelphia 76ers vs Boston Celtics",
   category: "Basketball",
   service: "NBA",
   logo: "https://i.imgur.com/916TTeF.jpeg",
   page: "nba1.html",
-  date: "2026-05-02",
-  startTime: "7:00 AM",
+  date: "2026-05-03",
+  startTime: "7:30 AM",
   endTime: "10:30 AM"
 },
 {
