@@ -3,24 +3,24 @@
 -------------------------------------------------*/
 const channels = [
 {
-  title: "Orlando Magic vs. Detroit Pistons",
+  title: "Philadelphia 76ers vs. New York Knicks",
   category: "Basketball",
   service: "NBA",
   logo: "https://i.imgur.com/916TTeF.jpeg",
   page: "nba1.html",
-  date: "2026-05-04",
-  startTime: "3:30 AM",
-  endTime: "7:00 AM"
+  date: "2026-05-05",
+  startTime: "8:00 AM",
+  endTime: "11:30 AM"
 },
 {
-  title: "Toronto Raptors vs. Cleveland Cavaliers",
+  title: "Minnesota Timberwolves vs. San Antonio Spurs",
   category: "Basketball",
   service: "NBA",
   logo: "https://i.imgur.com/916TTeF.jpeg",
   page: "nba2.html",
-  date: "2026-05-04",
-  startTime: "7:30 AM",
-  endTime: "11:00 AM"
+  date: "2026-05-05",
+  startTime: "9:30 AM",
+  endTime: "1:00 PM"
 },
 {
   title: "🇵🇭 PBA - Ginebra vs San Miguel",
