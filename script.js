@@ -26,7 +26,7 @@ const channels = [
   title: "🇵🇭 PBA - Ginebra vs San Miguel",
   category: "Basketball",
   service: "PBA",
-  logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6rQ4mevy1u1IZhRZ5UCJ5KX8-7ydnWyS4m2-Hr9po343J4B10pn1kfRI&s=10",
   page: "pba1.html",
   date: "2026-01-12",
   startTime: "5:15 PM",
