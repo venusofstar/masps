@@ -39,8 +39,8 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
   page: "pba1.html",
   date: "2026-05-05",
-  startTime: "7:30 PM",
-  endTime: "10:00 PM"
+  startTime: "19:30 PM",
+  endTime: "22:00 PM"
 },
 {
   title: "UFC Fight Night: Sterling vs Zalal",
