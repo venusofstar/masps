@@ -23,22 +23,22 @@ const channels = [
   endTime: "12:00 PM"
 },
 {
-  title: "🇵🇭 PBA - Ginebra vs San Miguel",
+  title: "🇵🇭 PBA - Beermen vs Terra",
   category: "Basketball",
   service: "PBA",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6rQ4mevy1u1IZhRZ5UCJ5KX8-7ydnWyS4m2-Hr9po343J4B10pn1kfRI&s=10",
+  logo: "https://cdn.manilastandard.net/wp-content/uploads/2023/08/PBA.png",
   page: "pba1.html",
-  date: "2026-01-12",
+  date: "2026-05-06",
   startTime: "5:15 PM",
   endTime: "8:30 PM"
 },
 {
-  title: "🇵🇭 PBA - TNT vs Magnolia",
+  title: "🇵🇭 PBA - Macau black knights vs Phoenix",
   category: "Basketball",
   service: "PBA",
-  logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Philippine_Basketball_Association_%28logo%29.svg/1200px-Philippine_Basketball_Association_%28logo%29.svg.png",
-  page: "pba1.html",
-  date: "2026-05-05",
+  logo: "https://cdn.manilastandard.net/wp-content/uploads/2023/08/PBA.png",
+  page: "pba2.html",
+  date: "2026-05-06",
   startTime: "7:30 PM",
   endTime: "11:00 PM"
 },
