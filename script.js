@@ -27,20 +27,20 @@ const channels = [
   category: "Basketball",
   service: "PBA",
   logo: "https://cdn.manilastandard.net/wp-content/uploads/2023/08/PBA.png",
-  page: "pba1.html",
+  page: "pba2.html",
   date: "2026-05-06",
-  startTime: "5:15 PM",
-  endTime: "8:30 PM"
+  startTime: "7:30 PM",
+  endTime: "11:30 PM"
 },
 {
   title: "🇵🇭 PBA - Macau black knights vs Phoenix",
   category: "Basketball",
   service: "PBA",
   logo: "https://cdn.manilastandard.net/wp-content/uploads/2023/08/PBA.png",
-  page: "pba2.html",
+  page: "pba1.html",
   date: "2026-05-06",
-  startTime: "7:30 PM",
-  endTime: "11:00 PM"
+  startTime: "5:15 PM",
+  endTime: "8:00 PM"
 },
 {
   title: "UFC Fight Night: Sterling vs Zalal",
