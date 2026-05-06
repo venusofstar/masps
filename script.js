@@ -23,7 +23,7 @@ const channels = [
   endTime: "12:00 PM"
 },
 {
-  title: "🇵🇭 PBA - Beermen vs Terra",
+  title: "🇵🇭 PBA - San Miguel vs Terrafirma",
   category: "Basketball",
   service: "PBA",
   logo: "https://cdn.manilastandard.net/wp-content/uploads/2023/08/PBA.png",
