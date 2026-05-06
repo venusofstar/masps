@@ -3,24 +3,24 @@
 -------------------------------------------------*/
 const channels = [
 {
-  title: "Cleveland Cavaliers vs. Detroit Pistons",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://i.imgur.com/916TTeF.jpeg",
-  page: "nba1.html",
-  date: "2026-05-06",
-  startTime: "7:00 AM",
-  endTime: "10:30 AM"
+  "title": "Philadelphia 76ers vs. New York Knicks",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://i.imgur.com/916TTeF.jpeg",
+  "page": "nba1.html",
+  "date": "2026-05-07",
+  "startTime": "7:00 AM",
+  "endTime": "10:30 AM"
 },
 {
-  title: "Los Angeles Lakers vs. Oklahoma City Thunder",
-  category: "Basketball",
-  service: "NBA",
-  logo: "https://i.imgur.com/916TTeF.jpeg",
-  page: "nba2.html",
-  date: "2026-05-06",
-  startTime: "8:30 AM",
-  endTime: "12:00 PM"
+  "title": "Minnesota Timberwolves vs. San Antonio Spurs",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://i.imgur.com/916TTeF.jpeg",
+  "page": "nba2.html",
+  "date": "2026-05-07",
+  "startTime": "9:30 AM",
+  "endTime": "1:00 PM"
 },
 {
   title: "🇵🇭 PBA - San Miguel vs Terrafirma",
