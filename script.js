@@ -3,22 +3,22 @@
 -------------------------------------------------*/
 const channels = [
 {
-  "title": "Cleveland Cavaliers vs. Detroit Pistons",
+  "title": "New York Knicks vs. Philadelphia 76ers",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
-  "date": "2026-05-08",
+  "date": "2026-05-09",
   "startTime": "7:00 AM",
   "endTime": "10:30 AM"
 },
 {
-  "title": "Los Angeles Lakers vs. Oklahoma City Thunder",
+  "title": "San Antonio Spurs vs. Minnesota Timberwolves",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba2.html",
-  "date": "2026-05-08",
+  "date": "2026-05-09",
   "startTime": "9:30 AM",
   "endTime": "1:00 PM"
 },
