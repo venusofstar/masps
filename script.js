@@ -43,13 +43,13 @@ const channels = [
   endTime: "8:00 PM"
 },
 {
-  title: "UFC Fight Night: Sterling vs Zalal",
+  title: "UFC 328: Chimaev vs. Strickland",
   category: "UFC",
   service: "UFC",
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
   page: "ufc1.html",
-  date: "2026-04-26",
-  startTime: "5:00 AM",
+  date: "2026-05-10",
+  startTime: "4:00 AM",
   endTime: "12:30 PM"
 },
 {
