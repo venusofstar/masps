@@ -1,0 +1,91 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-name="Sky Sport 1 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sky Sports",Sky Sport 1 HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=d8f0663ec8283ca0aef8f12a7868afbc:ec674895f8a0021dc0ba02da95c7fab1
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_1_hd/dash/sky_sport_1_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport 2 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sky Sports",Sky Sport 2 HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=8ade9637c7c73ce2a9ff418fea41d8d6:e9e9d8af5a476a08749541071326a954
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_2_hd/dash/sky_sport_2_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport 3 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sky Sports",Sky Sport 3 HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1184321e329737189b8beb6fcd88a0ce:aa1d895be57f390e9e9a134c13b68c2a
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_3_hd/dash/sky_sport_3_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport 4 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sky Sports",Sky Sport 4 HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=cf96ff7fd56d39beb072d01dfe5cfdec:10e5a0f3d923d55128021d1e706d1a21
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_4_hd/dash/sky_sport_4_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport 5 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sky Sports",Sky Sport 5 HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5e47723998213e518808bbefce8ef673:38f0b12208f2c07f249f1deb2e89e6bb
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_5_hd/dash/sky_sport_5_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport 6 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sky Sports",Sky Sport 6 HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=dd30fb88f1ca3d77a368e5cd302e4d2e:3f11ab2591ce4be5fdf0b532bf1b6fcc
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_6_hd/dash/sky_sport_6_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport 7 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sky Sports",Sky Sport 7 HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=c7f17f8a65b63d72ac7ce48568501b74:fe28c2683e9bb181e88f8471c2931046
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_7_hd/dash/sky_sport_7_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport 8 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sky Sports",Sky Sport 8 HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=8b1e79740887330c824553bc9eacca8a:ef2c04e9d59195de14720f065ac08265
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_8_hd/dash/sky_sport_8_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport 9 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sky Sports",Sky Sport 9 HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e5587464cf893abf8453921facd85c68:61cfc0cbdc3982982b1aee03ead21493
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_9_hd/dash/sky_sport_9_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport 10 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sky Sports",Sky Sport 10 HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ea78dd6d8dbd3b1eb2461d229fc9e16e:830bce4403341f48f902eea35fdb360c
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_10_hd/dash/sky_sport_10_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport F1 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_F1_logo.svg" group-title="Sports Special",Sky Sport F1 HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=6695688f79dc36f7a41f7db13bff5aca:22ef689af2162aefbf745cba2adb4fe9
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_f1_hd/dash/sky_sport_f1_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport Premier League HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sports Special",Sky Sport Premier League HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=446af6dd9ec0395eaf5ab6adac2b8234:a70a5944e51312f5a045b1e81651d033
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_premier_league_hd/dash/sky_sport_premier_league_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport Tennis HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sports Special",Sky Sport Tennis HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=b29b2b7da32e33b08fe391d25d00b3f1:dc7f4b1c6c63838a60182d9a72c563dd
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_tennis_hd/dash/sky_sport_tennis_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport Golf HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sports Special",Sky Sport Golf HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e571f67594c530f8a4b861ca41004a4f:9156d299e8ced2f112ab58706a8bf5b2
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_golf_hd/dash/sky_sport_golf_hd.mpd
+
+#EXTINF:-1 tvg-name="Sky Sport News HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sky_Sports_logo_2020.svg" group-title="Sports News",Sky Sport News HD
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=66b11332364e3a45a2328fc24a075e28:a8968f08b78f992005498d9377d9de06
+https://simplitv-live.mdn.ors.at/live/eds/sky_sport_news_hd/dash/sky_sport_news_hd.mpd
