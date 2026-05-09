@@ -63,14 +63,14 @@ const channels = [
   endTime: "2:30 PM"
 },
 {
-  title: "WWE: NXT",
+  title: "WWE Backlash Tampa",
   category: "WWE",
   service: "WWE",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZr5Kf-2nSHJw7LJXM_57RfmwVkcXo-pFrQ&usqp=CAU",
+  logo: "https://api.ppv.to/assets/thumb/cde45a8d799b848a373d5601dffb4504-thumbnail.jpg",
   page: "nxt.html",
-  date: "2025-12-31",
-  startTime: "9:00 AM",
-  endTime: "11:00 AM"
+  date: "2026-05-10",
+  startTime: "7:30 AM",
+  endTime: "1:00 PM"
 }
 ];
 
