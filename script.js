@@ -3,14 +3,14 @@
 -------------------------------------------------*/
 const channels = [
 {
-  "title": "Minnesota Timberwolves vs. San Antonio Spurs",
+  "title": "San Antonio Spurs vs Oklahoma City Thunder",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
-  "date": "2026-05-13",
-  "startTime": "8:00 AM",
-  "endTime": "11:30 AM"
+  "date": "2026-05-19",
+  "startTime": "8:30 AM",
+  "endTime": "12:30 AM"
 },
 {
   "title": "Cleveland Cavaliers vs. Detroit Pistons",
