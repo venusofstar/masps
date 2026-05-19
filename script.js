@@ -10,16 +10,16 @@ const channels = [
   "page": "nba1.html",
   "date": "2026-05-19",
   "startTime": "8:30 AM",
-  "endTime": "12:30 AM"
+  "endTime": "12:30 PM"
 },
 {
-  "title": "Cleveland Cavaliers vs. Detroit Pistons",
+  "title": "San Antonio Spurs vs Oklahoma City Thunder",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
   "date": "2026-05-18",
-  "startTime": "8:00 AM",
+  "startTime": "8:30 AM",
   "endTime": "11:30 AM"
 },
 {
@@ -29,7 +29,7 @@ const channels = [
   logo: "https://cdn.manilastandard.net/wp-content/uploads/2023/08/PBA.png",
   page: "pba2.html",
   date: "2026-05-06",
-  startTime: "7:30 PM",
+  startTime: "8:30 PM",
   endTime: "11:30 PM"
 },
 {
