@@ -3,12 +3,12 @@
 -------------------------------------------------*/
 const channels = [
 {
-  "title": "Cleveland Cavaliers vs. New York Knicks",
+  "title": "Cleveland Cavaliers vs New York Knicks",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
-  "date": "2026-05-20",
+  "date": "2026-05-22",
   "startTime": "8:00 AM",
   "endTime": "12:30 PM"
 },
