@@ -3,23 +3,23 @@
 -------------------------------------------------*/
 const channels = [
 {
-  "title": "Cleveland Cavaliers vs New York Knicks",
-  "category": "Basketball",
-  "service": "NBA",
-  "logo": "https://i.imgur.com/916TTeF.jpeg",
-  "page": "nba1.html",
-  "date": "2026-05-22",
-  "startTime": "8:00 AM",
-  "endTime": "12:30 PM"
-},
-{
   "title": "San Antonio Spurs vs Oklahoma City Thunder",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
-  "date": "2026-05-21",
+  "date": "2026-05-23",
   "startTime": "8:30 AM",
+  "endTime": "12:30 PM"
+},
+{
+  "title": "Cleveland Cavaliers vs New York Knicks",
+  "category": "Basketball",
+  "service": "NBA",
+  "logo": "https://i.imgur.com/916TTeF.jpeg",
+  "page": "nba1.html",
+  "date": "2026-05-24",
+  "startTime": "8:00 AM",
   "endTime": "12:30 PM"
 },
 {
@@ -63,14 +63,24 @@ const channels = [
   endTime: "2:30 PM"
 },
 {
-  title: "WWE Backlash Tampa",
-  category: "WWE",
-  service: "WWE",
-  logo: "https://api.ppv.to/assets/thumb/cde45a8d799b848a373d5601dffb4504-thumbnail.jpg",
-  page: "nxt.html",
-  date: "2026-05-10",
-  startTime: "7:30 AM",
-  endTime: "1:00 PM"
+  title: "Canadian Grand Prix - Practice 1",
+  category: "F1",
+  service: "F1",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
+  page: "f1.html",
+  date: "2026-05-23",
+  startTime: "12:30 AM",
+  endTime: "6:00 AM"
+},
+{
+  title: "Canadian Grand Prix - Sprint Qualifying",
+  category: "F1",
+  service: "F1",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
+  page: "f1.html",
+  date: "2026-05-23",
+  startTime: "4:30 AM",
+  endTime: "9:00 AM"
 }
 ];
 
