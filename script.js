@@ -53,33 +53,33 @@ const channels = [
   endTime: "12:30 PM"
 },
 {
-  title: "Fundora vs Thurman",
+  title: "Oleksandr Usyk vs. Rico Verhoeven",
   category: "Boxing",
   service: "Boxing",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH8CQhoXPv9Q8fvjnugRAihFJNgHUSyqynHqO4YX1VvA&s=10",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1AZaSDYMS504vJynWmug5VhjiqGuW3v5zlZM92D8huJ48GBjsTYFlqQ&s=10",
   page: "boxing1.html",
   date: "2026-03-29",
-  startTime: "9:00 AM",
-  endTime: "2:30 PM"
+  startTime: "11:00 PM",
+  endTime: "5:30 AM"
 },
 {
-  title: "Canadian Grand Prix - Practice 1",
+  title: "Canadian Grand Prix - Sprint",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
   date: "2026-05-23",
-  startTime: "12:30 AM",
+  startTime: "12:00 AM",
   endTime: "6:00 AM"
 },
 {
-  title: "Canadian Grand Prix - Sprint Qualifying",
+  title: "Canadian Grand Prix - Qualifying",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
-  page: "f1.html",
+  page: "f2.html",
   date: "2026-05-23",
-  startTime: "4:30 AM",
+  startTime: "4:00 AM",
   endTime: "9:00 AM"
 }
 ];
