@@ -18,7 +18,7 @@ const channels = [
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
-  "date": "2026-05-24",
+  "date": "2026-05-26",
   "startTime": "8:00 AM",
   "endTime": "12:30 PM"
 },
