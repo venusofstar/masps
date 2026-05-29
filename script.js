@@ -8,8 +8,8 @@ const channels = [
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
-  "date": "2026-05-29",
-  "startTime": "8:30 AM",
+  "date": "2026-05-31",
+  "startTime": "8:00 AM",
   "endTime": "12:00 PM"
 },
 {
