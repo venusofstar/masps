@@ -48,19 +48,19 @@ const channels = [
   service: "UFC",
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
   page: "ufc1.html",
-  date: "2026-05-31",
+  date: "2026-05-30",
   startTime: "5:00 PM",
   endTime: "10:30 PM"
 },
 {
-  title: "Oleksandr Usyk vs. Rico Verhoeven",
+  title: "O'Shaquie Foster vs. Raymond Ford",
   category: "Boxing",
   service: "Boxing",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1AZaSDYMS504vJynWmug5VhjiqGuW3v5zlZM92D8huJ48GBjsTYFlqQ&s=10",
   page: "boxing1.html",
-  date: "2026-05-23",
-  startTime: "11:00 PM",
-  endTime: "5:30 AM"
+  date: "2026-05-31",
+  startTime: "8:00 AM",
+  endTime: "1:30 PM"
 },
 {
   title: "Canadian Grand Prix - Sprint",
