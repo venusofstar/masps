@@ -3,13 +3,13 @@
 -------------------------------------------------*/
 const channels = [
 {
-  "title": "San Antonio Spurs vs Oklahoma City Thunder",
+  "title": "New York Knicks vs San Antonio Spurs",
   "category": "Basketball",
   "service": "NBA",
   "logo": "https://i.imgur.com/916TTeF.jpeg",
   "page": "nba1.html",
-  "date": "2026-05-31",
-  "startTime": "8:00 AM",
+  "date": "2026-06-4",
+  "startTime": "8:30 AM",
   "endTime": "12:00 PM"
 },
 {
