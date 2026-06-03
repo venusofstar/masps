@@ -49,8 +49,8 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
   page: "ufc1.html",
   date: "2026-06-7",
-  startTime: "5:00 PM",
-  endTime: "10:30 PM"
+  startTime: "5:00 AM",
+  endTime: "10:30 AM"
 },
 {
   title: "O'Shaquie Foster vs. Raymond Ford",
