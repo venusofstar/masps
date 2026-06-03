@@ -43,12 +43,12 @@ const channels = [
   endTime: "8:00 PM"
 },
 {
-  title: "UFC Fight Night: Song vs Figueiredo",
+  title: "UFC Fight Night: Muhammad vs. Bonfim",
   category: "UFC",
   service: "UFC",
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
   page: "ufc1.html",
-  date: "2026-05-30",
+  date: "2026-06-7",
   startTime: "5:00 PM",
   endTime: "10:30 PM"
 },
