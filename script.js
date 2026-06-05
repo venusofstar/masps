@@ -70,7 +70,7 @@ const channels = [
   page: "f1.html",
   date: "2026-06-5",
   startTime: "9:00 PM",
-  endTime: "1:59 PM"
+  endTime: "11:59 PM"
 },
 {
   title: "Canadian Grand Prix - Qualifying",
