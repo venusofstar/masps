@@ -63,24 +63,34 @@ const channels = [
   endTime: "1:30 PM"
 },
 {
-  title: "Monaco Grand Prix - Practice 1",
+  title: "Monaco Grand Prix - Practice 3",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
-  date: "2026-06-5",
-  startTime: "9:00 PM",
-  endTime: "11:59 PM"
+  date: "2026-06-6",
+  startTime: "6:30 PM",
+  endTime: "9:30 PM"
 },
 {
-  title: "Canadian Grand Prix - Qualifying",
+  title: "Monaco Grand Prix - Qualifying",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
-  page: "f2.html",
-  date: "2026-05-24",
-  startTime: "4:00 AM",
-  endTime: "9:00 AM"
+  page: "f1.html",
+  date: "2026-06-6",
+  startTime: "9:00 PM",
+  endTime: "11:59 PM"
+   },
+{
+  title: "Monaco Grand Prix - Race",
+  category: "F1",
+  service: "F1",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
+  page: "f1.html",
+  date: "2026-06-7",
+  startTime: "8:00 PM",
+  endTime: "11:59 PM"
 }
 ];
 
