@@ -63,14 +63,14 @@ const channels = [
   endTime: "1:30 PM"
 },
 {
-  title: "Canadian Grand Prix - Sprint",
+  title: "Monaco Grand Prix - Practice 1",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
-  date: "2026-05-24",
-  startTime: "12:00 AM",
-  endTime: "6:00 AM"
+  date: "2026-06-5",
+  startTime: "9:00 PM",
+  endTime: "1:00 AM"
 },
 {
   title: "Canadian Grand Prix - Qualifying",
