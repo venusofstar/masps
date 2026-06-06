@@ -1,47 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>boxing — Fullscreen Video</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Live Fullscreen Embed</title>
   <style>
-    html,body {margin:0;padding:0;height:100%;background:#000;overflow:hidden;}
-    #fullPlayer {position:fixed;top:0;left:0;width:100vw;height:100vh;border:0;}
+    /* Make the page and iframe full screen */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #000; /* Black background for better viewing */
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
   </style>
 </head>
 <body>
 
-  <!-- FULLSCREEN VIDEO PLAYER -->
+  <!-- YouTube Live Embed -->
   <iframe
-    id="fullPlayer"
-    src="https://pooembed.eu/embed/oshaquie-foster-vs-raymond-ford"
-    allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-    allowfullscreen
-    sandbox="allow-same-origin allow-scripts allow-forms allow-presentation"
-  ></iframe>
-
-  <script>
-    const frame = document.getElementById('fullPlayer');
-
-    // Auto request fullscreen on load (browsers may block until user interaction)
-    frame.addEventListener('load', async () => {
-      try {
-        if (!document.fullscreenElement) {
-          await frame.requestFullscreen();
-        }
-      } catch(e) {
-        console.warn('Fullscreen requires a tap/click');
-      }
-    });
-
-    // On click, try forcing fullscreen
-    document.body.addEventListener('click', async () => {
-      try {
-        if (!document.fullscreenElement) await frame.requestFullscreen();
-        frame.contentWindow?.postMessage({action:'unmute'}, '*');
-      } catch(e){}
-    });
-  </script>
+    src="https://www.youtube.com/embed/kV9veFdbqMw?autoplay=1&mute=0"
+    title="YouTube Live"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+    allowfullscreen>
+  </iframe>
 
 </body>
 </html>
