@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube Live Fullscreen Embed</title>
-  <style>
-    /* Make the page and iframe full screen */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      background: #000; /* Black background for better viewing */
-    }
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Fullscreen</title>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Fullscreen iframe */
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+
+  /* 🚫 disables touch/click interaction */
+  pointer-events: none;
+}
+</style>
 </head>
+
 <body>
 
-  <!-- YouTube Live Embed -->
-  <iframe
-    src="https://www.youtube.com/embed/kV9veFdbqMw?autoplay=1&mute=0"
-    title="YouTube Live"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-    allowfullscreen>
-  </iframe>
+<iframe
+  src="https://www.youtube.com/embed/kV9veFdbqMw?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
+  allow="autoplay; fullscreen"
+  allowfullscreen>
+</iframe>
 
 </body>
 </html>
