@@ -14,6 +14,7 @@ html, body {
   background: #000;
 }
 
+/* Fullscreen iframe */
 iframe {
   position: absolute;
   top: 0;
@@ -22,7 +23,7 @@ iframe {
   height: 100%;
   border: none;
 
-  /* disable touch/click */
+  /* 🚫 disables touch/click interaction */
   pointer-events: none;
 }
 </style>
@@ -31,7 +32,7 @@ iframe {
 <body>
 
 <iframe
-  src="https://www.youtube.com/embed/kV9veFdbqMw?autoplay=1&mute=0&controls=0&playsinline=1&rel=0&modestbranding=1"
+  src="https://www.youtube.com/embed/kV9veFdbqMw?autoplay=1&unmute=1&controls=0&playsinline=1&rel=0&modestbranding=1"
   allow="autoplay; fullscreen"
   allowfullscreen>
 </iframe>
