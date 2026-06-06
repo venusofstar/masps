@@ -1,3 +1,7 @@
+the play button, unmute button, Full screen button 
+
+Fully optimize auto hide if playing and auto display when click 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,6 +117,66 @@ video {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
+/* Controls wrapper */
+#controls {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    transition: opacity .3s ease;
+}
+
+#controls.show {
+    opacity: 1;
+}
+
+#controls.hide {
+    opacity: 0;
+}
+
+/* Buttons */
+#play-btn,
+#unmute-btn,
+#fullscreen-btn {
+    pointer-events: auto;
+    border: none;
+    color: white;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}
+
+/* Center Play */
+#play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px 28px;
+    font-size: 24px;
+    border-radius: 12px;
+    background: rgba(0,200,0,.75);
+}
+
+/* Top Left */
+#unmute-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 10px 18px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: rgba(0,200,0,.55);
+}
+
+/* Top Right */
+#fullscreen-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 10px 18px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: rgba(0,200,0,.55);
+}
 </style>
 </head>
 
@@ -121,9 +185,11 @@ video {
 <div id="player-container">
     <video id="player-bet" playsinline></video>
 
+<div id="controls" class="show">
     <button id="play-btn">▶ Play</button>
     <button id="unmute-btn">🔊 Unmute</button>
     <button id="fullscreen-btn">⛶</button>
+</div>
 
     <div id="spinner"></div>
 </div>
@@ -186,75 +252,81 @@ function loadPlayer() {
     video.addEventListener("error", () => setTimeout(loadPlayer, 2000));
 }
 
-// Auto reload page every 30 minutes
-setInterval(() => {
-    console.log("Auto page reload...");
-    location.reload();
-}, 1800000); // 30 minutes
-
-// Reload page if video is frozen for 20 seconds
-let lastTime = 0;
-
-setInterval(() => {
-    if (!video.paused && !video.ended) {
-        if (video.currentTime === lastTime) {
-            console.warn("Video frozen. Reloading page...");
-            location.reload();
-        }
-        lastTime = video.currentTime;
-    }
-}, 20000);
-
-// Reload page when HLS fatal error occurs repeatedly
-let errorCount = 0;
-
-hls && hls.on(Hls.Events.ERROR, (event, data) => {
-    if (data.fatal) {
-        errorCount++;
-        if (errorCount >= 3) {
-            location.reload();
-        }
-    }
-});
-
-hls.on(Hls.Events.ERROR, (event, data) => {
-    console.warn("HLS Error", data);
-
-    if (data.fatal) {
-        setTimeout(() => {
-            location.reload();
-        }, 3000);
-    }
-});
-
-video.addEventListener("error", () => {
-    setTimeout(() => location.reload(), 3000);
-});
-
-video.addEventListener("stalled", () => {
-    setTimeout(() => location.reload(), 5000);
-});
-
-video.addEventListener("ended", () => {
-    setTimeout(() => location.reload(), 2000);
-});
-
-// Reload page when browser goes back online
-window.addEventListener('offline', () => {
-    console.warn("Internet disconnected");
-});
-
-window.addEventListener('online', () => {
-    console.log("Internet restored. Reloading...");
-    location.reload();
-});
-
 // Manual play
 playBtn.addEventListener("click", () => { video.play(); playBtn.style.display="none"; loadMonetagAds(); });
 unmuteBtn.addEventListener("click", () => { video.volume=1; unmuteBtn.style.display="none"; loadMonetagAds(); });
 fullscreenBtn.addEventListener("click", () => {
     if (!document.fullscreenElement) { video.requestFullscreen().catch(err=>console.warn(err)); }
     else { document.exitFullscreen(); }
+});
+
+const controls = document.getElementById("controls");
+
+let hideTimer;
+
+function showControls() {
+    controls.classList.remove("hide");
+    controls.classList.add("show");
+
+    clearTimeout(hideTimer);
+
+    if (!video.paused) {
+        hideTimer = setTimeout(() => {
+            controls.classList.remove("show");
+            controls.classList.add("hide");
+        }, 3000);
+    }
+}
+
+function hideControls() {
+    if (!video.paused) {
+        controls.classList.remove("show");
+        controls.classList.add("hide");
+    }
+}
+
+video.addEventListener("playing", () => {
+    showSpinner(false);
+    showControls();
+});
+
+video.addEventListener("pause", () => {
+    controls.classList.remove("hide");
+    controls.classList.add("show");
+});
+
+video.addEventListener("click", showControls);
+
+document.getElementById("player-container")
+.addEventListener("click", (e) => {
+    if (
+        e.target === video ||
+        e.target.id === "player-container"
+    ) {
+        showControls();
+    }
+});
+
+playBtn.addEventListener("click", () => {
+    video.play();
+    loadMonetagAds();
+    showControls();
+});
+
+unmuteBtn.addEventListener("click", () => {
+    video.volume = 1;
+    unmuteBtn.style.display = "none";
+    showControls();
+    loadMonetagAds();
+});
+
+fullscreenBtn.addEventListener("click", () => {
+    if (!document.fullscreenElement) {
+        video.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
+    showControls();
 });
 
 loadPlayer();
