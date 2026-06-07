@@ -100,7 +100,7 @@ const channels = [
   page: "fifa1.html",
   date: "2026-06-12",
   startTime: "3:00 AM",
-  endTime: "7:00 PM"
+  endTime: "7:00 AM"
 },
 {
   title: "South Korea vs. Czechia",
