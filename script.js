@@ -63,14 +63,14 @@ const channels = [
   endTime: "7:30 PM"
 },
 {
-  title: "Monaco Grand Prix - Practice 3",
+  title: "Barcelona-Catalunya GP",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
-  date: "2026-06-6",
-  startTime: "6:30 PM",
-  endTime: "9:30 PM"
+  date: "2026-06-14",
+  startTime: "9:00 PM",
+  endTime: "11:59 PM"
 },
 {
   title: "Monaco Grand Prix - Qualifying",
