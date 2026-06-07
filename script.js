@@ -50,7 +50,7 @@ const channels = [
   page: "ufc1.html",
   date: "2026-06-7",
   startTime: "5:00 AM",
-  endTime: "10:30 AM"
+  endTime: "11:59 AM"
 },
 {
   title: "nery vs casimero",
