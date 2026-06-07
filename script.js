@@ -109,8 +109,8 @@ const channels = [
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTh_lXTlh8GQBSdngWkMMwHeEqsSxO0qW_bYSemB8TefHj1LD7j7WE0E5&s=10",
   page: "fifa2.html",
   date: "2026-06-12",
-  startTime: "10:00 PM",
-  endTime: "11:59 PM"
+  startTime: "10:00 AM",
+  endTime: "11:59 AM"
 }
 ];
 
