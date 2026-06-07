@@ -91,14 +91,14 @@ const channels = [
   date: "2026-06-7",
   startTime: "9:00 PM",
   endTime: "11:59 PM"
-   },
+},
 {
   title: "Mexico vs. South Africa",
   category: "FIFA World Cup",
   service: "FIFA World Cup",
-  logo: "https://logos-world.net/wp-content/uploads/2023/06/FIFA-World-Cup-Logo-2022.png",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTh_lXTlh8GQBSdngWkMMwHeEqsSxO0qW_bYSemB8TefHj1LD7j7WE0E5&s=10",
   page: "fifa1.html",
-  date: "2026-06-11",
+  date: "2026-06-12",
   startTime: "3:00 AM",
   endTime: "7:00 PM"
 },
@@ -106,11 +106,11 @@ const channels = [
   title: "South Korea vs. Czechia",
   category: "FIFA World Cup",
   service: "FIFA World Cup",
-  logo: "https://logos-world.net/wp-content/uploads/2023/06/FIFA-World-Cup-Logo-2022.png",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTh_lXTlh8GQBSdngWkMMwHeEqsSxO0qW_bYSemB8TefHj1LD7j7WE0E5&s=10",
   page: "fifa2.html",
   date: "2026-06-12",
   startTime: "10:00 PM",
-  endTime: "2:59 AM"
+  endTime: "11:59 PM"
 }
 ];
 
