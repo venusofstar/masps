@@ -43,12 +43,12 @@ const channels = [
   endTime: "8:00 PM"
 },
 {
-  title: "UFC Fight Night: Muhammad vs. Bonfim",
+  title: "UFC Freedom 250: Topuria vs. Gaethje",
   category: "UFC",
   service: "UFC",
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
   page: "ufc1.html",
-  date: "2026-06-7",
+  date: "2026-06-14",
   startTime: "5:00 AM",
   endTime: "11:59 AM"
 },
