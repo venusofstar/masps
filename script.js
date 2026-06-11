@@ -111,6 +111,86 @@ const channels = [
   date: "2026-06-12",
   startTime: "10:00 AM",
   endTime: "11:59 AM"
+   },
+{
+  "title": "Arizona Diamondbacks vs Miami Marlins",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb1.html",
+  "date": "2026-06-12",
+  "startTime": "1:10 AM",
+  "endTime": "5:25 AM"
+},
+{
+  "title": "Minnesota Twins vs Detroit Tigers",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb2.html",
+  "date": "2026-06-12",
+  "startTime": "1:10 AM",
+  "endTime": "5:25 AM"
+},
+{
+  "title": "St Louis Cardinals vs New York Mets",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb3.html",
+  "date": "2026-06-12",
+  "startTime": "1:10 AM",
+  "endTime": "5:25 AM"
+},
+{
+  "title": "Texas Rangers vs Kansas City Royals",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb4.html",
+  "date": "2026-06-12",
+  "startTime": "2:10 AM",
+  "endTime": "6:25 AM"
+},
+{
+  "title": "Chicago Cubs vs Colorado Rockies",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb5.html",
+  "date": "2026-06-12",
+  "startTime": "3:10 AM",
+  "endTime": "7:25 AM"
+},
+{
+  "title": "Los Angeles Dodgers vs Pittsburgh Pirates",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb6.html",
+  "date": "2026-06-12",
+  "startTime": "6:40 AM",
+  "endTime": "10:55 AM"
+},
+{
+  "title": "Seattle Mariners vs Baltimore Orioles",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb7.html",
+  "date": "2026-06-12",
+  "startTime": "7:05 AM",
+  "endTime": "11:15 AM"
+},
+{
+  "title": "Atlanta Braves vs Chicago White Sox",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb8.html",
+  "date": "2026-06-12",
+  "startTime": "7:40 AM",
+  "endTime": "11:30 AM"
 }
 ];
 
