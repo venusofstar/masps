@@ -79,8 +79,8 @@ const channels = [
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
   date: "2026-06-12",
-  startTime: "10:00 PM",
-  endTime: "11:59 PM"
+  startTime: "11:00 PM",
+  endTime: "3:59 AM"
    },
 {
   title: "Barcelona Grand Prix - Practice 3",
