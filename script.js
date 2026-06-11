@@ -63,17 +63,17 @@ const channels = [
   endTime: "7:30 PM"
 },
 {
-  title: "Barcelona-Catalunya GP",
+  title: "Barcelona Grand Prix - Practice 1",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
-  date: "2026-06-14",
-  startTime: "9:00 PM",
-  endTime: "11:59 PM"
+  date: "2026-06-12",
+  startTime: "7:30 PM",
+  endTime: "10:59 PM"
 },
 {
-  title: "Monaco Grand Prix - Qualifying",
+  title: "Barcelona Grand Prix - Practice 2",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
@@ -83,14 +83,14 @@ const channels = [
   endTime: "11:59 PM"
    },
 {
-  title: "Monaco Grand Prix - Race",
+  title: "Barcelona Grand Prix - Practice 3",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
   date: "2026-06-8",
-  startTime: "1:00 AM",
-  endTime: "3:00 AM"
+  startTime: "5:00 PM",
+  endTime: "10:00 PM"
 },
 {
   title: "Mexico vs. South Africa",
@@ -100,7 +100,7 @@ const channels = [
   page: "fifa1.html",
   date: "2026-06-12",
   startTime: "3:00 AM",
-  endTime: "7:00 AM"
+  endTime: "8:00 AM"
 },
 {
   title: "South Korea vs. Czechia",
