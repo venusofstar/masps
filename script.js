@@ -99,7 +99,7 @@ const channels = [
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
   "date": "2026-06-13",
-  "startTime": "2:00 AM",
+  "startTime": "3:00 AM",
   "endTime": "6:00 AM"
 },
 {
@@ -109,7 +109,7 @@ const channels = [
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
   "date": "2026-06-13",
-  "startTime": "8:00 AM",
+  "startTime": "9:00 AM",
   "endTime": "12:00 PM"
 },
 {
@@ -119,7 +119,7 @@ const channels = [
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
   "date": "2026-06-14",
-  "startTime": "2:00 AM",
+  "startTime": "3:00 AM",
   "endTime": "6:00 AM"
 },
 {
@@ -129,7 +129,7 @@ const channels = [
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
   "date": "2026-06-14",
-  "startTime": "5:00 AM",
+  "startTime": "6:00 AM",
   "endTime": "9:00 AM"
 },
 {
