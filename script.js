@@ -94,7 +94,7 @@ const channels = [
 },
 {
   "title": "Canada vs Bosnia-Herzegovina",
-  "category": "Football",
+  "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
@@ -104,7 +104,7 @@ const channels = [
 },
 {
   "title": "United States vs Paraguay",
-  "category": "Football",
+  "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
@@ -114,7 +114,7 @@ const channels = [
 },
 {
   "title": "Qatar vs Switzerland",
-  "category": "Football",
+  "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
@@ -124,7 +124,7 @@ const channels = [
 },
 {
   "title": "Brazil vs Morocco",
-  "category": "Football",
+  "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
@@ -134,7 +134,7 @@ const channels = [
 },
 {
   "title": "Haiti vs Scotland",
-  "category": "Football",
+  "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
