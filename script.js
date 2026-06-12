@@ -111,87 +111,158 @@ const channels = [
   date: "2026-06-12",
   startTime: "10:00 AM",
   endTime: "11:59 AM"
-   },
+},
 {
-  "title": "Arizona Diamondbacks vs Miami Marlins",
+  "title": "Miami Marlins vs Pittsburgh Pirates",
   "category": "MLB",
   "service": "MLB",
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
   "page": "mlb1.html",
-  "date": "2026-06-12",
-  "startTime": "1:10 AM",
-  "endTime": "5:25 AM"
+  "date": "2026-06-13",
+  "startTime": "6:40 AM",
+  "endTime": "10:59 AM"
 },
 {
-  "title": "Minnesota Twins vs Detroit Tigers",
+  "title": "Seattle Mariners vs Washington Nationals",
   "category": "MLB",
   "service": "MLB",
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
   "page": "mlb2.html",
-  "date": "2026-06-12",
-  "startTime": "1:10 AM",
-  "endTime": "5:25 AM"
+  "date": "2026-06-13",
+  "startTime": "6:45 AM",
+  "endTime": "10:59 PM"
 },
 {
-  "title": "St Louis Cardinals vs New York Mets",
+  "title": "San Diego Padres vs Baltimore Orioles",
   "category": "MLB",
   "service": "MLB",
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
   "page": "mlb3.html",
-  "date": "2026-06-12",
-  "startTime": "1:10 AM",
-  "endTime": "5:25 AM"
+  "date": "2026-06-13",
+  "startTime": "7:05 AM",
+  "endTime": "11:50 AM"
 },
 {
-  "title": "Texas Rangers vs Kansas City Royals",
+  "title": "Detroit Tigers vs Cleveland Guardians",
   "category": "MLB",
   "service": "MLB",
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
   "page": "mlb4.html",
-  "date": "2026-06-12",
-  "startTime": "2:10 AM",
-  "endTime": "6:25 AM"
+  "date": "2026-06-13",
+  "startTime": "7:10 AM",
+  "endTime": "11:59 AM"
 },
 {
-  "title": "Chicago Cubs vs Colorado Rockies",
+  "title": "Texas Rangers vs Boston Red Sox",
   "category": "MLB",
   "service": "MLB",
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
   "page": "mlb5.html",
-  "date": "2026-06-12",
-  "startTime": "3:10 AM",
-  "endTime": "7:25 AM"
+  "date": "2026-06-13",
+  "startTime": "7:10 AM",
+  "endTime": "11:59 AM"
 },
 {
-  "title": "Los Angeles Dodgers vs Pittsburgh Pirates",
+  "title": "Arizona Diamondbacks vs Cincinnati Reds",
   "category": "MLB",
   "service": "MLB",
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
   "page": "mlb6.html",
-  "date": "2026-06-12",
-  "startTime": "6:40 AM",
-  "endTime": "10:55 AM"
+  "date": "2026-06-13",
+  "startTime": "7:15 AM",
+  "endTime": "11:59 AM"
 },
 {
-  "title": "Seattle Mariners vs Baltimore Orioles",
+  "title": "Atlanta Braves vs New York Mets",
   "category": "MLB",
   "service": "MLB",
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
   "page": "mlb7.html",
-  "date": "2026-06-12",
-  "startTime": "7:05 AM",
-  "endTime": "11:15 AM"
+  "date": "2026-06-13",
+  "startTime": "7:15 AM",
+  "endTime": "2:30 PM"
 },
 {
-  "title": "Atlanta Braves vs Chicago White Sox",
+  "title": "New York Yankees vs Toronto Blue Jays",
   "category": "MLB",
   "service": "MLB",
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
   "page": "mlb8.html",
-  "date": "2026-06-12",
+  "date": "2026-06-13",
+  "startTime": "7:37 AM",
+  "endTime": "2:30 PM"
+},
+{
+  "title": "Los Angeles Dodgers vs Chicago White Sox",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb9.html",
+  "date": "2026-06-13",
   "startTime": "7:40 AM",
-  "endTime": "11:30 AM"
+  "endTime": "1:30 PM"
+},
+{
+  "title": "Philadelphia Phillies vs Milwaukee Brewers",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb10.html",
+  "date": "2026-06-13",
+  "startTime": "7:40 AM",
+  "endTime": "1:30 PM"
+},
+{
+  "title": "Houston Astros vs Kansas City Royals",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb11.html",
+  "date": "2026-06-13",
+  "startTime": "8:10 AM",
+  "endTime": "3:29 PM"
+},
+{
+  "title": "St. Louis Cardinals vs Minnesota Twins",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb12.html",
+  "date": "2026-06-13",
+  "startTime": "8:10 AM",
+  "endTime": "3:29 PM"
+},
+{
+  "title": "Tampa Bay Rays vs Los Angeles Angels",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb13.html",
+  "date": "2026-06-13",
+  "startTime": "9:38 AM",
+  "endTime": "2:30 PM"
+},
+{
+  "title": "Colorado Rockies vs Athletics",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb14.html",
+  "date": "2026-06-13",
+  "startTime": "10:05 AM",
+  "endTime": "3:24 PM"
+},
+{
+  "title": "Chicago Cubs vs San Francisco Giants",
+  "category": "MLB",
+  "service": "MLB",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
+  "page": "mlb15.html",
+  "date": "2026-06-13",
+  "startTime": "10:15 AM",
+  "endTime": "3:30 PM"
 }
+
 ];
 
 /* ------------------------------------------------
