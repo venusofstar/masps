@@ -93,24 +93,54 @@ const channels = [
   endTime: "10:00 PM"
 },
 {
-  title: "Mexico vs. South Africa",
-  category: "FIFA World Cup",
-  service: "FIFA World Cup",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTh_lXTlh8GQBSdngWkMMwHeEqsSxO0qW_bYSemB8TefHj1LD7j7WE0E5&s=10",
-  page: "fifa1.html",
-  date: "2026-06-12",
-  startTime: "3:00 AM",
-  endTime: "8:00 AM"
+  "title": "Canada vs Bosnia-Herzegovina",
+  "category": "Football",
+  "service": "FIFA World Cup",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FIFA_World_Cup_2026_logo.svg/512px-FIFA_World_Cup_2026_logo.svg.png",
+  "page": "fifa1.html",
+  "date": "2026-06-13",
+  "startTime": "2:00 AM",
+  "endTime": "6:00 AM"
 },
 {
-  title: "South Korea vs. Czechia",
-  category: "FIFA World Cup",
-  service: "FIFA World Cup",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTh_lXTlh8GQBSdngWkMMwHeEqsSxO0qW_bYSemB8TefHj1LD7j7WE0E5&s=10",
-  page: "fifa2.html",
-  date: "2026-06-12",
-  startTime: "10:00 AM",
-  endTime: "11:59 AM"
+  "title": "United States vs Paraguay",
+  "category": "Football",
+  "service": "FIFA World Cup",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FIFA_World_Cup_2026_logo.svg/512px-FIFA_World_Cup_2026_logo.svg.png",
+  "page": "fifa1.html",
+  "date": "2026-06-13",
+  "startTime": "8:00 AM",
+  "endTime": "12:00 PM"
+},
+{
+  "title": "Qatar vs Switzerland",
+  "category": "Football",
+  "service": "FIFA World Cup",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FIFA_World_Cup_2026_logo.svg/512px-FIFA_World_Cup_2026_logo.svg.png",
+  "page": "fifa1.html",
+  "date": "2026-06-14",
+  "startTime": "2:00 AM",
+  "endTime": "6:00 AM"
+},
+{
+  "title": "Brazil vs Morocco",
+  "category": "Football",
+  "service": "FIFA World Cup",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FIFA_World_Cup_2026_logo.svg/512px-FIFA_World_Cup_2026_logo.svg.png",
+  "page": "fifa1.html",
+  "date": "2026-06-14",
+  "startTime": "5:00 AM",
+  "endTime": "9:00 AM"
+},
+{
+  "title": "Haiti vs Scotland",
+  "category": "Football",
+  "service": "FIFA World Cup",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FIFA_World_Cup_2026_logo.svg/512px-FIFA_World_Cup_2026_logo.svg.png",
+  "page": "fifa1.html",
+  "date": "2026-06-14",
+  "startTime": "8:00 AM",
+  "endTime": "12:00 PM"
 },
 {
   "title": "Miami Marlins vs Pittsburgh Pirates",
