@@ -160,7 +160,7 @@ const channels = [
   "page": "mlb2.html",
   "date": "2026-06-13",
   "startTime": "6:45 AM",
-  "endTime": "10:59 PM"
+  "endTime": "10:59 AM"
 },
 {
   "title": "San Diego Padres vs Baltimore Orioles",
