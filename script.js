@@ -73,22 +73,23 @@ const channels = [
   endTime: "10:59 PM"
    },
 {
-  title: "Barcelona Grand Prix - Practice 3",
-  category: "F1",
-  service: "F1",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
-  page: "f1.html",
-  date: "2026-06-13",
-  startTime: "6:30 PM",
-  endTime: "9:00 PM"
-   },
-{
   title: "Barcelona Grand Prix - Qualifying",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
   date: "2026-06-13",
+  startTime: "10:00 PM",
+  endTime: "11:59 PM"
+        },
+{
+
+     title: "Barcelona Grand Prix - Race",
+  category: "F1",
+  service: "F1",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
+  page: "f1.html",
+  date: "2026-06-14",
   startTime: "10:00 PM",
   endTime: "11:59 PM"
 },
