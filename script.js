@@ -291,7 +291,9 @@ const channels = [
   "date": "2026-06-13",
   "startTime": "10:15 AM",
   "endTime": "3:30 PM"
-   {
+},
+  {
+      
   "title": "Australia vs Türkiye",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
