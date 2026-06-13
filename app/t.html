@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MASPORTS HLS Player</title>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<style>
+html,
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
+    font-family:Arial,sans-serif;
+}
+
+#player-container{
+    position:relative;
+    width:100%;
+    height:100%;
+    background:#000;
+}
+
+video{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    background:#000;
+}
+
+#play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:20;
+    padding:15px 25px;
+    font-size:24px;
+    border:none;
+    border-radius:10px;
+    background:rgba(0,200,0,.8);
+    color:#fff;
+    cursor:pointer;
+}
+
+#play-btn:hover{
+    background:rgba(0,200,0,1);
+}
+
+#unmute-btn{
+    position:absolute;
+    top:15px;
+    left:15px;
+    z-index:20;
+    padding:10px 20px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    background:rgba(0,200,0,.5);
+    color:#fff;
+    cursor:pointer;
+}
+
+#fullscreen-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    z-index:20;
+    padding:10px 20px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    background:rgba(0,200,0,.5);
+    color:#fff;
+    cursor:pointer;
+}
+
+#status{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    z-index:20;
+    color:#fff;
+    font-size:14px;
+    background:rgba(0,0,0,.5);
+    padding:6px 10px;
+    border-radius:6px;
+}
+
+#spinner{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:60px;
+    height:60px;
+    border:6px solid rgba(255,255,255,.2);
+    border-top:6px solid #fff;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    display:none;
+    z-index:30;
+}
+
+@keyframes spin{
+    from{
+        transform:translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+}
+</style>
+</head>
+<body>
+
+<div id="player-container">
+
+    <video
+        id="player-bet"
+        playsinline
+        webkit-playsinline
+        preload="auto"
+        muted>
+    </video>
+
+    <button id="play-btn">▶ Play</button>
+    <button id="unmute-btn">🔊 Unmute</button>
+    <button id="fullscreen-btn">⛶</button>
+
+    <div id="spinner"></div>
+
+    <div id="status">Loading...</div>
+
+</div>
+
+<script>
+
+const streamUrl =
+"https://proxygooz.honortv-stream.workers.dev/?url=https://pl.kamfir10.space/playlist/51883/oztak3/caxi";
+
+const video = document.getElementById("player-bet");
+const playBtn = document.getElementById("play-btn");
+const unmuteBtn = document.getElementById("unmute-btn");
+const fullscreenBtn = document.getElementById("fullscreen-btn");
+const spinner = document.getElementById("spinner");
+const statusBox = document.getElementById("status");
+
+let hls = null;
+let reloadTimer = null;
+
+function setStatus(text){
+    statusBox.textContent = text;
+    console.log(text);
+}
+
+function showSpinner(show){
+    spinner.style.display = show ? "block" : "none";
+}
+
+function safeReload(){
+
+    clearTimeout(reloadTimer);
+
+    reloadTimer = setTimeout(() => {
+
+        setStatus("Reloading stream...");
+
+        loadPlayer();
+
+    },3000);
+
+}
+
+function loadPlayer(){
+
+    showSpinner(true);
+    setStatus("Loading stream...");
+
+    if(hls){
+        hls.destroy();
+        hls = null;
+    }
+
+    if(Hls.isSupported()){
+
+        hls = new Hls({
+            enableWorker:true,
+            lowLatencyMode:true,
+            backBufferLength:90,
+            maxBufferLength:30,
+            maxMaxBufferLength:60
+        });
+
+        hls.loadSource(streamUrl);
+        hls.attachMedia(video);
+
+        hls.on(Hls.Events.MEDIA_ATTACHED, () => {
+            setStatus("Media attached");
+        });
+
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+
+            showSpinner(false);
+
+            setStatus("Ready");
+
+            playBtn.style.display = "block";
+
+        });
+
+        hls.on(Hls.Events.ERROR, (event,data) => {
+
+            console.log("HLS ERROR",data);
+
+            setStatus(
+                `${data.type} : ${data.details}`
+            );
+
+            if(data.fatal){
+
+                switch(data.type){
+
+                    case Hls.ErrorTypes.NETWORK_ERROR:
+                        hls.startLoad();
+                        break;
+
+                    case Hls.ErrorTypes.MEDIA_ERROR:
+                        hls.recoverMediaError();
+                        break;
+
+                    default:
+                        safeReload();
+                        break;
+                }
+            }
+
+        });
+
+    }else if(video.canPlayType('application/vnd.apple.mpegurl')){
+
+        video.src = streamUrl;
+
+        video.addEventListener("loadedmetadata", () => {
+
+            showSpinner(false);
+
+            setStatus("Ready");
+
+            playBtn.style.display = "block";
+
+        });
+
+    }else{
+
+        setStatus("HLS not supported");
+
+    }
+}
+
+playBtn.addEventListener("click", async () => {
+
+    try{
+
+        video.muted = false;
+
+        await video.play();
+
+        playBtn.style.display = "none";
+
+        setStatus("Playing");
+
+    }catch(error){
+
+        console.error(error);
+
+        setStatus("Play failed");
+
+    }
+
+});
+
+unmuteBtn.addEventListener("click", () => {
+
+    video.muted = false;
+    video.volume = 1;
+
+    unmuteBtn.style.display = "none";
+
+});
+
+fullscreenBtn.addEventListener("click", () => {
+
+    if(!document.fullscreenElement){
+
+        if(video.requestFullscreen){
+            video.requestFullscreen();
+        }
+
+    }else{
+
+        document.exitFullscreen();
+
+    }
+
+});
+
+video.addEventListener("waiting", () => {
+
+    showSpinner(true);
+    setStatus("Buffering...");
+
+});
+
+video.addEventListener("playing", () => {
+
+    showSpinner(false);
+    setStatus("Playing");
+
+});
+
+video.addEventListener("stalled", () => {
+
+    setStatus("Stream stalled");
+
+    safeReload();
+
+});
+
+video.addEventListener("ended", () => {
+
+    setStatus("Stream ended");
+
+    safeReload();
+
+});
+
+video.addEventListener("error", () => {
+
+    console.log("VIDEO ERROR", video.error);
+
+    setStatus("Video error");
+
+    safeReload();
+
+});
+
+window.addEventListener("load", () => {
+
+    loadPlayer();
+
+});
+</script>
+
+</body>
+</html>
