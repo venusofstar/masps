@@ -80,7 +80,7 @@ const channels = [
   page: "f1.html",
   date: "2026-06-13",
   startTime: "6:30 PM",
-  endTime: "11:00 PM"
+  endTime: "9:00 PM"
    },
 {
   title: "Barcelona Grand Prix - Qualifying",
