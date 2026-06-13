@@ -291,8 +291,56 @@ const channels = [
   "date": "2026-06-13",
   "startTime": "10:15 AM",
   "endTime": "3:30 PM"
+   {
+  "title": "Australia vs Türkiye",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa1.html",
+  "date": "2026-06-14",
+  "startTime": "12:00 PM",
+  "endTime": "4:00 PM"
+},
+{
+  "title": "Germany vs Curaçao",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa1.html",
+  "date": "2026-06-14",
+  "startTime": "1:00 AM",
+  "endTime": "4:00 AM"
+},
+{
+  "title": "Netherlands vs Japan",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa1.html",
+  "date": "2026-06-15",
+  "startTime": "3:00 AM",
+  "endTime": "9:00 AM"
+},
+{
+  "title": "Ivory Coast vs Ecuador",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa1.html",
+  "date": "2026-06-15",
+  "startTime": "6:00 AM",
+  "endTime": "12:00 PM"
+},
+{
+  "title": "Sweden vs Tunisia",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa1.html",
+  "date": "2026-06-15",
+  "startTime": "9:00 PM",
+  "endTime": "11:50 PM"      
 }
-
 ];
 
 /* ------------------------------------------------
