@@ -1,0 +1,50 @@
+export default {
+      async fetch(request) {
+          const url = new URL(request.url);
+              const target = url.searchParams.get("url");
+
+                  const resp = await fetch(target, {
+                        headers: {
+                                Referer: "https://streams.center/",
+                                        Origin: "https://streams.center",
+                                                "User-Agent":
+                                                          "Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0"
+                                                                }
+                                                                    });
+
+                                                                        const contentType = resp.headers.get("content-type") || "";
+
+                                                                            if (
+                                                                                  contentType.includes("mpegurl") ||
+                                                                                        target.endsWith(".m3u8")
+                                                                                            ) {
+                                                                                                  let text = await resp.text();
+
+                                                                                                        const base = target.substring(
+                                                                                                                0,
+                                                                                                                        target.lastIndexOf("/") + 1
+                                                                                                                              );
+
+                                                                                                                                    text = text.replace(
+                                                                                                                                            /^([^#].*\.ts.*)$/gm,
+                                                                                                                                                    line =>
+                                                                                                                                                              `${url.origin}/?url=${encodeURIComponent(
+                                                                                                                                                                          new URL(line, base).href
+                                                                                                                                                                                    )}`
+                                                                                                                                                                                          );
+
+                                                                                                                                                                                                return new Response(text, {
+                                                                                                                                                                                                        headers: {
+                                                                                                                                                                                                                  "Content-Type": "application/vnd.apple.mpegurl",
+                                                                                                                                                                                                                            "Access-Control-Allow-Origin": "*"
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                          });
+                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                  return new Response(resp.body, {
+                                                                                                                                                                                                                                                        headers: {
+                                                                                                                                                                                                                                                                "Access-Control-Allow-Origin": "*"
+                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                                          });
+                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                            }
