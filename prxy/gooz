@@ -1,0 +1,68 @@
+/**
+ * Welcome to Cloudflare Workers! This is your first worker.
+ *
+ * - Run "npm run dev" in your terminal to start a development server
+ * - Open a browser tab at http://localhost:8787/ to see your worker in action
+ * - Run "npm run deploy" to publish your worker
+ *
+ * Learn more at https://developers.cloudflare.com/workers/
+ */
+
+export default {
+    async fetch(request) {
+        const url = new URL(request.url);
+            const target = url.searchParams.get("url");
+
+                if (!target) {
+                      return new Response("Missing url parameter", { status: 400 });
+                          }
+
+                              const response = await fetch(target, {
+                                    headers: {
+                                            "Referer": "https://gooz.aapmains.net/",
+                                                    "Origin": "https://gooz.aapmains.net",
+                                                            "User-Agent": "Mozilla/5.0"
+                                                                  }
+                                                                      });
+
+                                                                          const contentType = response.headers.get("content-type") || "";
+
+                                                                              // Rewrite M3U8 playlists
+                                                                                  if (
+                                                                                        contentType.includes("mpegurl") ||
+                                                                                              target.includes(".m3u8") ||
+                                                                                                    target.includes("/playlist/")
+                                                                                                        ) {
+                                                                                                              let text = await response.text();
+
+                                                                                                                    text = text.replace(
+                                                                                                                            /^(https?:\/\/.+)$/gm,
+                                                                                                                                    (line) =>
+                                                                                                                                              `${url.origin}/?url=${encodeURIComponent(line.trim())}`
+                                                                                                                                                    );
+
+                                                                                                                                                          return new Response(text, {
+                                                                                                                                                                  status: 200,
+                                                                                                                                                                          headers: {
+                                                                                                                                                                                    "Content-Type": "application/vnd.apple.mpegurl",
+                                                                                                                                                                                              "Access-Control-Allow-Origin": "*",
+                                                                                                                                                                                                        "Cache-Control": "no-cache"
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                      });
+                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                              // Proxy segments
+                                                                                                                                                                                                                                  const headers = new Headers(response.headers);
+
+                                                                                                                                                                                                                                      headers.set("Access-Control-Allow-Origin", "*");
+
+                                                                                                                                                                                                                                          if (target.endsWith(".txt")) {
+                                                                                                                                                                                                                                                headers.set("Content-Type", "video/mp2t");
+                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                        return new Response(response.body, {
+                                                                                                                                                                                                                                                              status: response.status,
+                                                                                                                                                                                                                                                                    headers
+                                                                                                                                                                                                                                                                        });
+                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                                          }
