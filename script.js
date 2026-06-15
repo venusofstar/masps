@@ -293,56 +293,75 @@ const channels = [
   "startTime": "10:15 AM",
   "endTime": "3:30 PM"
 },
-  {
-      
-  "title": "Australia vs Türkiye",
+{
+  "title": "Spain vs Cape Verde",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-14",
-  "startTime": "12:00 PM",
-  "endTime": "4:00 PM"
+  "date": "2026-06-16",
+  "startTime": "12:00 AM",
+  "endTime": "3:29 AM"
 },
 {
-  "title": "Germany vs Curaçao",
+  "title": "Belgium vs Egypt",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-15",
-  "startTime": "1:00 AM",
-  "endTime": "4:00 AM"
-},
-{
-  "title": "Netherlands vs Japan",
-  "category": "FIFA World Cup",
-  "service": "FIFA World Cup",
-  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa1.html",
-  "date": "2026-06-15",
+  "date": "2026-06-16",
   "startTime": "3:00 AM",
-  "endTime": "9:00 AM"
+  "endTime": "6:29 AM"
 },
 {
-  "title": "Ivory Coast vs Ecuador",
+  "title": "Saudi Arabia vs Uruguay",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-15",
+  "date": "2026-06-16",
   "startTime": "6:00 AM",
-  "endTime": "12:00 PM"
+  "endTime": "9:29 AM"
 },
 {
-  "title": "Sweden vs Tunisia",
+  "title": "Iran vs New Zealand",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-15",
-  "startTime": "9:00 PM",
-  "endTime": "11:50 PM"      
+  "date": "2026-06-16",
+  "startTime": "9:00 AM",
+  "endTime": "12:29 PM"
+},
+{
+  "title": "France vs Senegal",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa1.html",
+  "date": "2026-06-16",
+  "startTime": "3:00 AM",
+  "endTime": "6:29 AM"
+},
+{
+  "title": "Iraq vs Norway",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa1.html",
+  "date": "2026-06-16",
+  "startTime": "6:00 PM",
+  "endTime": "9:29 AM"
+},
+{
+  "title": "Argentina vs Algeria",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa1.html",
+  "date": "2026-06-16",
+  "startTime": "9:00 AM",
+  "endTime": "12:29 PM"
 }
 ];
 
