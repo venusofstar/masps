@@ -1,158 +1,271 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Embedded Player</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MASPORTS Live Player</title><meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30"><script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script><style>
+html,body{
+margin:0;
+padding:0;
+width:100%;
+height:100%;
+overflow:hidden;
+background:#000;
+}
 
-  <style>
-    html,body {
-      height:100%;
-      margin:0;
-      background:#000;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto;
-      color:#fff;
-    }
+#player-container{
+position:relative;
+width:100%;
+height:100%;
+background:#000;
+}
 
-    .player-wrap {
-      position: fixed;
-      inset: 0;
-      display:flex;
-      background:#000;
-      overflow:hidden;
-    }
+video{
+width:100%;
+height:100%;
+background:#000;
+}
 
-    #player {
-      width:100%;
-      height:100%;
-      border:0;
-      background:#000;
-    }
+#play-btn{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+z-index:20;
+padding:15px 25px;
+font-size:24px;
+border:none;
+border-radius:10px;
+background: rgba(0, 191, 255, 0.5);
+color:#fff;
+cursor:pointer;
+}
 
-    .controls {
-      position:absolute;
-      right:12px;
-      bottom:12px;
-      z-index:40;
-    }
+#unmute-btn{
+position:absolute;
+top:15px;
+left:15px;
+z-index:20;
+padding:10px 20px;
+font-size:16px;
+border:none;
+border-radius:8px;
+background: rgba(0, 191, 255, 0.5);
+color:#fff;
+cursor:pointer;
+}
 
-    .btn {
-      background: rgba(0,0,0,0.55);
-      color:#fff;
-      border:1px solid rgba(255,255,255,0.12);
-      padding:8px 10px;
-      border-radius:8px;
-      cursor:pointer;
-      font-size:14px;
-      backdrop-filter: blur(4px);
-    }
+#fullscreen-btn{
+position:absolute;
+top:15px;
+right:15px;
+z-index:20;
+padding:10px 20px;
+font-size:16px;
+border:none;
+border-radius:8px;
+background: rgba(0, 191, 255, 0.5);
+color:#fff;
+cursor:pointer;
+}
 
-    .btn:active { transform:translateY(1px); }
+#spinner{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:60px;
+height:60px;
+border:6px solid rgba(255,255,255,.2);
+border-top:6px solid #fff;
+border-radius:50%;
+animation:spin 1s linear infinite;
+display:none;
+z-index:30;
+}
 
-    .title {
-      position:absolute;
-      left:12px;
-      top:12px;
-      z-index:40;
-      background:rgba(0,0,0,0.45);
-      padding:6px 10px;
-      border-radius:8px;
-      font-size:13px;
-      border:1px solid rgba(255,255,255,0.06);
-    }
+@keyframes spin{
+from{transform:translate(-50%,-50%) rotate(0deg);}
+to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+</style></head>
+<body><div id="player-container"><video
+id="video"
+playsinline
+webkit-playsinline
+preload="auto"
+muted>
+</video>
 
-    .loading {
-      position:absolute;
-      left:50%;
-      top:50%;
-      transform:translate(-50%,-50%);
-      z-index:35;
-      display:flex;
-      gap:12px;
-      font-size:14px;
-      color:#ddd;
-      pointer-events:none;
-    }
+<button id="play-btn">▶ Play</button>
+<button id="unmute-btn">🔊 Unmute</button>
+<button id="fullscreen-btn">⛶</button>
 
-    .spinner {
-      width:28px;
-      height:28px;
-      border-radius:50%;
-      border:3px solid rgba(255,255,255,0.12);
-      border-top-color:rgba(255,255,255,0.9);
-      animation:spin 1s linear infinite;
-    }
+<div id="spinner"></div></div><script>
+let monetagLoaded=false;
 
-    @keyframes spin { to { transform:rotate(360deg); } }
+function loadMonetagAds(){
 
-    /* Fallback completely hidden */
-    .fallback {
-      display:none !important;
-    }
-  </style>
-</head>
-<body>
+if(monetagLoaded) return;
 
-  <div class="player-wrap" id="playerWrap">
-    <div class="title">masports</div>
+monetagLoaded=true;
 
-    <div class="loading" id="loading">
-      <div class="spinner"></div>
-      Loading…
-    </div>
+(function(s){
+s.dataset.zone='10131170';
+s.src='https://al5sm.com/tag.min.js';
+document.body.appendChild(s);
+})(document.createElement('script'));
 
-    <!-- FALLBACK REMOVED (hidden) -->
-    <div class="fallback" id="fallback"></div>
+(function(s){
+s.dataset.zone='10131172';
+s.src='https://groleegni.net/vignette.min.js';
+document.body.appendChild(s);
+})(document.createElement('script'));
 
-    <iframe
-      id="player"
-      src="https://pooembed.eu/embed/ufc-fight-night-allen-vs-costa"
-      allowfullscreen
-      allow="encrypted-media; picture-in-picture; fullscreen"
-    ></iframe>
+}
+</script><script>
 
-    <div class="controls">
-      <button class="btn" id="fsBtn">⤢ Fullscreen</button>
-    </div>
-  </div>
+const streamUrl='https://gooz.freetvs.workers.dev/?url=https://pl.kamfir5.space/playlist/52049/youbest8/caxi';
 
-  <script>
-    const iframe = document.getElementById('player');
-    const loading = document.getElementById('loading');
-    const fallback = document.getElementById('fallback');
-    const wrap = document.getElementById('playerWrap');
+const video=document.getElementById('video');
+const playBtn=document.getElementById('play-btn');
+const unmuteBtn=document.getElementById('unmute-btn');
+const fullscreenBtn=document.getElementById('fullscreen-btn');
+const spinner=document.getElementById('spinner');
 
-    let loadTimeout;
+let hls=null;
+let reloadTimer=null;
 
-    iframe.addEventListener('load', () => {
-      setTimeout(() => loading.style.display = "none", 400);
-      clearTimeout(loadTimeout);
-    });
+function showSpinner(show){
+spinner.style.display=show?'block':'none';
+}
 
-    loadTimeout = setTimeout(() => {
-      loading.style.display = "none";
-      // fallback is hidden, so no message will appear
-    }, 10000);
+function reloadStream(){
 
-    document.getElementById('fsBtn').addEventListener('click', async () => {
-      try {
-        if (!document.fullscreenElement) {
-          await wrap.requestFullscreen();
-        } else {
-          await document.exitFullscreen();
-        }
-      } catch (e) {
-        console.warn(e);
-      }
-    });
+clearTimeout(reloadTimer);
 
-    window.addEventListener('keydown', (e) => {
-      if (e.key.toLowerCase() === "f") {
-        e.preventDefault();
-        document.getElementById('fsBtn').click();
-      }
-    });
-  </script>
+reloadTimer=setTimeout(()=>{
+initPlayer();
+},3000);
 
-</body>
+}
+
+function initPlayer(){
+
+showSpinner(true);
+
+if(hls){
+hls.destroy();
+hls=null;
+}
+
+if(Hls.isSupported()){
+
+hls=new Hls({
+enableWorker:true,
+lowLatencyMode:true,
+backBufferLength:90,
+maxBufferLength:30,
+maxMaxBufferLength:60
+});
+
+hls.loadSource(streamUrl);
+hls.attachMedia(video);
+
+hls.on(Hls.Events.MANIFEST_PARSED,()=>{
+
+showSpinner(false);
+
+playBtn.style.display='block';
+
+});
+
+hls.on(Hls.Events.ERROR,(event,data)=>{
+
+console.log('HLS ERROR',data);
+
+if(data.fatal){
+
+switch(data.type){
+
+case Hls.ErrorTypes.NETWORK_ERROR:
+hls.startLoad();
+break;
+
+case Hls.ErrorTypes.MEDIA_ERROR:
+hls.recoverMediaError();
+break;
+
+default:
+reloadStream();
+break;
+
+}
+
+}
+
+});
+
+}else if(video.canPlayType('application/vnd.apple.mpegurl')){
+
+video.src=streamUrl;
+
+video.addEventListener('loadedmetadata',()=>{
+showSpinner(false);
+playBtn.style.display='block';
+});
+
+}
+
+}
+
+playBtn.addEventListener('click',async()=>{
+
+try{
+
+await video.play();
+
+playBtn.style.display='none';
+
+loadMonetagAds();
+
+}catch(e){
+console.log(e);
+}
+
+});
+
+unmuteBtn.addEventListener('click',()=>{
+
+video.muted=false;
+video.volume=1;
+
+unmuteBtn.style.display='none';
+
+loadMonetagAds();
+
+});
+
+fullscreenBtn.addEventListener('click',()=>{
+
+if(!document.fullscreenElement){
+
+video.requestFullscreen?.();
+
+}else{
+
+document.exitFullscreen?.();
+
+}
+
+});
+
+video.addEventListener('waiting',()=>showSpinner(true));
+video.addEventListener('playing',()=>showSpinner(false));
+video.addEventListener('stalled',reloadStream);
+video.addEventListener('ended',reloadStream);
+video.addEventListener('error',reloadStream);
+
+initPlayer();
+
+</script></body>
 </html>
