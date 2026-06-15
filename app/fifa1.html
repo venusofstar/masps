@@ -1,47 +1,197 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NBAA4 — Fullscreen Video</title>
-  <style>
-    html,body {margin:0;padding:0;height:100%;background:#000;overflow:hidden;}
-    #fullPlayer {position:fixed;top:0;left:0;width:100vw;height:100vh;border:0;}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLB - Shaka Player</title>
+
+<!-- Shaka Player Library -->
+<script src="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/shaka-player.compiled.js"></script>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+
+#player-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: black;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+/* UI Buttons */
+#play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 15px 25px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 200, 0, 0.7);
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#play-btn:hover { background: rgba(0, 200, 0, 1); }
+
+#unmute-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(0, 200, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#unmute-btn:hover { background: rgba(0, 200, 0, 1); }
+
+#fullscreen-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(0, 200, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#fullscreen-btn:hover { background: rgba(0, 200, 0, 1); }
+
+/* Buffering Spinner */
+#spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    border: 8px solid rgba(255,255,255,0.2);
+    border-top: 8px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+</style>
 </head>
 <body>
 
-  <!-- FULLSCREEN VIDEO PLAYER -->
-  <iframe
-    id="fullPlayer"
-    src="https://streams.center/embed/ch1.php"
-    allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-    allowfullscreen
-    sandbox="allow-same-origin allow-scripts allow-forms allow-presentation"
-  ></iframe>
+<div id="player-container">
+    <video id="player-video" playsinline></video>
+    <button id="play-btn">▶ Play</button>
+    <button id="unmute-btn">🔊 Unmute</button>
+    <button id="fullscreen-btn">⛶</button>
+    <div id="spinner"></div>
+</div>
 
-  <script>
-    const frame = document.getElementById('fullPlayer');
+<script>
+// --- STREAM & DECRYPTION SETTINGS ---
+const streamUrl = "https://qp-pldt-live-bpk-ucd-prod.akamaized.net/bpk-tv/ch299/default/index.mpd";
+const clearKeyId = "549ab7cd35a64bb6bb479ecead04d69d";
+const clearKeyValue = "829799ed534d11fcadeb4b192467e050";
 
-    // Auto request fullscreen on load (browsers may block until user interaction)
-    frame.addEventListener('load', async () => {
-      try {
-        if (!document.fullscreenElement) {
-          await frame.requestFullscreen();
+// --- ELEMENTS ---
+const video = document.getElementById("player-video");
+const playBtn = document.getElementById("play-btn");
+const unmuteBtn = document.getElementById("unmute-btn");
+const fullscreenBtn = document.getElementById("fullscreen-btn");
+const spinner = document.getElementById("spinner");
+
+let player;
+
+function showSpinner(show) {
+    spinner.style.display = show ? "block" : "none";
+}
+
+// --- INITIALIZE SHAKA PLAYER ---
+async function initPlayer() {
+    shaka.polyfill.installAll();
+    player = new shaka.Player(video);
+
+    // Register Clear Key decryption
+    player.configure({
+        drm: {
+            clearKeys: {
+                [clearKeyId]: clearKeyValue
+            }
         }
-      } catch(e) {
-        console.warn('Fullscreen requires a tap/click');
-      }
     });
 
-    // On click, try forcing fullscreen
-    document.body.addEventListener('click', async () => {
-      try {
-        if (!document.fullscreenElement) await frame.requestFullscreen();
-        frame.contentWindow?.postMessage({action:'unmute'}, '*');
-      } catch(e){}
+    // Load stream
+    try {
+        await player.load(streamUrl);
+        console.log("✅ Stream loaded successfully");
+        video.volume = 0; // start muted
+        playBtn.style.display = "inline-block";
+        unmuteBtn.style.display = "inline-block";
+    } catch (error) {
+        console.error("❌ Error loading stream:", error);
+        setTimeout(initPlayer, 5000); // retry on failure
+    }
+
+    // Buffering events
+    video.addEventListener("waiting", () => showSpinner(true));
+    video.addEventListener("playing", () => showSpinner(false));
+
+    // Auto-reload if stream fails
+    player.addEventListener("error", () => {
+        console.warn("⚠️ Stream error, reloading...");
+        player.destroy();
+        setTimeout(initPlayer, 3000);
     });
-  </script>
+}
+
+// --- UI CONTROLS ---
+playBtn.addEventListener("click", () => {
+    video.play();
+    playBtn.style.display = "none";
+});
+
+unmuteBtn.addEventListener("click", () => {
+    video.volume = 1;
+    unmuteBtn.style.display = "none";
+});
+
+fullscreenBtn.addEventListener("click", () => {
+    if (!document.fullscreenElement) {
+        video.requestFullscreen().catch(err => console.warn("Fullscreen error:", err));
+    } else {
+        document.exitFullscreen();
+    }
+});
+
+// Start player
+window.addEventListener("load", initPlayer);
+</script>
 
 </body>
 </html>
