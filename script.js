@@ -294,52 +294,12 @@ const channels = [
   "endTime": "3:30 PM"
 },
 {
-  "title": "Spain vs Cape Verde",
-  "category": "FIFA World Cup",
-  "service": "FIFA World Cup",
-  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa1.html",
-  "date": "2026-06-16",
-  "startTime": "12:00 AM",
-  "endTime": "3:29 AM"
-},
-{
-  "title": "Belgium vs Egypt",
-  "category": "FIFA World Cup",
-  "service": "FIFA World Cup",
-  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa1.html",
-  "date": "2026-06-16",
-  "startTime": "3:00 AM",
-  "endTime": "6:29 AM"
-},
-{
-  "title": "Saudi Arabia vs Uruguay",
-  "category": "FIFA World Cup",
-  "service": "FIFA World Cup",
-  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa1.html",
-  "date": "2026-06-16",
-  "startTime": "6:00 AM",
-  "endTime": "9:29 AM"
-},
-{
-  "title": "Iran vs New Zealand",
-  "category": "FIFA World Cup",
-  "service": "FIFA World Cup",
-  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa1.html",
-  "date": "2026-06-16",
-  "startTime": "9:00 AM",
-  "endTime": "12:29 PM"
-},
-{
   "title": "France vs Senegal",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-16",
+  "date": "2026-06-17",
   "startTime": "3:00 AM",
   "endTime": "6:29 AM"
 },
@@ -349,7 +309,7 @@ const channels = [
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-16",
+  "date": "2026-06-17",
   "startTime": "6:00 AM",
   "endTime": "9:29 AM"
 },
@@ -359,9 +319,19 @@ const channels = [
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-16",
+  "date": "2026-06-17",
   "startTime": "9:00 AM",
   "endTime": "12:29 PM"
+},
+{
+  "title": "Austria vs Jordan",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa1.html",
+  "date": "2026-06-17",
+  "startTime": "12:00 PM",
+  "endTime": "3:29 PM"
 }
 ];
 
