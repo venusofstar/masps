@@ -304,22 +304,22 @@ const channels = [
   "endTime": "6:29 AM"
 },
 {
-  "title": "Iraq vs Norway",
+  "title": "Ghana vs. Panama",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-17",
+  "date": "2026-06-18",
   "startTime": "6:00 AM",
   "endTime": "9:29 AM"
 },
 {
-  "title": "Argentina vs Algeria",
+  "title": "Uzbekistan vs. Colombia",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-17",
+  "date": "2026-06-18",
   "startTime": "9:00 AM",
   "endTime": "12:29 PM"
 },
