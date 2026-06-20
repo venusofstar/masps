@@ -294,43 +294,43 @@ const channels = [
   "endTime": "3:30 PM"
 },
 {
-  "title": "United States vs. Australia",
+  "title": "Netherlands vs. Sweden",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-20",
-  "startTime": "3:00 AM",
+  "date": "2026-06-21",
+  "startTime": "1:00 AM",
+  "endTime": "3:29 AM"
+},
+{
+  "title": "Germany vs. Ivory Coast",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa1.html",
+  "date": "2026-06-21",
+  "startTime": "4:00 AM",
   "endTime": "6:29 AM"
 },
 {
-  "title": "Scotland vs. Morocco",
+  "title": "Ecuador vs. Curaçao",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-20",
-  "startTime": "6:00 AM",
-  "endTime": "9:29 AM"
-},
-{
-  "title": "Brazil vs. Haiti",
-  "category": "FIFA World Cup",
-  "service": "FIFA World Cup",
-  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa1.html",
-  "date": "2026-06-20",
+  "date": "2026-08-21",
   "startTime": "8:30 AM",
   "endTime": "11:00 AM"
 },
 {
-  "title": "Türkiye vs. Paraguay",
+  "title": "Tunisia vs. Japan",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-20",
-  "startTime": "11:00 AM",
+  "date": "2026-06-21",
+  "startTime": "12:00 AM",
   "endTime": "3:29 PM"
 }
 ];
