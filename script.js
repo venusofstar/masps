@@ -330,7 +330,7 @@ const channels = [
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
   "date": "2026-06-21",
-  "startTime": "12:00 AM",
+  "startTime": "12:00 PM",
   "endTime": "3:29 PM"
 }
 ];
