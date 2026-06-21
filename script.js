@@ -43,12 +43,12 @@ const channels = [
   endTime: "8:00 PM"
 },
 {
-  title: "UFC Freedom 250: Topuria vs. Gaethje",
+  title: "UFC Fight Night: Kape vs. Horiguchi",
   category: "UFC",
   service: "UFC",
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
   page: "ufc1.html",
-  date: "2026-06-15",
+  date: "2026-06-21",
   startTime: "8:00 AM",
   endTime: "3:00 PM"
 },
