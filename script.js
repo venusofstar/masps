@@ -294,44 +294,44 @@ const channels = [
   "endTime": "3:30 PM"
 },
 {
-  "title": "Netherlands vs. Sweden",
+  "title": "Spain vs. Saudi Arabia",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-21",
-  "startTime": "1:00 AM",
+  "date": "2026-06-22",
+  "startTime": "12:00 AM",
   "endTime": "3:29 AM"
 },
 {
-  "title": "Germany vs. Ivory Coast",
+  "title": "Belgium vs. Iran",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-21",
-  "startTime": "4:00 AM",
+  "date": "2026-06-22",
+  "startTime": "3:00 AM",
   "endTime": "6:29 AM"
 },
 {
-  "title": "Ecuador vs. Curaçao",
+  "title": "Uruguay vs. Cape Verde",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
   "date": "2026-06-21",
-  "startTime": "8:30 AM",
-  "endTime": "11:00 AM"
+  "startTime": "6:00 AM",
+  "endTime": "9:00 AM"
 },
 {
-  "title": "Tunisia vs. Japan",
+  "title": "New Zealand vs. Egypt",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
   "date": "2026-06-21",
-  "startTime": "12:00 PM",
-  "endTime": "3:29 PM"
+  "startTime": "9:00 PM",
+  "endTime": "1:29 PM"
 }
 ];
 
