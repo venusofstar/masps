@@ -53,14 +53,14 @@ const channels = [
   endTime: "3:00 PM"
 },
 {
-  title: "nery vs casimero",
+  title: "ONE Friday Fights 160 & The Inner Circle 20",
   category: "Boxing",
   service: "Boxing",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1AZaSDYMS504vJynWmug5VhjiqGuW3v5zlZM92D8huJ48GBjsTYFlqQ&s=10",
   page: "boxing1.html",
-  date: "2026-06-5",
-  startTime: "4:00 PM",
-  endTime: "7:30 PM"
+  date: "2026-06-25",
+  startTime: "7:30 PM",
+  endTime: "11:59 PM"
 },
 {
   title: "Barcelona Grand Prix - Practice 1",
