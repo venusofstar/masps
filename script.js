@@ -308,10 +308,10 @@ const channels = [
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa1.html",
+  "page": "fifa2.html",
   "date": "2026-06-23",
   "startTime": "5:00 AM",
-  "endTime": "8:29 AM"
+  "endTime": "10:29 AM"
 },
 {
   "title": "Norway vs. Senegal",
@@ -321,17 +321,17 @@ const channels = [
   "page": "fifa3.html",
   "date": "2026-06-23",
   "startTime": "8:00 AM",
-  "endTime": "11:30 AM"
+  "endTime": "1:30 PM"
 },
 {
   "title": "Jordan vs. Algeria",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa1.html",
+  "page": "fifa4.html",
   "date": "2026-06-23",
   "startTime": "11:00 AM",
-  "endTime": "2:29 PM"
+  "endTime": "4:29 PM"
 }
 ];
 
