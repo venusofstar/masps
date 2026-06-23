@@ -318,7 +318,7 @@ const channels = [
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa1.html",
+  "page": "fifa3.html",
   "date": "2026-06-23",
   "startTime": "8:00 AM",
   "endTime": "11:30 AM"
