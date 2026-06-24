@@ -1,6 +1,15 @@
 
 #EXTM3U
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://k-wctv1.honortv.workers.dev/
+#EXTINF:-1 tvg-id="304343" tvg-name="World Cup TV" tvg-logo="https://img.dge-prod.dicelaboratory.com/original/2026/06/01100422-06frvrwe8w3np6fv.png" group-title="BlastTV",World Cup TV
+http://burasuto.wasabih.net/blast/304343/master.mpd
 
+
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://k-wctv2.honortv.workers.dev/
+#EXTINF:-1 tvg-id="304344" tvg-name="World Cup TV 2" tvg-logo="https://img.dge-prod.dicelaboratory.com/original/2026/06/01100741-xohdgirjqlyydgxq.png" group-title="BlastTV",World Cup TV 2
+http://burasuto.wasabih.net/blast/304344/master.mpd
 #EXTINF:-1 group-title="QNET TV" tvg-logo="https://camerathethao.vn/images/apps/29-mytv-net.png",Animal Planet
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
