@@ -8,9 +8,9 @@ const channels = [
   "service": "NBA",
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHw9c_LcceLpFhiy0lyhO3_F2jkPwIURiqexIRjB2lyw&s",
   "page": "nba1.html",
-  "date": "2026-06-24",
-  "startTime": "8:30 AM",
-  "endTime": "8:300 PM"
+  "date": "2026-06-25",
+  "startTime": "8:00 AM",
+  "endTime": "1:30 PM"
 },
 {
   "title": "Cleveland Cavaliers vs New York Knicks",
