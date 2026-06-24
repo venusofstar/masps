@@ -3,14 +3,14 @@
 -------------------------------------------------*/
 const channels = [
 {
-  "title": "New York Knicks vs San Antonio Spurs",
+  "title": "2026 NBA Draft",
   "category": "Basketball",
   "service": "NBA",
-  "logo": "https://i.imgur.com/916TTeF.jpeg",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHw9c_LcceLpFhiy0lyhO3_F2jkPwIURiqexIRjB2lyw&s",
   "page": "nba1.html",
-  "date": "2026-06-14",
+  "date": "2026-06-24",
   "startTime": "8:30 AM",
-  "endTime": "12:00 PM"
+  "endTime": "8:300 PM"
 },
 {
   "title": "Cleveland Cavaliers vs New York Knicks",
