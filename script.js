@@ -318,7 +318,7 @@ const channels = [
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa3.html",
+  "page": "fifa1.html",
   "date": "2026-06-25",
   "startTime": "6:00 AM",
   "endTime": "10:29 AM"
@@ -328,7 +328,7 @@ const channels = [
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa4.html",
+  "page": "fifa2.html",
   "date": "2026-06-25",
   "startTime": "6:00 AM",
   "endTime": "10:29 AM"
@@ -338,7 +338,7 @@ const channels = [
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa5.html",
+  "page": "fifa1.html",
   "date": "2026-06-25",
   "startTime": "9:00 AM",
   "endTime": "1:29 PM"
@@ -348,7 +348,7 @@ const channels = [
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa6.html",
+  "page": "fifa2.html",
   "date": "2026-06-25",
   "startTime": "9:00 AM",
   "endTime": "1:29 PM"
