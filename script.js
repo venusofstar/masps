@@ -294,44 +294,64 @@ const channels = [
   "endTime": "3:30 PM"
 },
 {
-  "title": "Portugal vs. Uzbekistan",
+  "title": "Bosnia-Herzegovina vs. Qatar",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-24",
-  "startTime": "1:00 AM",
-  "endTime": "5:29 AM"
+  "date": "2026-06-25",
+  "startTime": "3:00 AM",
+  "endTime": "7:29 AM"
 },
 {
-  "title": "England vs. Ghana",
+  "title": "Switzerland vs. Canada",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa2.html",
-  "date": "2026-06-24",
-  "startTime": "4:00 AM",
-  "endTime": "9:29 AM"
+  "date": "2026-06-25",
+  "startTime": "3:00 AM",
+  "endTime": "8:29 AM"
 },
 {
-  "title": "Panama vs. Croatia",
+  "title": "Morocco vs. Haiti",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa3.html",
-  "date": "2026-06-24",
-  "startTime": "7:00 AM",
-  "endTime": "12:30 PM"
+  "date": "2026-06-25",
+  "startTime": "6:00 AM",
+  "endTime": "10:29 AM"
 },
 {
-  "title": "Colombia vs. Congo DR",
+  "title": "Scotland vs. Brazil",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa4.html",
-  "date": "2026-06-24",
-  "startTime": "10:00 AM",
-  "endTime": "2:29 PM"
+  "date": "2026-06-25",
+  "startTime": "6:00 AM",
+  "endTime": "10:29 AM"
+},
+{
+  "title": "Czechia vs. Mexico",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa5.html",
+  "date": "2026-06-25",
+  "startTime": "9:00 AM",
+  "endTime": "1:29 PM"
+},
+{
+  "title": "South Africa vs. South Korea",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa6.html",
+  "date": "2026-06-25",
+  "startTime": "9:00 AM",
+  "endTime": "1:29 PM"
 }
 ];
 
