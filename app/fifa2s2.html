@@ -1,47 +1,271 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NBAA4 — Fullscreen Video</title>
-  <style>
-    html,body {margin:0;padding:0;height:100%;background:#000;overflow:hidden;}
-    #fullPlayer {position:fixed;top:0;left:0;width:100vw;height:100vh;border:0;}
-  </style>
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MASPORTS Live Player</title><meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30"><script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script><style>
+html,body{
+margin:0;
+padding:0;
+width:100%;
+height:100%;
+overflow:hidden;
+background:#000;
+}
 
-  <!-- FULLSCREEN VIDEO PLAYER -->
-  <iframe
-    id="fullPlayer"
-    src="https://embedindia.st/embed/wc/2026-06-11/kor-cze"
-    allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-    allowfullscreen
-    sandbox="allow-same-origin allow-scripts allow-forms allow-presentation"
-  ></iframe>
+#player-container{
+position:relative;
+width:100%;
+height:100%;
+background:#000;
+}
 
-  <script>
-    const frame = document.getElementById('fullPlayer');
+video{
+width:100%;
+height:100%;
+background:#000;
+}
 
-    // Auto request fullscreen on load (browsers may block until user interaction)
-    frame.addEventListener('load', async () => {
-      try {
-        if (!document.fullscreenElement) {
-          await frame.requestFullscreen();
-        }
-      } catch(e) {
-        console.warn('Fullscreen requires a tap/click');
-      }
-    });
+#play-btn{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+z-index:20;
+padding:15px 25px;
+font-size:24px;
+border:none;
+border-radius:10px;
+background: rgba(0, 191, 255, 0.5);
+color:#fff;
+cursor:pointer;
+}
 
-    // On click, try forcing fullscreen
-    document.body.addEventListener('click', async () => {
-      try {
-        if (!document.fullscreenElement) await frame.requestFullscreen();
-        frame.contentWindow?.postMessage({action:'unmute'}, '*');
-      } catch(e){}
-    });
-  </script>
+#unmute-btn{
+position:absolute;
+top:15px;
+left:15px;
+z-index:20;
+padding:10px 20px;
+font-size:16px;
+border:none;
+border-radius:8px;
+background: rgba(0, 191, 255, 0.5);
+color:#fff;
+cursor:pointer;
+}
 
-</body>
+#fullscreen-btn{
+position:absolute;
+top:15px;
+right:15px;
+z-index:20;
+padding:10px 20px;
+font-size:16px;
+border:none;
+border-radius:8px;
+background: rgba(0, 191, 255, 0.5);
+color:#fff;
+cursor:pointer;
+}
+
+#spinner{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:60px;
+height:60px;
+border:6px solid rgba(255,255,255,.2);
+border-top:6px solid #fff;
+border-radius:50%;
+animation:spin 1s linear infinite;
+display:none;
+z-index:30;
+}
+
+@keyframes spin{
+from{transform:translate(-50%,-50%) rotate(0deg);}
+to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+</style></head>
+<body><div id="player-container"><video
+id="video"
+playsinline
+webkit-playsinline
+preload="auto"
+muted>
+</video>
+
+<button id="play-btn">▶ Play</button>
+<button id="unmute-btn">🔊 Unmute</button>
+<button id="fullscreen-btn">⛶</button>
+
+<div id="spinner"></div></div><script>
+let monetagLoaded=false;
+
+function loadMonetagAds(){
+
+if(monetagLoaded) return;
+
+monetagLoaded=true;
+
+(function(s){
+s.dataset.zone='10131170';
+s.src='https://al5sm.com/tag.min.js';
+document.body.appendChild(s);
+})(document.createElement('script'));
+
+(function(s){
+s.dataset.zone='10131172';
+s.src='https://groleegni.net/vignette.min.js';
+document.body.appendChild(s);
+})(document.createElement('script'));
+
+}
+</script><script>
+
+const streamUrl='https://gooz.freetvs.workers.dev/?url=https://chatgpt.hereisman.net/playlist/52457/load-playlist';
+
+const video=document.getElementById('video');
+const playBtn=document.getElementById('play-btn');
+const unmuteBtn=document.getElementById('unmute-btn');
+const fullscreenBtn=document.getElementById('fullscreen-btn');
+const spinner=document.getElementById('spinner');
+
+let hls=null;
+let reloadTimer=null;
+
+function showSpinner(show){
+spinner.style.display=show?'block':'none';
+}
+
+function reloadStream(){
+
+clearTimeout(reloadTimer);
+
+reloadTimer=setTimeout(()=>{
+initPlayer();
+},3000);
+
+}
+
+function initPlayer(){
+
+showSpinner(true);
+
+if(hls){
+hls.destroy();
+hls=null;
+}
+
+if(Hls.isSupported()){
+
+hls=new Hls({
+enableWorker:true,
+lowLatencyMode:true,
+backBufferLength:90,
+maxBufferLength:30,
+maxMaxBufferLength:60
+});
+
+hls.loadSource(streamUrl);
+hls.attachMedia(video);
+
+hls.on(Hls.Events.MANIFEST_PARSED,()=>{
+
+showSpinner(false);
+
+playBtn.style.display='block';
+
+});
+
+hls.on(Hls.Events.ERROR,(event,data)=>{
+
+console.log('HLS ERROR',data);
+
+if(data.fatal){
+
+switch(data.type){
+
+case Hls.ErrorTypes.NETWORK_ERROR:
+hls.startLoad();
+break;
+
+case Hls.ErrorTypes.MEDIA_ERROR:
+hls.recoverMediaError();
+break;
+
+default:
+reloadStream();
+break;
+
+}
+
+}
+
+});
+
+}else if(video.canPlayType('application/vnd.apple.mpegurl')){
+
+video.src=streamUrl;
+
+video.addEventListener('loadedmetadata',()=>{
+showSpinner(false);
+playBtn.style.display='block';
+});
+
+}
+
+}
+
+playBtn.addEventListener('click',async()=>{
+
+try{
+
+await video.play();
+
+playBtn.style.display='none';
+
+loadMonetagAds();
+
+}catch(e){
+console.log(e);
+}
+
+});
+
+unmuteBtn.addEventListener('click',()=>{
+
+video.muted=false;
+video.volume=1;
+
+unmuteBtn.style.display='none';
+
+loadMonetagAds();
+
+});
+
+fullscreenBtn.addEventListener('click',()=>{
+
+if(!document.fullscreenElement){
+
+video.requestFullscreen?.();
+
+}else{
+
+document.exitFullscreen?.();
+
+}
+
+});
+
+video.addEventListener('waiting',()=>showSpinner(true));
+video.addEventListener('playing',()=>showSpinner(false));
+video.addEventListener('stalled',reloadStream);
+video.addEventListener('ended',reloadStream);
+video.addEventListener('error',reloadStream);
+
+initPlayer();
+
+</script></body>
 </html>
