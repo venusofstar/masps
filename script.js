@@ -294,63 +294,63 @@ const channels = [
   "endTime": "3:30 PM"
 },
 {
-  "title": "Bosnia-Herzegovina vs. Qatar",
+  "title": "Curaçao vs. Ivory Coast",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-25",
-  "startTime": "3:00 AM",
+  "date": "2026-06-26",
+  "startTime": "4:00 AM",
   "endTime": "7:29 AM"
 },
 {
-  "title": "Switzerland vs. Canada",
+  "title": "Ecuador vs. Germany",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa2.html",
-  "date": "2026-06-25",
-  "startTime": "3:00 AM",
-  "endTime": "8:29 AM"
+  "date": "2026-06-26",
+  "startTime": "4:00 AM",
+  "endTime": "7:29 AM"
 },
 {
-  "title": "Morocco vs. Haiti",
+  "title": "Japan vs. Sweden",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-25",
-  "startTime": "6:00 AM",
+  "date": "2026-06-26",
+  "startTime": "7:00 AM",
   "endTime": "10:29 AM"
 },
 {
-  "title": "Scotland vs. Brazil",
+  "title": "Tunisia vs. Netherlands",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa2.html",
-  "date": "2026-06-25",
-  "startTime": "6:00 AM",
+  "date": "2026-06-26",
+  "startTime": "7:00 AM",
   "endTime": "10:29 AM"
 },
 {
-  "title": "Czechia vs. Mexico",
+  "title": "Paraguay vs. Australia",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-25",
-  "startTime": "9:00 AM",
+  "date": "2026-06-26",
+  "startTime": "10:00 AM",
   "endTime": "1:29 PM"
 },
 {
-  "title": "South Africa vs. South Korea",
+  "title": "Türkiye vs. United States",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa2.html",
-  "date": "2026-06-25",
-  "startTime": "9:00 AM",
+  "date": "2026-06-26",
+  "startTime": "10:00 AM",
   "endTime": "1:29 PM"
 }
 ];
