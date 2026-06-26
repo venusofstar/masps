@@ -43,14 +43,14 @@ const channels = [
   endTime: "8:00 PM"
 },
 {
-  title: "UFC Fight Night: Kape vs. Horiguchi",
+  title: "UFC - PANCRASE 363",
   category: "UFC",
   service: "UFC",
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
   page: "ufc1.html",
-  date: "2026-06-21",
-  startTime: "8:00 AM",
-  endTime: "3:00 PM"
+  date: "2026-06-28",
+  startTime: "12:00 PM",
+  endTime: "7:00 PM"
 },
 {
   title: "ONE Friday Fights 160 & The Inner Circle 20",
@@ -63,35 +63,35 @@ const channels = [
   endTime: "11:59 PM"
 },
 {
-  title: "Barcelona Grand Prix - Practice 1",
+  title: "Austrian Grand Prix - Practice 1",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
-  date: "2026-06-12",
+  date: "2026-06-26",
   startTime: "7:30 PM",
   endTime: "10:59 PM"
    },
 {
-  title: "Barcelona Grand Prix - Qualifying",
+  title: "Austrian Grand Prix - Practice 2",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
-  date: "2026-06-13",
-  startTime: "10:00 PM",
+  date: "2026-06-26",
+  startTime: "11:00 PM",
   endTime: "11:59 PM"
         },
 {
 
-     title: "Barcelona Grand Prix - Race",
+     title: "Austrian Grand Prix - Practice 3",
   category: "F1",
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
-  date: "2026-06-14",
-  startTime: "10:00 PM",
-  endTime: "11:59 PM"
+  date: "2026-06-27",
+  startTime: "6:30 PM",
+  endTime: "9:59 PM"
 },
 {
   "title": "Canada vs Bosnia-Herzegovina",
@@ -294,63 +294,63 @@ const channels = [
   "endTime": "3:30 PM"
 },
 {
-  "title": "Curaçao vs. Ivory Coast",
+  "title": "Norway vs. France",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-26",
-  "startTime": "4:00 AM",
-  "endTime": "7:29 AM"
+  "date": "2026-06-27",
+  "startTime": "3:00 AM",
+  "endTime": "6:29 AM"
 },
 {
-  "title": "Ecuador vs. Germany",
+  "title": "Senegal vs. Iraq",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa2.html",
-  "date": "2026-06-26",
-  "startTime": "4:00 AM",
-  "endTime": "7:29 AM"
+  "date": "2026-06-27",
+  "startTime": "3:00 AM",
+  "endTime": "6:29 AM"
 },
 {
-  "title": "Japan vs. Sweden",
+  "title": "Cape Verde vs. Saudi Arabia",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-26",
-  "startTime": "7:00 AM",
-  "endTime": "10:29 AM"
+  "date": "2026-06-27",
+  "startTime": "8:00 AM",
+  "endTime": "11:29 AM"
 },
 {
-  "title": "Tunisia vs. Netherlands",
+  "title": "Uruguay vs. Spain",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa2.html",
-  "date": "2026-06-26",
-  "startTime": "7:00 AM",
-  "endTime": "10:29 AM"
+  "date": "2026-06-27",
+  "startTime": "8:00 AM",
+  "endTime": "11:29 AM"
 },
 {
-  "title": "Paraguay vs. Australia",
+  "title": "Egypt vs. Iran",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-26",
-  "startTime": "10:00 AM",
+  "date": "2026-06-27",
+  "startTime": "11:00 AM",
   "endTime": "1:29 PM"
 },
 {
-  "title": "Türkiye vs. United States",
+  "title": "New Zealand vs. Belgium",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa2.html",
-  "date": "2026-06-26",
-  "startTime": "10:00 AM",
+  "date": "2026-06-27",
+  "startTime": "11:00 AM",
   "endTime": "1:29 PM"
 }
 ];
