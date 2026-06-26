@@ -33,14 +33,14 @@ const channels = [
   endTime: "11:30 PM"
 },
 {
-  title: "🇵🇭 PBA - Macau black knights vs Phoenix",
-  category: "Basketball",
-  service: "PBA",
-  logo: "https://cdn.manilastandard.net/wp-content/uploads/2023/08/PBA.png",
-  page: "pba1.html",
-  date: "2026-05-06",
-  startTime: "5:15 PM",
-  endTime: "8:00 PM"
+  title: "UFC Fight Night: Fiziev vs. Torres",
+  category: "UFC",
+  service: "UFC",
+  logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
+  page: "ufc1.html",
+  date: "2026-06-28",
+  startTime: "9:00 AM",
+  endTime: "3:00 PM"
 },
 {
   title: "UFC - PANCRASE 363",
