@@ -93,52 +93,62 @@ const channels = [
   endTime: "11:59 PM"
    },
 {
-  "title": "Canada vs Bosnia-Herzegovina",
+  "title": "Croatia vs. Ghana",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-13",
-  "startTime": "3:00 AM",
-  "endTime": "6:00 AM"
+  "date": "2026-06-28",
+  "startTime": "5:00 AM",
+  "endTime": "8:00 AM"
 },
 {
-  "title": "United States vs Paraguay",
+  "title": "Panama vs. England",
+  "category": "FIFA World Cup",
+  "service": "FIFA World Cup",
+  "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+  "page": "fifa2.html",
+  "date": "2026-06-28",
+  "startTime": "5:00 AM",
+  "endTime": "8:00 AM"
+},
+{
+  "title": "Colombia vs. Portugal",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-13",
-  "startTime": "9:00 AM",
+  "date": "2026-06-28",
+  "startTime": "7:30 AM",
   "endTime": "12:00 PM"
 },
 {
-  "title": "Qatar vs Switzerland",
+  "title": "Congo DR vs. Uzbekistan",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-  "page": "fifa1.html",
-  "date": "2026-06-14",
-  "startTime": "3:00 AM",
-  "endTime": "6:00 AM"
+  "page": "fifa2.html",
+  "date": "2026-06-28",
+  "startTime": "7:30 AM",
+  "endTime": "12:00 PM"
 },
 {
-  "title": "Brazil vs Morocco",
+  "title": "Algeria vs. Austria",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-14",
-  "startTime": "6:00 AM",
-  "endTime": "9:00 AM"
-},
+  "date": "2026-06-28",
+  "startTime": "10:00 AM",
+  "endTime": "2:00 PM"
+   },
 {
-  "title": "Haiti vs Scotland",
+  "title": "Jordan vs. Argentina",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-14",
+  "date": "2026-06-28",
   "startTime": "10:00 AM",
   "endTime": "2:00 PM"
 },
