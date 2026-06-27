@@ -38,9 +38,9 @@ const channels = [
   service: "UFC",
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
   page: "ufc1.html",
-  date: "2026-06-28",
-  startTime: "5:00 AM",
-  endTime: "2:00 PM"
+  date: "2026-06-27",
+  startTime: "8:00 PM",
+  endTime: "11:59 PM"
 },
 {
   title: "UFC - PANCRASE 363",
