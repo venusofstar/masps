@@ -63,27 +63,6 @@ const channels = [
   endTime: "11:59 PM"
 },
 {
-  title: "Austrian Grand Prix - Practice 1",
-  category: "F1",
-  service: "F1",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
-  page: "f1.html",
-  date: "2026-06-26",
-  startTime: "7:30 PM",
-  endTime: "10:59 PM"
-   },
-{
-  title: "Austrian Grand Prix - Practice 2",
-  category: "F1",
-  service: "F1",
-  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
-  page: "f1.html",
-  date: "2026-06-26",
-  startTime: "11:00 PM",
-  endTime: "11:59 PM"
-        },
-{
-
      title: "Austrian Grand Prix - Practice 3",
   category: "F1",
   service: "F1",
@@ -93,6 +72,26 @@ const channels = [
   startTime: "6:30 PM",
   endTime: "9:59 PM"
 },
+{
+     title: "Austrian Grand Prix - Qualifying",
+  category: "F1",
+  service: "F1",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
+  page: "f1.html",
+  date: "2026-06-26",
+  startTime: "10:00 PM",
+  endTime: "11:59 PM"
+        },
+{
+   title: "Austrian Grand Prix - Race",
+  category: "F1",
+  service: "F1",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
+  page: "f1.html",
+  date: "2026-06-27",
+  startTime: "9:00 PM",
+  endTime: "11:59 PM"
+   },
 {
   "title": "Canada vs Bosnia-Herzegovina",
   "category": "FIFA World Cup",
