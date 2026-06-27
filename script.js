@@ -78,7 +78,7 @@ const channels = [
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
-  date: "2026-06-26",
+  date: "2026-06-27",
   startTime: "10:00 PM",
   endTime: "11:59 PM"
         },
@@ -88,7 +88,7 @@ const channels = [
   service: "F1",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
   page: "f1.html",
-  date: "2026-06-27",
+  date: "2026-06-28",
   startTime: "9:00 PM",
   endTime: "11:59 PM"
    },
