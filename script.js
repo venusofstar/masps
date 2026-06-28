@@ -120,7 +120,7 @@ const channels = [
   "page": "fifa1.html",
   "date": "2026-06-29",
   "startTime": "3:00 AM",
-  "endTime": "6:00 PM"
+  "endTime": "6:00 AM"
 },
 {
   "title": "Congo DR vs. Uzbekistan",
