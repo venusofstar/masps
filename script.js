@@ -33,7 +33,7 @@ const channels = [
   endTime: "11:30 PM"
 },
 {
-  title: "UFC Fight Night: Fiziev vs. Torres",
+  title: "Xander Zayas vs. Jaron 'Boots' Ennis",
   category: "UFC",
   service: "UFC",
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
@@ -49,11 +49,11 @@ const channels = [
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
   page: "ufc1.html",
   date: "2026-06-28",
-  startTime: "10:00 AM",
-  endTime: "5:00 PM"
+  startTime: "11:30 AM",
+  endTime: "7:00 PM"
 },
 {
-  title: "ONE Friday Fights 160 & The Inner Circle 20",
+  title: "Xander Zayas vs. Jaron 'Boots' Ennis",
   category: "Boxing",
   service: "Boxing",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1AZaSDYMS504vJynWmug5VhjiqGuW3v5zlZM92D8huJ48GBjsTYFlqQ&s=10",
