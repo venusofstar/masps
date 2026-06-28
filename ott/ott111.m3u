@@ -1,12 +1,8 @@
 #EXTM3U
 #EXTM3U
 
-#EXTINF:-1 tvg-id="Sports" tvg-name="Sports" group-title="Sports",Sportsi
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
-#EXTVLCOPT:http-referrer=https://brit.287wd0wifeqsjrfought.cfd/
-#EXTVLCOPT:http-origin=https://brit.287wd0wifeqsjrfought.cfd
-https://fhlsport301.tbaa149f8pqlisten.ru/token-cxV%2BmOTHK6eGuDcux%2FY6mWqHlJrXgCrjb3auwaMbGGaj77CcHURfFIsvshdKWlIZR3bBwzNokfl3dZFNVBcM6J9nTUmyNoI=a/cfall/s2001/v3b/4p2nnqrrnUE0pQbiY3OfLKxhZGO4p3EgZv50o3N=/hedy/sx_740140/index.m3u8
-
+#EXTINF:-1 tvg-id="Sports" tvg-name="Sports" group-title="Sports",TNT PREMIUM 
+https://rakettv.uk/api/proxy-stream?url=https%3A%2F%2Ffhlsport301.tbaa149f8pqlisten.ru%2Ftoken-cxV%252BmOTHK6eGuDcux%252FY6mWqHlJrXgCrjb3auwaMbGGaj77CcHURfFIsvshdKWlIZR3bBwzNokfl3dZFNVBcM6J9nTUmyNoI%253Da%2Fcfall%2Fs2001%2Fv3b%2F4p2nnqrrnUE0pQbiY3OfLKxhZGO4p3EgZv50o3N%253D%2Fhedy%2Fsx_740140%2Findex.m3u8&referer=https%3A%2F%2Fbrit.287wd0wifeqsjrfought.cfd%2F
 #EXTINF:-1 tvg-id="" tvg-name="NBA4 Stream" tvg-logo="" group-title="NBA",NBA4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
 #EXTVLCOPT:http-referrer=https://instream.click/
