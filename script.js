@@ -58,9 +58,9 @@ const channels = [
   service: "Boxing",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1AZaSDYMS504vJynWmug5VhjiqGuW3v5zlZM92D8huJ48GBjsTYFlqQ&s=10",
   page: "boxing1.html",
-  date: "2026-06-25",
-  startTime: "7:30 PM",
-  endTime: "11:59 PM"
+  date: "2026-06-28",
+  startTime: "9:00 PM",
+  endTime: "5:59 PM"
 },
 {
      title: "Austrian Grand Prix - Practice 3",
