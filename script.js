@@ -59,7 +59,7 @@ const channels = [
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1AZaSDYMS504vJynWmug5VhjiqGuW3v5zlZM92D8huJ48GBjsTYFlqQ&s=10",
   page: "boxing1.html",
   date: "2026-06-28",
-  startTime: "9:00 PM",
+  startTime: "9:00 AM",
   endTime: "5:59 PM"
 },
 {
