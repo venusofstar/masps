@@ -120,7 +120,7 @@ const channels = [
   "page": "fifa1.html",
   "date": "2026-06-28",
   "startTime": "7:30 AM",
-  "endTime": "12:00 PM"
+  "endTime": "10:00 PM"
 },
 {
   "title": "Congo DR vs. Uzbekistan",
@@ -130,7 +130,7 @@ const channels = [
   "page": "fifa2.html",
   "date": "2026-06-28",
   "startTime": "7:30 AM",
-  "endTime": "12:00 PM"
+  "endTime": "10:00 PM"
 },
 {
   "title": "Algeria vs. Austria",
