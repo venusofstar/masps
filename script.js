@@ -113,14 +113,14 @@ const channels = [
   "endTime": "8:00 AM"
 },
 {
-  "title": "Colombia vs. Portugal",
+  "title": "South Africa vs. Canada",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-28",
-  "startTime": "7:30 AM",
-  "endTime": "10:00 PM"
+  "date": "2026-06-29",
+  "startTime": "3:00 AM",
+  "endTime": "6:00 PM"
 },
 {
   "title": "Congo DR vs. Uzbekistan",
