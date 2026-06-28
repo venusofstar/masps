@@ -303,34 +303,34 @@ const channels = [
   "endTime": "3:30 PM"
 },
 {
-  "title": "Norway vs. France",
+  "title": "Brazil vs. Japan",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-27",
-  "startTime": "3:00 AM",
-  "endTime": "6:29 AM"
+  "date": "2026-06-30",
+  "startTime": "1:00 AM",
+  "endTime": "4:29 AM"
 },
 {
-  "title": "Senegal vs. Iraq",
+  "title": "Germany vs. Paraguay",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa2.html",
-  "date": "2026-06-27",
-  "startTime": "3:00 AM",
-  "endTime": "6:29 AM"
+  "date": "2026-06-30",
+  "startTime": "4:30 AM",
+  "endTime": "7:29 AM"
 },
 {
-  "title": "Cape Verde vs. Saudi Arabia",
+  "title": "Netherlands vs. Morocco",
   "category": "FIFA World Cup",
   "service": "FIFA World Cup",
   "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
   "page": "fifa1.html",
-  "date": "2026-06-27",
-  "startTime": "8:00 AM",
-  "endTime": "11:29 AM"
+  "date": "2026-06-30",
+  "startTime": "9:00 AM",
+  "endTime": "12:29 PM"
 },
 {
   "title": "Uruguay vs. Spain",
