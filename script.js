@@ -318,8 +318,8 @@ const channels = [
 "page": "fifa1.html",
 "date": "2026-06-30",
 "endDate": "2026-06-30",
-"startTime": "4:30 AM",
-"endTime": "7:29 AM"
+"startTime": "5:00 AM",
+"endTime": "8:29 AM"
 },
 {
 "title": "Netherlands vs. Morocco",
@@ -330,7 +330,7 @@ const channels = [
 "date": "2026-06-30",
 "endDate": "2026-06-30",
 "startTime": "9:00 AM",
-"endTime": "12:29 PM"
+"endTime": "1:29 PM"
 },
 {
 "title": "Uruguay vs. Spain",
