@@ -300,36 +300,36 @@ const channels = [
 "endTime": "3:30 PM"
 },
 {
-"title": "Ivory Coast vs. Norway",
+"title": "England vs. Congo DR",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
 "date": "2026-06-31",
 "endDate": "2026-06-31",
-"startTime": "1:00 AM",
+"startTime": "12:00 AM",
 "endTime": "4:29 AM"
 },
 {
-"title": "France vs. Sweden",
+"title": "Belgium vs. Senegal",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-06-31",
-"endDate": "2026-06-31",
-"startTime": "5:00 AM",
+"date": "2026-07-2",
+"endDate": "2026-07-2",
+"startTime": "4:00 AM",
 "endTime": "8:29 AM"
 },
 {
-"title": "Mexico vs. Ecuador",
+"title": "United States vs. Bosnia-Herzegovina",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-06-31",
-"endDate": "2026-06-31",
-"startTime": "9:00 AM",
+"date": "2026-07-2",
+"endDate": "2026-07-2",
+"startTime": "8:00 AM",
 "endTime": "1:29 PM"
 },
 {
