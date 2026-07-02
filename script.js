@@ -28,7 +28,7 @@ const channels = [
 "title": "Gilas Pilipinas vs New Zealand",
 "category": "Basketball",
 "service": "Fiba World Cup",
-"logo": "https://cdn.manilastandard.net/wp-content/uploads/2023/08/PBA.png",
+"logo": "https://i.imgur.com/ajaAfO5.png",
 "page": "pba1.html",
 "date": "2026-07-3",
 "endDate": "2026-07-3",
