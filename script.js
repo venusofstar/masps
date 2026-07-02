@@ -25,15 +25,15 @@ const channels = [
 "endTime": "12:30 PM"
 },
 {
-"title": "🇵🇭 PBA - San Miguel vs Terrafirma",
+"title": "Gilas Pilipinas vs New Zealand",
 "category": "Basketball",
-"service": "PBA",
+"service": "Fiba World Cup",
 "logo": "https://cdn.manilastandard.net/wp-content/uploads/2023/08/PBA.png",
-"page": "pba2.html",
-"date": "2026-05-06",
-"endDate": "2026-05-06",
-"startTime": "8:30 PM",
-"endTime": "11:30 PM"
+"page": "pba1.html",
+"date": "2026-07-3",
+"endDate": "2026-07-3",
+"startTime": "3:30 PM",
+"endTime": "6:30 PM"
 },
 {
 "title": "Xander Zayas vs. Jaron 'Boots' Ennis",
