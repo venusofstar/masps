@@ -32,7 +32,7 @@ const channels = [
 "page": "pba1.html",
 "date": "2026-07-3",
 "endDate": "2026-07-3",
-"startTime": "3:30 PM",
+"startTime": "3:00 PM",
 "endTime": "6:30 PM"
 },
 {
