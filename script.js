@@ -80,61 +80,6 @@ const channels = [
 "endTime": "8:00 AM"
 },
 {
-"title": "Panama vs. England",
-"category": "FIFA World Cup",
-"service": "FIFA World Cup",
-"logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-"page": "fifa2.html",
-"date": "2026-06-28",
-"endDate": "2026-06-28",
-"startTime": "5:00 AM",
-"endTime": "8:00 AM"
-},
-{
-"title": "South Africa vs. Canada",
-"category": "FIFA World Cup",
-"service": "FIFA World Cup",
-"logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-"page": "fifa1.html",
-"date": "2026-06-29",
-"endDate": "2026-06-29",
-"startTime": "3:00 AM",
-"endTime": "6:00 AM"
-},
-{
-"title": "Congo DR vs. Uzbekistan",
-"category": "FIFA World Cup",
-"service": "FIFA World Cup",
-"logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-"page": "fifa2.html",
-"date": "2026-06-28",
-"endDate": "2026-06-28",
-"startTime": "7:30 AM",
-"endTime": "10:00 PM"
-},
-{
-"title": "Algeria vs. Austria",
-"category": "FIFA World Cup",
-"service": "FIFA World Cup",
-"logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-"page": "fifa1.html",
-"date": "2026-06-28",
-"endDate": "2026-06-28",
-"startTime": "10:00 AM",
-"endTime": "2:00 PM"
-},
-{
-"title": "Jordan vs. Argentina",
-"category": "FIFA World Cup",
-"service": "FIFA World Cup",
-"logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-"page": "fifa2.html",
-"date": "2026-06-28",
-"endDate": "2026-06-28",
-"startTime": "10:00 AM",
-"endTime": "2:00 PM"
-},
-{
 "title": "Miami Marlins vs Pittsburgh Pirates",
 "category": "MLB",
 "service": "MLB",
@@ -300,37 +245,37 @@ const channels = [
 "endTime": "3:30 PM"
 },
 {
-"title": "Spain vs. Austria",
+"title": "Australia vs. Egypt",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-3",
-"endDate": "2026-07-3",
-"startTime": "3:00 AM",
-"endTime": "7:29 AM"
+"date": "2026-07-4",
+"endDate": "2026-07-4",
+"startTime": "2:00 AM",
+"endTime": "6:29 AM"
 },
 {
-"title": "Portugal vs. Croatia",
+"title": "Argentina vs. Cape Verde",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-3",
-"endDate": "2026-07-3",
-"startTime": "7:00 AM",
-"endTime": "11:29 AM"
+"date": "2026-07-4",
+"endDate": "2026-07-4",
+"startTime": "6:00 AM",
+"endTime": "9:29 AM"
 },
 {
-"title": "Switzerland vs. Algeria",
+"title": "Colombia vs. Ghana",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-3",
-"endDate": "2026-07-3",
-"startTime": "11:00 AM",
-"endTime": "2:29 PM"
+"date": "2026-07-4",
+"endDate": "2026-07-4",
+"startTime": "9:30 AM",
+"endTime": "12:29 PM"
 },
 {
 "title": "Uruguay vs. Spain",
