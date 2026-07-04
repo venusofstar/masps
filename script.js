@@ -352,7 +352,7 @@ const channels = [
 "date": "2026-07-04",
 "endDate": "2026-07-05",
 "startTime": "10:00 PM",
-"endTime": "3:59 PM"
+"endTime": "3:59 AM"
 },
 {
 "title": "British Grand Prix - Race",
