@@ -245,26 +245,26 @@ const channels = [
 "endTime": "3:30 PM"
 },
 {
-"title": "Australia vs. Egypt",
+"title": "Canada vs. Morocco",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-4",
-"endDate": "2026-07-4",
-"startTime": "2:00 AM",
-"endTime": "6:29 AM"
+"date": "2026-07-5",
+"endDate": "2026-07-5",
+"startTime": "1:00 AM",
+"endTime": "5:29 AM"
 },
 {
-"title": "Argentina vs. Cape Verde",
+"title": "Paraguay vs. France",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-4",
-"endDate": "2026-07-4",
-"startTime": "6:00 AM",
-"endTime": "9:29 AM"
+"date": "2026-07-5",
+"endDate": "2026-07-5",
+"startTime": "5:00 AM",
+"endTime": "8:29 AM"
 },
 {
 "title": "Colombia vs. Ghana",
