@@ -363,7 +363,7 @@ const channels = [
 "date": "2026-07-05",
 "endDate": "2026-07-06",
 "startTime": "9:00 PM",
-"endTime": "2:59 PM"
+"endTime": "2:59 AM"
 }  
 ];
 
