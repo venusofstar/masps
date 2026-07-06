@@ -245,26 +245,26 @@ const channels = [
 "endTime": "3:30 PM"
 },
 {
-"title": "Brazil vs. Norway",
+"title": "Portugal vs. Spain",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-6",
-"endDate": "2026-07-6",
-"startTime": "4:00 AM",
-"endTime": "8:29 AM"
+"date": "2026-07-7",
+"endDate": "2026-07-7",
+"startTime": "3:00 AM",
+"endTime": "7:29 AM"
 },
 {
-"title": "Mexico vs. England",
+"title": "United States vs. Belgium",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-6",
-"endDate": "2026-07-6",
-"startTime": "9:00 AM",
-"endTime": "1:59 PM"
+"date": "2026-07-7",
+"endDate": "2026-07-7",
+"startTime": "8:00 AM",
+"endTime": "12:59 PM"
 },
 {
 "title": "Colombia vs. Ghana",
