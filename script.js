@@ -80,15 +80,15 @@ const channels = [
 "endTime": "8:00 AM"
 },
 {
-"title": "Miami Marlins vs Pittsburgh Pirates",
-"category": "MLB",
-"service": "MLB",
-"logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
-"page": "mlb1.html",
-"date": "2026-06-13",
-"endDate": "2026-06-13",
-"startTime": "6:40 AM",
-"endTime": "10:59 AM"
+"title": "Jasmine Paolini vs. Alexandra Eala",
+"category": "TENNIS",
+"service": "TENNIS",
+"logo": "https://i.imgur.com/PfCdSrm.png",
+"page": "tennis 1.html",
+"date": "2026-07-7",
+"endDate": "2026-07-7",
+"startTime": "8:30 PM",
+"endTime": "10:59 PM"
 },
 {
 "title": "Seattle Mariners vs Washington Nationals",
