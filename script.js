@@ -87,7 +87,7 @@ const channels = [
 "page": "tennis1.html",
 "date": "2026-07-6",
 "endDate": "2026-07-6",
-"startTime": "8:30 PM",
+"startTime": "8:35 PM",
 "endTime": "10:59 PM"
 },
 {
