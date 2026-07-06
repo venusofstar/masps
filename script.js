@@ -84,7 +84,7 @@ const channels = [
 "category": "TENNIS",
 "service": "TENNIS",
 "logo": "https://i.imgur.com/PfCdSrm.png",
-"page": "tennis 1.html",
+"page": "tennis1.html",
 "date": "2026-07-6",
 "endDate": "2026-07-6",
 "startTime": "8:30 PM",
