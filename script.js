@@ -263,8 +263,8 @@ const channels = [
 "page": "fifa1.html",
 "date": "2026-07-6",
 "endDate": "2026-07-6",
-"startTime": "8:00 AM",
-"endTime": "11:59 AM"
+"startTime": "9:00 AM",
+"endTime": "1:59 PM"
 },
 {
 "title": "Colombia vs. Ghana",
