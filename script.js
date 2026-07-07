@@ -102,7 +102,7 @@ const channels = [
 "endTime": "8:00 AM"
 },
 {
-  "title": "Milwaukee Brewers vs St. Louis Cardinals (Game 1)",
+  "title": "Milwaukee Brewers vs St. Louis Cardinals",
   "category": "MLB",
   "service": "MLB",
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
@@ -223,7 +223,7 @@ const channels = [
   "endTime": "11:40 AM"
 },
 {
-  "title": "Milwaukee Brewers vs St. Louis Cardinals (Game 1)",
+  "title": "Milwaukee Brewers vs St. Louis Cardinals",
   "category": "MLB",
   "service": "MLB",
   "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9hOX1yLWzVP93gXWKnNtF12_Fa_iJgbb_46gtJtsFA&s=10",
