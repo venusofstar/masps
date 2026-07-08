@@ -44,7 +44,7 @@ const channels = [
 "date": "2026-07-8",
 "endDate": "2026-07-8",
 "startTime": "4:00 AM",
-"endTime": "8:00 PM"
+"endTime": "8:00 AM"
 },
 {
 "title": "Gilas Pilipinas vs New Zealand",
