@@ -278,60 +278,60 @@ const channels = [
   "endTime": "2:10 PM"
 },
 {
- "title": "British Grand Prix - Practice 1",
-"category": "F1",
-"service": "F1",
-"logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
-"page": "f1.html",
-"date": "2026-07-03",
-"endDate": "2026-07-03",
-"startTime": "7:30 PM",
-"endTime": "11:59 PM"
+  "title": "Belgian Grand Prix - Practice 1",
+  "category": "F1",
+  "service": "F1",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
+  "page": "f1.html",
+  "date": "2026-07-17",
+  "endDate": "2026-07-17",
+  "startTime": "7:30 PM",
+  "endTime": "11:59 PM"
 },
 {
-"title": "British Grand Prix - Sprint Qualifying",
-"category": "F1",
-"service": "F1",
-"logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
-"page": "f1.html",
-"date": "2026-07-03",
-"endDate": "2026-07-04",
-"startTime": "11:30 PM",
-"endTime": "3:59 AM"
+  "title": "Belgian Grand Prix - Practice 2",
+  "category": "F1",
+  "service": "F1",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
+  "page": "f1.html",
+  "date": "2026-07-17",
+  "endDate": "2026-07-18",
+  "startTime": "11:00 PM",
+  "endTime": "3:59 AM"
 },
 {
-"title": "British Grand Prix - Sprint",
-"category": "F1",
-"service": "F1",
-"logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
-"page": "f1.html",
-"date": "2026-07-04",
-"endDate": "2026-07-04",
-"startTime": "7:00 PM",
-"endTime": "11:59 PM"
+  "title": "Belgian Grand Prix - Practice 3",
+  "category": "F1",
+  "service": "F1",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
+  "page": "f1.html",
+  "date": "2026-07-18",
+  "endDate": "2026-07-18",
+  "startTime": "6:30 PM",
+  "endTime": "10:59 PM"
 },
 {
-"title": "British Grand Prix - Qualifying",
-"category": "F1",
-"service": "F1",
-"logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
-"page": "f1.html",
-"date": "2026-07-04",
-"endDate": "2026-07-05",
-"startTime": "10:00 PM",
-"endTime": "3:59 AM"
+  "title": "Belgian Grand Prix - Qualifying",
+  "category": "F1",
+  "service": "F1",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
+  "page": "f1.html",
+  "date": "2026-07-18",
+  "endDate": "2026-07-18",
+  "startTime": "10:00 PM",
+  "endTime": "11:59 PM"
 },
 {
-"title": "British Grand Prix - Race",
-"category": "F1",
-"service": "F1",
-"logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
-"page": "f1.html",
-"date": "2026-07-05",
-"endDate": "2026-07-06",
-"startTime": "9:00 PM",
-"endTime": "2:59 AM"
-}  
+  "title": "Belgian Grand Prix - Race",
+  "category": "F1",
+  "service": "F1",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMs-qvMbBce47vo45QG1PlOjKTgyfWeid3uQ&s",
+  "page": "f1.html",
+  "date": "2026-07-19",
+  "endDate": "2026-07-19",
+  "startTime": "9:00 PM",
+  "endTime": "11:59 PM"
+}
 ];
 
 /* ------------------------------------------------
