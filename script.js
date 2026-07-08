@@ -91,14 +91,14 @@ const channels = [
 "endTime": "5:59 PM"
 },
 {
-"title": "Croatia vs. Ghana",
+"title": "France vs. Morocco",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-06-28",
-"endDate": "2026-06-28",
-"startTime": "5:00 AM",
+"date": "2026-07-10",
+"endDate": "2026-07-10",
+"startTime": "4:00 AM",
 "endTime": "8:00 AM"
 },
 {
