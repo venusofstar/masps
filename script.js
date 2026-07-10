@@ -25,15 +25,15 @@ const channels = [
 "endTime": "12:30 PM"
 },
 {
-  "title": "Argentina vs. Egypt",
+  "title": "Spain vs. Belgium",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-8",
-"endDate": "2026-07-8",
-"startTime": "12:00 AM",
-"endTime": "4:00 AM"
+"date": "2026-07-11",
+"endDate": "2026-07-11",
+"startTime": "3:00 AM",
+"endTime": "6:00 AM"
 },
 {
 "title": "Switzerland vs. Colombia",
