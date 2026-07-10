@@ -58,15 +58,15 @@ const channels = [
 "endTime": "6:30 PM"
 },
 {
-"title": "Xander Zayas vs. Jaron 'Boots' Ennis",
+"title": "UFC 329: McGregor vs. Holloway 2",
 "category": "UFC",
 "service": "UFC",
 "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
 "page": "ufc1.html",
-"date": "2026-06-28",
-"endDate": "2026-06-28",
-"startTime": "12:00 AM",
-"endTime": "3:59 AM"
+"date": "2026-07-12",
+"endDate": "2026-07-12",
+"startTime": "5:00 AM",
+"endTime": "3:59 PM"
 },
 {
 "title": "UFC - PANCRASE 363",
