@@ -33,7 +33,7 @@ const channels = [
 "date": "2026-07-11",
 "endDate": "2026-07-11",
 "startTime": "3:00 AM",
-"endTime": "6:00 AM"
+  "endTime": "6:00 AM"
 },
 {
 "title": "Switzerland vs. Colombia",
@@ -96,8 +96,8 @@ const channels = [
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-11",
-"endDate": "2026-07-11",
+"date": "2026-07-12",
+"endDate": "2026-07-12",
 "startTime": "5:00 AM",
 "endTime": "9:00 AM"
 },
@@ -107,8 +107,8 @@ const channels = [
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-11",
-"endDate": "2026-07-11",
+"date": "2026-07-12",
+"endDate": "2026-07-12",
 "startTime": "8:00 AM",
 "endTime": "11:00 AM"
 },
