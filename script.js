@@ -10,8 +10,8 @@ const channels = [
     "page": "nba1.html",
     "date": "2026-07-12",
     "endDate": "2026-07-12",
-    "startTime": "03:30",
-    "endTime": "05:30"
+    "startTime": "03:30 AM",
+    "endTime": "05:30 AM"
   },
   {
     "title": "Charlotte Hornets vs New Orleans Pelicans",
@@ -21,8 +21,8 @@ const channels = [
     "page": "nba2.html",
     "date": "2026-07-12",
     "endDate": "2026-07-12",
-    "startTime": "04:00",
-    "endTime": "06:00"
+    "startTime": "04:00 AM",
+    "endTime": "07:00 AM"
   },
   {
     "title": "Philadelphia 76ers vs Indiana Pacers",
@@ -32,8 +32,8 @@ const channels = [
     "page": "nba3.html",
     "date": "2026-07-12",
     "endDate": "2026-07-12",
-    "startTime": "05:30",
-    "endTime": "07:30"
+    "startTime": "05:30 AM",
+    "endTime": "08:30 AM"
   },
   {
     "title": "San Antonio Spurs vs New York Knicks",
@@ -43,8 +43,8 @@ const channels = [
     "page": "nba4.html",
     "date": "2026-07-12",
     "endDate": "2026-07-12",
-    "startTime": "06:00",
-    "endTime": "08:00"
+    "startTime": "06:00 AM",
+    "endTime": "09:00 AM"
   },
   {
     "title": "Minnesota Timberwolves vs Denver Nuggets",
@@ -54,8 +54,8 @@ const channels = [
     "page": "nba5.html",
     "date": "2026-07-12",
     "endDate": "2026-07-12",
-    "startTime": "07:30",
-    "endTime": "09:30"
+    "startTime": "07:30 AM",
+    "endTime": "10:30 AM"
   },
   {
     "title": "Brooklyn Nets vs Atlanta Hawks",
@@ -65,8 +65,8 @@ const channels = [
     "page": "nba6.html",
     "date": "2026-07-12",
     "endDate": "2026-07-12",
-    "startTime": "08:00",
-    "endTime": "10:00"
+    "startTime": "08:00 AM",
+    "endTime": "11:00 AM"
   },
   {
     "title": "Houston Rockets vs Toronto Raptors",
@@ -76,8 +76,8 @@ const channels = [
     "page": "nba7.html",
     "date": "2026-07-12",
     "endDate": "2026-07-12",
-    "startTime": "09:30",
-    "endTime": "11:30"
+    "startTime": "09:30 AM",
+    "endTime": "12:30 PM"
   },
   {
     "title": "Dallas Mavericks vs Los Angeles Lakers",
@@ -87,8 +87,8 @@ const channels = [
     "page": "nba8.html",
     "date": "2026-07-12",
     "endDate": "2026-07-12",
-    "startTime": "10:00",
-    "endTime": "12:00"
+    "startTime": "10:00 AM",
+    "endTime": "1:00 PM"
   },
 {
   "title": "Spain vs. Belgium",
