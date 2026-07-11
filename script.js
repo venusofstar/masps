@@ -146,15 +146,15 @@ const channels = [
 "endTime": "7:00 PM"
 },
 {
-"title": "Xander Zayas vs. Jaron 'Boots' Ennis",
+"title": "Gassiev vs. Kadiru",
 "category": "Boxing",
 "service": "Boxing",
 "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1AZaSDYMS504vJynWmug5VhjiqGuW3v5zlZM92D8huJ48GBjsTYFlqQ&s=10",
 "page": "boxing1.html",
-"date": "2026-06-28",
-"endDate": "2026-06-28",
-"startTime": "9:00 AM",
-"endTime": "5:59 PM"
+"date": "2026-07-12",
+"endDate": "2026-07-12",
+"startTime": "2:30 AM",
+"endTime": "11:59 AM"
 },
 {
 "title": "Norway vs. England",
