@@ -91,15 +91,26 @@ const channels = [
 "endTime": "5:59 PM"
 },
 {
-"title": "France vs. Morocco",
+"title": "Norway vs. England",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-10",
-"endDate": "2026-07-10",
-"startTime": "4:00 AM",
-"endTime": "8:00 AM"
+"date": "2026-07-11",
+"endDate": "2026-07-11",
+"startTime": "5:00 AM",
+"endTime": "9:00 AM"
+},
+{
+  "title": "Argentina vs. Switzerland",
+"category": "FIFA World Cup",
+"service": "FIFA World Cup",
+"logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+"page": "fifa1.html",
+"date": "2026-07-11",
+"endDate": "2026-07-11",
+"startTime": "8:00 AM",
+"endTime": "11:00 AM"
 },
 {
   "title": "Atlanta Braves vs Pittsburgh Pirates",
