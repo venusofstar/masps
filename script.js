@@ -2,28 +2,94 @@
 CHANNEL LIST
 -------------------------------------------------*/
 const channels = [
-{
-"title": "2026 NBA Draft",
-"category": "Basketball",
-"service": "NBA",
-"logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHw9c_LcceLpFhiy0lyhO3_F2jkPwIURiqexIRjB2lyw&s",
-"page": "nba1.html",
-"date": "2026-06-25",
-"endDate": "2026-06-25",
-"startTime": "8:00 AM",
-"endTime": "1:30 PM"
-},
-{
-"title": "Cleveland Cavaliers vs New York Knicks",
-"category": "Basketball",
-"service": "NBA",
-"logo": "https://i.imgur.com/916TTeF.jpeg",
-"page": "nba1.html",
-"date": "2026-05-26",
-"endDate": "2026-05-26",
-"startTime": "8:00 AM",
-"endTime": "12:30 PM"
-},
+  {
+    "title": "Miami Heat vs Orlando Magic",
+    "category": "NBA",
+    "service": "NBA Summer League",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
+    "page": "nba1.html",
+    "date": "2026-07-12",
+    "endDate": "2026-07-12",
+    "startTime": "03:30",
+    "endTime": "05:30"
+  },
+  {
+    "title": "Charlotte Hornets vs New Orleans Pelicans",
+    "category": "NBA",
+    "service": "NBA Summer League",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
+    "page": "nba2.html",
+    "date": "2026-07-12",
+    "endDate": "2026-07-12",
+    "startTime": "04:00",
+    "endTime": "06:00"
+  },
+  {
+    "title": "Philadelphia 76ers vs Indiana Pacers",
+    "category": "NBA",
+    "service": "NBA Summer League",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
+    "page": "nba3.html",
+    "date": "2026-07-12",
+    "endDate": "2026-07-12",
+    "startTime": "05:30",
+    "endTime": "07:30"
+  },
+  {
+    "title": "San Antonio Spurs vs New York Knicks",
+    "category": "NBA",
+    "service": "NBA Summer League",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
+    "page": "nba4.html",
+    "date": "2026-07-12",
+    "endDate": "2026-07-12",
+    "startTime": "06:00",
+    "endTime": "08:00"
+  },
+  {
+    "title": "Minnesota Timberwolves vs Denver Nuggets",
+    "category": "NBA",
+    "service": "NBA Summer League",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
+    "page": "nba5.html",
+    "date": "2026-07-12",
+    "endDate": "2026-07-12",
+    "startTime": "07:30",
+    "endTime": "09:30"
+  },
+  {
+    "title": "Brooklyn Nets vs Atlanta Hawks",
+    "category": "NBA",
+    "service": "NBA Summer League",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
+    "page": "nba6.html",
+    "date": "2026-07-12",
+    "endDate": "2026-07-12",
+    "startTime": "08:00",
+    "endTime": "10:00"
+  },
+  {
+    "title": "Houston Rockets vs Toronto Raptors",
+    "category": "NBA",
+    "service": "NBA Summer League",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
+    "page": "nba7.html",
+    "date": "2026-07-12",
+    "endDate": "2026-07-12",
+    "startTime": "09:30",
+    "endTime": "11:30"
+  },
+  {
+    "title": "Dallas Mavericks vs Los Angeles Lakers",
+    "category": "NBA",
+    "service": "NBA Summer League",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
+    "page": "nba8.html",
+    "date": "2026-07-12",
+    "endDate": "2026-07-12",
+    "startTime": "10:00",
+    "endTime": "12:00"
+  },
 {
   "title": "Spain vs. Belgium",
 "category": "FIFA World Cup",
