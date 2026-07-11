@@ -109,7 +109,7 @@ const channels = [
 "page": "fifa1.html",
 "date": "2026-07-12",
 "endDate": "2026-07-12",
-"startTime": "8:00 AM",
+"startTime": "9:00 AM",
 "endTime": "11:00 AM"
 },
 {
