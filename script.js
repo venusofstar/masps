@@ -3,92 +3,92 @@ CHANNEL LIST
 -------------------------------------------------*/
 const channels = [
   {
-    "title": "Miami Heat vs Orlando Magic",
+    "title": "New Orleans Pelicans vs Phoenix Suns",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba1.html",
-    "date": "2026-07-12",
-    "endDate": "2026-07-12",
-    "startTime": "03:30 AM",
-    "endTime": "05:30 AM"
+    "date": "2026-07-13",
+    "endDate": "2026-07-13",
+    "startTime": "03:00 AM",
+    "endTime": "05:00 AM"
   },
   {
-    "title": "Charlotte Hornets vs New Orleans Pelicans",
+    "title": "Cleveland Cavaliers vs Detroit Pistons",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba2.html",
-    "date": "2026-07-12",
-    "endDate": "2026-07-12",
+    "date": "2026-07-13",
+    "endDate": "2026-07-13",
     "startTime": "04:00 AM",
-    "endTime": "07:00 AM"
+    "endTime": "06:00 AM"
   },
   {
-    "title": "Philadelphia 76ers vs Indiana Pacers",
+    "title": "Boston Celtics vs Charlotte Hornets",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba3.html",
-    "date": "2026-07-12",
-    "endDate": "2026-07-12",
-    "startTime": "05:30 AM",
-    "endTime": "08:30 AM"
+    "date": "2026-07-13",
+    "endDate": "2026-07-13",
+    "startTime": "05:00 AM",
+    "endTime": "07:00 AM"
   },
   {
-    "title": "San Antonio Spurs vs New York Knicks",
+    "title": "Oklahoma City Thunder vs Golden State Warriors",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba4.html",
-    "date": "2026-07-12",
-    "endDate": "2026-07-12",
+    "date": "2026-07-13",
+    "endDate": "2026-07-13",
     "startTime": "06:00 AM",
-    "endTime": "09:00 AM"
+    "endTime": "08:00 AM"
   },
   {
-    "title": "Minnesota Timberwolves vs Denver Nuggets",
+    "title": "Portland Trail Blazers vs Orlando Magic",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba5.html",
-    "date": "2026-07-12",
-    "endDate": "2026-07-12",
-    "startTime": "07:30 AM",
-    "endTime": "10:30 AM"
+    "date": "2026-07-13",
+    "endDate": "2026-07-13",
+    "startTime": "07:00 AM",
+    "endTime": "09:00 AM"
   },
   {
-    "title": "Brooklyn Nets vs Atlanta Hawks",
+    "title": "Washington Wizards vs Sacramento Kings",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba6.html",
-    "date": "2026-07-12",
-    "endDate": "2026-07-12",
+    "date": "2026-07-13",
+    "endDate": "2026-07-13",
     "startTime": "08:00 AM",
-    "endTime": "11:00 AM"
+    "endTime": "10:00 AM"
   },
   {
-    "title": "Houston Rockets vs Toronto Raptors",
+    "title": "Milwaukee Bucks vs San Antonio Spurs",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba7.html",
-    "date": "2026-07-12",
-    "endDate": "2026-07-12",
-    "startTime": "09:30 AM",
-    "endTime": "12:30 PM"
+    "date": "2026-07-13",
+    "endDate": "2026-07-13",
+    "startTime": "09:00 AM",
+    "endTime": "11:00 AM"
   },
   {
-    "title": "Dallas Mavericks vs Los Angeles Lakers",
+    "title": "Los Angeles Clippers vs Utah Jazz",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba8.html",
-    "date": "2026-07-12",
-    "endDate": "2026-07-12",
+    "date": "2026-07-13",
+    "endDate": "2026-07-13",
     "startTime": "10:00 AM",
-    "endTime": "1:00 PM"
+    "endTime": "12:00 PM"
   },
 {
   "title": "Spain vs. Belgium",
