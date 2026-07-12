@@ -1,7 +1,13 @@
 #EXTM3U
-#EXTM3U
 
-#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="Channel" tvg-logo="" group-title="Live TV",buffspo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Android 13; Mobile; rv:141.0) Gecko/141.0 Firefox/141.0
+#KODIPROP:http-user-agent=Mozilla/5.0 (Android 13; Mobile; rv:141.0) Gecko/141.0 Firefox/141.0
+#KODIPROP:http-referrer=https://ninguno.cc/
+#KODIPROP:http-origin=https://ninguno.cc
+https://s-c5.owledge.cc/viktor/vu7aga2egum0w0hahim0/master.m3u8?u_id=g6s8g3n5f8s7t4x1h7q7l4k8w9i2n2b5&ssid=MTc4MzgzMDY5Ni4zZWQ5MzFhNTdiOTQxN2RmYmU0ZjJkNTYwZmExMWNjYw
+
+
 
 #EXTINF:-1 tvg-id="" tvg-name="Channel" tvg-logo="" group-title="Live TV",ib
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0
