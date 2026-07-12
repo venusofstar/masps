@@ -7,9 +7,6 @@
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0
 #EXTVLCOPT:http-referrer=https://embed.st/
 #EXTVLCOPT:http-origin=https://embed.st
-#KODIPROP:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0
-#KODIPROP:http-referrer=https://embed.st/
-#KODIPROP:http-origin=https://embed.st
 https://lb1.strmd.st/secure/IDSFHaXWFUNztLrsHgwVXLCRvIuSwQSY/rtmp/stream/kmIRnTypnR-E9U5G0AhSTNft2j3rf_6PPwDppfsjFZeWaEikGIA87i8mJksmmvXhFVwSrh1Irz1j26aG_iJmvYE/1/high/mono.m3u8
 
 #EXTINF:-1 tvg-id="Sports" tvg-name="Sports" group-title="Sports",TNT PREMIUM 
