@@ -44,7 +44,7 @@ const channels = [
     "date": "2026-07-13",
     "endDate": "2026-07-13",
     "startTime": "06:00 AM",
-    "endTime": "08:00 AM"
+    "endTime": "09:00 AM"
   },
   {
     "title": "Portland Trail Blazers vs Orlando Magic",
@@ -55,7 +55,7 @@ const channels = [
     "date": "2026-07-13",
     "endDate": "2026-07-13",
     "startTime": "07:00 AM",
-    "endTime": "09:00 AM"
+    "endTime": "010:00 AM"
   },
   {
     "title": "Washington Wizards vs Sacramento Kings",
@@ -66,7 +66,7 @@ const channels = [
     "date": "2026-07-13",
     "endDate": "2026-07-13",
     "startTime": "08:00 AM",
-    "endTime": "10:00 AM"
+    "endTime": "11:00 AM"
   },
   {
     "title": "Milwaukee Bucks vs San Antonio Spurs",
@@ -77,7 +77,7 @@ const channels = [
     "date": "2026-07-13",
     "endDate": "2026-07-13",
     "startTime": "09:00 AM",
-    "endTime": "11:00 AM"
+    "endTime": "12:00 PM"
   },
   {
     "title": "Los Angeles Clippers vs Utah Jazz",
@@ -88,7 +88,7 @@ const channels = [
     "date": "2026-07-13",
     "endDate": "2026-07-13",
     "startTime": "10:00 AM",
-    "endTime": "12:00 PM"
+    "endTime": "1:00 PM"
   },
 {
   "title": "Spain vs. Belgium",
