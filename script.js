@@ -3,92 +3,70 @@ CHANNEL LIST
 -------------------------------------------------*/
 const channels = [
   {
-    "title": "New York Knicks vs Detroit Pistons",
+    "title": "Houston Rockets vs Philadelphia 76ers",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba1.html",
-    "date": "2026-07-14",
-    "endDate": "2026-07-14",
+    "date": "2026-07-15",
+    "endDate": "2026-07-15",
     "startTime": "04:00 AM",
-    "endTime": "06:00 AM"
+    "endTime": "07:00 AM"
   },
   {
-    "title": "Indiana Pacers vs Toronto Raptors",
+    "title": "Brooklyn Nets vs Sacramento Kings",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba2.html",
-    "date": "2026-07-14",
-    "endDate": "2026-07-14",
-    "startTime": "04:30 AM",
-    "endTime": "06:30 AM"
+    "date": "2026-07-15",
+    "endDate": "2026-07-15",
+    "startTime": "06:00 AM",
+    "endTime": "09:00 AM"
   },
   {
-    "title": "Boston Celtics vs Atlanta Hawks",
+    "title": "Golden State Warriors vs Memphis Grizzlies",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba3.html",
-    "date": "2026-07-14",
-    "endDate": "2026-07-14",
-    "startTime": "06:00 AM",
-    "endTime": "08:00 AM"
-  },
-  {
-    "title": "Memphis Grizzlies vs Dallas Mavericks",
-    "category": "NBA",
-    "service": "NBA Summer League",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba4.html",
-    "date": "2026-07-14",
-    "endDate": "2026-07-14",
+    "date": "2026-07-15",
+    "endDate": "2026-07-15",
     "startTime": "07:00 AM",
     "endTime": "10:00 AM"
   },
   {
-    "title": "Miami Heat vs Cleveland Cavaliers",
+    "title": "Washington Wizards vs Chicago Bulls",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba5.html",
-    "date": "2026-07-14",
-    "endDate": "2026-07-14",
+    "page": "nba4.html",
+    "date": "2026-07-15",
+    "endDate": "2026-07-15",
     "startTime": "08:00 AM",
     "endTime": "11:00 AM"
   },
   {
-    "title": "Utah Jazz vs Chicago Bulls",
+    "title": "Oklahoma City Thunder vs Denver Nuggets",
+    "category": "NBA",
+    "service": "NBA Summer League",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
+    "page": "nba5.html",
+    "date": "2026-07-15",
+    "endDate": "2026-07-15",
+    "startTime": "09:00 AM",
+    "endTime": "12:00 AM"
+  },
+  {
+    "title": "Los Angeles Clippers vs Los Angeles Lakers",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba6.html",
-    "date": "2026-07-14",
-    "endDate": "2026-07-14",
-    "startTime": "09:00 AM",
-    "endTime": "11:59 AM"
-  },
-  {
-    "title": "Phoenix Suns vs Milwaukee Bucks",
-    "category": "NBA",
-    "service": "NBA Summer League",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba7.html",
-    "date": "2026-07-14",
-    "endDate": "2026-07-14",
+    "date": "2026-07-15",
+    "endDate": "2026-07-15",
     "startTime": "10:00 AM",
     "endTime": "1:00 PM"
-  },
-  {
-    "title": "Portland Trail Blazers vs Minnesota Timberwolves",
-    "category": "NBA",
-    "service": "NBA Summer League",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba8.html",
-    "date": "2026-07-14",
-    "endDate": "2026-07-14",
-    "startTime": "11:00 AM",
-    "endTime": "02:00 PM"
   },
 {
   "title": "Spain vs. Belgium",
