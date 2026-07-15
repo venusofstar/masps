@@ -1,5 +1,12 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="" tvg-name="Stream" group-title="Live",Stream
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#EXTVLCOPT:http-referrer=https://turneven.net/
+#KODIPROP:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#KODIPROP:http-referrer=https://turneven.net/
+#KODIPROP:http-origin=https://turneven.net
+https://htq43xdc.12703830.net:8443/hls/4yie4m4rbhffq.m3u8?s=WrcBlEs_wS0WsBOUkwFocA&e=1784145606
 #EXTINF:-1 tvg-id="" tvg-name="Channel" tvg-logo="" group-title="Live TV",buffspo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Android 13; Mobile; rv:141.0) Gecko/141.0 Firefox/141.0
 #KODIPROP:http-user-agent=Mozilla/5.0 (Android 13; Mobile; rv:141.0) Gecko/141.0 Firefox/141.0
