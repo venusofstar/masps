@@ -55,7 +55,7 @@ const channels = [
     "date": "2026-07-15",
     "endDate": "2026-07-15",
     "startTime": "09:00 AM",
-    "endTime": "12:00 AM"
+    "endTime": "12:00 PM"
   },
   {
     "title": "Los Angeles Clippers vs Los Angeles Lakers",
