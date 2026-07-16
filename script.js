@@ -2,7 +2,6 @@
 CHANNEL LIST
 -------------------------------------------------*/
 const channels = [
-[
   {
     "title": "Dallas Mavericks vs Oklahoma City Thunder",
     "category": "NBA",
