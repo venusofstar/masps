@@ -69,25 +69,25 @@ const channels = [
     "endTime": "01:30 PM"
   },
 {
-  "title": "Spain vs. Belgium",
+  "title": "England vs. France",
+"category": "FIFA World Cup",
+"service": "FIFA World Cup",
+"logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
+"page": "fifa1.html",
+"date": "2026-07-19",
+"endDate": "2026-07-19",
+"startTime": "5:00 AM",
+"endTime": "9:00 AM"
+},
+  {
+  "title": "Spain vs. Argentina",
   "title": "France vs. Spain",
 "category": "FIFA World Cup",
 "service": "FIFA World Cup",
 "logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
 "page": "fifa1.html",
-"date": "2026-07-15",
-"endDate": "2026-07-15",
-"startTime": "3:00 AM",
-"endTime": "7:00 AM"
-},
-{
-"title": "England vs. Argentina",
-"category": "FIFA World Cup",
-"service": "FIFA World Cup",
-"logo": "https://statics.foxsports.com/www.foxsports.com/content/uploads/2023/05/IMG_6227.png",
-"page": "fifa1.html",
-"date": "2026-07-16",
-"endDate": "2026-07-16",
+"date": "2026-07-20",
+"endDate": "2026-07-20",
 "startTime": "3:00 AM",
 "endTime": "7:00 AM"
 },
