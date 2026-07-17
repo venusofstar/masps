@@ -3,81 +3,70 @@ CHANNEL LIST
 -------------------------------------------------*/
 const channels = [
   {
-    "title": "Dallas Mavericks vs Oklahoma City Thunder",
+    "title": "Sacramento Kings vs Charlotte Hornets",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba1.html",
-    "date": "2026-07-17",
-    "endDate": "2026-07-17",
-    "startTime": "04:00 AM",
-    "endTime": "06:30 AM"
+    "date": "2026-07-18",
+    "endDate": "2026-07-18",
+    "startTime": "06:30 AM",
+    "endTime": "09:00 AM"
   },
   {
-    "title": "Houston Rockets vs Brooklyn Nets",
+    "title": "Chicago Bulls vs Cleveland Cavaliers",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba2.html",
-    "date": "2026-07-17",
-    "endDate": "2026-07-17",
-    "startTime": "04:30 AM",
-    "endTime": "07:00 AM"
-  },
-  {
-    "title": "Los Angeles Lakers vs Chicago Bulls",
-    "category": "NBA",
-    "service": "NBA Summer League",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba3.html",
-    "date": "2026-07-17",
-    "endDate": "2026-07-17",
-    "startTime": "06:00 AM",
-    "endTime": "08:30 AM"
-  },
-  {
-    "title": "New York Knicks vs Golden State Warriors",
-    "category": "NBA",
-    "service": "NBA Summer League",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba4.html",
-    "date": "2026-07-17",
-    "endDate": "2026-07-17",
+    "date": "2026-07-18",
+    "endDate": "2026-07-18",
     "startTime": "07:00 AM",
     "endTime": "09:30 AM"
   },
   {
-    "title": "Memphis Grizzlies vs Atlanta Hawks",
+    "title": "Dallas Mavericks vs New York Knicks",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba5.html",
-    "date": "2026-07-17",
-    "endDate": "2026-07-17",
-    "startTime": "08:00 AM",
-    "endTime": "10:30 AM"
+    "page": "nba3.html",
+    "date": "2026-07-18",
+    "endDate": "2026-07-18",
+    "startTime": "08:30 AM",
+    "endTime": "11:00 AM"
   },
   {
-    "title": "Miami Heat vs Toronto Raptors",
+    "title": "Detroit Pistons vs Miami Heat",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba6.html",
-    "date": "2026-07-17",
-    "endDate": "2026-07-17",
+    "page": "nba4.html",
+    "date": "2026-07-18",
+    "endDate": "2026-07-18",
     "startTime": "09:00 AM",
     "endTime": "11:30 AM"
   },
   {
-    "title": "Denver Nuggets vs Portland Trail Blazers",
+    "title": "Portland Trail Blazers vs Utah Jazz",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba7.html",
-    "date": "2026-07-17",
-    "endDate": "2026-07-17",
-    "startTime": "10:00 AM",
-    "endTime": "12:30 PM"
+    "page": "nba5.html",
+    "date": "2026-07-18",
+    "endDate": "2026-07-18",
+    "startTime": "10:30 AM",
+    "endTime": "01:00 PM"
+  },
+  {
+    "title": "Minnesota Timberwolves vs Los Angeles Clippers",
+    "category": "NBA",
+    "service": "NBA Summer League",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
+    "page": "nba6.html",
+    "date": "2026-07-18",
+    "endDate": "2026-07-18",
+    "startTime": "11:00 AM",
+    "endTime": "01:30 PM"
   },
 {
   "title": "Spain vs. Belgium",
