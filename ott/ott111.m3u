@@ -1,4 +1,12 @@
 #EXTM3U
+#EXTM3U
+#EXT-X-VERSION:3
+#EXTINF:-1 tvg-id="PL_SDI2" tvg-name="PL SDI2" group-title="Live Channels",PL SDI2
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://widevine-proxy.api.plive.quickplay.com/getlicense?service=plive&version=1.0&kid=C5A8F391-7D42-4E80-9B16-6F3C2A7D9045&ptoken=eyJjb250ZW50SWQiOiJDNUE4RjM5MS03RDQyLTRFODAtOUIxNi02RjNDMkE3RDkwNDUiLCJsaWNlbnNlRXhwaXJ5VGltZSI6MTc4NDUyMDUyMjAzNCwiZW50aXRsZWRDb250ZW50SWRzIjoiUXpWQk9FWXpPVEV0TjBRME1pMDBSVGd3TFRsQ01UWXROa1l6UXpKQk4wUTVNRFExIiwibWF4VXNlcyI6MSwic2lnbmF0dXJlIjoiMDU3Y2QzZmVkMDNmN2FiZDFkNGRlYjNjZjIyNmRmNGM4MzA1MjVjY2Q5ZTExMTM5ZWE0NDliMmVjOThkZGM0OSIsInVuaXF1ZUlkIjoiNmJkZTlmMzEyNzY4ZTQ0MyIsImlzc3VlciI6IlNJR05LRVlfUFRPS0VOX0NPTlNVTUVfSVNTVUVSIiwiYXBpS2V5IjoiYXBpS2V5Iiwia2V5VmVyc2lvbiI6InZlcnMwMSIsImV4cGlyeVRpbWUiOjE3ODQ0NzczODIwMzQsImNyZWF0ZWRUaW1lIjoxNzg0NDc3MzIyMDM0LCJ0b2tlbk1vZGVsVmVyc2lvbiI6IlYzIn0=||R{SSM}|
+https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/pl_sdi2/default/index.mpd?hdntl=exp=1784563723~acl=%2F*~id=_IpXNc_4eqAyjSbrj5Z4P_Q5vPHhkOKAAfAUIkXv2de6EZ8~data=hdntl~hmac=4e650ab47086d58b1b7ede0990d8bf4fd1a8ae383921601a5e7a51d7adbbb065
+
 #EXTINF:0 CUID="1" tvg-name="01. TV5" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/TV5_%28Philippines%29_logo.svg/2048px-TV5_%28Philippines%29_logo.svg.png" group-title="🇵🇭 PHILIPPINES CHANNEL",TV5
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
