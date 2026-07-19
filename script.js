@@ -3,81 +3,37 @@ CHANNEL LIST
 -------------------------------------------------*/
 const channels = [
   {
-    "title": "Boston Celtics vs Orlando Magic",
+    "title": "Brooklyn Nets vs Oklahoma City Thunder",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba1.html",
-    "date": "2026-07-19",
-    "endDate": "2026-07-19",
+    "date": "2026-07-20",
+    "endDate": "2026-07-20",
     "startTime": "04:30 AM",
     "endTime": "07:00 AM"
   },
   {
-    "title": "Philadelphia 76ers vs Milwaukee Bucks",
+    "title": "Denver Nuggets vs Toronto Raptors",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
     "page": "nba2.html",
-    "date": "2026-07-19",
-    "endDate": "2026-07-19",
-    "startTime": "05:00 AM",
-    "endTime": "07:30 AM"
-  },
-  {
-    "title": "Houston Rockets vs Memphis Grizzlies",
-    "category": "NBA",
-    "service": "NBA Summer League",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba3.html",
-    "date": "2026-07-19",
-    "endDate": "2026-07-19",
+    "date": "2026-07-20",
+    "endDate": "2026-07-20",
     "startTime": "06:30 AM",
     "endTime": "09:00 AM"
   },
   {
-    "title": "Atlanta Hawks vs Washington Wizards",
+    "title": "Golden State Warriors vs Memphis Grizzlies",
     "category": "NBA",
     "service": "NBA Summer League",
     "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba4.html",
-    "date": "2026-07-19",
-    "endDate": "2026-07-19",
-    "startTime": "07:00 AM",
-    "endTime": "09:30 AM"
-  },
-  {
-    "title": "Golden State Warriors vs Los Angeles Lakers",
-    "category": "NBA",
-    "service": "NBA Summer League",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba5.html",
-    "date": "2026-07-19",
-    "endDate": "2026-07-19",
-    "startTime": "08:30 AM",
-    "endTime": "11:00 AM"
-  },
-  {
-    "title": "Indiana Pacers vs New Orleans Pelicans",
-    "category": "NBA",
-    "service": "NBA Summer League",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba6.html",
-    "date": "2026-07-19",
-    "endDate": "2026-07-19",
+    "page": "nba3.html",
+    "date": "2026-07-20",
+    "endDate": "2026-07-20",
     "startTime": "09:00 AM",
     "endTime": "11:30 AM"
-  },
-  {
-    "title": "San Antonio Spurs vs Phoenix Suns",
-    "category": "NBA",
-    "service": "NBA Summer League",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg",
-    "page": "nba7.html",
-    "date": "2026-07-19",
-    "endDate": "2026-07-19",
-    "startTime": "10:30 AM",
-    "endTime": "01:00 PM"
   },
 {
   "title": "England vs. France",
