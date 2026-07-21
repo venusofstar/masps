@@ -1,11 +1,13 @@
 #EXTM3U
 
 #EXTINF:-1 tvg-id="" tvg-name="NBA4 Stream" tvg-logo="" group-title="NBA",jjj
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
 #EXTVLCOPT:http-referrer=https://pilipinaslive.com/
 #EXTVLCOPT:http-origin=https://pilipinaslive.com
 #KODIPROP:inputstream.adaptive.license_key=b4f7c8219d624e30a9156c3a5d7f2048:60391d7d3bb726a4a95e66c4c0af219d
-https://ucdn.mediaquest.com.ph/bpk-tv/pl_sdi5/default/index.mpd
+https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pl_sdi5/default/index.mpd
 
 #EXTINF:-1 tvg-id="ff30ed75-d314-40c8-8adb-766b088843bc" tvg-name="mio Sports"  group-title="新加坡电信2",  p5
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
