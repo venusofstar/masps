@@ -8,7 +8,7 @@
 #EXTVLCOPT:http-origin=https://pilipinaslive.com
 #EXTVLCOPT:http-header=Host:https://pilipinaslive.com
 #KODIPROP:inputstream.adaptive.license_key=b4f7c8219d624e30a9156c3a5d7f2048:60391d7d3bb726a4a95e66c4c0af219d
-https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pl_sdi5/default/index.mpd
+https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pl_sdi5/default/index.mpd?hdnts=st=1784642005~exp=1784642125~acl=*~id=_IpXNc_4eqAyjSbrj5Z4P_Q5vPHhkOKAAfAUIkXv2de6EZ8~hmac=543c978cca6dd0679f2ebe860f5d4bc5503bcf9f4cfd59d342f693cc3b4d8254
 
 #EXTINF:-1 tvg-id="ff30ed75-d314-40c8-8adb-766b088843bc" tvg-name="mio Sports"  group-title="新加坡电信2",  p5
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -20,6 +20,7 @@ https://ucdn.mediaquest.com.ph/bpk-tv/pl_sdi5/default/index.mpd
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=b4f7c8219d624e30a9156c3a5d7f2048:60391d7d3bb726a4a95e66c4c0af219d
+https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pl_sdi5/default/index.mpd?hdnts=st=1784642005~exp=1784642125~acl=*~id=_IpXNc_4eqAyjSbrj5Z4P_Q5vPHhkOKAAfAUIkXv2de6EZ8~hmac=543c978cca6dd0679f2ebe860f5d4bc5503bcf9f4cfd59d342f693cc3b4d8254
 https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pl_sdi5/default/index.mpd?hdnts=st=1784636911~exp=1784637031~acl=*~id=_IpXNc_4eqAyjSbrj5Z4P_Q5vPHhkOKAAfAUIkXv2de6EZ8~hmac=d1b80718618c5480c8bcb739fb282fcc6f7a4a635032be8439a1cb6fa6deb0f7
 
 
