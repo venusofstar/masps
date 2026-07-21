@@ -3,7 +3,7 @@
 #EXTINF:-1 tvg-id="" tvg-name="NBA4 Stream" tvg-logo="" group-title="NBA",jjj
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 13; Hi10 XPro Build/TP1A.220624.014)
 #EXTVLCOPT:http-referrer=https://pilipinaslive.com/
 #EXTVLCOPT:http-origin=https://pilipinaslive.com
 #KODIPROP:inputstream.adaptive.license_key=b4f7c8219d624e30a9156c3a5d7f2048:60391d7d3bb726a4a95e66c4c0af219d
