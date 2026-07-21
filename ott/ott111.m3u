@@ -1,5 +1,16 @@
 #EXTM3U
-#EXTM3U
+Host:s-static.innovid.com
+User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:152.0) Gecko/20100101 Firefox/152.0
+Accept:video/webm,video/ogg,video/*;q=0.9,application/ogg;q=0.7,audio/*;q=0.6,*/*;q=0.5
+Accept-Language:en-US,en;q=0.9
+Range:bytes=0-
+Sec-Fetch-Storage-Access:none
+Connection:keep-alive
+Referer:https://pilipinaslive.com/
+Cookie:uuid="46003aa8-ef83-4bc0-933a-9e84a6219fa8-20260721 08:28:33"
+Sec-Fetch-Dest:video
+Sec-Fetch-Mode:no-cors
+Sec-Fetch-Site:cross-site
 #EXT-X-VERSION:3
 #EXTINF:-1 tvg-id="PL_SDI2" tvg-name="PL SDI2" group-title="Live Channels",PL SDI2
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
