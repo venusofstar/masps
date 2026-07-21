@@ -6,6 +6,7 @@
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 13; Hi10 XPro Build/TP1A.220624.014)
 #EXTVLCOPT:http-referrer=https://pilipinaslive.com/
 #EXTVLCOPT:http-origin=https://pilipinaslive.com
+#EXTVLCOPT:http-header=Host:https://pilipinaslive.com
 #KODIPROP:inputstream.adaptive.license_key=b4f7c8219d624e30a9156c3a5d7f2048:60391d7d3bb726a4a95e66c4c0af219d
 https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pl_sdi5/default/index.mpd
 
