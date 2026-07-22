@@ -69,13 +69,13 @@ const channels = [
 "endTime": "6:30 PM"
 },
 {
-"title": "UFC Fight Night: Du Plessis vs. Usman",
+"title": "UFC Fight Night: Ankalaev vs. Guskov",
 "category": "UFC",
 "service": "UFC",
 "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",
 "page": "ufc1.html",
 "date": "2026-07-19",
-"endDate": "2026-07-19",
+"endDate": "2026-07-22",
 "startTime": "5:00 AM",
 "endTime": "3:59 PM"
 },
